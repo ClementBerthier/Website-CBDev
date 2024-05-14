@@ -41,7 +41,7 @@ export default function Header() {
                     </a>
                     <div className="borderLine "></div>
                 </div>
-                <div className="navBar_items_container active">
+                <div className="navBar_items_container">
                     <a className="navBar_items" href="Articles">
                         Articles
                     </a>

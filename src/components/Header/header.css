@@ -5,6 +5,7 @@
     align-items: center;
     position: fixed;
     z-index: 2;
+    gap: 15%;
     .logo_container {
         width: 5%;
         height: 5%;
@@ -18,10 +19,11 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 5rem;
+        gap: 10%;
         .navBar_items_container {
             .navBar_items {
-                font-size: 2rem;
+                font-size: 1vw;
+                white-space: nowrap;
 
                 color: #000;
                 text-decoration: none;
@@ -54,6 +56,9 @@
             }
         }
     }
+}
+.scroll {
+    background-color: #000;
 }
 
 @keyframes borderLine {

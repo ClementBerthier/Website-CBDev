@@ -29,7 +29,7 @@ export default function Home() {
                             Développement de site web et d{"'"}application web
                         </p>
                     </div>
-                    <div>
+                    <div className="wave_container">
                         <div className="wave"></div>
                         <div className="wave"></div>
                         <div className="wave"></div>

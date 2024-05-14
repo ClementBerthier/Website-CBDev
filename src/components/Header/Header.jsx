@@ -12,7 +12,7 @@ export default function Header() {
             </div>
             <nav className="navBar">
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="Home">
+                    <a className="navBar_items" href="/">
                         Home
                     </a>
                     <div className="borderLine"></div>

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 100;    
+    z-index: 2;
     .logo_container {
         width: 5%;
         height: 5%;
@@ -35,22 +35,22 @@
         }
         .active {
             .navBar_items {
-                color: #004fbe;
+                color: #2e5339;
             }
             .borderLine {
                 width: 100%;
                 height: 0.2rem;
-                background-color: #004fbe;
+                background-color: #2e5339;
             }
         }
         .navBar_items_container:hover {
             .navBar_items {
-                color: #004fbe;
+                color: #2e5339;
             }
             .borderLine {
                 height: 0.2rem;
                 animation: borderLine 0.5s forwards;
-                background-color: #004fbe;
+                background-color: #2e5339;
             }
         }
     }

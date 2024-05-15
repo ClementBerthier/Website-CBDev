@@ -64,14 +64,14 @@
             }
             .borderLine {
                 height: 0.2rem;
-                animation: borderLine 0.5s forwards;
+                animation: borderLine 1.5s forwards ease-in-out;
                 background-color: #2e5339;
             }
         }
     }
 }
-.scroll {
-    background-color: #000;
+.scrolled {
+    animation: headerScroll 0.5s forwards;
 }
 
 @keyframes borderLine {
@@ -80,6 +80,16 @@
     }
     100% {
         width: 100%;
+    }
+}
+
+@keyframes headerScroll {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ffffff;
     }
 }
 

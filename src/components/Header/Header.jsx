@@ -1,8 +1,23 @@
+import { useState } from "react";
 import "./header.css";
 
 export default function Header() {
+    const [Scrolled, setScrolled] = useState("header");
+
+    const handleScroll = () => {
+        if (window.scrollY > 350) {
+            setScrolled("header scrolled");
+        } else {
+            setScrolled("header");
+        }
+    };
+
+    console.log(window.scrollY);
+
+    window.addEventListener("scroll", handleScroll);
+
     return (
-        <header className="header">
+        <header className={Scrolled}>
             <div className="logo_container">
                 <img
                     className="logo"

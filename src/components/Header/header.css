@@ -6,7 +6,7 @@
     position: fixed;
     width: 100%;
     height: 8vh;
-    z-index: 2;
+    z-index: 3;
     .logo_container {
         position: relative;
         height: 100%;
@@ -42,29 +42,30 @@
                 text-decoration: none;
                 cursor: pointer;
             }
+
+            .clicked {
+                color: #2e5339;
+
+                .borderLine {
+                    width: 100%;
+                    height: 0.2rem;
+                    background-color: #2e5339;
+                }
+            }
             .borderLine {
                 height: 0.2rem;
                 background-color: transparent;
                 margin-top: 0.5rem;
             }
         }
-        .active {
-            .navBar_items {
-                color: #2e5339;
-            }
-            .borderLine {
-                width: 100%;
-                height: 0.2rem;
-                background-color: #2e5339;
-            }
-        }
+
         .navBar_items_container:hover {
             .navBar_items {
                 color: #2e5339;
             }
             .borderLine {
                 height: 0.2rem;
-                animation: borderLine 1.5s forwards ease-in-out;
+                animation: borderLine 1s forwards;
                 background-color: #2e5339;
             }
         }

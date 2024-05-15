@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./header.css";
+import { Link } from "react-scroll";
 
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
+
+    const [isClicked, setIsclicked] = useState("");
 
     const handleScroll = () => {
         if (window.scrollY > 350) {
@@ -12,9 +15,13 @@ export default function Header() {
         }
     };
 
-    console.log(window.scrollY);
-
     window.addEventListener("scroll", handleScroll);
+
+    const handleClick = (e) => {
+        const id = e.target.id;
+        setIsclicked(id);
+        console.log(isClicked);
+    };
 
     return (
         <header className={Scrolled}>
@@ -27,58 +34,157 @@ export default function Header() {
             </div>
             <nav className="navBar">
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="/">
+                    <Link
+                        onClick={handleClick}
+                        id="headerHome"
+                        className={`navBar_items ${
+                            isClicked === "headerHome" ? "clicked" : ""
+                        }`}
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         Home
-                    </a>
-                    <div className="borderLine"></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="Menu">
+                    <Link
+                        onClick={handleClick}
+                        id="headerMenu"
+                        className={`navBar_items ${
+                            isClicked === "headerMenu" ? "clicked" : ""
+                        }`}
+                        to="menu"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         Menu
-                    </a>
-                    <div className="borderLine"></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="/aboutMe">
-                        A Propos
-                    </a>
-                    <div className="borderLine"></div>
+                    <Link
+                        onClick={handleClick}
+                        id="headerAboutMe"
+                        className={`navBar_items ${
+                            isClicked === "headerAboutMe" ? "clicked" : ""
+                        }`}
+                        to="aboutMe"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        A propos
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="Services">
+                    <Link
+                        onClick={handleClick}
+                        id="headerServices"
+                        className={`navBar_items ${
+                            isClicked === "headerServices" ? "clicked" : ""
+                        }`}
+                        to="services"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         Services
-                    </a>
-                    <div className="borderLine"></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="Technos">
+                    <Link
+                        onClick={handleClick}
+                        id="headerTechnos"
+                        className={`navBar_items ${
+                            isClicked === "headerTechnos" ? "clicked" : ""
+                        }`}
+                        to="technos"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         Technos
-                    </a>
-                    <div className="borderLine "></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="Articles">
+                    <Link
+                        onClick={handleClick}
+                        id="headerArticles"
+                        className={`navBar_items ${
+                            isClicked === "headerArticles" ? "clicked" : ""
+                        }`}
+                        to="articles"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         Articles
-                    </a>
-                    <div className="borderLine "></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="News">
+                    <Link
+                        onClick={handleClick}
+                        id="headerNews"
+                        className={`navBar_items ${
+                            isClicked === "headerNews" ? "clicked" : ""
+                        }`}
+                        to="news"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         News
-                    </a>
-                    <div className="borderLine"></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="FAQs">
+                    <Link
+                        onClick={handleClick}
+                        id="headerFAQs"
+                        className={`navBar_items ${
+                            isClicked === "headerFAQs" ? "clicked" : ""
+                        }`}
+                        to="FAQs"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         FAQs
-                    </a>
-                    <div className="borderLine"></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
                 <div className="navBar_items_container">
-                    <a className="navBar_items" href="Contact">
+                    <Link
+                        onClick={handleClick}
+                        id="headerContact"
+                        className={`navBar_items ${
+                            isClicked === "headerContact" ? "clicked" : ""
+                        }`}
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
                         Contact
-                    </a>
-                    <div className="borderLine"></div>
+                        <div className="borderLine"></div>
+                    </Link>
                 </div>
             </nav>
         </header>

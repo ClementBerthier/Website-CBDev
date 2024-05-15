@@ -7,7 +7,7 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <section className="home">
+                <section className="home" id="home">
                     <div className="first_container">
                         <div className="picture_container">
                             <img

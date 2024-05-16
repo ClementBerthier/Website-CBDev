@@ -3,14 +3,17 @@ import "./aboutMe.css";
 export default function AboutMe() {
     return (
         <div className="aboutMe" id="aboutMe">
+            <div className="whiteBanner"></div>
             <div className="description_container">
                 <h2 className="description_title">Qui somme nous?</h2>
 
                 <p className="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem ipsum doloremque error fugit id voluptatem illum? Quam
-                    provident veniam accusantium a cupiditate culpa excepturi,
-                    laudantium voluptate officiis magnam nihil quia.
+                    Clément Berthier Développeur est votre solution pour la
+                    création de vos projets web, offrant des services sur mesure
+                    en développement web et application. Nous vous accompagnons
+                    tout au long de votre projet en mettant à votre disposition
+                    notre expertise et notre passion afin de transformer vos
+                    idées en réalité.
                 </p>
             </div>
             <div className="aboutMe_container">
@@ -77,6 +80,7 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
+            <div className="whiteBanner"></div>
         </div>
     );
 }

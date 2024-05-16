@@ -7,6 +7,8 @@ export default function Header() {
 
     const [isClicked, setIsclicked] = useState("");
 
+    //TODO : faire en sorte que les lien du header se colorise en fonction de la position de l'utilisateur, et se decolorise lorsqu'il quite la zone.
+
     const handleScroll = () => {
         if (window.scrollY > 350) {
             setScrolled("header scrolled");
@@ -20,7 +22,6 @@ export default function Header() {
     const handleClick = (e) => {
         const id = e.target.id;
         setIsclicked(id);
-        console.log(isClicked);
     };
 
     return (

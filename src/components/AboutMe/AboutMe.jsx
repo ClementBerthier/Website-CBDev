@@ -1,3 +1,4 @@
+import Waves from "../Waves/Waves.jsx";
 import "./aboutMe.css";
 
 export default function AboutMe() {
@@ -95,7 +96,7 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-            <div className="whiteBanner"></div>
+            <Waves />
         </>
     );
 }

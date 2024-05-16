@@ -78,7 +78,6 @@ export default function Header() {
                         to="aboutMe"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
                     >
                         A propos

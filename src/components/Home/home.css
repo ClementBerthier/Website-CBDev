@@ -1,5 +1,6 @@
 .home {
     z-index: 1;
+    background-color: white;
     .first_container {
         position: relative;
         .picture_container {

@@ -16,6 +16,7 @@
         background-color: white;
         border-radius: 30px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        transition: transform 0.8s ease;
 
         .logo {
             width: 10rem;
@@ -47,6 +48,9 @@
             }
         }
     }
+    .description_container:hover {
+        transform: translateY(-15px);
+    }
     .aboutMe_container {
         width: 30%;
         height: 35%;
@@ -56,6 +60,8 @@
         background-color: white;
         border-radius: 30px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        transition: transform 0.8s ease;
+
         .logo {
             width: 10rem;
             height: 10rem;
@@ -103,6 +109,9 @@
                 }
             }
         }
+    }
+    .aboutMe_container:hover {
+        transform: translateY(-15px);
     }
 }
 .whiteBanner {

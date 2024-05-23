@@ -39,3 +39,29 @@
         transform: translate3d(85px, 0, 0);
     }
 }
+
+@media screen and (max-width: 725px) {
+    .wave_container {
+        bottom: 7rem;
+        .waves {
+            max-height: 6.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wave_container {
+        bottom: 5rem;
+        .waves {
+            max-height: 4.8rem;
+        }
+    }
+}
+@media screen and (max-width: 345px) {
+    .wave_container {
+        bottom: 3rem;
+        .waves {
+            max-height: 2.8rem;
+        }
+    }
+}

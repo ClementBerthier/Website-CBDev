@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <main>
+            <div>
                 <section className="home" id="home">
                     <div className="first_container">
                         <div className="picture_container">
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
                     <Waves />
                 </section>
-            </main>
+            </div>
         </>
     );
 }

@@ -1,18 +1,13 @@
 .aboutMe {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(255, 255, 255, 0.382);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5%;
     height: 50vh;
-    position: relative;
 
     .aboutMe_title {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         font-size: 1.5vw;
         font-weight: 700;
     }
@@ -25,12 +20,11 @@
         align-items: center;
         background-color: white;
         border-radius: 30px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.409);
         transition: transform 0.8s ease;
 
         .logo {
-            width: 10rem;
-            height: 10rem;
+            height: 40%;
             margin: 0 0.5rem;
         }
 
@@ -52,87 +46,51 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                line-height: 1.5rem;
                 font-size: 0.7vw;
             }
         }
     }
+
+    .slider {
+        width: 100%;
+        margin: 3rem 0;
+
+        .slide_logo_container {
+            height: 100%;
+            .slide_logo {
+                width: 30%;
+                max-height: 100%;
+            }
+        }
+        button {
+            display: none !important;
+        }
+    }
+
+    .whiteboard {
+        background-color: blue;
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        background-image: url(../src/assets/images/deskBackground.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        z-index: -1;
+    }
+
     .description_container:hover {
         transform: translateY(-15px);
     }
-    .aboutMe_container {
-        width: 30%;
-        height: 35%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: white;
-        border-radius: 30px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-        transition: transform 0.8s ease;
 
-        .logo {
-            width: 10rem;
-            height: 10rem;
-            margin: 0 0.5rem;
-        }
-        .info_container {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 100%;
-            height: 100%;
-
-            .title {
-                margin: 2rem 0 0 0;
-                font-size: 0.8vw;
-                font-weight: 700;
-            }
-            .tech_container {
-                width: 100%;
-                height: 65%;
-                display: flex;
-                flex-direction: column;
-                padding: 1.5rem 0;
-                gap: 10%;
-                .firstSection {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    height: 50%;
-
-                    .techLogo {
-                        height: 100%;
-                        margin: 0 1rem;
-                        transition: transform 0.4s ease;
-                    }
-                    .techLogo:hover {
-                        transform: scale(1.3);
-                    }
-                }
-                .secondSection {
-                    height: 50%;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    .techLogo {
-                        height: 100%;
-                        margin: 0 1rem;
-                        transition: transform 0.4s ease;
-                    }
-                    .techLogo:hover {
-                        transform: scale(1.3);
-                    }
-                }
-            }
-        }
-    }
     .aboutMe_container:hover {
         transform: translateY(-15px);
     }
-}
-.whiteBanner {
-    width: 100%;
-    height: 10vh;
-    background-color: white;
+
+    .whiteBanner {
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+    }
 }

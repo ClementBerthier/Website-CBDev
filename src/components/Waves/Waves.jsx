@@ -1,10 +1,6 @@
-import { useState } from "react";
 import "./waves.css";
 
 export default function Waves() {
-    const [bottomValues, setBottomValues] = useState(null);
-    const windowsWidth = window.innerWidth;
-
     return (
         <div className="wave_container">
             <svg

@@ -18,10 +18,10 @@ export default function Home() {
                             />
                         </div>
                         <div className="title_container">
-                            <h1 className="title">
+                            <h2 className="title">
                                 Clément Berthier{" "}
                                 <span className="spanColor">Développeur</span>
-                            </h1>
+                            </h2>
                             <h2 className="subTitle">
                                 Votre <span className="spanColor">vision</span>,
                                 notre

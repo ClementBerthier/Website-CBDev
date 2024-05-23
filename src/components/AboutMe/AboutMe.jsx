@@ -9,8 +9,8 @@ export default function AboutMe() {
         dots: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 4000,
+        autoplaySpeed: 5000,
+        speed: 5000,
         slidesToShow: 4,
         slidesToScroll: 1,
         cssEase: "linear",
@@ -19,23 +19,49 @@ export default function AboutMe() {
         <>
             <div className="aboutMe" id="aboutMe">
                 <h1 className="aboutMe_title">À propos de nous</h1>
-                <div className="description_container">
-                    <img
-                        className="logo"
-                        src="../../src/assets/images/user-scan.svg"
-                        alt="logo scan"
-                    />
-                    <div className="text_container">
-                        <h2 className="description_title">Qui sommes nous?</h2>
+                <div className="banner_container">
+                    <div className="description_container">
+                        <img
+                            className="logo"
+                            src="../../src/assets/images/user-scan.svg"
+                            alt="logo scan"
+                        />
+                        <div className="text_container">
+                            <h2 className="description_title">Qui suis-je?</h2>
 
-                        <p className="description">
-                            Clément Berthier Développeur est votre solution pour
-                            la création de vos projets web, offrant des services
-                            sur mesure en développement web et application. Nous
-                            vous accompagnons tout au long de votre projet en
-                            mettant à votre disposition notre expertise et notre
-                            passion afin de transformer vos idées en réalité.
-                        </p>
+                            <p className="description">
+                                Je m{"'"}appelle Clément Berthier, je suis un
+                                développeur spécialisé dans la création de
+                                projets web sur mesure. Passioné par mon métier,
+                                je travaille autant coté <span>Frontend</span>{" "}
+                                que <span>Backend</span> pour vous offrir des
+                                solutions complètes et adaptées à vos besoins.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="description_container">
+                        <img
+                            className="logo"
+                            src="../../src/assets/images/code.svg"
+                            alt="logo scan"
+                        />
+                        <div className="text_container">
+                            <h2 className="description_title">
+                                Que faisons nous?
+                            </h2>
+
+                            <p className="description">
+                                Clément Berthier Développeur est votre solution
+                                pour la création de vos projets web. En tant que
+                                professionnel indépendant, je mets à votre
+                                disposition mon expertise et mon expérience dans
+                                le développement web et d{"'"}applications. Je m
+                                {"'"}engage à vous accompagner à chaque étape de
+                                votre projet, en mettant mon savoir-faire et ma
+                                passion au service de vos idées pour les
+                                transformer en réalité.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <Slider {...slideSettings} className="slider">

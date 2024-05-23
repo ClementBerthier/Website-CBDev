@@ -18,7 +18,7 @@ export default function AboutMe() {
     return (
         <>
             <div className="aboutMe" id="aboutMe">
-                <h1 className="aboutMe_title">À propos de nous</h1>
+                <h2 className="aboutMe_title">À propos de nous</h2>
                 <div className="banner_container">
                     <div className="description_container">
                         <img

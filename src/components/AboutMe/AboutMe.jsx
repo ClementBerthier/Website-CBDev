@@ -12,9 +12,9 @@ export default function AboutMe() {
         autoplaySpeed: 5000,
         speed: 5000,
         slidesToShow: 4,
-        slidesToScroll: 1,
         cssEase: "linear",
     };
+
     return (
         <>
             <div className="aboutMe" id="aboutMe">

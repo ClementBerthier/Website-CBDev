@@ -51,23 +51,7 @@ export default function Header() {
                         <div className="borderLine"></div>
                     </Link>
                 </div>
-                <div className="navBar_items_container">
-                    <Link
-                        onClick={handleClick}
-                        id="headerMenu"
-                        className={`navBar_items ${
-                            isClicked === "headerMenu" ? "clicked" : ""
-                        }`}
-                        to="menu"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        Menu
-                        <div className="borderLine"></div>
-                    </Link>
-                </div>
+
                 <div className="navBar_items_container">
                     <Link
                         onClick={handleClick}

@@ -4,10 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 6rem 0;
     .title {
         font-size: 2vw;
         font-weight: 700;
-        margin: 6rem;
+        margin-bottom: 6rem;
     }
 
     .services {
@@ -35,6 +36,7 @@
             .services_title {
                 font-size: 1.3vw;
                 font-weight: 700;
+                white-space: nowrap;
             }
             .services_text {
                 font-size: 0.8vw;

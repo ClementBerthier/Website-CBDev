@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./services.css";
 
 export default function Service() {

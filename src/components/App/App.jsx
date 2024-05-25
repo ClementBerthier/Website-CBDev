@@ -3,6 +3,10 @@ import Home from "../Home/Home";
 import AboutMe from "../AboutMe/AboutMe";
 import "./App.css";
 import Service from "../Services/Service.jsx";
+import ContactBanner from "../ContactBanner/ContactBanner.jsx";
+import Contact from "../Contact/Contact.jsx";
+//import FAQs from "../FAQs/FAQs.jsx";
+//import Articles from "../Articles/Articles.jsx";
 
 function App() {
     return (
@@ -10,6 +14,11 @@ function App() {
             <Home />
             <AboutMe />
             <Service />
+            <ContactBanner />
+            {/*  <Articles />
+             <FAQs
+             */}
+            <Contact />
         </div>
     );
 }

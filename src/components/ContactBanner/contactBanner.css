@@ -1,0 +1,36 @@
+.contactBanner_container {
+    background-image: url(../src/assets/images/deskBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contactBanner {
+        background-color: rgba(255, 255, 255, 0.382);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+        .contactBanner_title {
+            font-size: 2.5vw;
+            font-weight: 700;
+        }
+        .contactBanner_text {
+            font-size: 1.5vw;
+        }
+        .contactBanner_button {
+            font-size: 1.5vw;
+            font-weight: 700;
+            background-color: #2e5339;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+    }
+}

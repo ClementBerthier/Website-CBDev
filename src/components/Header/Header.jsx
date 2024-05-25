@@ -8,7 +8,7 @@ export default function Header() {
     const [isClicked, setIsclicked] = useState("");
 
     //TODO : faire en sorte que les lien du header se colorise en fonction de la position de l'utilisateur, et se decolorise lorsqu'il quite la zone.
-
+    //Todo: faire en sorte que lorsque l'on clique sur un lien le h2 soit visible et non caché
     const handleScroll = () => {
         if (window.scrollY > 350) {
             setScrolled("header scrolled");
@@ -85,23 +85,7 @@ export default function Header() {
                         <div className="borderLine"></div>
                     </Link>
                 </div>
-                <div className="navBar_items_container">
-                    <Link
-                        onClick={handleClick}
-                        id="headerTechnos"
-                        className={`navBar_items ${
-                            isClicked === "headerTechnos" ? "clicked" : ""
-                        }`}
-                        to="technos"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        Technos
-                        <div className="borderLine"></div>
-                    </Link>
-                </div>
+
                 <div className="navBar_items_container">
                     <Link
                         onClick={handleClick}

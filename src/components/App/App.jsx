@@ -5,6 +5,7 @@ import "./App.css";
 import Service from "../Services/Service.jsx";
 import ContactBanner from "../ContactBanner/ContactBanner.jsx";
 import Contact from "../Contact/Contact.jsx";
+import Footer from "../Footer/Footer.jsx";
 //import FAQs from "../FAQs/FAQs.jsx";
 //import Articles from "../Articles/Articles.jsx";
 
@@ -19,6 +20,7 @@ function App() {
              <FAQs
              */}
             <Contact />
+            {/* <Footer /> */}
         </div>
     );
 }

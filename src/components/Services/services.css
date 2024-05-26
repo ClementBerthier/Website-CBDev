@@ -26,7 +26,6 @@
             box-sizing: border-box;
             flex: 1 1 calc(50% - 20px);
             padding: 2rem;
-            border-radius: 0 20px 0 20px;
             box-shadow: 0 0 10px 0 rgb(46, 83, 57, 0.3);
 
             .services_logo {
@@ -47,6 +46,7 @@
         .services_box:hover {
             background-color: #2e5339;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+            transition: ease 0.5s;
             .services_title,
             .services_text {
                 color: white;
@@ -55,6 +55,32 @@
                 background-color: white;
                 border-radius: 15px 0 15px 0;
             }
+        }
+
+        .topLeft {
+            border-radius: 20px 0 20px 0px;
+        }
+        .topRight {
+            border-radius: 0 20px 0px 20px;
+        }
+        .bottomLeft {
+            border-radius: 0px 20px 0px 20px;
+        }
+        .bottomRight {
+            border-radius: 20px 0px 20px 0px;
+        }
+
+        .topLeft:hover {
+            transform: translateX(-10px) translateY(-10px);
+        }
+        .topRight:hover {
+            transform: translateX(10px) translateY(-10px);
+        }
+        .bottomLeft:hover {
+            transform: translateX(-10px) translateY(10px);
+        }
+        .bottomRight:hover {
+            transform: translateX(10px) translateY(10px);
         }
     }
 }

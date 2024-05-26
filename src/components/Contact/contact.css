@@ -42,6 +42,7 @@
             .detail {
                 margin: 0;
                 .detail_title {
+                    font-size: 1vw;
                     margin: 0.5rem 0;
                     text-decoration: underline;
                     text-underline-offset: 0.2rem;

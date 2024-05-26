@@ -1,6 +1,9 @@
 import "./contact.css";
 import Button from "../elements/Button/Button.jsx";
-import { FormField, Checkbox, Form, FormTextArea } from "semantic-ui-react";
+import { FormField, Form, FormTextArea } from "semantic-ui-react";
+import facebook from "../../assets/images/whitefacebook.svg";
+import instagram from "../../assets/images/whiteinsta.svg";
+import linkedin from "../../assets/images/whitelinkedin.svg";
 
 export default function Contact() {
     const mail = "clementberthierdeveloppeur@gmail.com";
@@ -17,6 +20,7 @@ export default function Contact() {
                     <Form
                         action={`https://formsubmit.co/${mail}`}
                         method="POST"
+                        className="contact_form"
                     >
                         <FormField>
                             <label>Nom</label>
@@ -38,12 +42,14 @@ export default function Contact() {
                                 maxLength="500"
                             />
                         </div>
-                        <Button
-                            className="form_button"
-                            id="contact"
-                            text="Envoyer"
-                            type="submit"
-                        />
+                        <div className="button_container">
+                            <Button
+                                className="form_button"
+                                id="contact"
+                                text="Envoyer"
+                                type="submit"
+                            />
+                        </div>
                     </Form>
                 </div>
                 <div className="contact-detail">
@@ -57,12 +63,31 @@ export default function Contact() {
                     <div className="detail">
                         <h3 className="detail_title">Email:</h3>
                         <p className="detail_text">
-                            clementberthierdeveloppeur@gmail.com
+                            <a
+                                className="mailto"
+                                href="mailto:clementberthierdeveloppeur@gmail.com"
+                            >
+                                clementberthierdeveloppeur@gmail.com
+                            </a>
                         </p>
                     </div>
                     <div className="detail">
-                        <h3 className="detail_title">Téléphone</h3>
+                        <h3 className="detail_title">Téléphone:</h3>
                         <p className="detail_text">07.88.45.37.78</p>
+                    </div>
+                    <div className="detail">
+                        <h3 className="detail_title">Réseaux sociaux:</h3>
+                        <div className="detail_logo">
+                            <a className="detail_link" href="">
+                                <img src={facebook} alt="logo facebook" />
+                            </a>
+                            <a className="detail_link" href="">
+                                <img src={instagram} alt="logo instagram" />
+                            </a>
+                            <a className="detail_link" href="">
+                                <img src={linkedin} alt="logo instagram" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

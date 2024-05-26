@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    height: 60vh;
     .contact_title {
         font-size: 2vw;
-        margin: 1rem;
     }
     .contact_message {
         font-size: 0.8vw;
@@ -13,15 +14,58 @@
     .contact {
         display: flex;
         flex-direction: row;
+        width: 50%;
         .form_container {
-            width: 100%;
+            height: 100%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             margin: 0 2rem;
+            .button_container {
+                position: absolute;
+                bottom: -35%;
+                right: -2rem;
+                transform: translate(50%, -50%);
+            }
         }
         .contact-detail {
+            width: 50%;
             height: 100%;
             border: 1px solid black;
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #2e5339;
+            color: white;
+            border-radius: 20px 0 20px 0;
+            .detail {
+                margin: 0;
+                .detail_title {
+                    margin: 0.5rem 0;
+                    text-decoration: underline;
+                    text-underline-offset: 0.2rem;
+                }
+                .detail_text {
+                    font-size: 0.8vw;
+                    .mailto {
+                        color: white;
+                        text-decoration: none;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .detail_logo {
+                    width: 100%;
+                    display: flex;
+                    gap: 5%;
+
+                    .detail_link {
+                        width: 10%;
+                    }
+                }
+            }
         }
     }
 }

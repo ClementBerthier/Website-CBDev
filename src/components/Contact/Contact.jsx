@@ -4,12 +4,39 @@ import { FormField, Form, FormTextArea } from "semantic-ui-react";
 import facebook from "../../assets/images/whitefacebook.svg";
 import instagram from "../../assets/images/whiteinsta.svg";
 import linkedin from "../../assets/images/whitelinkedin.svg";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export default function Contact() {
-    const mail = "clementberthierdeveloppeur@gmail.com";
+    const serviceId = "o/j#YBqAnUk:BhFdPP1*13:";
+    const templateId = "template_z2eknc5";
+    const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
+
+    const form = useRef();
+
+    const sendEmail = async (e) => {
+        e.preventDefault();
+        try {
+            const result = await emailjs.sendForm(
+                serviceId,
+                templateId,
+                form.current,
+                {
+                    publicKey: emailJSPublicKey,
+                }
+            );
+            console.log("success", result);
+        } catch (error) {
+            console.log("Failed", error);
+        }
+    };
 
     return (
-        <form className="contact_container">
+        <form
+            className="contact_container ui form"
+            onSubmit={sendEmail}
+            ref={form}
+        >
             <h2 className="contact_title">Contactez-nous</h2>
             <p className="contact_message">
                 N{"'"}hésitez pas à nous envoyer un message pour plus d{"'"}
@@ -17,40 +44,38 @@ export default function Contact() {
             </p>
             <div className="contact">
                 <div className="form_container">
-                    <Form
-                        action={`https://formsubmit.co/${mail}`}
-                        method="POST"
-                        className="contact_form"
-                    >
+                    <div className="contact_form" id="contact_form">
                         <FormField>
                             <label>Nom</label>
-                            <input placeholder="Nom" />
+                            <input
+                                placeholder="Nom"
+                                name="user_lastname"
+                                type="text"
+                            />
                         </FormField>
                         <FormField>
                             <label>Prénom</label>
-                            <input placeholder="Prénom" />
+                            <input
+                                placeholder="Prénom"
+                                name="user_firstname"
+                                type="text"
+                            />
                         </FormField>
                         <div>
                             <FormTextArea
                                 label="Objet"
                                 placeholder="Quel est l'objet de votre message ?"
                                 maxLength="150"
+                                name="object"
                             />
                             <FormTextArea
                                 label="Message"
                                 placeholder="Votre message ici."
                                 maxLength="500"
+                                name="message"
                             />
-                        </div>
-                        <div className="button_container">
-                            <Button
-                                className="form_button"
-                                id="contact"
-                                text="Envoyer"
-                                type="submit"
-                            />
-                        </div>
-                    </Form>
+                        </div>{" "}
+                    </div>
                 </div>
                 <div className="contact-detail">
                     <div className="detail">
@@ -90,6 +115,15 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
+            </div>{" "}
+            <div className="button_container">
+                <Button
+                    className="form_button"
+                    id="contact"
+                    text="Envoyer"
+                    type="submit"
+                    onSubmit={sendEmail}
+                />
             </div>
         </form>
     );

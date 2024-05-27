@@ -21,12 +21,6 @@
             display: flex;
             flex-direction: column;
             margin: 0 2rem;
-            .button_container {
-                position: absolute;
-                bottom: -35%;
-                right: -2rem;
-                transform: translate(50%, -50%);
-            }
         }
         .contact-detail {
             width: 50%;
@@ -68,5 +62,8 @@
                 }
             }
         }
+    }
+    .button_container {
+        margin: 2rem 0;
     }
 }

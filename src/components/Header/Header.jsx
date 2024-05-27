@@ -27,11 +27,7 @@ export default function Header() {
     return (
         <header className={Scrolled}>
             <div className="logo_container">
-                <img
-                    className="logo"
-                    src="../../src/assets/images/Logo_CBDev.svg "
-                    alt="Logo_noir"
-                />
+                <img className="logo" src="/Logo_CBDev.svg" alt="Logo_noir" />
             </div>
             <nav className="navBar">
                 <div className="navBar_items_container">

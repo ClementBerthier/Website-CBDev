@@ -1,5 +1,5 @@
 import Header from "../Header/Header";
-import Picture from "../../assets/images/HomePage.png";
+import Picture from "/images/HomePage.png";
 import Waves from "../Waves/Waves.jsx";
 import "./home.css";
 

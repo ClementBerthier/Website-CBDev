@@ -68,77 +68,77 @@ export default function AboutMe() {
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/HTML5.png"
+                            src="/images/techLogo/HTML5.png"
                             alt="HTML5 logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/css3.svg"
+                            src="/images/techLogo/css3.svg"
                             alt="css3 logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/JavaScript.png"
+                            src="/images/techLogo/JavaScript.png"
                             alt="JavaScript logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/typescript.svg"
+                            src="/images/techLogo/typescript.svg"
                             alt="TypeScript logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/react.png"
+                            src="/images/techLogo/react.png"
                             alt="react logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/node.svg"
+                            src="/images/techLogo/node.svg"
                             alt="node.JS logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/postgre.png"
+                            src="/images/techLogo/postgre.png"
                             alt="postgreSQL logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/graphQL.png"
+                            src="/images/techLogo/graphQL.png"
                             alt="graphQL logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/github.png"
+                            src="/images/techLogo/github.png"
                             alt="github logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/Socket-io.png"
+                            src="/images/techLogo/Socket-io.png"
                             alt="socketIO logo"
                         />
                     </div>
                     <div className="slide_logo_container">
                         <img
                             className="slide_logo"
-                            src="../../src/assets/images/techLogo/Vite.png"
+                            src="/images/techLogo/Vite.png"
                             alt="vite logo"
                         />
                     </div>

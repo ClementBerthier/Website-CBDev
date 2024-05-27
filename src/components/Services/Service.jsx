@@ -8,7 +8,7 @@ export default function Service() {
                 <div className="services_box topLeft" id="firstBox">
                     <img
                         className="services_logo"
-                        src="../../src/assets/images/laptop-dev-mode.svg"
+                        src="/images/laptop-dev-mode.svg"
                         alt="conception web logo"
                     />
                     <h2 className="services_title">Conception de sites web</h2>
@@ -22,7 +22,7 @@ export default function Service() {
                 <div className="services_box topRight" id="secondBox">
                     <img
                         className="services_logo"
-                        src="../../src/assets/images/application.svg"
+                        src="/images/application.svg"
                         alt="conception web logo"
                     />
                     <h2 className="services_title">
@@ -38,7 +38,7 @@ export default function Service() {
                 <div className="services_box bottomLeft" id="thirdBox">
                     <img
                         className="services_logo"
-                        src="../../src/assets/images/tools.svg"
+                        src="/images/tools.svg"
                         alt="conception web logo"
                     />
                     <h2 className="services_title">Refonte & Maintenance</h2>
@@ -52,7 +52,7 @@ export default function Service() {
                 <div className="services_box bottomRight" id="fourthBox">
                     <img
                         className="services_logo"
-                        src="../../src/assets/images/stats-report.svg"
+                        src="/images/stats-report.svg"
                         alt="conception web logo"
                     />
                     <h2 className="services_title">

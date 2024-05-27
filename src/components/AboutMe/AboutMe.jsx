@@ -23,7 +23,7 @@ export default function AboutMe() {
                     <div className="description_container">
                         <img
                             className="logo"
-                            src="./images/user-scan.svg"
+                            src="/images/user-scan.svg"
                             alt="logo scan"
                         />
                         <div className="text_container">
@@ -42,7 +42,7 @@ export default function AboutMe() {
                     <div className="description_container">
                         <img
                             className="logo"
-                            src="./images/code.svg"
+                            src="/images/code.svg"
                             alt="logo scan"
                         />
                         <div className="text_container">

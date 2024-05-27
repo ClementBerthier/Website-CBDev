@@ -1,9 +1,9 @@
 import "./contact.css";
 import ButtonElement from "../elements/Button/Button.jsx";
 import { Button, FormField, Header, Modal } from "semantic-ui-react";
-import facebook from "../../assets/images/whitefacebook.svg";
-import instagram from "../../assets/images/whiteinsta.svg";
-import linkedin from "../../assets/images/whitelinkedin.svg";
+import facebook from "/images/whitefacebook.svg";
+import instagram from "/images/whiteinsta.svg";
+import linkedin from "/images/whitelinkedin.svg";
 //import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 

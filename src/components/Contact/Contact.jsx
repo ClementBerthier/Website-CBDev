@@ -12,22 +12,31 @@ export default function Contact() {
     //const templateId = "template_z2eknc5";
     //const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
 
-    const [modalOpen, setModalOpen] = useState(false);
+    const [modalOpenConfirm, setModalOpenConfirm] = useState(false);
+    const [modalOpenMail, setModalOpenMail] = useState(false);
 
     const [formData, setFormData] = useState({
         user_lastname: "",
         user_firstname: "",
+        user_email: "",
+        user_phone: "",
         object: "",
         message: "",
     });
-
+    //Todo: finir le formulaire, ne pas clear les donné lorsque le mail est mauvais, gerer les bouton retour de la confirmation
     const handleClick = () => {
-        setModalOpen(true);
+        const regex = /^[^s@]+@[^s@]+.[^s@]+$/;
+        if (!regex.test(formData.user_email)) {
+            setModalOpenMail(true);
+        } else {
+            setModalOpenConfirm(true);
+        }
     };
 
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
+
         setFormData({ ...formData, [name]: value });
     };
 
@@ -47,6 +56,8 @@ export default function Contact() {
             setFormData({
                 user_lastname: "",
                 user_firstname: "",
+                user_email: "",
+                user_phone: "",
                 object: "",
                 message: "",
             });
@@ -59,8 +70,8 @@ export default function Contact() {
     return (
         <>
             <Modal
-                open={modalOpen}
-                onClose={() => setModalOpen(false)}
+                open={modalOpenConfirm}
+                onClose={() => setModalOpenConfirm(false)}
                 size="small"
                 className="modal_contact"
             >
@@ -69,10 +80,40 @@ export default function Contact() {
                     content="Confirmation"
                 />
                 <Modal.Content className="content_modal_contact">
-                    <p>blablablalbalblablalbalbalba</p>
+                    <p className="textModal">
+                        N{"'"}oubliez pas de nous laisser vos coordonnées pour
+                        que l{"'"}on puisse vous recontactez
+                    </p>
                 </Modal.Content>
                 <Modal.Actions className="actions_modal_contact">
-                    <Button onClick={() => setModalOpen(false)}>OK</Button>
+                    <Button onClick={() => setModalOpenConfirm(false)}>
+                        Retour
+                    </Button>
+                    <Button onClick={() => setModalOpenConfirm(false)}>
+                        OK
+                    </Button>
+                </Modal.Actions>
+            </Modal>
+            <Modal
+                open={modalOpenMail}
+                onClose={() => setModalOpenMail(false)}
+                size="small"
+                className="modal_contact"
+            >
+                <Header
+                    className="header_modal_contact"
+                    content="Mail invalide"
+                />
+                <Modal.Content className="content_modal_contact">
+                    <p className="textModal">
+                        Veuillez verifier votre adresse mail
+                    </p>
+                </Modal.Content>
+                <Modal.Actions className="actions_modal_contact">
+                    <Button onClick={() => setModalOpenMail(false)}>
+                        Retour
+                    </Button>
+                    <Button onClick={() => setModalOpenMail(false)}>OK</Button>
                 </Modal.Actions>
             </Modal>
 
@@ -89,23 +130,48 @@ export default function Contact() {
                 <div className="contact">
                     <div className="form_container">
                         <div className="contact_form" id="contact_form">
+                            <div className="firstSection">
+                                <FormField>
+                                    <label>Nom</label>
+                                    <input
+                                        placeholder="Votre nom"
+                                        name="user_lastname"
+                                        type="text"
+                                        value={formData.user_lastname}
+                                        onChange={handleChange}
+                                        maxLength={50}
+                                    />
+                                </FormField>
+                                <FormField>
+                                    <label>Prénom</label>
+                                    <input
+                                        placeholder="Votre prénom"
+                                        name="user_firstname"
+                                        type="text"
+                                        value={formData.user_firstname}
+                                        onChange={handleChange}
+                                        maxLength={50}
+                                    />
+                                </FormField>
+                            </div>
                             <FormField>
-                                <label>Nom</label>
+                                <label>Mail</label>
                                 <input
-                                    placeholder="Nom"
-                                    name="user_lastname"
+                                    placeholder="Votre adresse mail"
+                                    name="user_email"
                                     type="text"
-                                    value={formData.user_lastname}
+                                    value={formData.user_email}
                                     onChange={handleChange}
+                                    required
                                 />
                             </FormField>
                             <FormField>
-                                <label>Prénom</label>
+                                <label>Téléphone</label>
                                 <input
-                                    placeholder="Prénom"
-                                    name="user_firstname"
+                                    placeholder="Votre numéro de téléphone"
+                                    name="user_phone"
                                     type="text"
-                                    value={formData.user_firstname}
+                                    value={formData.user_phone}
                                     onChange={handleChange}
                                 />
                             </FormField>
@@ -126,10 +192,8 @@ export default function Contact() {
                                 <div className="field">
                                     <label htmlFor="">Message</label>
                                     <textarea
-                                        className="textarea_message"
                                         placeholder="Votre message ici"
                                         name="message"
-                                        required
                                         value={formData.message}
                                         onChange={handleChange}
                                     ></textarea>

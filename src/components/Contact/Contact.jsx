@@ -4,13 +4,13 @@ import { Button, FormField, Header, Modal } from "semantic-ui-react";
 import facebook from "../../assets/images/whitefacebook.svg";
 import instagram from "../../assets/images/whiteinsta.svg";
 import linkedin from "../../assets/images/whitelinkedin.svg";
-import emailjs from "@emailjs/browser";
+//import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 
 export default function Contact() {
-    const serviceId = "o/j#YBqAnUk:BhFdPP1*13:";
-    const templateId = "template_z2eknc5";
-    const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
+    //const serviceId = "o/j#YBqAnUk:BhFdPP1*13:";
+    //const templateId = "template_z2eknc5";
+    //const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
 
     const [modalOpen, setModalOpen] = useState(false);
 

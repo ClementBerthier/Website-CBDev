@@ -40,7 +40,15 @@
                     .textarea_message {
                         max-height: 500px;
                     }
+                    .requiredLegend {
+                        font-size: 0.8vw;
+                        color: red;
+                    }
                 }
+            }
+            .requiredField {
+                color: red;
+                font-size: 0.8vw;
             }
         }
         .contact-detail {

@@ -14,6 +14,7 @@ export default function AboutMe() {
         slidesToShow: 4,
         cssEase: "linear",
     };
+    //Todo: regler le probleme d'espacement entre le titre et le texte de la description pour les tres grand ecran
 
     return (
         <>

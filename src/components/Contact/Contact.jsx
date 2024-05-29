@@ -12,12 +12,12 @@ export default function Contact() {
     //const templateId = "template_z2eknc5";
     //const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
 
-    const [modalOpenConfirm, setModalOpenConfirm] = useState(false);
-    const [modalOpenMail, setModalOpenMail] = useState(false);
-    const [modalOpenPhone, setModalOpenPhone] = useState(false);
-    const [readyToSend, setReadyToSend] = useState(false);
-    const [modalOpenIncompleteField, setModalOpenIncompleteField] =
-        useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
+    const [readyToSend, setReadyToSend] = useState(true);
+    useState(false);
+
+    const [titleModal, setTitleModal] = useState("");
+    const [contentModal, setContentModal] = useState("");
 
     const [formData, setFormData] = useState({
         user_lastname: "",
@@ -28,60 +28,75 @@ export default function Contact() {
         message: "",
     });
 
-    //Todo: finir le formulaire, ne pas clear les donné lorsque le mail est mauvais, gerer les bouton retour de la confirmation
+    const [stateMailFull, setStateMailFull] = useState(false);
+    const [stateObjectFull, setStateObjectFull] = useState(false);
+    const [stateMessageFull, setStateMessageFull] = useState(false);
+    const [stateMailValid, setStateMailValid] = useState(false);
+    const [statePhoneValid, setStatePhoneValid] = useState(false);
+
     const handleClick = () => {
         console.log("handleClick");
-        const regexMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        const regexPhone =
-            /^\+?[0-9]{1,4}?[-. ]?(\(?\d{1,3}?\)?[-. ]?)?\d{1,4}[-. ]?\d{1,4}[-. ]?\d{1,9}$/;
 
         if (
-            !regexMail.test(formData.user_email) &&
-            formData.user_email !== ""
+            (stateMailFull === false && stateObjectFull === false) ||
+            (stateMailFull === false && stateMessageFull === false) ||
+            (stateObjectFull === false && stateMessageFull === false)
         ) {
-            setModalOpenMail(true);
             setReadyToSend(false);
-            console.log("mail invalide");
-        } else if (formData.user_email === "") {
-            setModalOpenIncompleteField(true);
+            setTitleModal("Champs manquants");
+            setContentModal(
+                "Plusieurs champs obligatoires sont manquants, veuillez les renseigner pour envoyer votre message"
+            );
+            setModalOpen(true);
+        } else if (stateMailFull === false) {
             setReadyToSend(false);
-            console.log("mail manquant");
-        } else if (regexMail.test(formData.user_email)) {
-            setModalOpenMail(false);
-            setReadyToSend(true);
-            console.log("mail valide");
-        }
 
-        if (
-            !regexPhone.test(formData.user_phone) &&
-            formData.user_phone !== ""
-        ) {
-            setModalOpenPhone(true);
+            setTitleModal("Mail manquant");
+            setContentModal("Veuillez renseigner votre adresse mail");
+            setModalOpen(true);
+        } else if (stateObjectFull === false) {
             setReadyToSend(false);
-            console.log("phone invalide");
-        } else if (formData.user_phone === "") {
-            setModalOpenIncompleteField(true);
-            setReadyToSend(false);
-            console.log("phone manquant");
-        } else if (regexPhone.test(formData.user_phone)) {
-            setModalOpenPhone(false);
-            setReadyToSend(true);
-            console.log("phone valide");
-        }
-    };
 
-    const handleClickConfirmOk = () => {
-        setModalOpenConfirm(false);
-        setReadyToSend(true);
+            setTitleModal("Objet manquant");
+            setContentModal("Veuillez renseigner l'objet de votre message");
+            setModalOpen(true);
+        } else if (stateMessageFull === false) {
+            setReadyToSend(false);
+
+            setTitleModal("Message manquant");
+            setContentModal("Veuillez renseigner votre message");
+            setModalOpen(true);
+        } else if (stateMailValid === false && statePhoneValid === false) {
+            setReadyToSend(false);
+
+            setTitleModal("Mail et numéro de téléphone invalide");
+            setContentModal(
+                "Veuillez vérifier votre adresse mail et votre numero de téléphone"
+            );
+            setModalOpen(true);
+        } else if (stateMailValid === false) {
+            setReadyToSend(false);
+
+            setTitleModal("Mail invalide");
+            setContentModal("Veuillez vérifier votre adresse mail");
+            setModalOpen(true);
+        } else if (statePhoneValid === false) {
+            setReadyToSend(false);
+
+            setTitleModal("Numéro de téléphone invalide");
+            setContentModal("Veuillez vérifier votre numéro de téléphone");
+            setModalOpen(true);
+        } else {
+            setReadyToSend(true);
+        }
     };
 
     const handleSubmit = async (e) => {
         console.log("handleSubmit");
-        console.log("readytosendsubmit", readyToSend);
         e.preventDefault();
+        console.log("readytosend", readyToSend);
 
         if (readyToSend) {
-            console.log("send");
             try {
                 /*  const result = await emailjs.sendForm(
                 serviceId,
@@ -91,7 +106,6 @@ export default function Contact() {
                     publicKey: emailJSPublicKey,
                 }
             ); */
-                console.log("readytosendSend", readyToSend);
                 console.log("success" /* result */);
             } catch (error) {
                 console.log("Failed", error);
@@ -106,6 +120,46 @@ export default function Contact() {
         const value = e.target.value;
 
         setFormData({ ...formData, [name]: value });
+
+        const regexMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const regexPhone =
+            /^\+?[0-9]{1,4}?[-. ]?(\(?\d{1,3}?\)?[-. ]?)?\d{1,4}[-. ]?\d{1,4}[-. ]?\d{1,9}$/;
+
+        if (formData.user_email === "") {
+            setStateMailFull(false);
+        } else {
+            setStateMailFull(true);
+        }
+
+        if (formData.object === "") {
+            setStateObjectFull(false);
+        } else {
+            setStateObjectFull(true);
+        }
+
+        if (formData.message === "") {
+            setStateMessageFull(false);
+        } else {
+            setStateMessageFull(true);
+        }
+
+        if (
+            formData.user_email !== "" &&
+            !regexMail.test(formData.user_email)
+        ) {
+            setStateMailValid(false);
+        } else {
+            setStateMailValid(true);
+        }
+
+        if (
+            formData.user_phone !== "" &&
+            !regexPhone.test(formData.user_phone)
+        ) {
+            setStatePhoneValid(false);
+        } else {
+            setStatePhoneValid(true);
+        }
     };
 
     const form = useRef();
@@ -113,114 +167,18 @@ export default function Contact() {
     return (
         <>
             <Modal
-                open={modalOpenConfirm}
-                onClose={() => setModalOpenConfirm(false)}
+                open={modalOpen}
+                onClose={() => setModalOpen(false)}
                 size="small"
                 className="modal_contact"
                 closeOnDimmerClick={false}
             >
-                <Header
-                    className="header_modal_contact"
-                    content="Confirmation d'envoi"
-                />
+                <Header className="header_modal_contact" content={titleModal} />
                 <Modal.Content className="content_modal_contact">
-                    <p className="textModal">
-                        Nous vous remercions de votre message, nous ne tarderons
-                        pas à vous répondre.
-                    </p>
+                    <p className="textModal">{contentModal}</p>
                 </Modal.Content>
                 <Modal.Actions className="actions_modal_contact">
-                    <Button onClick={handleClickConfirmOk}>OK</Button>
-                </Modal.Actions>
-            </Modal>
-            <Modal
-                open={modalOpenMail}
-                onClose={() => setModalOpenMail(false)}
-                size="small"
-                className="modal_contact"
-                closeOnDimmerClick={false}
-            >
-                <Header
-                    className="header_modal_contact"
-                    content="Mail invalide"
-                />
-                <Modal.Content className="content_modal_contact">
-                    <p className="textModal">
-                        Veuillez vérifier votre adresse mail
-                    </p>
-                </Modal.Content>
-                <Modal.Actions className="actions_modal_contact">
-                    <Button onClick={() => setModalOpenMail(false)}>
-                        Retour
-                    </Button>
-                </Modal.Actions>
-            </Modal>
-            <Modal
-                open={modalOpenPhone}
-                onClose={() => setModalOpenPhone(false)}
-                size="small"
-                className="modal_contact"
-                closeOnDimmerClick={false}
-            >
-                <Header
-                    className="header_modal_contact"
-                    content="Numéro de téléphone invalide"
-                />
-                <Modal.Content className="content_modal_contact">
-                    <p className="textModal">
-                        Veuillez vérifier votre numéro de téléphone
-                    </p>
-                </Modal.Content>
-                <Modal.Actions className="actions_modal_contact">
-                    <Button onClick={() => setModalOpenPhone(false)}>
-                        Retour
-                    </Button>
-                </Modal.Actions>
-            </Modal>
-            <Modal
-                open={modalOpenIncompleteField}
-                onClose={() => setModalOpenIncompleteField(false)}
-                size="small"
-                className="modal_contact"
-                closeOnDimmerClick={false}
-            >
-                <Header
-                    className="header_modal_contact"
-                    content="Mail invalide"
-                />
-                <Modal.Content className="content_modal_contact">
-                    <p className="textModal">
-                        Un ou plusieurs champs obligatoire du formulaire sont
-                        incomplets
-                    </p>
-                </Modal.Content>
-                <Modal.Actions className="actions_modal_contact">
-                    <Button onClick={() => setModalOpenIncompleteField(false)}>
-                        Retour
-                    </Button>
-                </Modal.Actions>
-            </Modal>
-            <Modal
-                open={modalOpenIncompleteField}
-                onClose={() => setModalOpenIncompleteField(false)}
-                size="small"
-                className="modal_contact"
-                closeOnDimmerClick={false}
-            >
-                <Header
-                    className="header_modal_contact"
-                    content="Mail invalide"
-                />
-                <Modal.Content className="content_modal_contact">
-                    <p className="textModal">
-                        Un ou plusieurs champs obligatoire du formulaire sont
-                        incomplets
-                    </p>
-                </Modal.Content>
-                <Modal.Actions className="actions_modal_contact">
-                    <Button onClick={() => setModalOpenIncompleteField(false)}>
-                        Retour
-                    </Button>
+                    <Button onClick={() => setModalOpen(false)}>Retour</Button>
                 </Modal.Actions>
             </Modal>
 
@@ -263,7 +221,8 @@ export default function Contact() {
                             </div>
                             <FormField>
                                 <label>
-                                    Mail<span className="requiredField">*</span>
+                                    Mail
+                                    <span className="requiredField">*</span>
                                 </label>
                                 <input
                                     placeholder="Votre adresse mail"
@@ -271,7 +230,6 @@ export default function Contact() {
                                     type="text"
                                     value={formData.user_email}
                                     onChange={handleChange}
-                                    required
                                 />
                             </FormField>
                             <FormField>
@@ -295,7 +253,6 @@ export default function Contact() {
                                         placeholder="Quel est le sujet de votre message? "
                                         rows="2"
                                         name="object"
-                                        required
                                         value={formData.object}
                                         onChange={handleChange}
                                     ></textarea>
@@ -309,7 +266,6 @@ export default function Contact() {
                                     <textarea
                                         placeholder="Votre message ici"
                                         name="message"
-                                        required
                                         value={formData.message}
                                         onChange={handleChange}
                                     ></textarea>

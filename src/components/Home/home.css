@@ -1,11 +1,13 @@
 .home {
     z-index: 1;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     .first_container {
         position: relative;
         .picture_container {
             .homePicture {
                 width: 100%;
+                height: 100vh;
                 object-fit: cover;
             }
         }

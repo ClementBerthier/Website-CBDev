@@ -27,7 +27,11 @@ export default function Header() {
     return (
         <header className={Scrolled}>
             <div className="logo_container">
-                <img className="logo" src="/images/Logo_CBDev.svg" alt="Logo_noir" />
+                <img
+                    className="logo"
+                    src="/images/Logo_CBDev.svg"
+                    alt="Logo_noir"
+                />
             </div>
             <nav className="navBar">
                 <div className="navBar_items_container">
@@ -82,7 +86,7 @@ export default function Header() {
                     </Link>
                 </div>
 
-                <div className="navBar_items_container">
+                {/* <div className="navBar_items_container">
                     <Link
                         onClick={handleClick}
                         id="headerArticles"
@@ -132,7 +136,7 @@ export default function Header() {
                         FAQs
                         <div className="borderLine"></div>
                     </Link>
-                </div>
+                </div> */}
                 <div className="navBar_items_container">
                     <Link
                         onClick={handleClick}

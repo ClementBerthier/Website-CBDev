@@ -12,7 +12,7 @@ export default function ContactBanner() {
                 <p className="contactBanner_text">
                     N{"'"}hésitez pas a nous contacter
                 </p>
-                <Link>
+                <Link to="contact">
                     <Button id="contact" text="Contact" />
                 </Link>
             </div>

@@ -4,13 +4,13 @@ import { Button, FormField, Header, Modal } from "semantic-ui-react";
 import facebook from "/images/whitefacebook.svg";
 import instagram from "/images/whiteinsta.svg";
 import linkedin from "/images/whitelinkedin.svg";
-//import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 
 export default function Contact() {
-    //const serviceId = "o/j#YBqAnUk:BhFdPP1*13:";
-    //const templateId = "template_z2eknc5";
-    //const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
+    const serviceId = "o/j#YBqAnUk:BhFdPP1*13:";
+    const templateId = "template_z2eknc5";
+    const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
 
     const [modalOpen, setModalOpen] = useState(false);
     const [readyToSend, setReadyToSend] = useState(true);
@@ -98,14 +98,14 @@ export default function Contact() {
 
         if (readyToSend) {
             try {
-                /*  const result = await emailjs.sendForm(
-                serviceId,
-                templateId,
-                form.current,
-                {
-                    publicKey: emailJSPublicKey,
-                }
-            ); */
+                const result = await emailjs.sendForm(
+                    serviceId,
+                    templateId,
+                    form.current,
+                    {
+                        publicKey: emailJSPublicKey,
+                    }
+                );
                 console.log("success" /* result */);
             } catch (error) {
                 console.log("Failed", error);

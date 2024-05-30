@@ -115,7 +115,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 728px) {
     .header {
         height: 4.5rem;
 
@@ -124,6 +124,80 @@
                 height: 100%;
                 padding: 0.8rem 0;
             }
+        }
+
+        .navBar {
+            .navBar_items_container {
+                .borderLine {
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .header {
+        display: none;
+    }
+    .headerBurger {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2e5339;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+        .headerBurger_logo_container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 100%;
+            }
+        }
+
+        .headerBurger_link_container {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 50%;
+            .headerBurger_section_link {
+                .headerBurger_link {
+                    font-size: 2rem;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .headerBurger_section_link:hover {
+                transform: scale(1.5);
+                transition: transform 0.5s;
+            }
+        }
+
+        .headerBurger_link {
+            font-size: 2rem;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .headerBurger_button_container {
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
 }

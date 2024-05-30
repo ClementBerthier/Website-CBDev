@@ -19,7 +19,7 @@ export default function Home() {
                         </div>
                         <div className="title_container">
                             <h2 className="title">
-                                Clément Berthier <br />
+                                Clément Berthier
                                 <span className="spanColor">Développeur</span>
                             </h2>
                             <h2 className="subTitle">
@@ -145,28 +145,29 @@ export default function Home() {
 /* 
 .home {
     z-index: 1;
-    height: 100vh;
+    width: 100vw;
     background-color: rgb(255, 255, 255);
     .first_container {
         position: relative;
         .picture_container {
             .homePicture {
                 width: 100%;
-                height: 100vh;
                 object-fit: cover;
             }
         }
         .title_container {
             width: 100%;
             position: absolute;
-            top: 32%;
+            top: 44%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
             .title {
-                font-size: 5vw;
+                font-size: 4vw;
                 font-weight: 700;
                 text-align: center;
+                margin: 1.5rem 0;
+
                 text-shadow: 0 0 3rem rgba(0, 0, 0, 0.398);
             }
             .subTitle {
@@ -174,10 +175,10 @@ export default function Home() {
                 font-weight: 500;
                 text-align: center;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.398);
-                padding: 3.5em 0 1rem 0;
+                margin: 0.5em 0;
             }
             .description {
-                font-size: 1.3vw;
+                font-size: 1.2vw;
                 font-weight: 200;
                 text-align: center;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.398);
@@ -188,5 +189,6 @@ export default function Home() {
         }
     }
 }
+
 
 */

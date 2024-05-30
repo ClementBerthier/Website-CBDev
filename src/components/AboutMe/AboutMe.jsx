@@ -14,64 +14,66 @@ export default function AboutMe() {
         slidesToShow: 4,
         cssEase: "linear",
     };
-    //Todo: regler le probleme d'espacement entre le titre et le texte de la description pour les tres grand ecran
 
     return (
         <>
             <div className="aboutMe" id="aboutMe">
                 <h2 className="aboutMe_title">À propos de nous</h2>
                 <div className="banner_container">
-                    <div className="description_container">
-                        <img
-                            className="logo"
-                            src="/images/user-scan.svg"
-                            alt="logo scan"
-                        />
-                        <div className="text_container">
-                            <div className="description">
-                                <p>
-                                    <span className="spanTitle">
-                                        Qui suis-je ?
-                                    </span>
-                                    <br />
-                                    <br />
-                                    Je m{"'"}appelle Clément Berthier, je suis
-                                    un développeur spécialisé dans la création
-                                    de projets web sur mesure. Passioné par mon
-                                    métier, je travaille autant coté{" "}
-                                    <span>Frontend</span> que{" "}
-                                    <span>Backend</span> pour vous offrir des
-                                    solutions complètes et adaptées à vos
-                                    besoins.
-                                </p>
+                    <div className="container_parent">
+                        <div className="description_container">
+                            <img
+                                className="logo"
+                                src="/images/user-scan.svg"
+                                alt="logo scan"
+                            />
+                            <div className="text_container">
+                                <div className="description">
+                                    <p>
+                                        <span className="spanTitle">
+                                            Qui suis-je ?
+                                        </span>
+                                        <br />
+                                        <br />
+                                        Je m{"'"}appelle Clément Berthier, je
+                                        suis un développeur spécialisé dans la
+                                        création de projets web sur mesure.
+                                        Passioné par mon métier, je travaille
+                                        autant coté <span>Frontend</span> que{" "}
+                                        <span>Backend</span> pour vous offrir
+                                        des solutions complètes et adaptées à
+                                        vos besoins.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="description_container">
-                        <img
-                            className="logo"
-                            src="/images/code.svg"
-                            alt="logo scan"
-                        />
-                        <div className="text_container">
-                            <div className="description">
-                                <p>
-                                    <span className="spanTitle">
-                                        Que faisons nous ?
-                                    </span>
-                                    <br />
-                                    <br />
-                                    Clément Berthier Développeur est votre
-                                    solution pour la création de vos projets
-                                    web. En tant que professionnel indépendant,
-                                    je mets à votre disposition mon expertise et
-                                    mon expérience dans le développement web et
-                                    d{"'"}applications. Je m{"'"}engage à vous
-                                    accompagner à chaque étape de votre projet,
-                                    en mettant mon savoir-faire et ma passion au
-                                    service de vos idées pour les transformer en
-                                    réalité.
-                                </p>
+                        <div className="description_container">
+                            <img
+                                className="logo"
+                                src="/images/code.svg"
+                                alt="logo scan"
+                            />
+                            <div className="text_container">
+                                <div className="description">
+                                    <p>
+                                        <span className="spanTitle">
+                                            Que faisons nous ?
+                                        </span>
+                                        <br />
+                                        <br />
+                                        Clément Berthier Développeur est votre
+                                        solution pour la création de vos projets
+                                        web. En tant que professionnel
+                                        indépendant, je mets à votre disposition
+                                        mon expertise et mon expérience dans le
+                                        développement web et d{"'"}applications.
+                                        Je m{"'"}engage à vous accompagner à
+                                        chaque étape de votre projet, en mettant
+                                        mon savoir-faire et ma passion au
+                                        service de vos idées pour les
+                                        transformer en réalité.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

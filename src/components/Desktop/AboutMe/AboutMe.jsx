@@ -9,8 +9,8 @@ export default function AboutMe() {
         dots: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 5000,
+        autoplaySpeed: 3000,
+        speed: 3000,
         slidesToShow: 4,
         cssEase: "linear",
     };

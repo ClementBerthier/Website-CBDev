@@ -1,5 +1,5 @@
 import "./contact.css";
-import ButtonElement from "../elements/Button/Button.jsx";
+import ButtonElement from "../../elements/Button/Button.jsx";
 import { Button, FormField, Header, Modal } from "semantic-ui-react";
 import facebook from "/images/whitefacebook.svg";
 import instagram from "/images/whiteinsta.svg";
@@ -106,7 +106,7 @@ export default function Contact() {
                         publicKey: emailJSPublicKey,
                     }
                 );
-                console.log("success" /* result */);
+                console.log("success", result);
             } catch (error) {
                 console.log("Failed", error);
             }

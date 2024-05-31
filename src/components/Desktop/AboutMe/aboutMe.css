@@ -93,6 +93,7 @@
 
         .slide_logo_container {
             position: relative;
+
             .slide_logo {
                 width: 40%;
                 margin: auto;
@@ -150,7 +151,7 @@
 @media screen and (max-width: 500px) {
     .aboutMe {
         gap: 1%;
-        height: 130vh;
+        height: 140vh;
         .aboutMe_title {
             font-size: 2rem;
             margin-top: 1rem;
@@ -177,7 +178,14 @@
             font-size: 1.5rem;
         }
         .slider {
-            max-height: 5rem;
+            width: 90%;
+            padding: 1rem 0rem;
+            margin-bottom: 2rem;
+            .slide_logo_container {
+                .slide_logo {
+                    width: 50%;
+                }
+            }
         }
     }
 }

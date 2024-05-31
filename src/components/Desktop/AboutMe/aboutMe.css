@@ -2,14 +2,18 @@
     background-color: rgba(255, 255, 255, 0.382);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     gap: 5%;
-    height: auto;
+    height: 94vh;
+    width: 100%;
+
+    position: relative;
 
     .aboutMe_title {
-        font-size: 2vw;
+        font-size: 4rem;
         font-weight: 700;
-        margin: 2.5rem;
+        margin: 2.5rem 0 0 0;
     }
 
     .banner_container {
@@ -18,7 +22,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: auto;
+
         .container_parent {
             display: flex;
             align-items: stretch;
@@ -26,12 +30,12 @@
             gap: 5%;
         }
         .description_container {
-            width: 30%;
+            width: 40%;
+            max-height: 30rem;
             display: flex;
             flex-direction: row;
             align-items: center;
             background-color: white;
-            border-radius: 30px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.409);
             transition: transform 0.8s ease;
 
@@ -44,7 +48,6 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                height: 100%;
 
                 .description {
                     display: flex;
@@ -52,16 +55,15 @@
                     justify-content: center;
                     align-items: center;
                     width: 100%;
-                    height: 100%;
-                    padding: 0 0.5rem;
-                    font-size: calc(0.45vw + 0.45vh);
+                    padding: 2rem 1rem;
+                    font-size: 1.2rem;
 
                     span {
                         color: #2e5339;
                         font-weight: 700;
                     }
                     .spanTitle {
-                        font-size: calc(0.7vw + 0.7vh);
+                        font-size: 1.5rem;
                     }
                     span:hover {
                         cursor: pointer;
@@ -69,16 +71,32 @@
                 }
             }
         }
+        .firstDescription {
+            border-radius: 30px 0 30px 0;
+        }
+        .secondDescription {
+            border-radius: 0 30px 0 30px;
+        }
+    }
+
+    .technoTitle {
+        font-size: 3rem;
+        margin: 0;
     }
 
     .slider {
-        width: 100%;
-        margin: 1rem 0;
+        width: 80%;
+        background-color: white;
+        padding: 2rem 0rem;
+        margin-bottom: 5rem;
+        border-radius: 15px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.409);
 
         .slide_logo_container {
-            height: 100%;
+            position: relative;
             .slide_logo {
-                max-width: 25%;
+                width: 40%;
+                margin: auto;
             }
         }
         button {
@@ -104,5 +122,57 @@
 
     .aboutMe_container:hover {
         transform: translateY(-15px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutMe {
+        .banner_container {
+            .container_parent {
+                flex-direction: column;
+                align-items: center;
+                .description_container {
+                    width: 80%;
+                    margin: 1rem;
+                    .logo {
+                        width: 30%;
+                    }
+                    .text_container {
+                        .description {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutMe {
+        .aboutMe_title {
+            font-size: 2rem;
+        }
+        .banner_container {
+            .container_parent {
+                flex-direction: column;
+                align-items: center;
+                .description_container {
+                    max-height: 29rem;
+                    margin: 1rem;
+                    .logo {
+                        width: 30%;
+                    }
+                    .text_container {
+                        .description {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+        .technoTitle {
+            font-size: 2rem;
+        }
     }
 }

@@ -21,14 +21,14 @@ export default function AboutMe() {
                 <h2 className="aboutMe_title">À propos de nous</h2>
                 <div className="banner_container">
                     <div className="container_parent">
-                        <div className="description_container">
+                        <div className="description_container firstDescription">
                             <img
                                 className="logo"
                                 src="/images/user-scan.svg"
                                 alt="logo scan"
                             />
                             <div className="text_container">
-                                <div className="description">
+                                <div className="description ">
                                     <p>
                                         <span className="spanTitle">
                                             Qui suis-je ?
@@ -47,14 +47,14 @@ export default function AboutMe() {
                                 </div>
                             </div>
                         </div>
-                        <div className="description_container">
+                        <div className="description_container secondDescription">
                             <img
                                 className="logo"
                                 src="/images/code.svg"
                                 alt="logo scan"
                             />
                             <div className="text_container">
-                                <div className="description">
+                                <div className="description ">
                                     <p>
                                         <span className="spanTitle">
                                             Que faisons nous ?
@@ -78,6 +78,7 @@ export default function AboutMe() {
                         </div>
                     </div>
                 </div>
+                <h3 className="technoTitle">Nos technologies</h3>
                 <Slider {...slideSettings} className="slider">
                     <div className="slide_logo_container">
                         <img

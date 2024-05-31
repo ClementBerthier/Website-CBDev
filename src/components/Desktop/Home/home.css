@@ -80,3 +80,20 @@
         }
     }
 }
+@media screen and (max-width: 425px) {
+    .home {
+        .first_container {
+            .title_container {
+                .title {
+                    font-size: 3.5rem;
+                }
+                .subTitle {
+                    font-size: 1.8rem;
+                }
+                .description {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

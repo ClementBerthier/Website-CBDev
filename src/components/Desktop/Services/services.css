@@ -169,6 +169,10 @@
                         font-size: 1rem;
                     }
                 }
+
+                .topRight:hover {
+                    transform: translateX(10px) translateY(10px);
+                }
             }
         }
     }

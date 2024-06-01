@@ -7,13 +7,14 @@
     width: 100%;
     height: 4.5rem;
     z-index: 5;
+
     .headerBurger_logo_container {
         position: relative;
         height: 100%;
         flex-grow: 1;
         .headerBurger_logo {
             height: 100%;
-            margin: 0.5rem;
+            margin: auto;
         }
     }
     .headerBurger_button {
@@ -63,6 +64,10 @@
     }
     .headerBurger_button:hover {
         cursor: pointer;
+    }
+    .scrolled {
+        animation: headerScroll 0.5s forwards;
+        box-shadow: 0 0 10px 0 rgb(46, 83, 57, 0.3);
     }
 }
 
@@ -120,7 +125,6 @@
     width: 100%;
     height: 6rem;
     z-index: 3;
-    box-shadow: 0 0 10px 0 rgb(46, 83, 57, 0.3);
 
     .logo_container {
         position: relative;
@@ -178,6 +182,7 @@
 }
 .scrolled {
     animation: headerScroll 0.5s forwards;
+    box-shadow: 0 0 10px 0 rgb(46, 83, 57, 0.3);
 }
 
 @keyframes borderLine {

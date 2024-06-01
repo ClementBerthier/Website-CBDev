@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
+    const [headerBurgerScrolled, setHeaderBurgerScrolled] =
+        useState("headerBurger");
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
 
@@ -26,6 +28,12 @@ export default function Header() {
         } else {
             setScrolled("header ");
         }
+
+        if (!isBurgerOpen && window.scrollY > 231) {
+            setHeaderBurgerScrolled("headerBurger scrolled");
+        } else {
+            setHeaderBurgerScrolled("headerBurger");
+        }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -38,7 +46,7 @@ export default function Header() {
         <>
             {isMobile ? (
                 <>
-                    <header className="headerBurger">
+                    <header className={headerBurgerScrolled}>
                         <div className="headerBurger_logo_container">
                             {!isBurgerOpen ? (
                                 <img
@@ -61,7 +69,7 @@ export default function Header() {
                         </div>
                     </header>
                     {isBurgerOpen ? (
-                        <div className="headerBurgerOpen_container">
+                        <div className="headerBurgerOpen_container ">
                             <div className="headerBurgerOpen_logo_container">
                                 <img
                                     className="headerBurgerOpen_logo"

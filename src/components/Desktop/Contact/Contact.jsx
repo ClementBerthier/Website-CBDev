@@ -93,14 +93,6 @@ export default function Contact() {
                 "Votre message a bien été envoyé, nous vous répondrons dans les plus brefs délais"
             );
             setModalOpen(true);
-            setFormData({
-                user_lastname: "",
-                user_firstname: "",
-                user_email: "",
-                user_phone: "",
-                object: "",
-                message: "",
-            });
         }
     };
 
@@ -119,6 +111,14 @@ export default function Contact() {
                         publicKey: emailJSPublicKey,
                     }
                 );
+                setFormData({
+                    user_lastname: "",
+                    user_firstname: "",
+                    user_email: "",
+                    user_phone: "",
+                    object: "",
+                    message: "",
+                });
                 console.log("success", result);
             } catch (error) {
                 console.log("Failed", error);

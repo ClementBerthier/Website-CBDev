@@ -94,22 +94,30 @@ export default function Header() {
                                 >
                                     A Propos
                                 </Link>
-                                <a
+                                <Link
                                     className="link"
-                                    href="#binder"
-                                    id="2"
+                                    id="hearderServices"
+                                    to="services"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-390}
+                                    duration={500}
                                     onClick={handleClick}
                                 >
-                                    Projets
-                                </a>
-                                <a
+                                    Services
+                                </Link>
+                                <Link
                                     className="link"
-                                    href="#binder"
-                                    id="3"
+                                    id="headerContact"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-250}
+                                    duration={500}
                                     onClick={handleClick}
                                 >
                                     Contact
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     ) : null}

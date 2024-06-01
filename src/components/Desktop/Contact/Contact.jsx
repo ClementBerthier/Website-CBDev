@@ -88,6 +88,11 @@ export default function Contact() {
             setModalOpen(true);
         } else {
             setReadyToSend(true);
+            setTitleModal("Message envoyé");
+            setContentModal(
+                "Votre message a bien été envoyé, nous vous répondrons dans les plus brefs délais"
+            );
+            setModalOpen(true);
         }
     };
 

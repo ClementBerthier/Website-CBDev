@@ -53,6 +53,14 @@
                     background-color: #2e5339;
                 }
             }
+            .unclicked {
+                color: #000;
+                .borderLine {
+                    width: 0;
+                    height: 0.2rem;
+                    background-color: transparent;
+                }
+            }
             .borderLine {
                 height: 0.2rem;
                 background-color: transparent;

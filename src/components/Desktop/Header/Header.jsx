@@ -5,42 +5,56 @@ import { Link } from "react-scroll";
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
 
-    const [isClicked, setIsclicked] = useState("");
+    const [isClicked, setIsClicked] = useState("home");
 
     //TODO : faire en sorte que les lien du header se colorise en fonction de la position de l'utilisateur, et se decolorise lorsqu'il quite la zone.
-    //Todo: faire en sorte que lorsque l'on clique sur un lien le h2 soit visible et non caché
+
     const handleScroll = () => {
-        if (window.scrollY > 350) {
+        if (window.scrollY > 271) {
             setScrolled("header  scrolled");
         } else {
             setScrolled("header ");
+        }
+
+        if (window.scrollY >= 0 && window.scrollY <= 1398) {
+            setIsClicked("home");
+        }
+
+        if (window.scrollY >= 1399 && window.scrollY <= 2198) {
+            setIsClicked("aboutMe");
+        }
+
+        if (window.scrollY >= 2199 && window.scrollY <= 3000) {
+            setIsClicked("services");
+        }
+
+        if (window.scrollY >= 3001 && window.scrollY <= 4252) {
+            setIsClicked("contact");
         }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    const handleClick = (e) => {
-        const id = e.target.id;
-        setIsclicked(id);
-    };
+    console.log(window.scrollY, isClicked);
 
     return (
         <>
             <header className={Scrolled}>
                 <div className="logo_container">
-                    <img
-                        className="logo"
-                        src="/images/Logo_CBDev.svg"
-                        alt="Logo_noir"
-                    />
+                    {
+                        <img
+                            className="logo"
+                            src="/images/Logo_CBDev.svg"
+                            alt="Logo_noir"
+                        />
+                    }
                 </div>
                 <nav className="navBar ">
                     <div className="navBar_items_container">
                         <Link
-                            onClick={handleClick}
                             id="headerHome"
                             className={`navBar_items ${
-                                isClicked === "headerHome" ? "clicked" : ""
+                                isClicked === "home" ? "clicked" : "unclicked"
                             }`}
                             to="home"
                             spy={true}
@@ -55,14 +69,14 @@ export default function Header() {
 
                     <div className="navBar_items_container">
                         <Link
-                            onClick={handleClick}
                             id="headerAboutMe"
                             className={`navBar_items ${
-                                isClicked === "headerAboutMe" ? "clicked" : ""
+                                isClicked === "aboutMe" ? "clicked" : ""
                             }`}
                             to="aboutMe"
                             spy={true}
                             smooth={true}
+                            offset={-70}
                             duration={500}
                         >
                             A propos
@@ -71,15 +85,14 @@ export default function Header() {
                     </div>
                     <div className="navBar_items_container">
                         <Link
-                            onClick={handleClick}
                             id="headerServices"
                             className={`navBar_items ${
-                                isClicked === "headerServices" ? "clicked" : ""
+                                isClicked === "services" ? "clicked" : ""
                             }`}
                             to="services"
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={-390}
                             duration={500}
                         >
                             Services
@@ -87,63 +100,11 @@ export default function Header() {
                         </Link>
                     </div>
 
-                    {/* <div className="navBar_items_container">
-                    <Link
-                        onClick={handleClick}
-                        id="headerArticles"
-                        className={`navBar_items ${
-                            isClicked === "headerArticles" ? "clicked" : ""
-                        }`}
-                        to="articles"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        Articles
-                        <div className="borderLine"></div>
-                    </Link>
-                </div>
-                <div className="navBar_items_container">
-                    <Link
-                        onClick={handleClick}
-                        id="headerNews"
-                        className={`navBar_items ${
-                            isClicked === "headerNews" ? "clicked" : ""
-                        }`}
-                        to="news"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        News
-                        <div className="borderLine"></div>
-                    </Link>
-                </div>
-                <div className="navBar_items_container">
-                    <Link
-                        onClick={handleClick}
-                        id="headerFAQs"
-                        className={`navBar_items ${
-                            isClicked === "headerFAQs" ? "clicked" : ""
-                        }`}
-                        to="FAQs"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                        FAQs
-                        <div className="borderLine"></div>
-                    </Link>
-                </div> */}
                     <div className="navBar_items_container">
                         <Link
-                            onClick={handleClick}
                             id="headerContact"
                             className={`navBar_items ${
-                                isClicked === "headerContact" ? "clicked" : ""
+                                isClicked === "contact" ? "clicked" : ""
                             }`}
                             to="contact"
                             spy={true}

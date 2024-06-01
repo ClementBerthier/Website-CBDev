@@ -1,13 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-scroll";
 
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
 
-    const [isClicked, setIsClicked] = useState("home");
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
 
-    //TODO : faire en sorte que les lien du header se colorise en fonction de la position de l'utilisateur, et se decolorise lorsqu'il quite la zone.
+    const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 500);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     const handleScroll = () => {
         if (window.scrollY > 271) {
@@ -15,109 +26,167 @@ export default function Header() {
         } else {
             setScrolled("header ");
         }
-
-        if (window.scrollY >= 0 && window.scrollY <= 1398) {
-            setIsClicked("home");
-        }
-
-        if (window.scrollY >= 1399 && window.scrollY <= 2198) {
-            setIsClicked("aboutMe");
-        }
-
-        if (window.scrollY >= 2199 && window.scrollY <= 3000) {
-            setIsClicked("services");
-        }
-
-        if (window.scrollY >= 3001 && window.scrollY <= 4252) {
-            setIsClicked("contact");
-        }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    console.log(window.scrollY, isClicked);
+    const handleClick = () => {
+        setIsBurgerOpen(!isBurgerOpen);
+    };
 
     return (
         <>
-            <header className={Scrolled}>
-                <div className="logo_container">
-                    {
-                        <img
-                            className="logo"
-                            src="/images/Logo_CBDev.svg"
-                            alt="Logo_noir"
-                        />
-                    }
-                </div>
-                <nav className="navBar ">
-                    <div className="navBar_items_container">
-                        <Link
-                            id="headerHome"
-                            className={`navBar_items ${
-                                isClicked === "home" ? "clicked" : "unclicked"
-                            }`}
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            Home
-                            <div className="borderLine"></div>
-                        </Link>
-                    </div>
+            {isMobile ? (
+                <>
+                    <header className="headerBurger">
+                        <div className="headerBurger_logo_container">
+                            {!isBurgerOpen ? (
+                                <img
+                                    className="headerBurger_logo"
+                                    src="./images/Logo_CBDev.svg"
+                                    alt="logo entreprise"
+                                />
+                            ) : null}
+                        </div>
 
-                    <div className="navBar_items_container">
-                        <Link
-                            id="headerAboutMe"
-                            className={`navBar_items ${
-                                isClicked === "aboutMe" ? "clicked" : ""
-                            }`}
-                            to="aboutMe"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
+                        <div
+                            className="headerBurger_button"
+                            onClick={handleClick}
                         >
-                            A propos
-                            <div className="borderLine"></div>
-                        </Link>
+                            <span
+                                className={`burger-bar ${
+                                    isBurgerOpen ? "open" : "close"
+                                } `}
+                            ></span>
+                        </div>
+                    </header>
+                    {isBurgerOpen ? (
+                        <div className="headerBurgerOpen_container">
+                            <div className="headerBurgerOpen_logo_container">
+                                <img
+                                    className="headerBurgerOpen_logo"
+                                    src="./images/Logo_CBDev_white.svg"
+                                    alt="logo entreprise"
+                                />
+                            </div>
+                            <div className="headerBurgerOpen_link_container">
+                                <Link
+                                    className="link"
+                                    id="headerHome"
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    onClick={handleClick}
+                                >
+                                    Accueil
+                                </Link>
+                                <Link
+                                    className="link"
+                                    id="headerAboutMe"
+                                    to="aboutMe"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                    onClick={handleClick}
+                                >
+                                    A Propos
+                                </Link>
+                                <a
+                                    className="link"
+                                    href="#binder"
+                                    id="2"
+                                    onClick={handleClick}
+                                >
+                                    Projets
+                                </a>
+                                <a
+                                    className="link"
+                                    href="#binder"
+                                    id="3"
+                                    onClick={handleClick}
+                                >
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    ) : null}
+                </>
+            ) : (
+                <header className={Scrolled}>
+                    <div className="logo_container">
+                        {
+                            <img
+                                className="logo"
+                                src="/images/Logo_CBDev.svg"
+                                alt="Logo_noir"
+                            />
+                        }
                     </div>
-                    <div className="navBar_items_container">
-                        <Link
-                            id="headerServices"
-                            className={`navBar_items ${
-                                isClicked === "services" ? "clicked" : ""
-                            }`}
-                            to="services"
-                            spy={true}
-                            smooth={true}
-                            offset={-390}
-                            duration={500}
-                        >
-                            Services
-                            <div className="borderLine"></div>
-                        </Link>
-                    </div>
+                    <nav className="navBar ">
+                        <div className="navBar_items_container">
+                            <Link
+                                id="headerHome"
+                                className="navBar_items"
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Home
+                                <div className="borderLine"></div>
+                            </Link>
+                        </div>
 
-                    <div className="navBar_items_container">
-                        <Link
-                            id="headerContact"
-                            className={`navBar_items ${
-                                isClicked === "contact" ? "clicked" : ""
-                            }`}
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            Contact
-                            <div className="borderLine"></div>
-                        </Link>
-                    </div>
-                </nav>
-            </header>
+                        <div className="navBar_items_container">
+                            <Link
+                                id="headerAboutMe"
+                                className="navBar_items"
+                                to="aboutMe"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                A propos
+                                <div className="borderLine"></div>
+                            </Link>
+                        </div>
+                        <div className="navBar_items_container">
+                            <Link
+                                id="hearderServices"
+                                className="navBar_items"
+                                to="services"
+                                spy={true}
+                                smooth={true}
+                                offset={-390}
+                                duration={500}
+                            >
+                                Services
+                                <div className="borderLine"></div>
+                            </Link>
+                        </div>
+
+                        <div className="navBar_items_container">
+                            <Link
+                                id="headerContact"
+                                className="navBar_items"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Contact
+                                <div className="borderLine"></div>
+                            </Link>
+                        </div>
+                    </nav>
+                </header>
+            )}
         </>
     );
 }

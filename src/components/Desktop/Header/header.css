@@ -1,3 +1,116 @@
+.headerBurger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 4.5rem;
+    z-index: 5;
+    .headerBurger_logo_container {
+        position: relative;
+        height: 100%;
+        flex-grow: 1;
+        .headerBurger_logo {
+            height: 100%;
+            margin: 0.5rem;
+        }
+    }
+    .headerBurger_button {
+        display: block;
+        position: fixed;
+        top: 1.5rem;
+        right: 0.5rem;
+        padding: 1rem;
+        .burger-bar,
+        .burger-bar::before,
+        .burger-bar::after {
+            display: block;
+            width: 3em;
+            height: 0.3em;
+            position: relative;
+            border-radius: 3px;
+            background-color: #2e5339;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .burger-bar::before,
+        .burger-bar::after {
+            content: "";
+            position: absolute;
+            right: 0;
+        }
+
+        .burger-bar::before {
+            transform: translateY(-12px);
+        }
+
+        .burger-bar::after {
+            transform: translateY(12px);
+        }
+        .open {
+            background-color: transparent;
+            width: 0;
+        }
+        .open::before {
+            transform: rotate(45deg);
+            background-color: white;
+        }
+        .open::after {
+            transform: rotate(-45deg);
+            background-color: white;
+        }
+    }
+    .headerBurger_button:hover {
+        cursor: pointer;
+    }
+}
+
+.headerBurgerOpen_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 4;
+
+    background-color: #2e5339;
+    .headerBurgerOpen_logo_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        .headerBurgerOpen_logo {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .headerBurgerOpen_link_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(3em, 8vw, 15em);
+        font-size: 1.4em;
+
+        .link {
+            font-size: 1.6em;
+            font-weight: 500;
+            color: white;
+            padding: 1em 0;
+            transition: transform 0.3s ease-in-out;
+            border-bottom: 0.2rem solid white;
+        }
+        .link:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+        }
+    }
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -44,23 +157,6 @@
                 cursor: pointer;
             }
 
-            .clicked {
-                color: #2e5339;
-
-                .borderLine {
-                    width: 100%;
-                    height: 0.2rem;
-                    background-color: #2e5339;
-                }
-            }
-            .unclicked {
-                color: #000;
-                .borderLine {
-                    width: 0;
-                    height: 0.2rem;
-                    background-color: transparent;
-                }
-            }
             .borderLine {
                 height: 0.2rem;
                 background-color: transparent;

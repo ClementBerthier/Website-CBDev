@@ -41,6 +41,7 @@ export default function Header() {
     const handleClick = () => {
         setIsBurgerOpen(!isBurgerOpen);
     };
+    console.log(isMobile);
 
     return (
         <>

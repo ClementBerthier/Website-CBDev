@@ -24,7 +24,7 @@ export default function Header() {
 
     const handleScroll = () => {
         if (window.scrollY > 271) {
-            setScrolled("header  scrolled");
+            setScrolled("header scrolled");
         } else {
             setScrolled("header ");
         }
@@ -41,7 +41,6 @@ export default function Header() {
     const handleClick = () => {
         setIsBurgerOpen(!isBurgerOpen);
     };
-    console.log(isMobile);
 
     return (
         <>

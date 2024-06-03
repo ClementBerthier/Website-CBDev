@@ -160,12 +160,6 @@
             }
             .contact-detail {
                 width: 100%;
-                .detail {
-                    .detail_logo {
-                        flex-direction: column;
-                        gap: 5%;
-                    }
-                }
             }
         }
     }

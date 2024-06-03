@@ -1,6 +1,6 @@
 import "semantic-ui-css/semantic.min.css";
-
 import "./contact.css";
+
 import ButtonElement from "../../elements/Button/Button.jsx";
 import { Button, FormField, Header, Modal } from "semantic-ui-react";
 import facebook from "/images/whitefacebook.svg";
@@ -212,7 +212,7 @@ export default function Contact() {
                         <div className="contact_form" id="contact_form">
                             <div className="firstSection">
                                 <FormField>
-                                    <label>Nom</label>
+                                    <label>Nom:</label>
                                     <input
                                         placeholder="Votre nom"
                                         name="user_lastname"

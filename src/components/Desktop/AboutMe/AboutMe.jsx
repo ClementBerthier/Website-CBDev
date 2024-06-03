@@ -28,7 +28,7 @@ export default function AboutMe() {
                         />
                         <div className="text_container">
                             <div className="description ">
-                                <p>
+                                <p className="paragraph">
                                     <span className="spanTitle">
                                         Qui suis-je ?
                                     </span>
@@ -54,7 +54,7 @@ export default function AboutMe() {
                         />
                         <div className="text_container">
                             <div className="description ">
-                                <p>
+                                <p className="paragraph">
                                     <span className="spanTitle">
                                         Que faisons nous ?
                                     </span>

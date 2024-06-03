@@ -14,13 +14,13 @@
         flex-grow: 1;
         .headerBurger_logo {
             height: 100%;
-            margin: 0.5rem 2rem;
+            margin: 0rem 2rem;
         }
     }
     .headerBurger_button {
         display: block;
         position: fixed;
-        top: 1.5rem;
+        top: 1.3rem;
         right: 0.5rem;
         padding: 1rem;
         .burger-bar,

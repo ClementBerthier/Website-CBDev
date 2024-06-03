@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-scroll";
 
+//todo: regler le probleme du clcik sur le burger menu, il est compliquer de le fermé car la div n'est pas centré
+
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
     const [headerBurgerScrolled, setHeaderBurgerScrolled] =

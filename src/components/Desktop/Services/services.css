@@ -1,185 +1,107 @@
 .services_container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     background-color: white;
+    padding: 4vw;
 
     .title {
         font-size: calc(2vw + 2rem);
         font-weight: 700;
         text-align: center;
-        padding: 2.5rem 0 0 0;
+        padding-bottom: 5vw;
     }
 
     .services {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 75rem;
-        gap: 1rem;
-        margin: 5rem auto;
-
-        .service_box_section {
+        width: 100rem;
+        gap: 1.5rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .services_box {
+            width: 100%;
             display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            .services_box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px 0 rgb(46, 83, 57, 0.3);
+
+            .services_logo {
+                margin: 1.5rem;
+                width: 15%;
+            }
+            .services_title {
+                font-size: calc(1vw + 1rem);
+                font-weight: 700;
+                text-align: center;
+                margin: 2rem;
+            }
+            .services_text {
+                font-size: calc(0.6vw + 0.5rem);
+                line-height: 130%;
+                text-align: center;
                 padding: 2rem;
-                box-shadow: 0 0 10px 0 rgb(46, 83, 57, 0.3);
+            }
+        }
+        .services_box:hover {
+            background-color: #2e5339;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+            transition: ease 0.5s;
+            .services_title,
+            .services_text {
+                color: white;
+            }
+            .services_logo {
+                background-color: white;
+                border-radius: 15px 0 15px 0;
+            }
+        }
 
-                .services_logo {
-                    padding: 1rem;
-                    width: 8rem;
-                }
-                .services_title {
-                    font-size: 2rem;
-                    font-weight: 700;
-                    text-align: center;
-                }
-                .services_text {
-                    font-size: 1.4rem;
-                    text-align: center;
-                    margin: 1rem 0;
-                }
-            }
-            .services_box:hover {
-                background-color: #2e5339;
-                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
-                transition: ease 0.5s;
-                .services_title,
-                .services_text {
-                    color: white;
-                }
-                .services_logo {
-                    background-color: white;
-                    border-radius: 15px 0 15px 0;
-                }
-            }
+        .topLeft {
+            border-radius: 20px 0 20px 0px;
+        }
+        .topRight {
+            border-radius: 0 20px 0px 20px;
+        }
+        .bottomLeft {
+            border-radius: 0px 20px 0px 20px;
+        }
+        .bottomRight {
+            border-radius: 20px 0px 20px 0px;
+        }
 
-            .topLeft {
-                border-radius: 20px 0 20px 0px;
-            }
-            .topRight {
-                border-radius: 0 20px 0px 20px;
-            }
-            .bottomLeft {
-                border-radius: 0px 20px 0px 20px;
-            }
-            .bottomRight {
-                border-radius: 20px 0px 20px 0px;
-            }
-
-            .topLeft:hover {
-                transform: translateX(-10px) translateY(-10px);
-            }
-            .topRight:hover {
-                transform: translateX(10px) translateY(-10px);
-            }
-            .bottomLeft:hover {
-                transform: translateX(-10px) translateY(10px);
-            }
-            .bottomRight:hover {
-                transform: translateX(10px) translateY(10px);
-            }
+        .topLeft:hover {
+            transform: translateX(-10px) translateY(-10px);
+        }
+        .topRight:hover {
+            transform: translateX(10px) translateY(-10px);
+        }
+        .bottomLeft:hover {
+            transform: translateX(-10px) translateY(10px);
+        }
+        .bottomRight:hover {
+            transform: translateX(10px) translateY(10px);
         }
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1100px) {
     .services_container {
-        height: 150vh;
+        .services {
+            width: 75rem;
+        }
     }
 }
-@media screen and (max-width: 1088px) {
+@media screen and (max-width: 825px) {
     .services_container {
-        height: 160vh;
-        .title {
-            font-size: 4rem;
-        }
         .services {
             width: 60rem;
-            gap: 1rem;
-            .service_box_section {
-                flex-direction: row;
-                gap: 1rem;
-                .services_box {
-                    width: 100%;
-                    .services_logo {
-                        width: 6rem;
-                    }
-                    .services_title {
-                        font-size: 1.8rem;
-                    }
-                    .services_text {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
         }
     }
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 825px) {
     .services_container {
-        height: 200vh;
-        .title {
-            font-size: 3rem;
-        }
         .services {
-            width: 50rem;
-            gap: 1rem;
-            .service_box_section {
-                flex-direction: row;
-                gap: 1rem;
-                .services_box {
-                    width: 100%;
-                    .services_logo {
-                        width: 5rem;
-                    }
-                    .services_title {
-                        font-size: 1.4rem;
-                    }
-                    .services_text {
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 728px) {
-    .services_container {
-        height: 230vh;
-        .title {
-            font-size: 3rem;
-        }
-        .services {
-            width: 22rem;
-            gap: 1rem;
-            .service_box_section {
-                flex-direction: column;
-                gap: 1rem;
-                .services_box {
-                    width: 100%;
-                    .services_logo {
-                        width: 5rem;
-                    }
-                    .services_title {
-                        font-size: 1.4rem;
-                    }
-                    .services_text {
-                        font-size: 1rem;
-                    }
-                }
-
-                .topRight:hover {
-                    transform: translateX(10px) translateY(10px);
-                }
-            }
+            width: 70%;
+            grid-template-columns: 1fr;
         }
     }
 }

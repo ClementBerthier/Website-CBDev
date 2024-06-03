@@ -154,7 +154,8 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-size: calc(1vw + 1vh);
+                font-size: calc(1.5vw + 10px);
+
                 white-space: nowrap;
                 color: #000;
                 text-decoration: none;
@@ -164,7 +165,7 @@
             .borderLine {
                 height: 0.2rem;
                 background-color: transparent;
-                margin-top: 0.5rem;
+                margin-top: 0.6vw;
             }
         }
 

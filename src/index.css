@@ -1,11 +1,7 @@
 html {
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
-    /* background-image: url(../src/assets/images/deskBackground.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; */
+
     margin: 0;
     padding: 0;
 }

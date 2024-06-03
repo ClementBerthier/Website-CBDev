@@ -1,16 +1,13 @@
 .services_container {
     width: 100vw;
-    height: 94vh;
+    height: 100vh;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .title {
-        font-size: 4rem;
+        font-size: calc(2vw + 2rem);
         font-weight: 700;
-        margin: 0 0 10rem 0;
+        text-align: center;
+        padding: 2.5rem 0 0 0;
     }
 
     .services {
@@ -20,6 +17,7 @@
         align-items: center;
         width: 75rem;
         gap: 1rem;
+        margin: 5rem auto;
 
         .service_box_section {
             display: flex;

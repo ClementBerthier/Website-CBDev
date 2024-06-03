@@ -1,33 +1,25 @@
 .aboutMe {
     background-color: rgba(255, 255, 255, 0.513);
     height: 100vh;
-    width: 100%;
-
+    width: 100vw;
     position: relative;
 
     .aboutMe_title {
         font-size: calc(2vw + 2rem);
         font-weight: 700;
-        padding: 2.5rem 0 0 0;
+        padding: 2.5rem 3rem;
+        margin: 0;
         text-align: center;
     }
 
     .banner_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 10rem auto;
-        .container_parent {
-            display: flex;
-            align-items: stretch;
-            justify-content: center;
-            gap: 5%;
-        }
+        display: grid;
+        width: 80%;
+        gap: 5%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 8rem auto;
+
         .description_container {
-            width: 40%;
-            max-height: 30rem;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -43,23 +35,21 @@
             .text_container {
                 display: flex;
                 flex-direction: column;
-                width: 100%;
 
                 .description {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    width: 100%;
-                    padding: 2rem 1rem;
-                    font-size: 1.2rem;
+                    padding: 2rem;
+                    font-size: calc(0.5vw + 0.5rem);
 
                     span {
                         color: #2e5339;
                         font-weight: 700;
                     }
                     .spanTitle {
-                        font-size: 1.5rem;
+                        font-size: calc(0.5vw + 0.8rem);
                     }
                     span:hover {
                         cursor: pointer;
@@ -89,10 +79,7 @@
         margin-bottom: 5rem;
         border-radius: 15px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.409);
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 8rem auto;
 
         .slide_logo_container {
             position: relative;
@@ -127,6 +114,26 @@
 
     .aboutMe_container:hover {
         transform: translateY(-15px);
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .aboutMe {
+        .banner_container {
+            grid-template-columns: 75vw;
+            grid-template-rows: 1fr;
+
+            .description_container {
+                width: 70%;
+                flex-direction: column;
+                margin: 0 auto;
+                .text_container {
+                    .description {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 }
 

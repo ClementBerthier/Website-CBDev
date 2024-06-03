@@ -1,3 +1,5 @@
+import "semantic-ui-css/semantic.min.css";
+
 import "./contact.css";
 import ButtonElement from "../../elements/Button/Button.jsx";
 import { Button, FormField, Header, Modal } from "semantic-ui-react";

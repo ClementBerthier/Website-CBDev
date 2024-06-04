@@ -7,7 +7,7 @@
     .aboutMe_title {
         font-size: calc(2vw + 2rem);
         font-weight: 700;
-        padding: 8vw 0;
+        padding: 4vw 0;
         text-align: center;
     }
 
@@ -29,6 +29,7 @@
 
             .logo {
                 width: 10vw;
+                margin-left: 1rem;
             }
 
             .text_container {

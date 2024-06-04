@@ -35,7 +35,7 @@
             }
             .description {
                 font-size: calc(1.5rem + 1vw);
-                font-weight: 300;
+                font-weight: 400;
                 text-align: center;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.709);
             }
@@ -50,8 +50,11 @@
     .home {
         .first_container {
             .title_container {
-                top: 25%;
+                top: 30%;
                 color: rgb(255, 255, 255);
+                .description {
+                    display: none;
+                }
             }
         }
     }

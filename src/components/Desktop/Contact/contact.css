@@ -95,7 +95,7 @@
                 }
                 .detail_text {
                     font-size: calc(0.5vw + 1rem);
-                    line-height: 2.2rem;
+                    line-height: 2.4rem;
                     .mailto {
                         color: white;
                         text-decoration: none;

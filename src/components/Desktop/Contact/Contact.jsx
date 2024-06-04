@@ -295,9 +295,10 @@ export default function Contact() {
                         <div className="detail">
                             <h3 className="detail_title">Adresse:</h3>
                             <p className="detail_text">
-                                12bis rue du commandant Wauthier, résidence l
-                                {"'"}
-                                Infante, Bat C Apt 32{" "}
+                                12bis rue du commandant Wauthier,
+                                <br /> résidence l{"'"}
+                                Infante, Bat C Apt 32, <br />
+                                81100 Castres
                             </p>
                         </div>
                         <div className="detail">

@@ -219,16 +219,9 @@
 @media screen and (max-width: 500px) {
     .scrolled {
         box-shadow: none;
-        background-color: #ffffff8f !important;
-    }
-
-    @keyframes headerScroll {
-        0% {
-            background-color: transparent;
-        }
-
-        100% {
-            background-color: transparent;
+        background-color: transparent !important;
+        .headerBurger_logo_container {
+            display: none;
         }
     }
 }

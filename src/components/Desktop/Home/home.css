@@ -23,24 +23,35 @@
                 font-size: calc(2.4rem + 4vw);
                 font-weight: 700;
                 text-align: center;
-                text-shadow: 0 0 3rem rgba(0, 0, 0, 0.398);
+                text-shadow: 0 0 3rem rgba(0, 0, 0, 0.709);
                 margin: 0 1rem;
             }
             .subTitle {
                 font-size: calc(2.4rem + 2vw);
                 font-weight: 500;
                 text-align: center;
-                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.398);
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.709);
                 margin: 4rem 0;
             }
             .description {
                 font-size: calc(1.5rem + 1vw);
                 font-weight: 300;
                 text-align: center;
-                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.398);
+                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.709);
             }
             .spanColor {
                 color: #2e5339;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .home {
+        .first_container {
+            .title_container {
+                top: 25%;
+                color: rgb(255, 255, 255);
             }
         }
     }

@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import Button from "../../elements/Button/Button.jsx";
+import Button from "../elements/Button/Button.jsx";
 import "./contactBanner.css";
 
 export default function ContactBanner() {

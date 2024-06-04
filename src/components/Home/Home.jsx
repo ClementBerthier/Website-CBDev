@@ -1,7 +1,7 @@
 import Header from "../Header/Header.jsx";
 import HomePage from "/images/HomePage.png";
 import SmallHomePage from "/images/HomePage_smallSize.png";
-import Waves from "../../Waves/Waves.jsx";
+import Waves from "../Waves/Waves.jsx";
 import "./home.css";
 import { useEffect, useState } from "react";
 

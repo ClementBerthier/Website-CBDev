@@ -45,13 +45,14 @@
             background-color: #2e5339;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
             transition: ease 0.5s;
+            cursor: pointer;
             .services_title,
             .services_text {
                 color: white;
             }
             .services_logo {
                 background-color: white;
-                border-radius: 15px 0 15px 0;
+                border-radius: 10px 0 10px 0;
             }
         }
 

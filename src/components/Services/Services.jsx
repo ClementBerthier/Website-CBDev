@@ -1,26 +1,28 @@
 import "./services.css";
 
-//TODO: redefinir les border raduis des logo pour le mobile
 export default function Service() {
     return (
         <div className="services_container">
             <h2 className="title">Nos services</h2>
             <div className="services">
-                <div className="services_box topLeft" id="firstBox">
+                <div className="services_box topLeft" id="servicePage">
                     <img
                         className="services_logo"
                         src="/images/laptop-dev-mode.svg"
                         alt="conception web logo"
+                        id="servicePage"
                     />
-                    <h2 className="services_title">Conception de sites web</h2>
-                    <p className="services_text">
+                    <h2 className="services_title" id="servicePage">
+                        Conception de sites web
+                    </h2>
+                    <p className="services_text" id="servicePage">
                         Lorem ipsum dolor, sit amet consectetur adipisicing
                         elit. Fugiat, animi? Rerum iusto odio placeat nihil
                         laborum aut ea fugit natus, id tempora perferendis amet
                         blanditiis accusantium assumenda alias nesciunt quos.
                     </p>
                 </div>
-                <div className="services_box topRight" id="secondBox">
+                <div className="services_box topRight" id="servicesPage">
                     <img
                         className="services_logo"
                         src="/images/application.svg"

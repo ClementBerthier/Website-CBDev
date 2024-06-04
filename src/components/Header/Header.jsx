@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-scroll";
 
-//todo: regler le probleme du clcik sur le burger menu, il est compliquer de le fermé car la div n'est pas centré
+//TODO: regler le probleme du clcik sur le burger menu, il est compliquer de le fermé car la div n'est pas centré
 
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
@@ -53,7 +53,7 @@ export default function Header() {
                             {!isBurgerOpen ? (
                                 <img
                                     className="headerBurger_logo"
-                                    src="./images/Logo_CBDev.svg"
+                                    src="../images/Logo_CBDev.svg"
                                     alt="logo entreprise"
                                 />
                             ) : null}
@@ -75,7 +75,7 @@ export default function Header() {
                             <div className="headerBurgerOpen_logo_container">
                                 <img
                                     className="headerBurgerOpen_logo"
-                                    src="./images/Logo_CBDev_white.svg"
+                                    src="../images/Logo_CBDev_white.svg"
                                     alt="logo entreprise"
                                 />
                             </div>

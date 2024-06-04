@@ -1,9 +1,24 @@
 import Header from "../Header/Header.jsx";
-import Picture from "/images/HomePage.png";
+import HomePage from "/images/HomePage.png";
+import SmallHomePage from "/images/HomePage_wihout_pc.png";
 import Waves from "../../Waves/Waves.jsx";
 import "./home.css";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 810);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <>
             <Header />
@@ -11,11 +26,19 @@ export default function Home() {
                 <section className="home" id="home">
                     <div className="first_container">
                         <div className="picture_container">
-                            <img
-                                className="homePicture"
-                                src={Picture}
-                                alt="Desk Picture"
-                            />
+                            {isMobile ? (
+                                <img
+                                    className="homePicture"
+                                    src={SmallHomePage}
+                                    alt="Desk Picture"
+                                />
+                            ) : (
+                                <img
+                                    className="homePicture"
+                                    src={HomePage}
+                                    alt="Desk Picture"
+                                />
+                            )}
                         </div>
                         <div className="title_container">
                             <h2 className="title">

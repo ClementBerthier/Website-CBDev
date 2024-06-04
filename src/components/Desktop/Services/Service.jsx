@@ -1,7 +1,7 @@
 import "./services.css";
 
+//TODO: redefinir les border raduis des logo pour le mobile
 export default function Service() {
-    //todo: redefinir les border raduis des logo pour le mobile
     return (
         <div className="services_container">
             <h2 className="title">Nos services</h2>

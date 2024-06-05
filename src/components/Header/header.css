@@ -225,3 +225,9 @@
         }
     }
 }
+
+@media screen and (orientation: landscape) and (max-width: 728px) {
+    .header {
+        background-color: white;
+    }
+}

@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 728px) {
+@media screen and (orientation: landscape) and (max-width: 905px) {
     .home {
         .first_container {
             .title_container {

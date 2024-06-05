@@ -63,16 +63,3 @@
         }
     }
 }
-
-@media screen and (orientation: landscape) {
-    .home {
-        .first_container {
-            .title_container {
-                z-index: 2;
-                .description {
-                    display: none;
-                }
-            }
-        }
-    }
-}

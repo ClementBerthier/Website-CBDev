@@ -1,14 +1,21 @@
 import Header from "../Header/Header.jsx";
 import HomePage from "/images/HomePage.png";
-import SmallHomePage from "/images/HomePage_smallSize.png";
+import SmallHomePage from "/images/SmallHomePage.png";
 import Waves from "../Waves/Waves.jsx";
 import "./home.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
+    const [isLandscape, setIsLandscape] = useState(true);
 
     useEffect(() => {
+        if (screen.orientation.type.startsWith("landscape")) {
+            setIsLandscape(true);
+        } else {
+            setIsLandscape(false);
+        }
+
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 810);
         };
@@ -27,11 +34,19 @@ export default function Home() {
                     <div className="first_container">
                         <div className="picture_container">
                             {isMobile ? (
-                                <img
-                                    className="homePicture"
-                                    src={SmallHomePage}
-                                    alt="Desk Picture"
-                                />
+                                !isLandscape ? (
+                                    <img
+                                        className="homePicture"
+                                        src={SmallHomePage}
+                                        alt="Desk Picture"
+                                    />
+                                ) : (
+                                    <img
+                                        className="homePicture"
+                                        src={HomePage}
+                                        alt="Desk Picture"
+                                    />
+                                )
                             ) : (
                                 <img
                                     className="homePicture"

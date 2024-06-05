@@ -68,7 +68,7 @@
     .home {
         .first_container {
             .title_container {
-                z-index: 55;
+                z-index: 2;
                 .description {
                     display: none;
                 }

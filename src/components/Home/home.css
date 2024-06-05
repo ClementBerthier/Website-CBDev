@@ -59,3 +59,20 @@
         }
     }
 }
+
+@media screen and (orientation: landscape) and (max-width: 728px) {
+    .home {
+        .first_container {
+            .title_container {
+                top: 50%;
+                .title {
+                    font-size: calc(2.4rem + 3vw);
+                }
+                .subTitle {
+                    font-size: calc(2.4rem + 1.5vw);
+                    margin: 1.5rem 0;
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 
 //TODO: regler le probleme du clcik sur le burger menu, il est compliquer de le fermé car la div n'est pas centré
 
+//TODO: revoir le CSS du logo quand le burger menu est ouvert
+
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
     const [nameOfLogo, setNameOfLogo] = useState("Logo_CBDev.svg");

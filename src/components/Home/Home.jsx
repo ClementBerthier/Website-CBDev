@@ -5,17 +5,20 @@ import Waves from "../Waves/Waves.jsx";
 import "./home.css";
 import { useEffect, useState } from "react";
 
+//TODO: le changement d'etat entre landscape et portrait ne reinitialise pas le state ce qui fait que l'imgage ne change pas correctement
+
+//TODO: voir si je peut remettre la description en dessous du titre en mode mobile
 export default function Home() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
     const [isLandscape, setIsLandscape] = useState(true);
 
-    useEffect(() => {
-        if (screen.orientation.type.startsWith("landscape")) {
-            setIsLandscape(true);
-        } else {
-            setIsLandscape(false);
-        }
+    const [orientation, setOrientation] = useState(
+        window.matchMedia("(orientation: landscape)").matches
+            ? "landscape"
+            : "portrait"
+    );
 
+    useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 810);
         };
@@ -25,6 +28,36 @@ export default function Home() {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
+    useEffect(() => {
+        const handleOrientationChange = () => {
+            const newOrientation = window.matchMedia("(orientation: landscape)")
+                .matches
+                ? "landscape"
+                : "portrait";
+            setOrientation(newOrientation);
+            executeCodeForOrientation(newOrientation);
+        };
+
+        const mediaQuery = window.matchMedia("(orientation: landscape)");
+        mediaQuery.addEventListener("change", handleOrientationChange);
+
+        // Exécuter le code pour l'orientation initiale au chargement de la page
+        executeCodeForOrientation(orientation);
+
+        // Nettoyer l'écouteur d'événements lors du démontage du composant
+        return () => {
+            mediaQuery.removeEventListener("change", handleOrientationChange);
+        };
+    }, [orientation]);
+
+    const executeCodeForOrientation = (orientation) => {
+        if (orientation === "landscape") {
+            setIsLandscape(true);
+        } else {
+            setIsLandscape(false);
+        }
+    };
 
     return (
         <>

@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
+    const [nameOfLogo, setNameOfLogo] = useState("Logo_CBDev.svg");
     const [headerBurgerScrolled, setHeaderBurgerScrolled] =
         useState("headerBurger");
 
@@ -25,13 +26,15 @@ export default function Header() {
     }, []);
 
     const handleScroll = () => {
-        if (window.scrollY > 271) {
+        if (window.scrollY > 1) {
             setScrolled("header scrolled");
+            setNameOfLogo("Logo_CBDev_white.png");
         } else {
             setScrolled("header ");
+            setNameOfLogo("Logo_CBDev.svg");
         }
 
-        if (!isBurgerOpen && window.scrollY > 231) {
+        if (!isBurgerOpen && window.scrollY > 1) {
             setHeaderBurgerScrolled("headerBurger scrolled");
         } else {
             setHeaderBurgerScrolled("headerBurger");
@@ -53,7 +56,7 @@ export default function Header() {
                             {!isBurgerOpen ? (
                                 <img
                                     className="headerBurger_logo"
-                                    src="../images/Logo_CBDev.svg"
+                                    src={`/images/${nameOfLogo}`}
                                     alt="logo entreprise"
                                 />
                             ) : null}
@@ -75,7 +78,7 @@ export default function Header() {
                             <div className="headerBurgerOpen_logo_container">
                                 <img
                                     className="headerBurgerOpen_logo"
-                                    src="../images/Logo_CBDev_white.svg"
+                                    src="../images/Logo_CBDev_white.png"
                                     alt="logo entreprise"
                                 />
                             </div>
@@ -138,8 +141,8 @@ export default function Header() {
                         {
                             <img
                                 className="logo"
-                                src="/images/Logo_CBDev.svg"
-                                alt="Logo_noir"
+                                src={`/images/${nameOfLogo}`}
+                                alt="Logo"
                             />
                         }
                     </div>

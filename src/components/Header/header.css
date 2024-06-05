@@ -225,3 +225,9 @@
         }
     }
 }
+
+@media screen and (orientation: landscape) {
+    .header {
+        background-color: white;
+    }
+}

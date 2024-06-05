@@ -110,7 +110,7 @@ export default function Header() {
                                     to="services"
                                     spy={true}
                                     smooth={true}
-                                    offset={-390}
+                                    offset={-70}
                                     duration={500}
                                     onClick={handleClick}
                                 >

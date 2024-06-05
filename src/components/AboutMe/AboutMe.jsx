@@ -37,7 +37,7 @@ export default function AboutMe() {
                                     Je m{"'"}appelle Clément Berthier, je suis
                                     un développeur spécialisé dans la création
                                     de projets web sur mesure. Passioné par mon
-                                    métier, je travaille autant coté{" "}
+                                    métier, je travaille autant côté{" "}
                                     <span>Frontend</span> que{" "}
                                     <span>Backend</span> pour vous offrir des
                                     solutions complètes et adaptées à vos
@@ -68,8 +68,7 @@ export default function AboutMe() {
                                     d{"'"}applications. Je m{"'"}engage à vous
                                     accompagner à chaque étape de votre projet,
                                     en mettant mon savoir-faire et ma passion au
-                                    service de vos idées pour les transformer en
-                                    réalité.
+                                    service de vos idées pour les réaliser.
                                 </p>
                             </div>
                         </div>

@@ -50,8 +50,25 @@
     .home {
         .first_container {
             .title_container {
-                top: 30%;
+                top: 50%;
+                .title {
+                    font-size: calc(2.4rem + 2vw);
+                }
+                .subTitle {
+                    font-size: calc(2.4rem + 1vw);
+                    margin: 1.5rem 0;
+                }
                 color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .home {
+        .first_container {
+            .title_container {
+                z-index: 55;
                 .description {
                     display: none;
                 }

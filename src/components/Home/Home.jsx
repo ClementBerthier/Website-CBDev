@@ -5,8 +5,6 @@ import Waves from "../Waves/Waves.jsx";
 import "./home.css";
 import { useEffect, useState } from "react";
 
-//TODO: le changement d'etat entre landscape et portrait ne reinitialise pas le state ce qui fait que l'imgage ne change pas correctement
-
 //TODO: voir si je peut remettre la description en dessous du titre en mode mobile
 export default function Home() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);

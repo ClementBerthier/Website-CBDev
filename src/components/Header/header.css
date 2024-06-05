@@ -88,8 +88,7 @@
         align-items: center;
         height: 20%;
         .headerBurgerOpen_logo {
-            height: 100%;
-            width: 100%;
+            width: 50%;
         }
     }
     .headerBurgerOpen_link_container {

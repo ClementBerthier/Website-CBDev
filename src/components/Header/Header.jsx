@@ -160,7 +160,7 @@ export default function Header() {
                                 offset={-70}
                                 duration={500}
                             >
-                                Home
+                                Accueil
                                 <div className="borderLine"></div>
                             </Link>
                         </div>

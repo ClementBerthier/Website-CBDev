@@ -4,6 +4,7 @@ import Services from "../Services/Services.jsx";
 import ContactBanner from "../ContactBanner/ContactBanner.jsx";
 import Contact from "../Contact/Contact.jsx";
 import HomeLoader from "../HomeLoader/HomeLoader.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 export default function Layout() {
     return (
@@ -16,7 +17,7 @@ export default function Layout() {
             {/* <Articles /> */}
             {/* <FAQs /> */}
             <Contact />
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }

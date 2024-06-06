@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 export default function HomeLoader() {
     const [loaderValue, setLoaderValue] = useState(0);
     const [dimmerStatus, setDimmerStatus] = useState(true);
-    const [fadeOut, setFadeOut] = useState("");
     const [isLoaderDone, setIsLoaderDone] = useState(false);
 
     useEffect(() => {
@@ -34,7 +33,6 @@ export default function HomeLoader() {
     useEffect(() => {
         if (loaderValue === 1000) {
             setDimmerStatus(false);
-            setFadeOut("fadeOut");
         }
     }, [loaderValue]);
 

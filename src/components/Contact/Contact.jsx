@@ -1,11 +1,14 @@
 import "semantic-ui-css/semantic.min.css";
 import "./contact.css";
 
+//TODO: mettre les liens des réseaux sociaux
+
 import ButtonElement from "../elements/Button/Button.jsx";
 import { Button, FormField, Header, Modal } from "semantic-ui-react";
 import facebook from "/images/whitefacebook.svg";
 import instagram from "/images/whiteinsta.svg";
 import linkedin from "/images/whitelinkedin.svg";
+import github from "/images/whitegithub.svg";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 
@@ -336,6 +339,15 @@ export default function Contact() {
                                 </a>
                                 <a className="detail_link" href="">
                                     <img src={linkedin} alt="logo instagram" />
+                                </a>
+                                <a
+                                    className="detail_link"
+                                    href="https://github.com/ClementBerthier"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    aria-label="github"
+                                >
+                                    <img src={github} alt="logo github" />
                                 </a>
                             </div>
                         </div>

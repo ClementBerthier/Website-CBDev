@@ -4,8 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "./aboutMe.css";
 
-//TODO: rendre cliquable les logo techno pour envoyé sur la page correspondante
-
 export default function AboutMe() {
     const slideSettings = {
         dots: false,

@@ -17,6 +17,15 @@
             margin: 0rem 1rem;
         }
     }
+
+    .headerBurgerShape {
+        width: 10%;
+        height: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 0%;
+        right: 1.5%;
+    }
     .headerBurger_button {
         display: block;
         position: fixed;

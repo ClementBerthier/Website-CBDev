@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "./services.css";
-//TODO: verifier l'offsedt au click sur le header pour le positionnement de la page  (voir aussi mes autre liens)
 export default function Service() {
     const navigation = useNavigate();
 

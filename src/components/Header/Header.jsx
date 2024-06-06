@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-scroll";
 
-//TODO: regler le probleme du clcik sur le burger menu, il est compliquer de le fermé car la div n'est pas centré
-
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
     const [nameOfLogo, setNameOfLogo] = useState("Logo_CBDev.svg");
@@ -63,6 +61,10 @@ export default function Header() {
                             ) : null}
                         </div>
 
+                        <div
+                            className="headerBurgerShape"
+                            onClick={handleClick}
+                        ></div>
                         <div
                             className="headerBurger_button"
                             onClick={handleClick}

@@ -41,14 +41,12 @@ export default function HomeLoader() {
     return (
         <div className="homeLoader">
             {dimmerStatus && !isLoaderDone ? (
-                <Dimmer active className="homeDimmer">
+                <Dimmer active className="homeDimmer fadeOut">
                     {loaderValue + "%"}
                     <Loader size="massive" className="test"></Loader>
                 </Dimmer>
             ) : !isLoaderDone ? (
-                <Dimmer active className={fadeOut}>
-                    {loaderValue + "%"}
-                </Dimmer>
+                <Dimmer active>{loaderValue + "%"}</Dimmer>
             ) : null}
         </div>
     );

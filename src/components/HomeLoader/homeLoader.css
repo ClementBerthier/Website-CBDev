@@ -1,0 +1,49 @@
+.homeLoader {
+    .homeDimmer {
+        position: fixed;
+        background-color: #2e5339 !important;
+        height: 100vh;
+    }
+
+    .content {
+        font-size: 10rem;
+    }
+
+    .ui .loader {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .ui.massive.loader,
+    .ui.massive.loader:after,
+    .ui.massive.loader:before {
+        width: 30rem;
+        height: 30rem;
+        font-size: 2rem !important;
+    }
+
+    .ui.massive.loader:after,
+    .ui.massive.loader:before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .fadeOut {
+        animation: 3s ease-in-out 0s 1 fadeOut forwards;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

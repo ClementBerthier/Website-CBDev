@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import "./aboutMe.css";
 
+//TODO: mettre les liens de frontend et backend 
+
 export default function AboutMe() {
     const slideSettings = {
         dots: false,

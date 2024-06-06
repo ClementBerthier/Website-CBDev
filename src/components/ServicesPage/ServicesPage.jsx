@@ -7,7 +7,6 @@ export default function ServicesPage() {
 
     console.log(id);
 
-    console.log;
     return (
         <div>
             <div>page</div>

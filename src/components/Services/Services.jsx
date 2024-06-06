@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import "./services.css";
+
+//TODO: mettre le vrai texte dans les service box
+
 export default function Service() {
     const navigation = useNavigate();
 

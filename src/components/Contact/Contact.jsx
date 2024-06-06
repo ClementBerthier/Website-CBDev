@@ -212,30 +212,34 @@ export default function Contact() {
                         <div className="contact_form" id="contact_form">
                             <div className="firstSection">
                                 <FormField>
-                                    <label>Nom:</label>
+                                    <label htmlFor="lastname">Nom:</label>
                                     <input
                                         placeholder="Votre nom"
                                         name="user_lastname"
                                         type="text"
+                                        id="lastname"
                                         value={formData.user_lastname}
                                         onChange={handleChange}
                                         maxLength={50}
+                                        autoComplete="given-name"
                                     />
                                 </FormField>
                                 <FormField>
-                                    <label>Prénom</label>
+                                    <label htmlFor="firstname">Prénom</label>
                                     <input
                                         placeholder="Votre prénom"
                                         name="user_firstname"
                                         type="text"
+                                        id="firstname"
                                         value={formData.user_firstname}
                                         onChange={handleChange}
                                         maxLength={50}
+                                        autoComplete="family-name"
                                     />
                                 </FormField>
                             </div>
                             <FormField>
-                                <label>
+                                <label htmlFor="mail">
                                     Mail
                                     <span className="requiredField">*</span>
                                 </label>
@@ -243,23 +247,26 @@ export default function Contact() {
                                     placeholder="Votre adresse mail"
                                     name="user_email"
                                     type="text"
+                                    id="mail"
                                     value={formData.user_email}
                                     onChange={handleChange}
                                 />
                             </FormField>
                             <FormField>
-                                <label>Téléphone</label>
+                                <label htmlFor="phone">Téléphone</label>
                                 <input
                                     placeholder="Votre numéro de téléphone"
                                     name="user_phone"
                                     type="text"
+                                    id="phone"
                                     value={formData.user_phone}
                                     onChange={handleChange}
+                                    autoComplete="tel"
                                 />
                             </FormField>
                             <div className="textarea_container">
                                 <div className="field">
-                                    <label htmlFor="">
+                                    <label htmlFor="textarea_object">
                                         Objet
                                         <span className="requiredField">*</span>
                                     </label>
@@ -270,11 +277,12 @@ export default function Contact() {
                                         name="object"
                                         value={formData.object}
                                         onChange={handleChange}
+                                        id="textarea_object"
                                     ></textarea>
                                 </div>
 
                                 <div className="field">
-                                    <label htmlFor="">
+                                    <label htmlFor="textarea_message">
                                         Message
                                         <span className="requiredField">*</span>
                                     </label>
@@ -283,6 +291,7 @@ export default function Contact() {
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
+                                        id="textarea_message"
                                     ></textarea>
                                 </div>
                                 <p className="requiredLegend">

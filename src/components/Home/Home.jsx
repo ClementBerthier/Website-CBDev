@@ -5,7 +5,6 @@ import Waves from "../Waves/Waves.jsx";
 import "./home.css";
 import { useEffect, useState } from "react";
 
-//TODO: voir si je peut remettre la description en dessous du titre en mode mobile
 export default function Home() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
     const [isLandscape, setIsLandscape] = useState(true);

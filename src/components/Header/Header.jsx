@@ -4,8 +4,6 @@ import { Link } from "react-scroll";
 
 //TODO: regler le probleme du clcik sur le burger menu, il est compliquer de le fermé car la div n'est pas centré
 
-//TODO: revoir le CSS du logo quand le burger menu est ouvert
-
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
     const [nameOfLogo, setNameOfLogo] = useState("Logo_CBDev.svg");
@@ -46,6 +44,7 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
 
     const handleClick = () => {
+        console.log("click");
         setIsBurgerOpen(!isBurgerOpen);
     };
 
@@ -103,7 +102,7 @@ export default function Header() {
                                     to="aboutMe"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
+                                    offset={-40}
                                     duration={500}
                                     onClick={handleClick}
                                 >
@@ -115,7 +114,7 @@ export default function Header() {
                                     to="services"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
+                                    offset={-100}
                                     duration={500}
                                     onClick={handleClick}
                                 >
@@ -127,7 +126,7 @@ export default function Header() {
                                     to="contact"
                                     spy={true}
                                     smooth={true}
-                                    offset={-250}
+                                    offset={-180}
                                     duration={500}
                                     onClick={handleClick}
                                 >
@@ -185,7 +184,7 @@ export default function Header() {
                                 to="services"
                                 spy={true}
                                 smooth={true}
-                                offset={-390}
+                                offset={-310}
                                 duration={500}
                             >
                                 Services
@@ -200,7 +199,7 @@ export default function Header() {
                                 to="contact"
                                 spy={true}
                                 smooth={true}
-                                offset={-70}
+                                offset={-230}
                                 duration={500}
                             >
                                 Contact

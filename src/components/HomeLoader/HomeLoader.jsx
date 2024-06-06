@@ -11,14 +11,14 @@ export default function HomeLoader() {
     useEffect(() => {
         const interval = setInterval(() => {
             setLoaderValue((prevValue) => {
-                if (prevValue < 10000000) {
+                if (prevValue < 100) {
                     return prevValue + 1;
                 } else {
                     clearInterval(interval);
                     return prevValue;
                 }
             });
-        }, 2000);
+        }, 20);
 
         return () => clearInterval(interval);
     }, []);
@@ -26,7 +26,7 @@ export default function HomeLoader() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoaderDone(true);
-        }, 3000000);
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);

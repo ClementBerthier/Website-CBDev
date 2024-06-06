@@ -79,81 +79,158 @@ export default function AboutMe() {
                 <h3 className="technoTitle">Nos technologies</h3>
                 <Slider {...slideSettings} className="slider">
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/HTML5.png"
-                            alt="HTML5 logo"
-                        />
+                        <a
+                            href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation HTML5"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/HTML5.png"
+                                alt="HTML5 logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/css3.svg"
-                            alt="css3 logo"
-                        />
+                        <a
+                            href="https://developer.mozilla.org/fr/docs/Web/CSS"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation CSS3"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/css3.svg"
+                                alt="css3 logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/JavaScript.png"
-                            alt="JavaScript logo"
-                        />
+                        <a
+                            href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation JavaScript"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/JavaScript.png"
+                                alt="JavaScript logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/typescript.svg"
-                            alt="TypeScript logo"
-                        />
+                        <a
+                            href="https://www.typescriptlang.org/docs/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation TypeScript"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/typescript.svg"
+                                alt="TypeScript logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/react.png"
-                            alt="react logo"
-                        />
+                        <a
+                            href="https://fr.react.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation ReactJS"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/react.png"
+                                alt="react logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/node.svg"
-                            alt="node.JS logo"
-                        />
+                        <a
+                            href="https://nodejs.org/docs/latest/api/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation NodeJS"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/node.svg"
+                                alt="nodeJS logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/postgre.png"
-                            alt="postgreSQL logo"
-                        />
+                        <a
+                            href="https://www.postgresql.org/docs/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation postgreSQL"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/postgre.png"
+                                alt="postgreSQL logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/graphQL.png"
-                            alt="graphQL logo"
-                        />
+                        <a
+                            href="https://graphql.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation graphQL"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/graphQL.png"
+                                alt="graphQL logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/github.png"
-                            alt="github logo"
-                        />
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation github"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/github.png"
+                                alt="github logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/Socket-io.png"
-                            alt="socketIO logo"
-                        />
+                        <a
+                            href="https://socket.io/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation Socket.io"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/Socket-io.png"
+                                alt="SocketIO logo"
+                            />
+                        </a>
                     </div>
                     <div className="slide_logo_container">
-                        <img
-                            className="slide_logo"
-                            src="/images/techLogo/Vite.png"
-                            alt="vite logo"
-                        />
+                        <a
+                            href="https://vitejs.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Documentation Vite"
+                        >
+                            <img
+                                className="slide_logo"
+                                src="/images/techLogo/Vite.png"
+                                alt="Vite logo"
+                            />
+                        </a>
                     </div>
                 </Slider>
                 <div className="whiteboard"></div>

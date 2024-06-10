@@ -87,3 +87,14 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .services_global {
+        .services_container {
+            .services {
+                width: 60%;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

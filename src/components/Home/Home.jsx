@@ -87,7 +87,7 @@ export default function Home() {
                         </div>
                         <div className="title_container">
                             <h2 className="title">
-                                Clément Berthier{" "}
+                                Clément Berthier <br />
                                 <span className="spanColor">Développeur</span>
                             </h2>
                             <h2 className="subTitle">
@@ -95,10 +95,6 @@ export default function Home() {
                                 notre
                                 <span className="spanColor"> création</span>
                             </h2>
-                            <p className="description">
-                                Développement de site web et d{"'"}application
-                                web
-                            </p>
                         </div>
                     </div>
                     <Waves />

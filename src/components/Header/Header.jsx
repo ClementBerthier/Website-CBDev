@@ -140,75 +140,77 @@ export default function Header() {
                 </>
             ) : (
                 <header className={Scrolled}>
-                    <div className="logo_container">
-                        {
-                            <img
-                                className="logo"
-                                src={`/images/${nameOfLogo}`}
-                                alt="Logo"
-                            />
-                        }
+                    <div className="container">
+                        <div className="logo_container">
+                            {
+                                <img
+                                    className="logo"
+                                    src={`/images/${nameOfLogo}`}
+                                    alt="Logo"
+                                />
+                            }
+                        </div>
+                        <nav className="navBar ">
+                            <div className="navBar_items_container">
+                                <Link
+                                    id="headerHome"
+                                    className="navBar_items"
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    Accueil
+                                    <div className="borderLine"></div>
+                                </Link>
+                            </div>
+
+                            <div className="navBar_items_container">
+                                <Link
+                                    id="headerAboutMe"
+                                    className="navBar_items"
+                                    to="aboutMe"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    A propos
+                                    <div className="borderLine"></div>
+                                </Link>
+                            </div>
+                            <div className="navBar_items_container">
+                                <Link
+                                    id="hearderServices"
+                                    className="navBar_items"
+                                    to="services"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-310}
+                                    duration={500}
+                                >
+                                    Services
+                                    <div className="borderLine"></div>
+                                </Link>
+                            </div>
+
+                            <div className="navBar_items_container">
+                                <Link
+                                    id="headerContact"
+                                    className="navBar_items"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-230}
+                                    duration={500}
+                                >
+                                    Contact
+                                    <div className="borderLine"></div>
+                                </Link>
+                            </div>
+                        </nav>
                     </div>
-                    <nav className="navBar ">
-                        <div className="navBar_items_container">
-                            <Link
-                                id="headerHome"
-                                className="navBar_items"
-                                to="home"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                            >
-                                Accueil
-                                <div className="borderLine"></div>
-                            </Link>
-                        </div>
-
-                        <div className="navBar_items_container">
-                            <Link
-                                id="headerAboutMe"
-                                className="navBar_items"
-                                to="aboutMe"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                            >
-                                A propos
-                                <div className="borderLine"></div>
-                            </Link>
-                        </div>
-                        <div className="navBar_items_container">
-                            <Link
-                                id="hearderServices"
-                                className="navBar_items"
-                                to="services"
-                                spy={true}
-                                smooth={true}
-                                offset={-310}
-                                duration={500}
-                            >
-                                Services
-                                <div className="borderLine"></div>
-                            </Link>
-                        </div>
-
-                        <div className="navBar_items_container">
-                            <Link
-                                id="headerContact"
-                                className="navBar_items"
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                offset={-230}
-                                duration={500}
-                            >
-                                Contact
-                                <div className="borderLine"></div>
-                            </Link>
-                        </div>
-                    </nav>
                 </header>
             )}
         </>

@@ -1,6 +1,5 @@
 .home {
     z-index: 1;
-    width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     .first_container {
         position: relative;
@@ -13,32 +12,29 @@
             }
         }
         .title_container {
-            width: 100%;
+            max-width: 1200px;
+            width: 90%;
             position: absolute;
-            top: 45%;
+            top: 47%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
             .title {
-                font-size: calc(2.4rem + 4vw);
+                max-width: 100%;
+                font-size: calc(3rem + 2vw);
                 font-weight: 700;
                 text-align: center;
                 text-shadow: 0 0 3rem rgba(0, 0, 0, 0.709);
                 margin: 0 1rem;
             }
             .subTitle {
-                font-size: calc(2.4rem + 2vw);
+                font-size: calc(2.4rem + 1vw);
                 font-weight: 500;
                 text-align: center;
                 text-shadow: 0 0 1rem rgba(0, 0, 0, 0.709);
-                margin: 4rem 0;
+                margin: 5rem 0;
             }
-            .description {
-                font-size: calc(1.5rem + 1vw);
-                font-weight: 400;
-                text-align: center;
-                text-shadow: 0 0 1rem rgba(0, 0, 0, 0.709);
-            }
+
             .spanColor {
                 color: #2e5339;
             }
@@ -60,7 +56,7 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 1040px) {
+@media screen and (orientation: landscape) and (max-width: 1120px) {
     .home {
         .first_container {
             .title_container {

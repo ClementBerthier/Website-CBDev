@@ -128,17 +128,18 @@
 
 .modal_contact {
     width: 50%;
-    height: 20%;
+    height: 17%;
     .header_modal_contact {
         width: 100%;
-        height: 30%;
+        height: 22%;
     }
     .content_modal_contact {
         width: 100%;
         height: 80%;
         .textModal {
-            font-size: 1rem;
+            font-size: 1.5rem;
             width: 100%;
+            padding: 0 1rem;
             text-align: center;
             position: absolute;
             top: 50%;

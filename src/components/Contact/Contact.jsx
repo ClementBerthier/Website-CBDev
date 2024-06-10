@@ -191,12 +191,18 @@ export default function Contact() {
                 className="modal_contact"
                 closeOnDimmerClick={false}
             >
-                <Header className="header_modal_contact" content={titleModal} />
+                <Header
+                    className="header_modal_contact"
+                    size="huge"
+                    content={titleModal}
+                />
                 <Modal.Content className="content_modal_contact">
                     <p className="textModal">{contentModal}</p>
                 </Modal.Content>
                 <Modal.Actions className="actions_modal_contact">
-                    <Button onClick={() => setModalOpen(false)}>Retour</Button>
+                    <Button size="huge" onClick={() => setModalOpen(false)}>
+                        Retour
+                    </Button>
                 </Modal.Actions>
             </Modal>
 

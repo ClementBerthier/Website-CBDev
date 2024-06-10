@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <div className="footer_container">
             <div className="footer_container_section">
-                <div className="footer">
+                <div className="footer_navigation_container">
                     <div className="footer_section">
                         <img
                             className="footer_logo"
@@ -17,6 +17,7 @@ export default function Footer() {
                         />
                         <p className="motto">
                             Votre <span className="greenText">vision</span>,
+                            <br />
                             notre <span className="greenText">création</span>
                         </p>
 
@@ -42,10 +43,8 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
-                </div>
-                <div className="footer_navigation_container">
                     <div className="footer_navigation">
-                        <div className="footer_navigation_section">
+                        <div className="footer_navigation_section ">
                             <h3 className="footer_navigation_title">
                                 Services
                             </h3>
@@ -69,7 +68,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="footer_navigation ">
-                        <div className="footer_navigation_section">
+                        <div className="footer_navigation_section links_section">
                             <h3 className="footer_navigation_title">Liens</h3>
                             <div className="footer_navigation_link_container">
                                 <a className="footer_navigation_link" href="">
@@ -95,7 +94,7 @@ export default function Footer() {
                                     <span className="footer_navigation_span_title">
                                         Adresse
                                     </span>
-                                    <span>
+                                    <span className="adress_info">
                                         12 bis rue du Commandant Wauthier,
                                         <br />
                                         Résidence l{"'"}Infante, Bat C Appt 32,
@@ -108,7 +107,7 @@ export default function Footer() {
                                         Email
                                     </span>
                                     <a
-                                        className="mailto"
+                                        className="mailto adress_info"
                                         href="mailto:clementberthierdeveloppeur@gmail.com"
                                     >
                                         clementberthierdeveloppeur@gmail.com
@@ -118,52 +117,14 @@ export default function Footer() {
                                     <span className="footer_navigation_span_title">
                                         Téléphone
                                     </span>
-                                    <span>07.88.45.37.78</span>
+                                    <span className="adress_info">
+                                        07.88.45.37.78
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/*   <div className="footer_detail_container">
-                    <div className="footer_detail_section">
-                        <h3 className="footer_detail_container_title">
-                            Contact
-                        </h3>
-                        <div className="footer_detail_section_detail">
-                            <div className="footer_detail">
-                                <h3 className="footer_detail_title">
-                                    Adresse:
-                                </h3>
-                                <p className="footer_detail_text">
-                                    12 bis rue du Commandant Wauthier,
-                                    <br /> Résidence l{"'"}
-                                    Infante, Bat C Appt 32, <br />
-                                    81100 Castres
-                                </p>
-                            </div>
-                            <div className="footer_detail">
-                                <h3 className="footer_detail_title">Email:</h3>
-                                <p className="footer_detail_text">
-                                    <a
-                                        className="mailto"
-                                        href="mailto:clementberthierdeveloppeur@gmail.com"
-                                    >
-                                        clementberthierdeveloppeur@gmail.com
-                                    </a>
-                                </p>
-                            </div>
-                            <div className="footer_detail">
-                                <h3 className="footer_detail_title">
-                                    Téléphone:
-                                </h3>
-                                <p className="footer_detail_text">
-                                    07.88.45.37.78
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </div>
             <div className="footer_credit_container">
                 <p className="footer_credit">

@@ -200,168 +200,188 @@ export default function Contact() {
                 </Modal.Actions>
             </Modal>
 
-            <form
-                className="contact_container ui form"
-                onSubmit={handleSubmit}
-                ref={form}
-            >
-                <h2 className="contact_title">Contactez-nous</h2>
-                <p className="contact_message">
-                    N{"'"}hésitez pas à nous envoyer un message pour plus d{"'"}
-                    informations
-                </p>
-                <div className="contact">
-                    <div className="form_container">
-                        <div className="contact_form" id="contact_form">
-                            <div className="firstSection">
+            <div className="form_global">
+                <form
+                    className="contact_container ui form"
+                    onSubmit={handleSubmit}
+                    ref={form}
+                >
+                    <h2 className="contact_title">Contactez-nous</h2>
+                    <p className="contact_message">
+                        N{"'"}hésitez pas à nous envoyer un message pour plus d
+                        {"'"}
+                        informations
+                    </p>
+                    <div className="contact">
+                        <div className="form_container">
+                            <div className="contact_form" id="contact_form">
+                                <div className="firstSection">
+                                    <FormField>
+                                        <label htmlFor="lastname">Nom:</label>
+                                        <input
+                                            placeholder="Votre nom"
+                                            name="user_lastname"
+                                            type="text"
+                                            id="lastname"
+                                            value={formData.user_lastname}
+                                            onChange={handleChange}
+                                            maxLength={50}
+                                            autoComplete="given-name"
+                                        />
+                                    </FormField>
+                                    <FormField>
+                                        <label htmlFor="firstname">
+                                            Prénom
+                                        </label>
+                                        <input
+                                            placeholder="Votre prénom"
+                                            name="user_firstname"
+                                            type="text"
+                                            id="firstname"
+                                            value={formData.user_firstname}
+                                            onChange={handleChange}
+                                            maxLength={50}
+                                            autoComplete="family-name"
+                                        />
+                                    </FormField>
+                                </div>
                                 <FormField>
-                                    <label htmlFor="lastname">Nom:</label>
-                                    <input
-                                        placeholder="Votre nom"
-                                        name="user_lastname"
-                                        type="text"
-                                        id="lastname"
-                                        value={formData.user_lastname}
-                                        onChange={handleChange}
-                                        maxLength={50}
-                                        autoComplete="given-name"
-                                    />
-                                </FormField>
-                                <FormField>
-                                    <label htmlFor="firstname">Prénom</label>
-                                    <input
-                                        placeholder="Votre prénom"
-                                        name="user_firstname"
-                                        type="text"
-                                        id="firstname"
-                                        value={formData.user_firstname}
-                                        onChange={handleChange}
-                                        maxLength={50}
-                                        autoComplete="family-name"
-                                    />
-                                </FormField>
-                            </div>
-                            <FormField>
-                                <label htmlFor="mail">
-                                    Mail
-                                    <span className="requiredField">*</span>
-                                </label>
-                                <input
-                                    placeholder="Votre adresse mail"
-                                    name="user_email"
-                                    type="text"
-                                    id="mail"
-                                    value={formData.user_email}
-                                    onChange={handleChange}
-                                />
-                            </FormField>
-                            <FormField>
-                                <label htmlFor="phone">Téléphone</label>
-                                <input
-                                    placeholder="Votre numéro de téléphone"
-                                    name="user_phone"
-                                    type="text"
-                                    id="phone"
-                                    value={formData.user_phone}
-                                    onChange={handleChange}
-                                    autoComplete="tel"
-                                />
-                            </FormField>
-                            <div className="textarea_container">
-                                <div className="field">
-                                    <label htmlFor="textarea_object">
-                                        Objet
+                                    <label htmlFor="mail">
+                                        Mail
                                         <span className="requiredField">*</span>
                                     </label>
-                                    <textarea
-                                        className="textarea_object"
-                                        placeholder="Quel est le sujet de votre message? "
-                                        rows="2"
-                                        name="object"
-                                        value={formData.object}
+                                    <input
+                                        placeholder="Votre adresse mail"
+                                        name="user_email"
+                                        type="text"
+                                        id="mail"
+                                        value={formData.user_email}
                                         onChange={handleChange}
-                                        id="textarea_object"
-                                    ></textarea>
-                                </div>
+                                    />
+                                </FormField>
+                                <FormField>
+                                    <label htmlFor="phone">Téléphone</label>
+                                    <input
+                                        placeholder="Votre numéro de téléphone"
+                                        name="user_phone"
+                                        type="text"
+                                        id="phone"
+                                        value={formData.user_phone}
+                                        onChange={handleChange}
+                                        autoComplete="tel"
+                                    />
+                                </FormField>
+                                <div className="textarea_container">
+                                    <div className="field">
+                                        <label htmlFor="textarea_object">
+                                            Objet
+                                            <span className="requiredField">
+                                                *
+                                            </span>
+                                        </label>
+                                        <textarea
+                                            className="textarea_object"
+                                            placeholder="Quel est le sujet de votre message? "
+                                            rows="2"
+                                            name="object"
+                                            value={formData.object}
+                                            onChange={handleChange}
+                                            id="textarea_object"
+                                        ></textarea>
+                                    </div>
 
-                                <div className="field">
-                                    <label htmlFor="textarea_message">
-                                        Message
-                                        <span className="requiredField">*</span>
-                                    </label>
-                                    <textarea
-                                        placeholder="Votre message ici"
-                                        name="message"
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        id="textarea_message"
-                                    ></textarea>
-                                </div>
-                                <p className="requiredLegend">
-                                    * champs obligatoire
-                                </p>
-                            </div>{" "}
-                        </div>
-                    </div>
-                    <div className="contact-detail">
-                        <div className="detail">
-                            <h3 className="detail_title">Adresse:</h3>
-                            <p className="detail_text">
-                                12 bis rue du Commandant Wauthier,
-                                <br /> Résidence l{"'"}
-                                Infante, Bat C Appt 32, <br />
-                                81100 Castres
-                            </p>
-                        </div>
-                        <div className="detail">
-                            <h3 className="detail_title">Email:</h3>
-                            <p className="detail_text">
-                                <a
-                                    className="mailto"
-                                    href="mailto:clementberthierdeveloppeur@gmail.com"
-                                >
-                                    clementberthierdeveloppeur@gmail.com
-                                </a>
-                            </p>
-                        </div>
-                        <div className="detail">
-                            <h3 className="detail_title">Téléphone:</h3>
-                            <p className="detail_text">07.88.45.37.78</p>
-                        </div>
-                        <div className="detail">
-                            <h3 className="detail_title">Réseaux sociaux:</h3>
-                            <div className="detail_logo">
-                                <a className="detail_link" href="">
-                                    <img src={facebook} alt="logo facebook" />
-                                </a>
-                                <a className="detail_link" href="">
-                                    <img src={instagram} alt="logo instagram" />
-                                </a>
-                                <a className="detail_link" href="">
-                                    <img src={linkedin} alt="logo instagram" />
-                                </a>
-                                <a
-                                    className="detail_link"
-                                    href="https://github.com/ClementBerthier"
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    aria-label="github"
-                                >
-                                    <img src={github} alt="logo github" />
-                                </a>
+                                    <div className="field">
+                                        <label htmlFor="textarea_message">
+                                            Message
+                                            <span className="requiredField">
+                                                *
+                                            </span>
+                                        </label>
+                                        <textarea
+                                            placeholder="Votre message ici"
+                                            name="message"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                            id="textarea_message"
+                                        ></textarea>
+                                    </div>
+                                    <p className="requiredLegend">
+                                        * champs obligatoire
+                                    </p>
+                                </div>{" "}
                             </div>
                         </div>
+                        <div className="contact-detail">
+                            <div className="detail">
+                                <h3 className="detail_title">Adresse:</h3>
+                                <p className="detail_text">
+                                    12 bis rue du Commandant Wauthier,
+                                    <br /> Résidence l{"'"}
+                                    Infante, Bat C Appt 32, <br />
+                                    81100 Castres
+                                </p>
+                            </div>
+                            <div className="detail">
+                                <h3 className="detail_title">Email:</h3>
+                                <p className="detail_text">
+                                    <a
+                                        className="mailto"
+                                        href="mailto:clementberthierdeveloppeur@gmail.com"
+                                    >
+                                        clementberthierdeveloppeur@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+                            <div className="detail">
+                                <h3 className="detail_title">Téléphone:</h3>
+                                <p className="detail_text">07.88.45.37.78</p>
+                            </div>
+                            <div className="detail">
+                                <h3 className="detail_title">
+                                    Réseaux sociaux:
+                                </h3>
+                                <div className="detail_logo">
+                                    <a className="detail_link" href="">
+                                        <img
+                                            src={facebook}
+                                            alt="logo facebook"
+                                        />
+                                    </a>
+                                    <a className="detail_link" href="">
+                                        <img
+                                            src={instagram}
+                                            alt="logo instagram"
+                                        />
+                                    </a>
+                                    <a className="detail_link" href="">
+                                        <img
+                                            src={linkedin}
+                                            alt="logo instagram"
+                                        />
+                                    </a>
+                                    <a
+                                        className="detail_link"
+                                        href="https://github.com/ClementBerthier"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        aria-label="github"
+                                    >
+                                        <img src={github} alt="logo github" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>{" "}
+                    <div className="button_container" onClick={handleClick}>
+                        <ButtonElement
+                            className="form_button"
+                            id="contact"
+                            text="Envoyer"
+                            type="submit"
+                        />
                     </div>
-                </div>{" "}
-                <div className="button_container" onClick={handleClick}>
-                    <ButtonElement
-                        className="form_button"
-                        id="contact"
-                        text="Envoyer"
-                        type="submit"
-                    />
-                </div>
-            </form>
+                </form>
+            </div>
         </>
     );
 }

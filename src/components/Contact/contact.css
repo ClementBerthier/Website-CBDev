@@ -150,23 +150,30 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .contact_container {
-        .contact {
-            flex-direction: column;
-            .form_container {
-                width: 100%;
-                margin: 0;
-                .contact_form {
-                    .firstSection {
-                        flex-direction: column;
-                        .field {
-                            width: 100%;
-                        }
+    .contact {
+        flex-direction: column !important;
+        .form_container {
+            width: 100% !important;
+            margin: 0;
+            .contact_form {
+                .firstSection {
+                    flex-direction: column;
+                    .field {
+                        width: 100%;
                     }
                 }
             }
-            .contact-detail {
-                width: 100%;
+        }
+        .contact-detail {
+            width: 100% !important;
+            margin: 2rem 0;
+            justify-content: center;
+            align-items: center;
+            .detail {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

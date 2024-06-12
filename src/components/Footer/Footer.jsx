@@ -3,6 +3,7 @@ import facebook from "/images/whitefacebook.svg";
 import instagram from "/images/whiteinsta.svg";
 import linkedin from "/images/whitelinkedin.svg";
 import github from "/images/whitegithub.svg";
+import { Link } from "react-scroll";
 
 export default function Footer() {
     return (
@@ -92,30 +93,50 @@ export default function Footer() {
                                     Liens
                                 </h3>
                                 <div className="footer_navigation_link_container">
-                                    <a
+                                    <Link
+                                        id="headerHome"
                                         className="footer_navigation_link"
-                                        href=""
+                                        to="home"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}
                                     >
                                         Accueil
-                                    </a>
-                                    <a
+                                    </Link>
+                                    <Link
+                                        id="headerAboutMe"
                                         className="footer_navigation_link"
-                                        href=""
+                                        to="aboutMe"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}
                                     >
                                         A propos
-                                    </a>
-                                    <a
+                                    </Link>
+                                    <Link
+                                        id="hearderServices"
                                         className="footer_navigation_link"
-                                        href=""
+                                        to="services"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-229}
+                                        duration={500}
                                     >
                                         Services
-                                    </a>
-                                    <a
+                                    </Link>
+                                    <Link
+                                        id="headerContact"
                                         className="footer_navigation_link"
-                                        href=""
+                                        to="contact"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-250}
+                                        duration={500}
                                     >
-                                        Contact
-                                    </a>
+                                        Contact{" "}
+                                    </Link>
                                 </div>
                             </div>
                         </div>

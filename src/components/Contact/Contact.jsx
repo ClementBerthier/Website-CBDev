@@ -223,7 +223,7 @@ export default function Contact() {
                             <div className="contact_form" id="contact_form">
                                 <div className="firstSection">
                                     <FormField>
-                                        <label htmlFor="lastname">Nom:</label>
+                                        <label htmlFor="lastname">Nom</label>
                                         <input
                                             placeholder="Votre nom"
                                             name="user_lastname"

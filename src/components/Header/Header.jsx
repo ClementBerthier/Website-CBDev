@@ -116,7 +116,7 @@ export default function Header() {
                                     to="services"
                                     spy={true}
                                     smooth={true}
-                                    offset={-100}
+                                    offset={-165}
                                     duration={500}
                                     onClick={handleClick}
                                 >
@@ -128,7 +128,7 @@ export default function Header() {
                                     to="contact"
                                     spy={true}
                                     smooth={true}
-                                    offset={-180}
+                                    offset={-130}
                                     duration={500}
                                     onClick={handleClick}
                                 >
@@ -187,7 +187,7 @@ export default function Header() {
                                     to="services"
                                     spy={true}
                                     smooth={true}
-                                    offset={-310}
+                                    offset={-229}
                                     duration={500}
                                 >
                                     Services
@@ -202,7 +202,7 @@ export default function Header() {
                                     to="contact"
                                     spy={true}
                                     smooth={true}
-                                    offset={-230}
+                                    offset={-220}
                                     duration={500}
                                 >
                                     Contact

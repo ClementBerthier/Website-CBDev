@@ -13,7 +13,15 @@ export default function ContactBanner() {
                     <p className="contactBanner_text">
                         N{"'"}hésitez pas à nous contacter
                     </p>
-                    <Link to="contact">
+                    <Link
+                        to="contact"
+                        id="headerContact"
+                        className="footer_navigation_link"
+                        spy={true}
+                        smooth={true}
+                        offset={-250}
+                        duration={500}
+                    >
                         <Button id="contact" text="Contact" />
                     </Link>
                 </div>

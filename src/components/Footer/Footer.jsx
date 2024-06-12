@@ -18,9 +18,9 @@ export default function Footer() {
                                 alt="logo entreprise"
                             />
                             <p className="motto">
-                                Votre <span className="greenText">vision</span>,
+                                Votre <span className="mottoText">vision</span>,
                                 notre{" "}
-                                <span className="greenText">création</span>
+                                <span className="mottoText">création</span>
                             </p>
                         </div>
                         <div className="footer_section_division_second">
@@ -32,8 +32,11 @@ export default function Footer() {
                                 <a className="footer_link" href="">
                                     <img src={instagram} alt="logo instagram" />
                                 </a>
-                                <a className="footer_link" href="">
-                                    <img src={linkedin} alt="logo instagram" />
+                                <a
+                                    className="footer_link"
+                                    href="https://www.linkedin.com/in/cl%C3%A9ment-berthier/"
+                                >
+                                    <img src={linkedin} alt="logo linkedin" />
                                 </a>
                                 <a
                                     className="footer_link"
@@ -55,34 +58,34 @@ export default function Footer() {
                                 </h3>
                                 <div className="footer_navigation_link_container">
                                     <a
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         href=""
                                     >
-                                        Site
+                                        {"> "}Site
                                     </a>
                                     <a
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         href=""
                                     >
-                                        Application
+                                        {"> "}Application
                                     </a>
                                     <a
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         href=""
                                     >
-                                        Refonte
+                                        {"> "}Refonte
                                     </a>
                                     <a
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         href=""
                                     >
-                                        Maintenance
+                                        {"> "}Maintenance
                                     </a>
                                     <a
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         href=""
                                     >
-                                        SEO
+                                        {"> "}SEO
                                     </a>
                                 </div>
                             </div>
@@ -95,47 +98,47 @@ export default function Footer() {
                                 <div className="footer_navigation_link_container">
                                     <Link
                                         id="headerHome"
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         to="home"
                                         spy={true}
                                         smooth={true}
                                         offset={-70}
                                         duration={500}
                                     >
-                                        Accueil
+                                        {"> "}Accueil
                                     </Link>
                                     <Link
                                         id="headerAboutMe"
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         to="aboutMe"
                                         spy={true}
                                         smooth={true}
                                         offset={-70}
                                         duration={500}
                                     >
-                                        A propos
+                                        {"> "}A propos
                                     </Link>
                                     <Link
                                         id="hearderServices"
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         to="services"
                                         spy={true}
                                         smooth={true}
                                         offset={-229}
                                         duration={500}
                                     >
-                                        Services
+                                        {"> "}Services
                                     </Link>
                                     <Link
                                         id="headerContact"
-                                        className="footer_navigation_link"
+                                        className="footer_navigation_link pointer"
                                         to="contact"
                                         spy={true}
                                         smooth={true}
                                         offset={-250}
                                         duration={500}
                                     >
-                                        Contact{" "}
+                                        {"> "}Contact{" "}
                                     </Link>
                                 </div>
                             </div>

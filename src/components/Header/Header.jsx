@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 export default function Header() {
     const [Scrolled, setScrolled] = useState("header");
-    const [nameOfLogo, setNameOfLogo] = useState("Logo_CBDev.svg");
+    const [nameOfLogo, setNameOfLogo] = useState("Logo_CBDev_darkPurple.png");
     const [headerBurgerScrolled, setHeaderBurgerScrolled] =
         useState("headerBurger");
 

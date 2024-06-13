@@ -1,5 +1,5 @@
 .button {
-    background: linear-gradient(90deg, #d2b48c, #8b4513);
+    background: linear-gradient(90deg, #796160, #3d3136);
     border: none;
     color: white;
     padding: 1.5rem 3.6rem;
@@ -12,12 +12,12 @@
     border-radius: 30px;
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
 }
 
 .button::before {
     content: "";
-    background: linear-gradient(90deg, #729a61, #2e5339);
+    background: linear-gradient(90deg, #b59b9e, #796160);
     position: absolute;
     top: 0;
     left: -100%;

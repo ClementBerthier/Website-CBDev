@@ -26,6 +26,7 @@ export default function ContactBanner() {
                     </Link>
                 </div>
             </div>
+            <div className="whitefade"></div>
         </div>
     );
 }

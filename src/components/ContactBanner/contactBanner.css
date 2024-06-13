@@ -52,3 +52,13 @@
         z-index: 1;
     }
 }
+
+@media screen and (max-width: 810px) {
+    .contactBanner_container {
+        background-image: url(/images/deskBackground.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        background-position: center;
+    }
+}

@@ -50,6 +50,12 @@ export default function Header() {
 
         if (destination === "headerHome") {
             navigate("/", { state: { scrollTo: "home" } });
+        } else if (destination === "headerAboutMe") {
+            navigate("/", { state: { scrollTo: "aboutMe" } });
+        } else if (destination === "hearderServices") {
+            navigate("/", { state: { scrollTo: "services" } });
+        } else if (destination === "headerContact") {
+            navigate("/", { state: { scrollTo: "contact" } });
         }
     };
 
@@ -198,6 +204,7 @@ export default function Header() {
                                     smooth={true}
                                     offset={-229}
                                     duration={500}
+                                    onClick={handleClick}
                                 >
                                     Services
                                     <div className="borderLine"></div>
@@ -213,6 +220,7 @@ export default function Header() {
                                     smooth={true}
                                     offset={-220}
                                     duration={500}
+                                    onClick={handleClick}
                                 >
                                     Contact
                                     <div className="borderLine"></div>

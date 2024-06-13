@@ -3,10 +3,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./aboutMe.css";
+import { useEffect, useState } from "react";
 
 //TODO: mettre les liens de frontend et backend
 
 export default function AboutMe() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 810);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 810);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     const slideSettings = {
         dots: false,
         infinite: true,
@@ -235,7 +249,11 @@ export default function AboutMe() {
                             </a>
                         </div>
                     </Slider>
-                    <div className="whiteboard"></div>
+                    {!isMobile ? (
+                        <div className="whiteboard"></div>
+                    ) : (
+                        <div className="whiteboardMobile"></div>
+                    )}
                 </div>
             </div>
         </>

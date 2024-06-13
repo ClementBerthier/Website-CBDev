@@ -114,6 +114,18 @@
             background-position: center;
             z-index: -1;
         }
+        .whiteboardMobile {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(/images/deskBackground.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+        }
 
         .description_container:hover {
             transform: translateY(-15px);

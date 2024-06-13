@@ -1,6 +1,5 @@
 import Header from "../Header/Header.jsx";
 import HomePage from "/images/HomePage.jpg";
-import SmallHomePage from "/images/SmallHomePage.png";
 import Waves from "../Waves/Waves.jsx";
 import "./home.css";
 import { useEffect, useState } from "react";

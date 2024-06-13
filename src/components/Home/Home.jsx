@@ -90,9 +90,13 @@ export default function Home() {
                                 <span className="spanColor">Développeur</span>
                             </h2>
                             <h2 className="subTitle">
-                                Votre <span className="spanColor">vision</span>,
-                                notre
-                                <span className="spanColor"> création</span>
+                                Votre{" "}
+                                <span className="spanColor little">vision</span>
+                                , notre
+                                <span className="spanColor little">
+                                    {" "}
+                                    création
+                                </span>
                             </h2>
                         </div>
                     </div>

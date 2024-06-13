@@ -40,7 +40,10 @@
 
             .spanColor {
                 color: #3d3136;
-                text-shadow: 0 0 4rem rgba(255, 255, 255, 0.813);
+                text-shadow: 0 0 4rem rgb(255, 255, 255);
+            }
+            .little {
+                text-shadow: 0 0 1.5rem rgb(255, 255, 255);
             }
         }
     }

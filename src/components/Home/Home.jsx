@@ -57,6 +57,7 @@ export default function Home() {
 
     return (
         <>
+        
             <Header />
             <div>
                 <section className="home" id="home">

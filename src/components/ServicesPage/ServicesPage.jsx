@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import "./ServicesPage.css";
+import Header from "../Header/Header.jsx";
 
 export default function ServicesPage() {
     const location = useLocation();
@@ -9,7 +10,7 @@ export default function ServicesPage() {
 
     return (
         <div>
-            <div>page</div>
+            <Header />
         </div>
     );
 }

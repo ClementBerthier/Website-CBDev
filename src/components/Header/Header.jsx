@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+    const navigate = useNavigate();
     const [Scrolled, setScrolled] = useState("header");
     const [nameOfLogo, setNameOfLogo] = useState("Logo_CBDev_darkPurple.png");
     const [headerBurgerScrolled, setHeaderBurgerScrolled] =
@@ -41,9 +43,14 @@ export default function Header() {
 
     window.addEventListener("scroll", handleScroll);
 
-    const handleClick = () => {
-        console.log("click");
+    const handleClick = (e) => {
+        const destination = e.target.id;
+        console.log("click", e.target.id);
         setIsBurgerOpen(!isBurgerOpen);
+
+        if (destination === "headerHome") {
+            navigate("/", { state: { scrollTo: "home" } });
+        }
     };
 
     return (
@@ -160,6 +167,7 @@ export default function Header() {
                                     smooth={true}
                                     offset={-70}
                                     duration={500}
+                                    onClick={handleClick}
                                 >
                                     Accueil
                                     <div className="borderLine"></div>
@@ -175,6 +183,7 @@ export default function Header() {
                                     smooth={true}
                                     offset={-70}
                                     duration={500}
+                                    onClick={handleClick}
                                 >
                                     A propos
                                     <div className="borderLine"></div>

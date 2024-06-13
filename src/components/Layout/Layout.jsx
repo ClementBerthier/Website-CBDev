@@ -39,10 +39,10 @@ export default function Layout() {
             <div ref={servicesRef}>
                 <Services />
             </div>
+            <ContactBanner />
             <div ref={contactRef}>
                 <Contact />
             </div>
-            <ContactBanner />
             {/* <Articles /> */}
             {/* <FAQs /> */}
 

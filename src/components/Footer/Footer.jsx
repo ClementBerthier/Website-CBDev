@@ -35,6 +35,9 @@ export default function Footer() {
                                 <a
                                     className="footer_link"
                                     href="https://www.linkedin.com/in/cl%C3%A9ment-berthier/"
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    aria-label="linkedin"
                                 >
                                     <img src={linkedin} alt="logo linkedin" />
                                 </a>

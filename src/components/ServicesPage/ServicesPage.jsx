@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import "./ServicesPage.css";
 import Header from "../Header/Header.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 export default function ServicesPage() {
     const location = useLocation();
@@ -9,8 +10,12 @@ export default function ServicesPage() {
     console.log(id);
 
     return (
-        <div>
+        <>
             <Header />
-        </div>
+            <div className="servicePage">
+                <div className="servicePage_container">blablabla</div>
+                <Footer />
+            </div>
+        </>
     );
 }

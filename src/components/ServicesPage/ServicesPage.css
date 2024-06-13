@@ -1,0 +1,10 @@
+.servicePage {
+    position: absolute;
+    top: 9rem;
+    height: 100vh;
+    .servicePage_container {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

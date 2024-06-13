@@ -359,10 +359,16 @@ export default function Contact() {
                                             alt="logo instagram"
                                         />
                                     </a>
-                                    <a className="detail_link" href="">
+                                    <a
+                                        className="detail_link"
+                                        href="https://www.linkedin.com/in/cl%C3%A9ment-berthier/"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                        aria-label="linkedin"
+                                    >
                                         <img
                                             src={linkedin}
-                                            alt="logo instagram"
+                                            alt="logo linkedin"
                                         />
                                     </a>
                                     <a

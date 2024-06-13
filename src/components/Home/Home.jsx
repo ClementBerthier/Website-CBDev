@@ -96,8 +96,8 @@ export default function Home() {
                             </h2>
                         </div>
                     </div>
-                    <div className="whitefade"></div>
                     <Waves />
+                    <div className="whitefade"></div>
                 </section>
             </div>
         </>

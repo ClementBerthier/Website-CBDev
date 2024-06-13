@@ -67,7 +67,7 @@ export default function Home() {
                                 !isLandscape ? (
                                     <img
                                         className="homePicture"
-                                        src={SmallHomePage}
+                                        src={HomePage}
                                         alt="Desk Picture"
                                     />
                                 ) : (

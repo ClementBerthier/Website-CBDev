@@ -1,5 +1,5 @@
 import Header from "../Header/Header.jsx";
-import HomePage from "/images/HomePage.png";
+import HomePage from "/images/HomePage.jpg";
 import SmallHomePage from "/images/SmallHomePage.png";
 import Waves from "../Waves/Waves.jsx";
 import "./home.css";
@@ -97,6 +97,7 @@ export default function Home() {
                             </h2>
                         </div>
                     </div>
+                    <div className="test"></div>
                     <Waves />
                 </section>
             </div>

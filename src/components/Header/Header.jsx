@@ -29,7 +29,7 @@ export default function Header() {
             setNameOfLogo("Logo_CBDev_white.png");
         } else {
             setScrolled("header ");
-            setNameOfLogo("Logo_CBDev.svg");
+            setNameOfLogo("Logo_CBDev_darkPurple.png");
         }
 
         if (!isBurgerOpen && window.scrollY > 1) {
@@ -145,7 +145,7 @@ export default function Header() {
                             {
                                 <img
                                     className="logo"
-                                    src={`/images/${nameOfLogo}`}
+                                    src={`/images/Logo_CBDev_white.png`}
                                     alt="Logo"
                                 />
                             }

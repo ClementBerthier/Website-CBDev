@@ -1,14 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header2.css";
+
+//TODO: ajouter les chemin de chaque liens
+//TODO: ajouter le chemin du bouton contact
 
 export default function Header2() {
     const [burgerOpen, setBurgerOpen] = useState(false);
-    const [hiddenClass, setHiddenClass] = useState("hidden");
-    const [crossClass, setCrossClass] = useState("cross");
+    const [hiddenClass, setHiddenClass] = useState("");
+    const [crossClass, setCrossClass] = useState("");
 
     const openBurger = () => {
         setBurgerOpen(!burgerOpen);
+    };
 
+    useEffect(() => {
         if (burgerOpen) {
             setHiddenClass("hidden");
             setCrossClass("cross");
@@ -16,7 +21,8 @@ export default function Header2() {
             setHiddenClass("");
             setCrossClass("");
         }
-    };
+    }, [burgerOpen]);
+
     return (
         <div className="Header">
             <div className="header_banner">

@@ -35,7 +35,7 @@
     }
     .header_navigation {
         background-color: #ffffff;
-        height: 10rem;
+        height: 8rem;
         display: flex;
         align-items: center;
         .header_navigation_container {
@@ -85,7 +85,7 @@
                     text-decoration: none;
                     padding: 1.5rem 3rem;
                     border-radius: 30px;
-                    margin: 0 10rem;
+                    margin: 0 8rem;
                     background-color: blue;
                     color: white;
                 }

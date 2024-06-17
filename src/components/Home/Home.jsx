@@ -1,4 +1,4 @@
-import Header from "../Header/Header.jsx";
+//import Header from "../Header/Header.jsx";
 import HomePage from "/images/HomePage.jpg";
 import Waves from "../Waves/Waves.jsx";
 import "./home.css";
@@ -57,8 +57,7 @@ export default function Home() {
 
     return (
         <>
-        
-            <Header />
+            {/* <Header /> */}
             <div>
                 <section className="home" id="home">
                     <div className="first_container">
@@ -102,7 +101,7 @@ export default function Home() {
                         </div>
                     </div>
                     <Waves />
-                    <div className="whitefade"></div>
+                    {/* <div className="whitefade"></div> */}
                 </section>
             </div>
         </>

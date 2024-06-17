@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer.jsx";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import AboutMe2 from "../AboutMe2/AboutMe2.jsx";
+import Header2 from "../Header/Header2.jsx";
 
 export default function Layout() {
     const location = useLocation();
@@ -30,6 +31,9 @@ export default function Layout() {
 
     return (
         <>
+            <div>
+                <Header2 />
+            </div>
             <div ref={homeRef}>
                 <Home />
             </div>

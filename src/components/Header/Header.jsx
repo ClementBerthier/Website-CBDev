@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./header.css";
+import "./Header.css";
 import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 

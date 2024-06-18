@@ -86,6 +86,7 @@
 @media screen and (max-width: 860px) {
     .home_container {
         .home {
+            padding: 20rem 1rem;
             flex-direction: column;
             .home_presentation {
                 width: 100%;
@@ -121,6 +122,8 @@
 @media screen and (max-width: 444px) {
     .home_container {
         .home {
+            padding: 18rem 1rem;
+
             .home_presentation {
                 .presentation_name {
                     font-size: calc(2.4rem + 2vw) !important;

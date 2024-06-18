@@ -4,11 +4,13 @@
     --steel-blue: #4682b4;
     --dodger-blue: #1e90ff;
     --light-blue: #add8e6;
+    --demi-light-blue: #e5f0fb;
     --navy-blue: #0606c2;
     --grey-blue: #f9fafe;
     --fake-black: #1c1c1c;
     --smooth-grey: #c5c5c58b;
     --white: #ffffff;
+    --black: #000000;
 }
 
 /*--------------------FONTS-----------------------*/
@@ -24,12 +26,19 @@
     --header-banner: var(--fake-black);
     --header-navigation: var(--white);
     --home-container: var(--grey-blue);
+    --services: var(--demi-light-blue);
+    --services_name_container: var(--white);
+    --services_name_container: var(--white);
+    --services_name_active: var(--dodger-blue);
+    --description_text_container: var(--white);
+    --description_picture_container: var(--white);
 }
 
 /*--------------------FONT-COLORS-----------------------*/
 
 :root {
     --mail-adress: var(--white);
+    --text-span: var(--dodger-blue);
 }
 
 /*--------------------BORDERS-COLORS-----------------------*/

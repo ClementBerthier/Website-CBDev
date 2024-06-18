@@ -9,17 +9,18 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 25rem 1rem;
+        padding: 30rem 1rem 0 1rem;
         gap: 3rem;
         .home_presentation {
             width: 50%;
+
             .presentation_name {
                 font-size: calc(3.5rem + 2vw);
                 font-weight: 500;
                 color: #000;
                 margin-bottom: 1rem;
                 white-space: nowrap;
-                padding: 3rem 2rem;
+                padding: 0rem 2rem 3rem 2rem;
                 font-family: "Poppins", sans-serif;
             }
             .presentation_paragraph {
@@ -63,6 +64,31 @@
             }
         }
     }
+    .home_scroller {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 0 0 0;
+        .arrow_picture {
+            width: 5%;
+            height: 30rem;
+            border-radius: 30px;
+            .picture {
+                animation: goDown 3s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes goDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -86,7 +112,7 @@
 @media screen and (max-width: 860px) {
     .home_container {
         .home {
-            padding: 20rem 1rem;
+            padding: 20rem 1rem 0 1rem;
             flex-direction: column;
             .home_presentation {
                 width: 100%;
@@ -116,13 +142,20 @@
                 }
             }
         }
+        .home_scroller {
+            padding: 4rem 0 0 0;
+            .arrow_picture {
+                width: 5%;
+                height: 15rem;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 444px) {
     .home_container {
         .home {
-            padding: 18rem 1rem;
+            padding: 18rem 1rem 0 1rem;
 
             .home_presentation {
                 .presentation_name {

@@ -1,5 +1,7 @@
 import "./Home2.css";
 
+//TODO: lié le bouton plus d'info avec sa destination
+
 export default function Home2() {
     return (
         <div className="home_container">
@@ -15,6 +17,7 @@ export default function Home2() {
                         projet web et vous proposer des solutions adaptées a vos
                         besoins.
                     </p>
+
                     <button className="information_button">
                         Plus d{"'"}infos
                     </button>
@@ -23,6 +26,15 @@ export default function Home2() {
                     <img
                         src="/images/avatar_dev.png"
                         alt="developper_illustration"
+                    />
+                </div>
+            </div>
+            <div className="home_scroller">
+                <div className="arrow_picture">
+                    <img
+                        className="picture"
+                        src="/images/arrow-down.svg"
+                        alt="arrow down"
                     />
                 </div>
             </div>

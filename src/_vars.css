@@ -1,0 +1,48 @@
+/*--------------------COLORS-----------------------*/
+
+:root {
+    --steel-blue: #4682b4;
+    --dodger-blue: #1e90ff;
+    --light-blue: #add8e6;
+    --navy-blue: #0606c2;
+    --grey-blue: #f9fafe;
+    --fake-black: #1c1c1c;
+    --smooth-grey: #c5c5c58b;
+    --white: #ffffff;
+}
+
+/*--------------------FONTS-----------------------*/
+
+:root {
+    --font-text: "Open Sans", sans-serif;
+    --font-title: "Poppins", sans-serif;
+}
+
+/*--------------------BACKGROUND-COLORS-----------------------*/
+
+:root {
+    --header-banner: var(--fake-black);
+    --header-navigation: var(--white);
+    --home-container: var(--grey-blue);
+}
+
+/*--------------------FONT-COLORS-----------------------*/
+
+:root {
+    --mail-adress: var(--white);
+}
+
+/*--------------------BORDERS-COLORS-----------------------*/
+
+:root {
+    --border-Header: var(--smooth-grey);
+}
+
+/*--------------------BUTTONS-COLORS-----------------------*/
+
+:root {
+    --button-background: var(--dodger-blue);
+    --button-color: var(--white);
+    --button-hover-background: var(--navy-blue);
+    --button-hover-color: var(--white);
+}

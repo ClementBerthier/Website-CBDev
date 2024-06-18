@@ -1,12 +1,12 @@
-import Home from "../Home/Home.jsx";
+//import Home from "../Home/Home.jsx";
 import Services from "../Services/Services.jsx";
 import ContactBanner from "../ContactBanner/ContactBanner.jsx";
 import Contact from "../Contact/Contact.jsx";
 import Footer from "../Footer/Footer.jsx";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import AboutMe2 from "../AboutMe2/AboutMe2.jsx";
 import Header2 from "../Header/Header2.jsx";
+import Home2 from "../Home/Home2.jsx";
 
 export default function Layout() {
     const location = useLocation();
@@ -35,11 +35,11 @@ export default function Layout() {
                 <Header2 />
             </div>
             <div ref={homeRef}>
-                <Home />
+                <Home2 />
             </div>
-            <div ref={aboutMeRef}>
+            {/*  <div ref={aboutMeRef}>
                 <AboutMe2 />
-            </div>
+            </div> */}
             <div ref={servicesRef}>
                 <Services />
             </div>

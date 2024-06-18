@@ -1,6 +1,10 @@
 .Header {
+    border-bottom: 1px solid var(--border-Header);
+    position: fixed;
+    width: 100%;
+    font-family: var(--font-title);
     .header_banner {
-        background-color: #1c1c1c;
+        background-color: var(--header-banner);
         .header_banner_container {
             max-width: 1700px;
             width: 90%;
@@ -24,7 +28,7 @@
                 .mail_adress {
                     font-size: 1.3rem;
                     font-weight: 300;
-                    color: #ffffff;
+                    color: var(--mail-adress);
                     text-decoration: none;
                 }
                 .mail_adress:hover {
@@ -34,7 +38,7 @@
         }
     }
     .header_navigation {
-        background-color: #ffffff;
+        background-color: var(--header-navigation);
         height: 8rem;
         display: flex;
         align-items: center;
@@ -86,11 +90,14 @@
                     padding: 1.5rem 3rem;
                     border-radius: 30px;
                     margin: 0 8rem;
-                    background-color: blue;
-                    color: white;
+                    background-color: var(--button-background);
+                    color: var(--button-color);
                 }
                 .contact_link:hover {
                     cursor: pointer;
+                    background-color: var(--button-hover-background);
+                    color: var(--button-hover-color);
+                    transition: all 0.5s ease;
                 }
                 .burger_button_container {
                     display: none;
@@ -154,7 +161,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 860px) {
     .Header {
         .header_banner {
             .header_banner_container {

@@ -8,12 +8,12 @@ export default function Home2() {
             <div className="home">
                 <div className="home_presentation">
                     <h2 className="presentation_name">
-                        Clément Berthier:
+                        Clément Berthier
                         <br className="firstBR" /> Développeur Web
                         <br /> Freelance.
                     </h2>
                     <p className="presentation_paragraph">
-                        Je suis à votre écoute pour vous aider a réalisé votre
+                        Je suis à votre écoute pour vous aider à réaliser votre
                         projet web et vous proposer des solutions adaptées a vos
                         besoins.
                     </p>

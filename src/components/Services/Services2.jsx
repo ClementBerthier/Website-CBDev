@@ -1,6 +1,10 @@
 import "./Services2.css";
 
 //TODO: chercher les bonne image a mettre dans le descption picture container
+//TODO: ajouter les liens pour les boutons plus d'infos
+//TODO: faire la logique d'active sur les services name
+//TODO: rendre dynamique le changement d'information en fonction du service name
+//TODO: faire un montage de l'image du site pour le rendu dans service picture
 
 export default function Services2() {
     return (

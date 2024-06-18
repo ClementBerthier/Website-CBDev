@@ -118,3 +118,33 @@
         }
     }
 }
+
+@media screen and (max-width: 860px) {
+    .services_description_container {
+        flex-direction: column !important;
+        .description_text_container {
+            width: 100% !important;
+            height: auto !important;
+            .logo {
+                width: 4rem !important;
+                height: 4rem !important;
+            }
+        }
+        .description_picture_container {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services_name_container {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 50% !important;
+        .services_name {
+            padding: 1rem !important;
+            font-size: calc(0.8rem + 0.5vw) !important;
+        }
+    }
+}

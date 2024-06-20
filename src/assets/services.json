@@ -21,6 +21,14 @@
         "title": "Donnez une nouvelle vie à vos applications et sites web",
 
         "description": "Modernisation de l'interface utilisateur, amélioration des performances, mise à jour des fonctionnalités... Nous nous occupons de la refonte et de la maintenance de vos applications et sites web, que ce soit pour corriger des bugs, optimiser la vitesse ou intégrer de nouvelles technologies. Découvrez comment nos services peuvent revitaliser vos solutions numériques.",
+        "logo": "/images/tools.svg",
+        "oldPicture": "/images/old.png",
+        "newPicture": "/images/new.png"
+    },
+    "SEO": {
+        "title": "Maximisez votre impact numérique grâce au SEO",
+
+        "description": "Analyse de mots-clés, optimisation du contenu, amélioration de la structure du site... Nous mettons en place des stratégies SEO efficaces pour augmenter votre visibilité sur les moteurs de recherche. Découvrez comment nos techniques peuvent propulser votre site au sommet des résultats de recherche",
         "logo": "/images/application.svg",
         "picture": "/images/pg4-large.png"
     }

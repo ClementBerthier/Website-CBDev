@@ -10,6 +10,7 @@ import { useState } from "react";
 
 export default function Services2() {
     const [isSite, setIsSite] = useState(true);
+    const [isRM, setIsRM] = useState(false);
     const [jsonData, setJsonData] = useState(services.site);
     const [activeSite, setActiveSite] = useState("active");
     const [activeAppli, setActiveAppli] = useState("");
@@ -42,10 +43,14 @@ export default function Services2() {
 
         if (dataElement === "R&M") {
             setJsonData(services.RM);
+            setIsRM(true);
             setActiveRM("active");
             setActiveSite("");
             setActiveAppli("");
             setActiveSEO("");
+        } else {
+            setIsRM(false);
+            setActiveRM("");
         }
 
         if (dataElement === "SEO") {
@@ -116,13 +121,32 @@ export default function Services2() {
 
                         <div className="link_button">+</div>
                     </div>
-                    <div className="description_picture_container">
-                        <img
-                            className="picture"
-                            src={jsonData.picture}
-                            alt="picture description service"
-                        />
-                    </div>
+                    {isRM ? (
+                        <div className="description_picture_container">
+                            <div className="picture_container">
+                                <img
+                                    className="oldPicture"
+                                    src={jsonData.oldPicture}
+                                    alt="ancien site"
+                                />
+                            </div>
+                            <div className="picture_container--2">
+                                <img
+                                    className="newPicture                                    "
+                                    src={jsonData.newPicture}
+                                    alt="nouveau site"
+                                />
+                            </div>
+                        </div>
+                    ) : (
+                        <div className="description_picture_container">
+                            <img
+                                className="picture"
+                                src={jsonData.picture}
+                                alt="picture description service"
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

@@ -119,7 +119,6 @@
 
 @media screen and (orientation: portrait) and (max-width: 860px) {
     .home_container {
-        height: 100vh !important;
         .home {
             padding: 10rem 1rem 0 1rem !important;
             flex-direction: column;

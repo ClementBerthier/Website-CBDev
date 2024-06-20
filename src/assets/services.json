@@ -1,0 +1,27 @@
+{
+    "site": {
+        "title": "Votre identité numérique sur mesure",
+        "firstSpan": "Sites vitrine",
+        "secondSpan": "blogs",
+        "thirdSpan": "portfolios",
+        "fourthSpan": "CV en ligne",
+        "fifthSpan": "sites d'évènements",
+        "description": "... Que vous soyez un particulier ou une entreprise, votre image numérique est importante. Découvrez plus en détail nos services de conception de site web.",
+        "logo": "/images/code.svg",
+        "picture": "/images/site-view-large.png"
+    },
+    "application": {
+        "title": "Optimisez vos projets avec des applications sur mesure",
+
+        "description": "Applications de gestion de projets, outils d'administration en ligne, bases de données interactives... Que vous soyez un particulier ou une entreprise, nous créons des applications web qui répondent précisément à vos besoins. Découvrez plus en détail nos services de conception d'application web.",
+        "logo": "/images/application.svg",
+        "picture": "/images/pg4-large.png"
+    },
+    "RM": {
+        "title": "Donnez une nouvelle vie à vos applications et sites web",
+
+        "description": "Modernisation de l'interface utilisateur, amélioration des performances, mise à jour des fonctionnalités... Nous nous occupons de la refonte et de la maintenance de vos applications et sites web, que ce soit pour corriger des bugs, optimiser la vitesse ou intégrer de nouvelles technologies. Découvrez comment nos services peuvent revitaliser vos solutions numériques.",
+        "logo": "/images/application.svg",
+        "picture": "/images/pg4-large.png"
+    }
+}

@@ -50,7 +50,7 @@
 
             .description_text_container {
                 width: 40%;
-                height: 45rem;
+                height: 50rem;
                 background-color: var(--description_text_container);
                 border-radius: 10px;
                 display: flex;
@@ -71,7 +71,7 @@
                     padding: 0 2rem;
                 }
                 .text {
-                    font-size: calc(0.8rem + 0.5vw);
+                    font-size: calc(0.7rem + 0.5vw);
                     font-family: var(--font-text);
                     line-height: 2.5rem;
                     margin: 0 auto;
@@ -103,7 +103,7 @@
             }
             .description_picture_container {
                 width: 60%;
-                height: 45rem;
+                height: 50rem;
                 background-color: var(--description_picture_container);
                 border-radius: 10px;
                 box-shadow: 0 0 10px 0 #0606c228;
@@ -157,11 +157,47 @@
         }
 
         .description_text_container {
-            height: 40rem !important;
+            height: 45rem !important;
+            .logo {
+                width: 4rem !important;
+                height: 4rem !important;
+                margin: 1rem 0rem 1rem 1rem;
+            }
+            .text {
+                font-size: calc(0.7rem + 0.5vw);
+                font-family: var(--font-text);
+                line-height: 2rem !important;
+                margin: 0 auto;
+                padding: 2rem;
+                span {
+                    color: var(--text-span);
+                    font-weight: 500;
+                }
+                span:hover {
+                    cursor: pointer;
+                }
+            }
         }
 
         .description_picture_container {
-            height: 40rem !important;
+            height: 45rem !important;
+        }
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .services_description_container {
+        flex-direction: column !important;
+        .description_text_container {
+            width: 100% !important;
+            height: auto !important;
+            .logo {
+                width: 4rem !important;
+                height: 4rem !important;
+            }
+        }
+        .description_picture_container {
+            width: 100% !important;
+            height: auto !important;
         }
     }
 }

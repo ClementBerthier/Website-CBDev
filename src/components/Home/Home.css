@@ -5,11 +5,12 @@
     .home {
         max-width: 1700px;
         width: 100%;
+
         margin: 0rem auto;
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 30rem 1rem 0 1rem;
+        padding: 38rem 1rem 0 1rem;
         gap: 3rem;
         .home_presentation {
             width: 50%;
@@ -91,8 +92,10 @@
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (orientation: portrait) and (max-width: 1280px) {
     .home {
+        padding: 25rem 1rem 0 1rem !important;
+
         .home_presentation {
             .presentation_name {
                 font-size: calc(2.8rem + 1vw) !important;
@@ -108,11 +111,17 @@
         }
     }
 }
+@media screen and (orientation: landscape) and (max-width: 1800px) {
+    .home {
+        padding: 14rem 1rem 0 1rem !important;
+    }
+}
 
-@media screen and (max-width: 860px) {
+@media screen and (orientation: portrait) and (max-width: 860px) {
     .home_container {
+        height: 100vh !important;
         .home {
-            padding: 20rem 1rem 0 1rem;
+            padding: 10rem 1rem 0 1rem !important;
             flex-direction: column;
             .home_presentation {
                 width: 100%;
@@ -152,7 +161,7 @@
     }
 }
 
-@media screen and (max-width: 444px) {
+@media screen and (orientation: portrait) and (max-width: 444px) {
     .home_container {
         .home {
             padding: 18rem 1rem 0 1rem;

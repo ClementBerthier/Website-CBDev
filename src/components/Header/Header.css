@@ -164,7 +164,7 @@
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (orientation: portrait) and (max-width: 860px) {
     .Header {
         .header_banner {
             .header_banner_container {
@@ -177,7 +177,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (orientation: portrait) and (max-width: 860px) {
     .Header {
         .header_banner {
             height: 3rem;
@@ -194,12 +194,43 @@
                         .company_logo {
                             width: 4rem;
                             height: 4rem;
+                            padding: 0.3rem;
                         }
                     }
                 }
                 .section_contact {
                     .contact_link {
                         display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1180px) {
+    .Header {
+        .header_banner {
+            height: 3rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .header_navigation {
+            height: 5.5rem;
+            .header_navigation_container {
+                .section_links {
+                    .logo_container {
+                        .company_logo {
+                            width: 4.5rem;
+                            height: 4.5rem;
+                            padding: 0.3rem;
+                        }
+                    }
+                }
+                .section_contact {
+                    .contact_link {
+                        padding: 1rem 2rem;
                     }
                 }
             }

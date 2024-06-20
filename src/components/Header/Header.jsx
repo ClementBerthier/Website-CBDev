@@ -3,6 +3,7 @@ import "./Header.css";
 
 //TODO: ajouter les chemin de chaque liens
 //TODO: ajouter le chemin du bouton contact
+//TODO: ajouter le burger menu
 
 export default function Header2() {
     const [burgerOpen, setBurgerOpen] = useState(false);

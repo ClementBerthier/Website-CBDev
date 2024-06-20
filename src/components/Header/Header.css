@@ -179,6 +179,13 @@
 
 @media screen and (max-width: 550px) {
     .Header {
+        .header_banner {
+            height: 3rem;
+            overflow: hidden;
+            .header_banner_container {
+                animation: goToMail 10s infinite;
+            }
+        }
         .header_navigation {
             .header_navigation_container {
                 .section_contact {
@@ -188,5 +195,17 @@
                 }
             }
         }
+    }
+}
+
+@keyframes goToMail {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

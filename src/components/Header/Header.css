@@ -187,7 +187,16 @@
             }
         }
         .header_navigation {
+            height: 4.5rem;
             .header_navigation_container {
+                .section_links {
+                    .logo_container {
+                        .company_logo {
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                    }
+                }
                 .section_contact {
                     .contact_link {
                         display: none;

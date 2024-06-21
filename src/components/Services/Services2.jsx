@@ -132,7 +132,7 @@ export default function Services2() {
                             </div>
                             <div className="picture_container--2">
                                 <img
-                                    className="newPicture                                    "
+                                    className="newPicture"
                                     src={jsonData.newPicture}
                                     alt="nouveau site"
                                 />

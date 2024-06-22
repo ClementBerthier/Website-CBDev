@@ -1,8 +1,9 @@
 //import Home from "../Home/Home.jsx";
-import Services2 from "../Services/Services2.jsx";
+import Services from "../Services/Services.jsx";
 import ContactBanner from "../ContactBanner/ContactBanner.jsx";
 import Contact from "../Contact/Contact.jsx";
 import Footer from "../Footer/Footer.jsx";
+import FAQs from "../FAQs/FAQs.jsx";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Header from "../Header/Header.jsx";
@@ -41,14 +42,16 @@ export default function Layout() {
                 <AboutMe2 />
             </div> */}
             <div ref={servicesRef}>
-                <Services2 />
+                <Services />
+            </div>
+            <div>
+                <FAQs />
             </div>
             <ContactBanner />
             <div ref={contactRef}>
                 <Contact />
             </div>
             {/* <Articles /> */}
-            {/* <FAQs /> */}
 
             <Footer />
         </>

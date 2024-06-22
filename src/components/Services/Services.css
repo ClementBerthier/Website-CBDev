@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 15rem 0;
+        padding: 0rem 0 5rem 0;
 
         .services_title {
             margin: 5rem 0;
@@ -107,7 +107,7 @@
                 background-color: var(--description_picture_container);
                 border-radius: 10px;
                 box-shadow: 0 0 10px 0 #0606c228;
-                overflow: hidden;
+                overflow: scroll;
                 position: relative;
                 .picture_container {
                     height: 100%;

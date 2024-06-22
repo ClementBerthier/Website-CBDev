@@ -1,11 +1,8 @@
-import "./Services2.css";
+import "./Services.css";
 import services from "../../assets/services.json";
 import { useState } from "react";
 
-//TODO: chercher les bonne image a mettre dans le descption picture container
 //TODO: ajouter les liens pour les boutons plus d'infos
-//TODO: faire la logique d'active sur les services name
-//TODO: rendre dynamique le changement d'information en fonction du service name
 //TODO: faire un montage de l'image du site pour le rendu dans service picture
 
 export default function Services2() {
@@ -14,6 +11,7 @@ export default function Services2() {
     const [jsonData, setJsonData] = useState(services.site);
     const [activeSite, setActiveSite] = useState("active");
     const [activeAppli, setActiveAppli] = useState("");
+    const [activeEco, setActiveEco] = useState("");
     const [activeRM, setActiveRM] = useState("");
     const [activeSEO, setActiveSEO] = useState("");
 
@@ -25,9 +23,6 @@ export default function Services2() {
             setJsonData(services.site);
             setIsSite(true);
             setActiveSite("active");
-            setActiveAppli("");
-            setActiveRM("");
-            setActiveSEO("");
         } else {
             setIsSite(false);
             setActiveSite("");
@@ -36,18 +31,21 @@ export default function Services2() {
         if (dataElement === "application") {
             setJsonData(services.application);
             setActiveAppli("active");
-            setActiveSite("");
-            setActiveRM("");
-            setActiveSEO("");
+        } else {
+            setActiveAppli("");
+        }
+
+        if (dataElement === "e_commerce") {
+            setJsonData(services.e_commerce);
+            setActiveEco("active");
+        } else {
+            setActiveEco("");
         }
 
         if (dataElement === "R&M") {
             setJsonData(services.RM);
             setIsRM(true);
             setActiveRM("active");
-            setActiveSite("");
-            setActiveAppli("");
-            setActiveSEO("");
         } else {
             setIsRM(false);
             setActiveRM("");
@@ -56,9 +54,8 @@ export default function Services2() {
         if (dataElement === "SEO") {
             setJsonData(services.SEO);
             setActiveSEO("active");
-            setActiveSite("");
-            setActiveAppli("");
-            setActiveRM("");
+        } else {
+            setActiveSEO("");
         }
     };
     return (
@@ -81,6 +78,13 @@ export default function Services2() {
                         onClick={handleClickClass}
                     >
                         Conception d{"'"}application
+                    </div>
+                    <div
+                        className={`services_name ${activeEco}`}
+                        id="e_commerce"
+                        onClick={handleClickClass}
+                    >
+                        E-commerce
                     </div>
                     <div
                         className={`services_name ${activeRM}`}

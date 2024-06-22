@@ -61,17 +61,16 @@ export default function FAQs() {
                                     alt="arrow"
                                 />
                             </div>
-                            <div className="answer_container">
-                                <p
-                                    className={`answer ${
-                                        questionOpened === question.id
-                                            ? "visible"
-                                            : "hidden"
-                                    }`}
-                                >
-                                    {question.answer}
-                                </p>
-                            </div>
+
+                            <p
+                                className={`answer ${
+                                    questionOpened === question.id
+                                        ? "visible"
+                                        : "hidden"
+                                }`}
+                            >
+                                {question.answer}
+                            </p>
                         </div>
                     ))}
                 </div>

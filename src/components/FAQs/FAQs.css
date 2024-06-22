@@ -66,18 +66,26 @@
                 .question_name_container:hover {
                     cursor: pointer;
                 }
-                .answer_container {
-                    .answer {
-                        font-size: calc(0.4rem + 0.5vw);
-                        font-family: var(--font-title);
-                        margin: 1rem 3rem;
-                    }
-                    .visible {
-                        display: block;
-                    }
-                    .hidden {
-                        display: none;
-                    }
+
+                .answer {
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+
+                    font-size: calc(0.4rem + 0.5vw);
+                    font-family: var(--font-title);
+                    margin: 0rem 3rem;
+                }
+                .visible {
+                    opacity: 1;
+                    max-height: 1000px;
+                    transition: opacity 0.5s ease-in, max-height 2s ease-in;
+                }
+                .hidden {
+                    opacity: 1;
+                    max-height: 0;
+                    transition: max-height 1s ease-in-out;
+                    margin: 0 3rem;
                 }
             }
         }

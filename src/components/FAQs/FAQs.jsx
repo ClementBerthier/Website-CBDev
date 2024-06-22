@@ -45,7 +45,11 @@ export default function FAQs() {
                                     />
                                     <h3
                                         id={question.id}
-                                        className="question_name"
+                                        className={`question_name ${
+                                            questionOpened === question.id
+                                                ? "blue"
+                                                : "noBlue"
+                                        }`}
                                     >
                                         {question.name}
                                     </h3>

@@ -1,21 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import question from "../../assets/questions.json";
 import "./FAQs.css";
 
 export default function FAQs() {
-    const [arrowClicked, setArrowClicked] = useState(false);
-    const [rotateClass, setRotateClass] = useState("rotate");
+    const [questionOpened, setQuestionOpened] = useState(null);
 
-    const handleClickArrow = () => {
-        setArrowClicked(!arrowClicked);
+    const handleClickQuestion = (e) => {
+        const id = e.target.id;
+        setQuestionOpened((prevId) =>
+            prevId === Number(id) ? null : Number(id)
+        );
+        console.log(questionOpened);
     };
-
-    useEffect(() => {
-        if (arrowClicked) {
-            setRotateClass("rotateUp");
-        } else {
-            setRotateClass("rotateDwn");
-        }
-    }, [arrowClicked]);
 
     return (
         <div className="FAQs">
@@ -26,41 +22,58 @@ export default function FAQs() {
                     souvent{" "}
                 </p>
                 <div className="questions_container">
-                    <div className="questions">
-                        <div className="question_name_container">
-                            <div className="left_section_question">
+                    {question.map((question, index) => (
+                        <div
+                            className="questions"
+                            id={question.id}
+                            key={index}
+                            onClick={handleClickQuestion}
+                        >
+                            <div
+                                className="question_name_container"
+                                id={question.id}
+                            >
+                                <div
+                                    className="left_section_question"
+                                    id={question.id}
+                                >
+                                    <img
+                                        id={question.id}
+                                        className="double_arrow"
+                                        src="/images/arrow-right-double-line.svg"
+                                        alt="double right arrow"
+                                    />
+                                    <h3
+                                        id={question.id}
+                                        className="question_name"
+                                    >
+                                        {question.name}
+                                    </h3>
+                                </div>
                                 <img
-                                    className="double_arrow"
-                                    src="/images/arrow-right-double-line.svg"
-                                    alt="double right arrow"
+                                    id={question.id}
+                                    className={`question_arrow ${
+                                        questionOpened === question.id
+                                            ? "rotateUp"
+                                            : "rotateDwn"
+                                    }`}
+                                    src="/images/arrow-down-line.svg"
+                                    alt="arrow"
                                 />
-                                <h3 className="question_name">
-                                    Question1 quel est la race de chat qui as
-                                    pas de peau?
-                                </h3>
                             </div>
-                            <img
-                                className={`question_arrow ${rotateClass}`}
-                                src="/images/arrow-down-line.svg"
-                                alt="arrow"
-                                onClick={handleClickArrow}
-                            />
+                            <div className="answer_container">
+                                <p
+                                    className={`answer ${
+                                        questionOpened === question.id
+                                            ? "visible"
+                                            : "hidden"
+                                    }`}
+                                >
+                                    {question.answer}
+                                </p>
+                            </div>
                         </div>
-                        <div className="answer_container">
-                            <p className="answer visible">
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Est, molestiae reprehenderit
-                                explicabo nam porro labore! Soluta, deserunt
-                                architecto error fugiat magnam fugit aut porro
-                                dolorum officiis velit autem debitis sit. Lorem,
-                                ipsum dolor sit amet consectetur adipisicing
-                                elit. Est, molestiae reprehenderit explicabo nam
-                                porro labore! Soluta, deserunt architecto error
-                                fugiat magnam fugit aut porro dolorum officiis
-                                velit autem debitis sit.
-                            </p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>

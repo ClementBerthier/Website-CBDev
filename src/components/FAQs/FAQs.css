@@ -23,7 +23,9 @@
             flex-direction: column;
             gap: 1rem;
             .questions {
-                border: 1px solid #0000ff28;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px 0 #0606c228;
                 margin: 1rem auto;
                 padding: 1rem;
                 width: 75%;
@@ -53,12 +55,16 @@
                     .question_arrow {
                         width: 3rem;
                     }
+
                     .rotateUp {
                         animation: rotateUp 0.5s forwards;
                     }
                     .rotateDwn {
                         animation: rotateDwn 0.5s forwards;
                     }
+                }
+                .question_name_container:hover {
+                    cursor: pointer;
                 }
                 .answer_container {
                     .answer {
@@ -69,6 +75,9 @@
                     .visible {
                         display: block;
                     }
+                    .hidden {
+                        display: none;
+                    }
                 }
             }
         }
@@ -77,18 +86,18 @@
 
 @keyframes rotateUp {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-180deg);
     }
     100% {
-        transform: rotate(-180deg);
+        transform: rotate(0);
     }
 }
 
 @keyframes rotateDwn {
     0% {
-        transform: rotate(-180deg);
+        transform: rotate(0);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(-180deg);
     }
 }

@@ -80,10 +80,10 @@
                     max-height: 1000px;
                     opacity: 1;
 
-                    font-size: calc(0.7rem + 0.5vw);
+                    font-size: calc(0.6rem + 0.6vw);
                     font-family: var(--font-text);
                     margin: 0rem 3rem;
-                    line-height: calc(1rem + 0.5vw);
+                    line-height: calc(1.2rem + 0.5vw);
                 }
                 .visible {
                     opacity: 1;

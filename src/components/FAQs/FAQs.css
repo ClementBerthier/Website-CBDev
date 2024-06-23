@@ -6,13 +6,13 @@
         .FAQ_title {
             margin: 5rem 0 0 0;
             font-family: var(--font-title);
-            font-size: calc(2rem + 1vw);
+            font-size: calc(1.88rem + 1vw);
             font-weight: 500;
             color: var(--black);
             text-align: center;
         }
         .FAQ_anwser_title {
-            font-size: calc(1rem + 0.5vw);
+            font-size: calc(0.8rem + 0.5vw);
             font-family: var(--font-title);
             text-align: center;
             padding: 2rem 1rem;
@@ -47,7 +47,7 @@
                             width: 3rem;
                         }
                         .question_name {
-                            font-size: calc(0.6rem + 0.5vw);
+                            font-size: calc(0.7rem + 0.5vw);
                             font-family: var(--font-text);
                             font-weight: 500;
                         }
@@ -80,10 +80,10 @@
                     max-height: 1000px;
                     opacity: 1;
 
-                    font-size: calc(0.4rem + 0.5vw);
+                    font-size: calc(0.5rem + 0.5vw);
                     font-family: var(--font-text);
                     margin: 0rem 3rem;
-                    line-height: 2.5rem;
+                    line-height: calc(1rem + 0.5vw);
                 }
                 .visible {
                     opacity: 1;

@@ -18,8 +18,8 @@ export default function FAQs() {
             <div className="FAQ_container">
                 <h2 className="FAQ_title">Vous avez des questions ?</h2>
                 <p className="FAQ_anwser_title">
-                    Voici les réponse aux questions que l{"'"}on me pose le plus
-                    souvent{" "}
+                    Voici les réponses aux questions que l{"'"}on me pose le
+                    plus souvent{" "}
                 </p>
                 <div className="questions_container">
                     {question.map((question, index) => (
@@ -58,8 +58,8 @@ export default function FAQs() {
                                     id={question.id}
                                     className={`question_arrow ${
                                         questionOpened === question.id
-                                            ? "rotateUp"
-                                            : "rotateDwn"
+                                            ? "rotateDwn"
+                                            : "rotateUp"
                                     }`}
                                     src="/images/arrow-down-line.svg"
                                     alt="arrow"

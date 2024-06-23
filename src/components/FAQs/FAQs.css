@@ -48,7 +48,7 @@
                         }
                         .question_name {
                             font-size: calc(0.6rem + 0.5vw);
-                            font-family: var(--font-title);
+                            font-family: var(--font-text);
                             font-weight: 500;
                         }
                         .blue {
@@ -75,13 +75,15 @@
                 }
 
                 .answer {
-                    opacity: 0;
-                    max-height: 0;
                     overflow: hidden;
+                    width: 90%;
+                    max-height: 1000px;
+                    opacity: 1;
 
                     font-size: calc(0.4rem + 0.5vw);
-                    font-family: var(--font-title);
+                    font-family: var(--font-text);
                     margin: 0rem 3rem;
+                    line-height: 2.5rem;
                 }
                 .visible {
                     opacity: 1;

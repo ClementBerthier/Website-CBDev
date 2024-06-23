@@ -16,12 +16,12 @@
     },
     {
         "id": 4,
-        "name": "name 4",
-        "answer": "reponse n4"
+        "name": "Ai-je vraiment besoin d'un site web ?",
+        "answer": "Si vous êtes une entreprise, un entrepreneur, un artiste ou un particulier, la réponse est oui. Aujourd'hui, un site web est un outil indispensable pour se faire connaître, présenter ses produits ou services, et toucher une audience plus large. C'est un investissement qui vous permettra de gagner en visibilité et en crédibilité."
     },
     {
         "id": 5,
-        "name": "name 5",
-        "answer": "reponse 5"
+        "name": "Quel avantage ai-je de passer par un développeur web plutôt que par un site de création de site web gratuit ?",
+        "answer": "Passer par un développeur web offre une personnalisation complète, un design professionnel, une optimisation pour le SEO et la performance, ainsi qu'un support technique dédié et une meilleure sécurité. Contrairement aux outils gratuits, un développeur garantit un site unique, évolutif et adapté spécifiquement à vos besoins."
     }
 ]

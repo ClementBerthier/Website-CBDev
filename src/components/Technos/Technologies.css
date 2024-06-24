@@ -68,6 +68,14 @@
                             border-radius: 10px;
                             cursor: pointer;
                         }
+                        .active {
+                            background: radial-gradient(
+                                circle,
+                                #a7d4e3 0%,
+                                #1e90ff 100%
+                            );
+                            border-radius: 10px;
+                        }
                     }
                 }
             }

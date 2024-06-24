@@ -1,7 +1,33 @@
 import "./Technologies.css";
 import technologiesData from "../../assets/technologies.json";
+import { useState } from "react";
 
 export default function Technologies() {
+    const [active, setActive] = useState("active");
+    const [logoClicked, setLogoClicked] = useState(1);
+
+    const [currentTechnology, setCurrentTechnology] = useState({
+        id: "",
+        tag: "",
+        name: "",
+        path: "",
+        url: "",
+        description: "",
+    });
+
+    const handleClickLogo = (e) => {
+        const id = e.target.id;
+        setLogoClicked(Number(id));
+
+        const technologyClicked = technologiesData.find(
+            (technology) => technology.id === Number(id)
+        );
+
+        setCurrentTechnology({ ...technologyClicked });
+    };
+
+    console.log(currentTechnology);
+
     return (
         <div className="Technologies">
             <div className="technologies_container">
@@ -27,41 +53,47 @@ export default function Technologies() {
                             <ul className="technologies_list">
                                 {technologiesData.map((technology, index) => (
                                     <li
-                                        className="technologies_list_item"
+                                        className={`technologies_list_item ${
+                                            logoClicked === technology.id
+                                                ? active
+                                                : ""
+                                        }`}
                                         key={index}
                                         id={technology.id}
+                                        onClick={handleClickLogo}
                                     >
                                         <img
+                                            id={technology.id}
                                             className="technologies_logo"
                                             src={technology.path}
                                             alt={technology.name}
+                                            onClick={handleClickLogo}
                                         />
                                     </li>
                                 ))}
                             </ul>
                         </div>
                         <div className="technologies_description_container">
-                            <span className="description_name">HTML5</span>
-                            <span className="description_tag">front/back</span>
+                            <span className="description_name">
+                                {currentTechnology.name}
+                            </span>
+                            <span className="description_tag">
+                                {currentTechnology.tag}
+                            </span>
                             <div className="description_logo_container">
                                 <img
                                     className="description_logo_dev"
-                                    src="/images/techLogo/HTML5.png"
+                                    src={currentTechnology.path}
                                     alt="technology logo"
                                 />
                                 <img
                                     className="description_logo_human"
-                                    src="/images/techLogo/HTML5.png"
+                                    src={currentTechnology.url}
                                     alt="logo human version"
                                 />
                             </div>
                             <p className="description_text">
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Minima officiis similique
-                                illum? Quae consequatur distinctio facilis.
-                                Libero distinctio deserunt assumenda qui,
-                                aspernatur fugit quasi, tempora rem quaerat
-                                voluptatum odio cumque. Lorem, ipsum dolor sit a
+                                {currentTechnology.description}
                             </p>
                         </div>
                     </div>

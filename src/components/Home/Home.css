@@ -34,26 +34,10 @@
                 font-family: "Open Sans", sans-serif;
                 line-height: 4rem;
             }
-            .information_button {
-                padding: 1.8rem;
-                margin-left: 2rem;
-                border: none;
-
-                font-size: calc(1rem + 0.5vw);
-                white-space: nowrap;
-                font-family: "Open Sans", sans-serif;
-                font-weight: 500;
-                text-align: center;
-                background-color: var(--button-background);
-                color: var(--button-color);
-                border-radius: 30px;
-                text-decoration: none;
-                transition: all 0.3s ease;
-                &:hover {
-                    background-color: var(--button-hover-background);
-                    color: var(--button-hover-color);
-                    cursor: pointer;
-                }
+            .button {
+                font-size: calc(1.2rem + 0.5vw);
+                font-family: var(--font-title);
+                margin: 0 1rem;
             }
         }
         .home_illustration {
@@ -105,7 +89,7 @@
                 font-size: calc(1rem + 0.5vw) !important;
                 line-height: 3rem !important;
             }
-            .information_button {
+            .button {
                 font-size: calc(1rem + 0.5vw);
             }
         }
@@ -136,7 +120,7 @@
                     padding: 1rem;
                 }
 
-                .information_button {
+                .button {
                     margin: 1rem 0;
                     font-size: calc(1.2rem + 0.5vw) !important;
                 }
@@ -173,7 +157,7 @@
                     font-size: calc(1rem + 0.5vw) !important;
                     line-height: 2.5rem !important;
                 }
-                .information_button {
+                .button {
                     font-size: calc(1rem + 0.5vw);
                     padding: 1.2rem;
                 }

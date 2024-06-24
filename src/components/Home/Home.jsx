@@ -1,3 +1,4 @@
+import Button from "../elements/Button/Button.jsx";
 import "./Home.css";
 
 //TODO: lié le bouton plus d'info avec sa destination
@@ -18,9 +19,7 @@ export default function Home2() {
                         besoins.
                     </p>
 
-                    <button className="information_button">
-                        Plus d{"'"}infos
-                    </button>
+                    <Button text="Plus d'infos"></Button>
                 </div>
                 <div className="home_illustration">
                     <img

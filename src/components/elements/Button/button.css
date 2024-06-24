@@ -1,12 +1,11 @@
 .button {
-    background: linear-gradient(90deg, #796160, #3d3136);
+    background: linear-gradient(90deg, #98d2e6, #1e90ff);
     border: none;
     color: white;
     padding: 1.5rem 3.6rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: calc(0.6vw + 1rem);
     transition: all 0.4s ease;
     cursor: pointer;
     border-radius: 30px;
@@ -17,7 +16,7 @@
 
 .button::before {
     content: "";
-    background: linear-gradient(90deg, #b59b9e, #796160);
+    background: linear-gradient(90deg, #1e90ff, #0606c2);
     position: absolute;
     top: 0;
     left: -100%;

@@ -1,7 +1,7 @@
 .FAQs {
     .FAQ_container {
         max-width: 1700px;
-        margin: 0 auto 5rem auto;
+        margin: 0 auto 10rem auto;
         width: 100%;
         .FAQ_title {
             margin: 5rem 0 0 0;
@@ -15,7 +15,7 @@
             font-size: calc(0.8rem + 0.5vw);
             font-family: var(--font-title);
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 2rem 1rem 5rem 1rem;
             border-radius: 10px;
         }
         .questions_container {

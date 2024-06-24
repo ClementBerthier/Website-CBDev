@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
+import Button from "../elements/Button/Button.jsx";
 
 //TODO: ajouter les chemin de chaque liens
 //TODO: ajouter le chemin du bouton contact
@@ -80,9 +81,7 @@ export default function Header2() {
                         </div>
                     </div>
                     <div className="section_contact">
-                        <a className="contact_link" href="">
-                            Contact
-                        </a>
+                        <Button href="" text="Contact"></Button>
                         <div
                             className="burger_button_container"
                             onClick={openBurger}

@@ -84,21 +84,10 @@
                         cursor: pointer;
                     }
                 }
-                .link_button {
-                    margin: 1.5rem auto;
-                    padding: 1rem 2rem;
-                    border-radius: 30px;
-                    background-color: var(--button-background);
-                    color: var(--button-color);
-                    font-size: calc(0.8rem + 0.5vw);
-                    font-weight: 600;
-                    text-decoration: none;
-                    transition: all 0.5s ease;
-                }
-                .link_button:hover {
-                    cursor: pointer;
-                    background-color: var(--button-hover-background);
-                    color: var(--button-hover-color);
+                .button {
+                    margin: 0 auto;
+                    font-size: calc(0.7rem + 0.5vw);
+                    font-family: var(--font-title);
                 }
             }
             .description_picture_container {
@@ -175,6 +164,10 @@
             .logo {
                 width: 4rem !important;
                 height: 4rem !important;
+            }
+            .button {
+                margin: 1rem auto !important;
+                padding: 1rem 2rem !important;
             }
         }
         .description_picture_container {

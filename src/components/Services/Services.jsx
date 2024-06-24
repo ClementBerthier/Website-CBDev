@@ -1,6 +1,7 @@
 import "./Services.css";
 import services from "../../assets/services.json";
 import { useState } from "react";
+import Button from "../elements/Button/Button.jsx";
 
 //TODO: ajouter les liens pour les boutons plus d'infos
 //TODO: faire un montage de l'image du site pour le rendu dans service picture
@@ -123,7 +124,7 @@ export default function Services2() {
                             <p className="text">{jsonData.description}</p>
                         )}
 
-                        <div className="link_button">+</div>
+                        <Button text="+"></Button>
                     </div>
                     {isRM ? (
                         <div className="description_picture_container">

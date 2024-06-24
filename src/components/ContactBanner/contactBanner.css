@@ -1,19 +1,13 @@
 .contactBanner_container {
-    background-image: url(/images/deskBackground.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     .contactBanner {
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.382);
         .contactBanner_detail_container {
-            max-width: 1200px;
-            width: 90%;
+            max-width: 1700px;
+            width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -22,23 +16,23 @@
             padding: 3vw;
             .contactBanner_title {
                 font-size: calc(1vw + 2rem);
-                font-weight: 700;
+                font-family: var(--font-title);
+                font-weight: 500;
                 text-align: center;
-                padding: 3rem 0;
-                color: #3d3136;
+                padding: 3rem 0 1rem 0;
+                color: black;
                 z-index: 2;
             }
             .contactBanner_text {
                 font-size: calc(1vw + 1rem);
+                font-family: var(--font-text);
                 padding: 1rem 0 4rem 0;
                 z-index: 2;
-                color: #3d3136;
+                color: #000000;
             }
-            .contactBanner_button {
-                color: white;
-                border: none;
-                border-radius: 5px;
-                transition: 0.3s;
+            .button {
+                font-size: calc(0.8rem + 0.5vw);
+                font-family: var(--font-title);
             }
         }
     }
@@ -48,17 +42,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: #e5f0fb;
         z-index: 1;
-    }
-}
-
-@media screen and (max-width: 810px) {
-    .contactBanner_container {
-        background-image: url(/images/deskBackground.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: local;
-        background-position: center;
     }
 }

@@ -11,7 +11,7 @@ export default function ContactBanner() {
                         Discutons ensemble de votre projet.
                     </h2>
                     <p className="contactBanner_text">
-                        N{"'"}hésitez pas à nous contacter
+                        N{"'"}hésitez pas à me contacter
                     </p>
                     <Link
                         to="contact"

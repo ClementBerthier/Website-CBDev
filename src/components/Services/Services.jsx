@@ -63,7 +63,7 @@ export default function Services2() {
         <div className="Services">
             <div className="services_container">
                 <h2 className="services_title">
-                    Nos services en developpement web
+                    Mes services en developpement web
                 </h2>
                 <div className="services_name_container">
                     <div

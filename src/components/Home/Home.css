@@ -17,21 +17,21 @@
 
             .presentation_name {
                 font-size: calc(3.5rem + 2vw);
+                font-family: var(--font-title);
                 font-weight: 500;
                 color: #000;
                 margin-bottom: 1rem;
                 white-space: nowrap;
                 padding: 0rem 2rem 3rem 2rem;
-                font-family: "Poppins", sans-serif;
             }
             .presentation_paragraph {
                 width: 100%;
                 font-size: calc(1.5rem + 0.5vw);
+                font-family: var(--font-text);
                 font-weight: 200;
                 color: #000;
                 margin-bottom: 1rem;
                 padding: 2rem;
-                font-family: "Open Sans", sans-serif;
                 line-height: 4rem;
             }
             .button {

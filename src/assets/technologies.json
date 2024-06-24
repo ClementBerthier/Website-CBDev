@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "tag": "Frontend",
+        "name": "HTML5",
+        "path": "/images/techLogo/HTML5.png",
+        "url": "",
+        "description": "HTML5 est un langage informatique qui permet de créer la structure et le contenu des pages web. Imaginez le comme le squelette de votre site ou chaque os représente un élément de votre page, tels que les titres, les paragraphes, les images, les vidéos, etc..."
+    },
+    {
+        "id": 2,
+        "tag": "Frontend",
+        "name": "CSS3",
+        "path": "/images/techLogo/css3.svg",
+        "url": "",
+        "description": "CSS3 est un langage informatique utilisé pour ajouter du style et de l'apparence aux pages web. Imaginez-le comme la peau, les vêtements et le maquillage de votre site, qui définissent les couleurs, les polices, la disposition et les animations pour rendre votre site attrayant et agréable à regarder."
+    },
+    {
+        "id": 3,
+        "tag": "Fullstack",
+        "name": "JavaScript",
+        "path": "/images/techLogo/JavaScript.png",
+        "url": "",
+        "description": "JavaScript est un langage informatique qui permet d'ajouter de l'interactivité et des fonctionnalités dynamiques aux pages web. Imaginez-le comme les muscles et les nerfs de votre site, permettant aux éléments de bouger, de réagir aux actions des utilisateurs et de communiquer avec des serveurs pour récupérer des données en temps réel."
+    },
+    {
+        "id": 4,
+        "tag": "Fullstack",
+        "name": "TypeScript",
+        "path": "/images/techLogo/typescript.svg",
+        "url": "",
+        "description": "TypeScript est un surensemble de JavaScript qui ajoute des types statiques au langage. Imaginez-le comme un coach personnel pour votre code, aidant à prévenir les erreurs en vérifiant la cohérence et la précision de votre code avant son exécution, ce qui rend le développement plus fiable et maintenable."
+    },
+
+    {
+        "id": 5,
+        "tag": "Backend",
+        "name": "Node.js",
+        "path": "/images/techLogo/node.svg",
+        "url": "",
+        "description": "Node.js est un environnement d'exécution pour JavaScript qui permet d'exécuter du code côté serveur. Imaginez-le comme le système nerveux central de votre site, gérant les requêtes, les bases de données et la logique côté serveur pour permettre aux applications web de fonctionner de manière fluide et efficace."
+    },
+    {
+        "id": 6,
+        "tag": "Frontend",
+        "name": "React",
+        "path": "/images/techLogo/react.png",
+        "url": "",
+        "description": "React est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur dynamiques et interactives. Imaginez-le comme le cerveau de votre site côté client, permettant de gérer efficacement l'affichage des données et les interactions des utilisateurs pour créer une expérience fluide et réactive."
+    },
+    {
+        "id": 7,
+        "tag": "Backend",
+        "name": "PostgreSQL",
+        "path": "/images/techLogo/postgre.png",
+        "url": "",
+        "description": "PostgreSQL est un système de gestion de base de données relationnelle open-source. Imaginez-le comme la mémoire de votre site, où toutes les informations importantes sont stockées, organisées et récupérées de manière sécurisée et efficace pour être utilisées par votre application web."
+    },
+    {
+        "id": 8,
+        "tag": "Fullstack",
+        "name": "GraphQL",
+        "path": "/images/techLogo/graphQL.png",
+        "url": "",
+        "description": "GraphQL est un langage de requête pour les API qui permet de demander précisément les données nécessaires. Imaginez-le comme un interprète entre le cerveau et la mémoire de votre site, permettant aux clients de spécifier exactement quelles informations ils veulent, réduisant ainsi les échanges de données inutiles et optimisant la performance."
+    },
+    {
+        "id": 9,
+        "tag": "Fullstack",
+        "name": "Socket.io",
+        "path": "/images/techLogo/Socket-io.png",
+        "url": "",
+        "description": "Socket.io est une bibliothèque JavaScript qui permet d'ajouter des fonctionnalités de communication en temps réel aux applications web. Imaginez-le comme les synapses de votre site, facilitant l'échange instantané de messages et de données entre le serveur et les clients pour des applications comme les chats en direct, les notifications et les jeux en ligne."
+    }
+]

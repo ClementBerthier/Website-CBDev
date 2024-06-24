@@ -177,7 +177,7 @@
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 600px) {
+@media screen and (orientation: portrait) and (max-width: 731px) {
     .services_name_container {
         display: flex !important;
         flex-direction: column !important;

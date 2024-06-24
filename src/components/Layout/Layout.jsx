@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Header from "../Header/Header.jsx";
 import Home from "../Home/Home.jsx";
+import Technologies from "../Technos/Technologies.jsx";
 
 export default function Layout() {
     const location = useLocation();
@@ -47,7 +48,12 @@ export default function Layout() {
             <div>
                 <FAQs />
             </div>
-            <ContactBanner />
+            <div>
+                <ContactBanner />
+            </div>
+            <div>
+                <Technologies />
+            </div>
             <div ref={contactRef}>
                 <Contact />
             </div>

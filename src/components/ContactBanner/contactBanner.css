@@ -19,8 +19,8 @@
                 font-family: var(--font-title);
                 font-weight: 500;
                 text-align: center;
-                padding: 3rem 0 1rem 0;
-                color: black;
+                padding: 2.5rem 0 1rem 0;
+                color: rgb(255, 255, 255);
                 z-index: 2;
             }
             .contactBanner_text {
@@ -28,11 +28,15 @@
                 font-family: var(--font-text);
                 padding: 1rem 0 4rem 0;
                 z-index: 2;
-                color: #000000;
+                color: #ffffff;
             }
             .button {
                 font-size: calc(0.8rem + 0.5vw);
                 font-family: var(--font-title);
+                background: linear-gradient(90deg, #5b7f8c, #0d447a);
+            }
+            .button::before {
+                background: linear-gradient(90deg, #13579b, #030350);
             }
         }
     }
@@ -42,7 +46,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #e5f0fb;
+        background-color: #404b5c;
         z-index: 1;
     }
 }

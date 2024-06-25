@@ -1,5 +1,6 @@
 import "./Technologies.css";
 import technologiesData from "../../assets/technologies.json";
+import Button from "../elements/Button/Button.jsx";
 import { useState } from "react";
 
 export default function Technologies() {
@@ -7,12 +8,13 @@ export default function Technologies() {
     const [logoClicked, setLogoClicked] = useState(1);
 
     const [currentTechnology, setCurrentTechnology] = useState({
-        id: "",
-        tag: "",
-        name: "",
-        path: "",
-        url: "",
-        description: "",
+        id: 1,
+        tag: "Frontend",
+        name: "HTML5",
+        path: "/images/techLogo/HTML5.png",
+        url: "https://developer.mozilla.org/fr/docs/Web/HTML",
+        description:
+            "HTML5 est un langage informatique qui permet de créer la structure et le contenu des pages web. Imaginez le comme le squelette de votre site ou chaque os représente un élément de votre page, tels que les titres, les paragraphes, les images, les vidéos, etc...",
     });
 
     const handleClickLogo = (e) => {
@@ -86,12 +88,15 @@ export default function Technologies() {
                                     src={currentTechnology.path}
                                     alt="technology logo"
                                 />
-                                <img
-                                    className="description_logo_human"
-                                    src={currentTechnology.url}
-                                    alt="logo human version"
-                                />
                             </div>
+                            <a
+                                href={currentTechnology.url}
+                                className="documentation"
+                                rel="noreferrer noopener"
+                                target="_blank"
+                            >
+                                <Button text="Documentation"></Button>
+                            </a>
                             <p className="description_text">
                                 {currentTechnology.description}
                             </p>

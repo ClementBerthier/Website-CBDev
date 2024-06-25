@@ -106,12 +106,12 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                flex: 3;
+                flex: 2;
                 margin: 0 auto;
-                .description_logo_dev,
-                .description_logo_human {
+                max-width: 50%;
+                .description_logo_dev {
                     margin: 0 2rem;
-                    width: 30%;
+                    width: 50%;
                 }
             }
             .description_name {
@@ -130,6 +130,13 @@
                 text-align: center;
                 flex: 1;
                 padding: 2rem;
+            }
+            .documentation {
+                margin: 0 auto 2rem auto;
+                .button {
+                    font-size: calc(0.5rem + 0.5vw);
+                    padding: 1rem 1.5rem;
+                }
             }
         }
     }

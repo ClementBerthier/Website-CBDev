@@ -39,23 +39,24 @@
             .technologies_board {
                 display: flex;
                 flex-direction: row;
+                max-height: 60rem;
                 .technologies_list_container {
-                    width: 10%;
+                    overflow: scroll;
+                    width: 25rem;
+                    border-radius: 10px;
                     .technologies_list {
                         box-shadow: 0 0 10px 0 #0606c228;
-                        border-radius: 10px;
-
                         background-color: white;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         gap: 1rem;
                         .technologies_list_item {
-                            padding: 1rem;
                             margin: 0.5rem 1rem;
+                            padding: 1rem;
                             .technologies_logo {
-                                width: 4rem;
-                                height: 4rem;
+                                width: 100%;
+                                min-width: 2rem;
                             }
                         }
                         .technologies_list_item:hover {
@@ -84,7 +85,6 @@
         .technologies_description_container {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             box-shadow: 0 0 10px 0 #0606c228;
             border-radius: 10px;
             border-bottom: 1px solid #c5c5c58b;
@@ -93,7 +93,6 @@
             background-color: white;
             .description_tag {
                 font-size: calc(1.2rem + 0.5vw);
-                flex: 0;
                 font-family: var(--font-text);
                 font-weight: 500;
                 text-align: center;
@@ -102,16 +101,11 @@
                 border-radius: 30px;
             }
             .description_logo_container {
+                margin: 3rem auto;
                 display: flex;
-                flex-direction: row;
-                align-items: center;
                 justify-content: center;
-                flex: 2;
-                margin: 0 auto;
-                max-width: 50%;
                 .description_logo_dev {
-                    margin: 0 2rem;
-                    width: 50%;
+                    max-width: 50%;
                 }
             }
             .description_name {
@@ -128,7 +122,6 @@
                 font-size: calc(0.8rem + 0.5vw);
                 font-family: var(--font-text);
                 text-align: center;
-                flex: 1;
                 padding: 2rem;
             }
             .documentation {
@@ -139,5 +132,17 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .technologies_board {
+        max-height: 60rem !important;
+        .technologies_list_item {
+            padding: 0.7rem !important;
+        }
+    }
+    .technologies_description_container {
+        justify-content: space-between;
     }
 }

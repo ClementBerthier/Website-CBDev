@@ -4,7 +4,7 @@ import Button from "../elements/Button/Button.jsx";
 import { useState } from "react";
 
 export default function Technologies() {
-    const [active, setActive] = useState("active");
+    const active = "active";
     const [logoClicked, setLogoClicked] = useState(1);
 
     const [currentTechnology, setCurrentTechnology] = useState({

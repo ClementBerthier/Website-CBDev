@@ -146,7 +146,7 @@
         .button_container {
             margin: 2rem 0;
             .button {
-                font-size: calc(0.8rem + 0.5vw);
+                font-size: calc(1rem + 0.5vw);
                 font-family: var(--font-title);
             }
         }

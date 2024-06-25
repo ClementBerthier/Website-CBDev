@@ -70,13 +70,13 @@ export default function Header2() {
                                 Services
                             </a>
                             <a className="link" href="">
+                                FAQ
+                            </a>
+                            <a className="link" href="">
                                 Portfolio
                             </a>
                             <a className="link" href="">
                                 Articles
-                            </a>
-                            <a className="link" href="">
-                                FAQ
                             </a>
                         </div>
                     </div>

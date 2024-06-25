@@ -13,7 +13,7 @@
         "name": "CSS3",
         "path": "/images/techLogo/css3.svg",
         "url": "https://developer.mozilla.org/fr/docs/Web/CSS",
-        "description": "CSS3 est un langage informatique utilisé pour ajouter du style et de l'apparence aux pages web. Imaginez-le comme la peau, les vêtements et le maquillage de votre site, qui définissent les couleurs, les polices, la disposition et les animations pour rendre votre site attrayant et agréable à regarder."
+        "description": "CSS3 est un langage informatique utilisé pour ajouter du style et de l'apparence aux pages web. Le CSS quant a lui serait comme la peau, les vêtements et le maquillage de votre site, qui définissent les couleurs, les polices, la disposition et les animations pour rendre votre site attrayant et agréable à regarder."
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "name": "JavaScript",
         "path": "/images/techLogo/JavaScript.png",
         "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript",
-        "description": "JavaScript est un langage informatique qui permet d'ajouter de l'interactivité et des fonctionnalités dynamiques aux pages web. Imaginez-le comme les muscles et les nerfs de votre site, permettant aux éléments de bouger, de réagir aux actions des utilisateurs et de communiquer avec des serveurs pour récupérer des données en temps réel."
+        "description": "JavaScript est un langage informatique qui permet d'ajouter de l'interactivité et des fonctionnalités dynamiques aux pages web. Il agirait comme les muscles et les nerfs de votre site, permettant aux éléments de bouger, de réagir aux actions des utilisateurs et de communiquer avec des serveurs pour récupérer des données en temps réel."
     },
     {
         "id": 4,
@@ -46,7 +46,7 @@
         "name": "React",
         "path": "/images/techLogo/react.png",
         "url": "https://react.dev/",
-        "description": "React est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur dynamiques et interactives. Imaginez-le comme le cerveau de votre site côté client, permettant de gérer efficacement l'affichage des données et les interactions des utilisateurs pour créer une expérience fluide et réactive."
+        "description": "React est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur dynamiques et interactives. Il s'agit du cerveau de votre site côté client, permettant de gérer efficacement l'affichage des données et les interactions des utilisateurs pour créer une expérience fluide et réactive."
     },
     {
         "id": 7,
@@ -54,7 +54,7 @@
         "name": "PostgreSQL",
         "path": "/images/techLogo/postgre.png",
         "url": "https://www.postgresql.org/",
-        "description": "PostgreSQL est un système de gestion de base de données relationnelle open-source. Imaginez-le comme la mémoire de votre site, où toutes les informations importantes sont stockées, organisées et récupérées de manière sécurisée et efficace pour être utilisées par votre application web."
+        "description": "PostgreSQL est un système de gestion de base de données relationnelle open-source. Qui dit base de données dit données stockées quelque part, comme s'il s'agissait de la mémoire de votre site, où toutes les informations importantes sont stockées, organisées et récupérées de manière sécurisée et efficace pour être utilisées par votre application web."
     },
     {
         "id": 8,
@@ -70,6 +70,6 @@
         "name": "Socket.io",
         "path": "/images/techLogo/Socket-io.png",
         "url": "https://socket.io/",
-        "description": "Socket.io est une bibliothèque JavaScript qui permet d'ajouter des fonctionnalités de communication en temps réel aux applications web. Imaginez-le comme les synapses de votre site, facilitant l'échange instantané de messages et de données entre le serveur et les clients pour des applications comme les chats en direct, les notifications et les jeux en ligne."
+        "description": "Socket.io est une bibliothèque JavaScript qui permet d'ajouter des fonctionnalités de communication en temps réel aux applications web. Voyez ici une sorte de neurotransmetteur, facilitant l'échange instantané de messages et de données entre le serveur et les clients pour des applications comme les chats en direct, les notifications et les jeux en ligne."
     }
 ]

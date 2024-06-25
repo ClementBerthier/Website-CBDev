@@ -150,6 +150,18 @@
     }
 }
 @media screen and (max-width: 650px) {
+    .technologies_board {
+        flex-direction: column !important;
+        .technologies_list {
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            margin-bottom: 2rem;
+        }
+        .technologies_description_container {
+            margin-left: 0 !important;
+        }
+    }
+
     .description_logo_dev {
         width: 20rem !important;
         height: 20rem !important;

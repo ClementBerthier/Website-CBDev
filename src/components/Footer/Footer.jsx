@@ -76,6 +76,12 @@ export default function Footer() {
                                         className="footer_navigation_link pointer"
                                         href=""
                                     >
+                                        {"> "}E-commerce
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href=""
+                                    >
                                         {"> "}Refonte
                                     </a>
                                     <a
@@ -119,7 +125,7 @@ export default function Footer() {
                                         offset={-70}
                                         duration={500}
                                     >
-                                        {"> "}A propos
+                                        {"> "}Services
                                     </Link>
                                     <Link
                                         id="hearderServices"

@@ -200,7 +200,11 @@ export default function Contact() {
                     <p className="textModal">{contentModal}</p>
                 </Modal.Content>
                 <Modal.Actions className="actions_modal_contact">
-                    <Button size="huge" onClick={() => setModalOpen(false)}>
+                    <Button
+                        className="buttonModal"
+                        size="huge"
+                        onClick={() => setModalOpen(false)}
+                    >
                         Retour
                     </Button>
                 </Modal.Actions>
@@ -212,9 +216,9 @@ export default function Contact() {
                     onSubmit={handleSubmit}
                     ref={form}
                 >
-                    <h2 className="contact_title">Contactez-nous</h2>
+                    <h2 className="contact_title">Contactez-moi</h2>
                     <p className="contact_message">
-                        N{"'"}hésitez pas à nous envoyer un message pour plus d
+                        N{"'"}hésitez pas à m{"'"}envoyer un message pour plus d
                         {"'"}
                         informations
                     </p>

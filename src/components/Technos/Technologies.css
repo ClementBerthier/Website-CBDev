@@ -13,7 +13,7 @@
             margin: 8rem 0 2rem 0rem;
         }
         .technologies_subtitle {
-            font-size: calc(0.8rem + 0.5vw);
+            font-size: calc(1.2rem + 0.5vw);
             font-family: var(--font-text);
             text-align: center;
             margin: 0rem 0 5rem 0;

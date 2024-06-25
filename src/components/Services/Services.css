@@ -184,8 +184,14 @@
         width: 50% !important;
         .services_name {
             padding: 1rem !important;
-            font-size: calc(0.8rem + 0.5vw) !important;
+            font-size: calc(1rem + 0.5vw) !important;
         }
+    }
+    .text_title {
+        font-size: calc(1.5rem + 0.5vw) !important;
+    }
+    .text {
+        font-size: calc(1rem + 0.5vw) !important;
     }
 }
 

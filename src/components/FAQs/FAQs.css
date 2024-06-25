@@ -118,3 +118,31 @@
         transform: rotate(-180deg);
     }
 }
+
+@media screen and (orientation: portrait) and (max-width: 728px) {
+    .FAQs {
+        .FAQ_container {
+            .FAQ_title {
+                font-size: calc(1.88rem + 1vw);
+            }
+            .FAQ_anwser_title {
+                font-size: calc(1.2rem + 0.5vw);
+            }
+            .questions_container {
+                .questions {
+                    .question_name_container {
+                        .left_section_question {
+                            .question_name {
+                                font-size: calc(1.3rem + 0.5vw);
+                            }
+                        }
+                    }
+                    .answer {
+                        font-size: calc(1rem + 0.5vw);
+                        line-height: calc(1.3rem + 0.5vw);
+                    }
+                }
+            }
+        }
+    }
+}

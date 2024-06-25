@@ -230,19 +230,19 @@
 @media screen and (max-width: 768px) {
     .field {
         label {
-            font-size: calc(1vw + 0.5rem) !important;
+            font-size: calc(1rem + 0.5vw) !important;
         }
         input {
-            font-size: calc(1vw + 0.5rem) !important;
+            font-size: calc(1rem + 0.5vw) !important;
         }
     }
     .textarea_container {
         .field {
             label {
-                font-size: calc(1vw + 0.5rem) !important ;
+                font-size: calc(1rem + 0.5vw) !important ;
             }
             textarea {
-                font-size: calc(1vw + 0.5rem) !important;
+                font-size: calc(1rem + 0.5vw) !important;
             }
         }
     }

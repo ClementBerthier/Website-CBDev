@@ -2,7 +2,7 @@
     background-color: #e5f0fb;
     .contact_container {
         max-width: 1200px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -233,7 +233,7 @@
             font-size: calc(1rem + 0.5vw) !important;
         }
         input {
-            font-size: calc(1rem + 0.5vw) !important;
+            font-size: calc(0.7rem + 0.5vw) !important;
         }
     }
     .textarea_container {
@@ -242,7 +242,7 @@
                 font-size: calc(1rem + 0.5vw) !important ;
             }
             textarea {
-                font-size: calc(1rem + 0.5vw) !important;
+                font-size: calc(0.7rem + 0.5vw) !important;
             }
         }
     }

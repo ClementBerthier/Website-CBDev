@@ -39,9 +39,7 @@ export default function Layout() {
             <div ref={homeRef}>
                 <Home />
             </div>
-            {/*  <div ref={aboutMeRef}>
-                <AboutMe2 />
-            </div> */}
+
             <div ref={servicesRef}>
                 <Services />
             </div>
@@ -57,7 +55,6 @@ export default function Layout() {
             <div ref={contactRef}>
                 <Contact />
             </div>
-            {/* <Articles /> */}
 
             <Footer />
         </>

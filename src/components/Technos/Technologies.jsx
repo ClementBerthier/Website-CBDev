@@ -1,6 +1,5 @@
 import "./Technologies.css";
 import technologiesData from "../../assets/technologies.json";
-import Button from "../elements/Button/Button.jsx";
 import { useState } from "react";
 
 export default function Technologies() {

@@ -390,7 +390,6 @@ export default function Contact() {
                     </div>{" "}
                     <div className="button_container" onClick={handleClick}>
                         <ButtonElement
-                            className="form_button"
                             id="contact"
                             text="Envoyer"
                             type="submit"

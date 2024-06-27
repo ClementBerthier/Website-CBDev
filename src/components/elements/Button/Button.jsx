@@ -6,12 +6,13 @@ export default function Button({ text, id, type }) {
     const navigate = useNavigate();
 
     const handleClickNavigate = (e) => {
-        e.preventDefault();
         const destinationId = e.target.id;
         if (destinationId === "contact") {
             navigate("/", { state: { id: destinationId } });
         } else if (destinationId === "servicesPage") {
             navigate("/servicesPage", { state: { id: destinationId } });
+        } else {
+            null;
         }
     };
     return (

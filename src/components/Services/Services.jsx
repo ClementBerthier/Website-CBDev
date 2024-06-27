@@ -124,7 +124,11 @@ export default function Services2() {
                             <p className="text">{jsonData.description}</p>
                         )}
 
-                        <Button text="+" id="servicesPage"></Button>
+                        <Button
+                            text="+"
+                            id="servicesPage"
+                            type="button"
+                        ></Button>
                     </div>
                     {isRM ? (
                         <div className="description_picture_container">

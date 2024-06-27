@@ -116,7 +116,12 @@ export default function Header2() {
                         </div>
                     </div>
                     <div className="section_contact">
-                        <Button href="/" text="Contact" id="contact"></Button>
+                        <Button
+                            href="/"
+                            text="Contact"
+                            id="contact"
+                            type="button"
+                        ></Button>
                         <div
                             className="burger_button_container"
                             onClick={openBurger}

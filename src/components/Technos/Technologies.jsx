@@ -93,7 +93,7 @@ export default function Technologies() {
                                 rel="noreferrer noopener"
                                 target="_blank"
                             >
-                                <Button text="Documentation"></Button>
+                                Documentation
                             </a>
                             <p className="description_text">
                                 {currentTechnology.description}

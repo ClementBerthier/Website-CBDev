@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./button.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Button({ text, id }) {
+export default function Button({ text, id, type }) {
     const navigate = useNavigate();
 
     const handleClickNavigate = (e) => {
@@ -17,7 +17,7 @@ export default function Button({ text, id }) {
     return (
         <button
             className="button"
-            type="button"
+            type={type}
             id={id}
             onClick={handleClickNavigate}
         >
@@ -29,4 +29,5 @@ export default function Button({ text, id }) {
 Button.propTypes = {
     text: PropTypes.string.isRequired,
     id: PropTypes.string,
+    type: PropTypes.string,
 };

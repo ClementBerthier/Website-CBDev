@@ -13,7 +13,12 @@ export default function ContactBanner() {
                         N{"'"}hésitez pas à me contacter
                     </p>
 
-                    <Button href="/" text="Contact" id="contact" />
+                    <Button
+                        href="/"
+                        text="Contact"
+                        id="contact"
+                        type="button"
+                    />
                 </div>
             </div>
             <div className="whitefade"></div>

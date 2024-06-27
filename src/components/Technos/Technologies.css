@@ -133,10 +133,39 @@
                     }
                     .documentation {
                         margin: 2rem auto;
-                        .button {
-                            font-size: calc(0.8rem + 0.5vw);
-                            padding: 1rem 1.5rem;
-                        }
+
+                        font-size: calc(0.8rem + 0.5vw);
+                        padding: 1rem 1.5rem;
+                        background: linear-gradient(90deg, #98d2e6, #1e90ff);
+                        border: none;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        transition: all 0.4s ease;
+                        cursor: pointer;
+                        border-radius: 30px;
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 2;
+                    }
+                    .documentation:before {
+                        content: "";
+                        background: linear-gradient(90deg, #1e90ff, #0606c2);
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 100%;
+                        transition: all 0.4s ease;
+                        z-index: -1;
+                    }
+                    .documentation:hover:before {
+                        left: 0;
+                    }
+                    .documentation:hover {
+                        color: #fff;
+                        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
                     }
                 }
             }

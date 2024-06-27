@@ -10,8 +10,6 @@ import HomeLoader from "../HomeLoader/HomeLoader.jsx";
 //import Articles from "../Articles/Articles.jsx";
 
 export default function App() {
-    //const isMobile = useMobileDetect();
-
     return (
         <>
             <HomeLoader />

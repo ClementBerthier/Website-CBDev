@@ -8,8 +8,11 @@ export default function Button({ text, id }) {
     const handleClickNavigate = (e) => {
         e.preventDefault();
         const destinationId = e.target.id;
-        navigate("/", { state: { id: destinationId } });
-        console.log(destinationId);
+        if (destinationId === "contact") {
+            navigate("/", { state: { id: destinationId } });
+        } else if (destinationId === "servicesPage") {
+            navigate("/servicesPage", { state: { id: destinationId } });
+        }
     };
     return (
         <button

@@ -35,6 +35,9 @@
                 padding: 2rem 1rem;
                 border-radius: 10px;
             }
+            .services_name:hover {
+                cursor: pointer;
+            }
             .active {
                 background-color: var(--services_name_active);
                 color: var(--white);

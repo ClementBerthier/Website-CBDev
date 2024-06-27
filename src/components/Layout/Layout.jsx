@@ -13,20 +13,30 @@ import Technologies from "../Technos/Technologies.jsx";
 export default function Layout() {
     const location = useLocation();
     const homeRef = useRef(null);
-    const aboutMeRef = useRef(null);
     const servicesRef = useRef(null);
+    const FAQsRef = useRef(null);
+    const technologiesRef = useRef(null);
     const contactRef = useRef(null);
 
     useEffect(() => {
         if (location.state) {
-            if (location.state.scrollTo === "home") {
-                homeRef.current.scrollIntoView({ behavior: "smooth" });
-            } else if (location.state.scrollTo === "aboutMe") {
-                aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
-            } else if (location.state.scrollTo === "services") {
-                servicesRef.current.scrollIntoView({ behavior: "smooth" });
-            } else if (location.state.scrollTo === "contact") {
-                contactRef.current.scrollIntoView({ behavior: "smooth" });
+            const options = {
+                block: "center",
+                behavior: "smooth",
+            };
+            if (location.state.id === "home") {
+                homeRef.current.scrollIntoView(options);
+            } else if (location.state.id === "services") {
+                servicesRef.current.scrollIntoView(options);
+            } else if (location.state.id === "FAQs") {
+                FAQsRef.current.scrollIntoView(options);
+            } else if (location.state.id === "technologies") {
+                technologiesRef.current.scrollIntoView({
+                    block: "end",
+                    behavior: "smooth",
+                });
+            } else if (location.state.id === "contact") {
+                contactRef.current.scrollIntoView(options);
             }
         }
     }, [location]);
@@ -43,13 +53,13 @@ export default function Layout() {
             <div ref={servicesRef}>
                 <Services />
             </div>
-            <div>
+            <div ref={FAQsRef}>
                 <FAQs />
             </div>
             <div>
                 <ContactBanner />
             </div>
-            <div>
+            <div ref={technologiesRef}>
                 <Technologies />
             </div>
             <div ref={contactRef}>

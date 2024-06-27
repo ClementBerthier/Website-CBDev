@@ -28,8 +28,6 @@ export default function Technologies() {
         setCurrentTechnology({ ...technologyClicked });
     };
 
-    console.log(currentTechnology);
-
     return (
         <div className="Technologies">
             <div className="technologies_container">

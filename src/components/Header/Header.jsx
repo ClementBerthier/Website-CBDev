@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import Button from "../elements/Button/Button.jsx";
+import { useNavigate } from "react-router-dom";
 
 //TODO: ajouter les chemin de chaque liens
 //TODO: ajouter le chemin du bouton contact
 //TODO: ajouter le burger menu
 
 export default function Header2() {
+    const navigate = useNavigate();
+
     const [burgerOpen, setBurgerOpen] = useState(false);
     const [hiddenClass, setHiddenClass] = useState("");
     const [crossClass, setCrossClass] = useState("");
@@ -24,6 +27,13 @@ export default function Header2() {
             setCrossClass("");
         }
     }, [burgerOpen]);
+
+    const handleClickNavigate = (e) => {
+        e.preventDefault();
+        const destinationId = e.target.id;
+        navigate("/", { state: { id: destinationId } });
+        console.log(destinationId);
+    };
 
     return (
         <div className="Header">
@@ -57,31 +67,58 @@ export default function Header2() {
                     <div className="section_links">
                         <a className="logo_container" href="">
                             <img
+                                id="home"
                                 className="company_logo"
                                 src="/images/Logo_CBDev.png"
                                 alt="logo entreprise"
+                                onClick={handleClickNavigate}
                             />
                         </a>
                         <div className="links_container">
-                            <a className="link" href="">
+                            <a
+                                className="link"
+                                href="/"
+                                id="home"
+                                onClick={handleClickNavigate}
+                            >
                                 Accueil
                             </a>
-                            <a className="link" href="">
+                            <a
+                                className="link"
+                                href="/"
+                                id="services"
+                                onClick={handleClickNavigate}
+                            >
                                 Services
                             </a>
-                            <a className="link" href="">
+                            <a
+                                className="link"
+                                href="/"
+                                id="FAQs"
+                                onClick={handleClickNavigate}
+                            >
                                 FAQ
                             </a>
-                            <a className="link" href="">
-                                Portfolio
+                            <a
+                                className="link"
+                                href="/"
+                                id="technologies"
+                                onClick={handleClickNavigate}
+                            >
+                                Technologies
                             </a>
-                            <a className="link" href="">
-                                Articles
+                            <a
+                                className="link"
+                                href="/"
+                                id="contact"
+                                onClick={handleClickNavigate}
+                            >
+                                Contact
                             </a>
                         </div>
                     </div>
                     <div className="section_contact">
-                        <Button href="" text="Contact"></Button>
+                        <Button href="/" text="Contact" id="contact"></Button>
                         <div
                             className="burger_button_container"
                             onClick={openBurger}

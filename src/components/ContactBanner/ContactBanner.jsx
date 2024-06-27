@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import Button from "../elements/Button/Button.jsx";
 import "./contactBanner.css";
 
@@ -13,17 +12,8 @@ export default function ContactBanner() {
                     <p className="contactBanner_text">
                         N{"'"}hésitez pas à me contacter
                     </p>
-                    <Link
-                        to="contact"
-                        id="headerContact"
-                        className="footer_navigation_link"
-                        spy={true}
-                        smooth={true}
-                        offset={-250}
-                        duration={500}
-                    >
-                        <Button id="contact" text="Contact" />
-                    </Link>
+
+                    <Button href="/" text="Contact" id="contact" />
                 </div>
             </div>
             <div className="whitefade"></div>

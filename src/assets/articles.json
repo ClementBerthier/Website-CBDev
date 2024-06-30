@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "tag": "Conception de site",
+        "title": "Site vitrine",
+        "description": "Affirmez votre présence en ligne avec un site vitrine professionnel et attractif.",
+        "introText": "Un site vitrine est comme la bande-annonce d'un grand film. Il doit captiver, intriguer et donner envie de voir la suite. Ce premier aperçu de votre entreprise peut faire toute la différence entre un visiteur de passage et un client fidèle. Dans cet article, je vais vous expliquer ce qu'est un site vitrine, son but et de quoi il peut être composé.",
+        "descriptionTitle": "Qu'est-ce qu'un site vitrine ?",
+        "descriptionText": "Un site vitrine est un site web qui présente une entreprise, une association ou toute autre entité qui mérite d'être présentée. Il s'agit d'une vitrine virtuelle qui permet aux visiteurs de découvrir qui vous êtes, vos produits ou vos services, et comment vous contacter de manière simple et efficace. Contrairement à un site e-commerce, un site vitrine n'a pas pour but de vendre directement des produits ou des services en ligne, mais plutôt de donner une image professionnelle de votre entreprise et de susciter l'intérêt des visiteurs.",
+        "featureTitle": "Quelques fonctionnalités clés d'un site vitrine",
+        "featureText": "Un site vitrine peut être composé de plusieurs fonctionnalités. Elles seront définies en fonction de vos besoins et de vos objectifs afin que vous ayez la meilleure image possible. Voici quelques fonctionnalités clés que vous pouvez retrouver sur un site vitrine :",
+
+        "featureList": {
+            "firstFeature": {
+                "title": "Page d'accueil attirante",
+                "text": "La page d'accueil est la première chose que voient les visiteurs de votre site vitrine. Elle doit être attrayante, claire et informative pour donner envie aux visiteurs de découvrir le reste de votre site. "
+            },
+            "secondFeature": {
+                "title": "Produits et services",
+                "text": "Des pages détaillant les produits et services offerts, avec des descriptions, des images et éventuellement des vidéos permettent de donner un aperçu de ce que vous proposez.  "
+            },
+            "thirdFeature": {
+                "title": "Formulaire de contact ",
+                "text": " Un formulaire de contact simple et efficace permet aux visiteurs de vous contacter facilement. Vous pouvez également ajouter des informations de contact comme votre adresse, votre numéro de téléphone ou vos horaires d'ouverture. "
+            },
+            "fourthFeature": {
+                "title": "Galerie d'images",
+                "text": "Une galerie d'images pour présenter vos produits, vos locaux ou vos équipes. Les images sont un excellent moyen de donner une image professionnelle de votre entreprise et de susciter l'intérêt des visiteurs. "
+            },
+            "fifthFeature": {
+                "title": "Intégration des réseaux sociaux",
+                "text": "L'intégration des réseaux sociaux afin de permettre aux visiteurs de partager votre contenu sur les réseaux sociaux et de rester en contact avec vous. Vous pouvez également afficher vos dernières publications sur les réseaux sociaux pour montrer que vous êtes actif en ligne. "
+            },
+            "sixthFeature": {
+                "title": "Menu de navigation",
+                "text": "Un menu de navigation clair et intuitif pour permettre aux visiteurs de trouver facilement ce qu'ils cherchent. Un bon menu de navigation est essentiel pour offrir une expérience utilisateur optimale. "
+            }
+        },
+        "exampleTitle": "Un scénario de site vitrine possible",
+        "videoSRC": "qsdfqsdfq",
+        "videoALT": "video site vitrine",
+        "exempleText": "Pour rester dans le thème du cinéma, imaginons que votre entreprise se spécialise dans la production cinématographique. Le site vitrine pourrait présenter des extraits de films, des témoignages de réalisateurs renommés, un portfolio de productions passées et un blog avec des actualités du monde du cinéma. Une section dédiée à l'équipe et aux coulisses des tournages offrirait un aperçu authentique de votre savoir-faire, tandis qu'un formulaire de contact permettrait aux producteurs et scénaristes de facilement entrer en relation avec vous.",
+        "conclusionText": "En conclusion, un site vitrine est bien plus qu'une simple présence en ligne, c'est la vitrine virtuelle de votre entreprise, où vous pouvez captiver et séduire vos visiteurs. Investir dans un site vitrine professionnel et attractif est essentiel pour renforcer votre image de marque et attirer de nouveaux clients. ",
+        "promotionnalTitle": "Un site vitrine vous intéresse ?"
+    },
+    {
+        "id": 1,
+        "tag": "Conception de site",
+        "title": "Blog",
+        "description": "Exprimez votre passion et partagez vos idées avec le monde grâce à un blog captivant et bien conçu.",
+        "introText": "Un blog est une invitation au partage : au partage d'une passion, au partage d'informations et au partage d'expériences personnelles. Il doit captiver, informer et créer un lien fort avec les lecteurs. Dans cet article, nous allons explorer ce qu'est un blog, son utilité et les éléments clés qui le composent.",
+        "descriptionTitle": "Qu'est-ce qu'un blog ?",
+        "descriptionText": "Un blog est une plateforme en ligne où une personne partage régulièrement des contenus sous forme d'articles, de photos, de vidéos ou de podcasts. Il peut être personnel ou professionnel, et traiter de sujets variés comme la cuisine, le voyage, la mode, la technologie, etc. Le blog permet à son auteur d'exprimer ses idées, de partager ses connaissances et d'interagir avec une communauté de lecteurs intéressés par ses contenus.",
+        "featureTitle": "Quelques fonctionnalités clés d'un blog",
+        "featureText": "Un blog peut être composé de plusieurs fonctionnalités, chacune ayant un rôle spécifique pour offrir une expérience de lecture agréable et interactive. Voici quelques fonctionnalités clés que vous pouvez retrouver sur un blog :",
+
+        "featureList": {
+            "firstFeature": {
+                "title": "Articles",
+                "text": "Les articles d'un blog sont le contenu principal. Ils peuvent être courts ou longs, informatifs ou divertissants, mais doivent toujours être bien écrits et intéressants pour captiver les lecteurs."
+            },
+            "secondFeature": {
+                "title": "Commentaires ",
+                "text": "Les commentaires permettent aux lecteurs de réagir aux articles, de poser des questions, de donner leur avis ou de partager leur expérience. Les commentaires sont un excellent moyen d'engager la communauté et de créer un lien avec les lecteurs. "
+            },
+            "thirdFeature": {
+                "title": "Recherche Intégrée",
+                "text": "Une fonction de recherche intégrée pour permettre aux lecteurs de trouver facilement les articles qui les intéressent. La recherche est un outil essentiel pour faciliter la navigation sur le blog et encourager les lecteurs à explorer davantage de contenus. "
+            },
+            "fourthFeature": {
+                "title": "Abonnement et Newsletter",
+                "text": "Un formulaire d'abonnement et une newsletter pour permettre aux lecteurs de rester informés des derniers articles publiés sur le blog. L'abonnement et la newsletter sont des outils efficaces pour fidéliser les lecteurs et les inciter à revenir régulièrement sur le blog."
+            },
+            "fifthFeature": {
+                "title": "Widgets et Plugins",
+                "text": "Des widgets et plugins pour ajouter des fonctionnalités supplémentaires au blog, comme un calendrier des événements, un nuage de tags, des boutons de partage sur les réseaux sociaux, etc. Les widgets et plugins permettent de personnaliser le blog et d'améliorer l'expérience utilisateur. "
+            },
+            "sixthFeature": {
+                "title": "Monétisation",
+                "text": "La monétisation du blog à travers la publicité, les partenariats, les articles sponsorisés, les produits numériques ou les services payants est possible. La monétisation est une façon de rentabiliser le blog et de récompenser l'auteur pour le temps et l'énergie investis dans la création de contenus de qualité. "
+            }
+        },
+        "exampleTitle": "Un scénario de blog possible",
+        "videoSRC": "qsdfqsdfq",
+        "videoALT": "video blog",
+        "exempleText": "Imaginons que votre blog se spécialise dans les aventures et les conseils de voyage. Le blog pourrait présenter des récits de voyages, des photos époustouflantes, des guides pratiques pour différentes destinations et des actualités sur les tendances du tourisme. Une section dédiée aux préparatifs de vos voyages offrirait un aperçu authentique de vos expériences, tandis qu'un formulaire de contact permettrait aux lecteurs et aux partenaires touristiques de facilement entrer en relation avec vous. ",
+        "conclusionText": "Un blog est bien plus qu'un simple journal en ligne ; c'est une plateforme dynamique pour partager votre passion, engager vos lecteurs et créer une communauté fidèle. Que votre thème soit la mode, la cuisine, le voyage, la technologie, la santé ou l'éducation, un blog bien conçu peut transformer votre passion en influence. Investissez dans un blog et partagez vos passions et idées avec le monde entier !",
+        "promotionnalTitle": "Un blog vous intéresse ?"
+    }
+]

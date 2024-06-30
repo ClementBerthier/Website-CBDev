@@ -1,0 +1,69 @@
+.ServicePage {
+    width: 100%;
+    .servicePage_banner_title {
+        background-color: black;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tagService {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+        .service_title {
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            padding-left: 50px;
+        }
+        .service_little_description {
+            color: white;
+            font-size: 20px;
+            padding-left: 50px;
+        }
+    }
+    .servicePage_content_container {
+        .servicePage_content {
+            .content_introduction_title {
+                font-size: 30px;
+                font-weight: bold;
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+            .content_introduction_text {
+                font-size: 20px;
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+            .content_feature_title {
+                font-size: 30px;
+                font-weight: bold;
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+            .content_feature_text {
+                font-size: 20px;
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+            .content_exemple_title {
+                font-size: 30px;
+                font-weight: bold;
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+            .content_exemple_text {
+                font-size: 20px;
+                padding: 50px;
+            }
+            .content_exemple_video {
+                width: 50%;
+            }
+        }
+    }
+}

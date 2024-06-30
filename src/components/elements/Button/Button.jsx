@@ -11,8 +11,6 @@ export default function Button({ text, id, type }) {
             navigate("/", { state: { id: destinationId } });
         } else if (destinationId === "servicesPage") {
             navigate("/servicesPage", { state: { id: destinationId } });
-        } else {
-            null;
         }
     };
     return (

@@ -44,7 +44,7 @@
         "promotionnalTitle": "Un site vitrine vous intéresse ?"
     },
     {
-        "id": 1,
+        "id": 2,
         "tag": "Conception de site",
         "title": "Blog",
         "description": "Exprimez votre passion et partagez vos idées avec le monde grâce à un blog captivant et bien conçu.",
@@ -86,5 +86,48 @@
         "exempleText": "Imaginons que votre blog se spécialise dans les aventures et les conseils de voyage. Le blog pourrait présenter des récits de voyages, des photos époustouflantes, des guides pratiques pour différentes destinations et des actualités sur les tendances du tourisme. Une section dédiée aux préparatifs de vos voyages offrirait un aperçu authentique de vos expériences, tandis qu'un formulaire de contact permettrait aux lecteurs et aux partenaires touristiques de facilement entrer en relation avec vous. ",
         "conclusionText": "Un blog est bien plus qu'un simple journal en ligne ; c'est une plateforme dynamique pour partager votre passion, engager vos lecteurs et créer une communauté fidèle. Que votre thème soit la mode, la cuisine, le voyage, la technologie, la santé ou l'éducation, un blog bien conçu peut transformer votre passion en influence. Investissez dans un blog et partagez vos passions et idées avec le monde entier !",
         "promotionnalTitle": "Un blog vous intéresse ?"
+    },
+    {
+        "id": 3,
+        "tag": "Conception de site",
+        "title": "Portfolio",
+        "description": "Présentez votre talent et démarquez-vous avec un portfolio en ligne élégant et captivant.",
+        "introText": "Un portfolio est le reflet de votre talent, de votre créativité et de votre expertise. Il doit captiver, inspirer et convaincre les visiteurs de votre valeur ajoutée. Dans cet article, je vais vous expliquer ce qu'est un portfolio, son utilité et les éléments clés qui le composent.",
+        "descriptionText": "Un portfolio est un site web qui présente vos réalisations, vos projets et vos compétences de manière visuelle et interactive. Il permet de mettre en valeur votre talent, de montrer votre style et de convaincre les visiteurs de faire appel à vos services. Que vous soyez graphiste, photographe, designer, développeur ou artiste, un portfolio en ligne est un outil essentiel pour promouvoir votre travail et attirer de nouveaux clients.",
+        "featureTitle": "Quelques fonctionnalités clés d'un portfolio",
+        "featureText": "Un portfolio peut être composé de plusieurs fonctionnalités, chacune ayant un rôle spécifique pour mettre en valeur vos réalisations et convaincre les visiteurs de votre talent. Voici quelques fonctionnalités clés que vous pouvez retrouver sur un portfolio :",
+
+        "featureList": {
+            "firstFeature": {
+                "title": "Galerie d'œuvres",
+                "text": "Une galerie d'œuvres pour présenter vos réalisations, vos projets ou vos créations. Les images, les vidéos ou les maquettes sont un excellent moyen de montrer votre talent et de convaincre les visiteurs de votre expertise. "
+            },
+            "secondFeature": {
+                "title": "Contact et Réseaux Sociaux  ",
+                "text": "Un formulaire de contact et des liens vers vos profils sur les réseaux sociaux pour permettre aux visiteurs de vous contacter facilement et de rester en contact avec vous. Vous pouvez également ajouter des boutons de partage sur les réseaux sociaux pour permettre aux visiteurs de partager votre contenu. "
+            },
+            "thirdFeature": {
+                "title": "Témoignages et Avis",
+                "text": "Des témoignages et des avis de clients ou de collaborateurs pour montrer la qualité de votre travail et la satisfaction de vos clients. Les témoignages sont un excellent moyen de renforcer votre crédibilité et de convaincre les visiteurs de faire appel à vos services. "
+            },
+            "fourthFeature": {
+                "title": "Vidéo et Médias",
+                "text": "Des vidéos, des podcasts ou d'autres médias pour présenter vos projets de manière dynamique et interactive. Les médias sont un excellent moyen de captiver les visiteurs et de leur donner un aperçu de votre style et de votre créativité. "
+            },
+            "fifthFeature": {
+                "title": "Multilingue",
+                "text": "Un site multilingue pour toucher un public international et présenter vos réalisations à un plus large éventail de visiteurs. La traduction de votre portfolio dans plusieurs langues peut vous aider à attirer de nouveaux clients et à vous démarquer de la concurrence. "
+            },
+            "sixthFeature": {
+                "title": "Téléchargements",
+                "text": "Des fichiers à télécharger comme des CV, des brochures, des guides ou des présentations pour permettre aux visiteurs de découvrir plus en détail vos compétences et vos réalisations. Les téléchargements sont un excellent moyen de compléter l'information présentée sur votre portfolio et de convaincre les visiteurs de votre expertise. "
+            }
+        },
+        "exampleTitle": "Un scénario de portfolio possible",
+        "videoSRC": "qsdfqsdfq",
+        "videoALT": "video portfolio",
+        "exempleText": "Imaginons que votre portfolio se spécialise dans les animations et les créations graphiques animées. Le portfolio pourrait présenter une galerie de vos œuvres animées, des descriptions détaillées de projets ou encore des vidéos de vos processus créatifs. Une section dédiée à votre biographie et à vos inspirations offrirait un aperçu authentique de votre parcours, tandis qu'un formulaire de contact permettrait aux agences et aux clients potentiels de facilement entrer en relation avec vous.",
+        "conclusionText": "En conclusion, un portfolio est bien plus qu'une simple vitrine de vos réalisations, c'est un outil puissant pour promouvoir votre talent, convaincre les visiteurs de votre expertise et attirer de nouveaux clients. Investir dans un portfolio en ligne élégant et captivant est essentiel pour vous démarquer de la concurrence et valoriser votre talent.",
+        "promotionnalTitle": "Vous avez besoin d'un portfolio ?"
     }
 ]

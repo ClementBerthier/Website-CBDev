@@ -6,6 +6,8 @@ import article from "../../assets/articles.json";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+//TODO: ne pas oublier de faire les liens site vitrine portfolio etc
+
 export default function ServicesPage() {
     const [jsonData, setJsonData] = useState(null);
     const data = useLocation();

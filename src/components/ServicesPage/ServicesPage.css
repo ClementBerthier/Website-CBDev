@@ -18,7 +18,7 @@
         .tagService {
             color: white;
             font-family: var(--font-title);
-            font-size: calc(1em + 0.5vw);
+            font-size: calc(0.8em + 0.5vw);
             margin-bottom: 2rem;
 
             font-weight: 400;
@@ -30,6 +30,7 @@
             font-size: calc(1em + 0.5vw);
             font-family: var(--font-text);
             margin: 0 15rem;
+            line-height: 3rem;
         }
     }
     .servicePage_content_container {
@@ -57,18 +58,22 @@
                 font-size: calc(1.2rem + 0.5vw);
                 font-family: var(--font-text);
                 font-weight: 300;
+                line-height: 3.5rem;
+                padding-bottom: 5rem;
             }
 
             .item_title {
                 font-size: calc(0.5em + 1vw);
                 font-family: var(--font-title);
                 font-weight: 500;
-                margin: 2rem 0;
+                margin: 1rem 0;
             }
             .item_text {
                 font-size: calc(1.2rem + 0.5vw);
                 font-family: var(--font-text);
                 font-weight: 300;
+                line-height: 3.5rem;
+                padding-bottom: 5rem;
             }
 
             .example_video {

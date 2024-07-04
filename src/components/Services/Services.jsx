@@ -78,7 +78,7 @@ export default function Services2() {
                         id="application"
                         onClick={handleClickClass}
                     >
-                        Conception d{"'"}application
+                        Développement d{"'"}application
                     </div>
                     <div
                         className={`services_name ${activeEco}`}

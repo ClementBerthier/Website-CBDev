@@ -131,46 +131,245 @@
         "promotionnalTitle": "Vous avez besoin d'un portfolio ?"
     },
     {
-        "id": 3,
+        "id": 4,
         "tag": "Conception de site",
-        "title": "Portfolio",
-        "description": "Présentez votre talent et démarquez-vous avec un portfolio en ligne élégant et captivant.",
-        "introText": "Un portfolio est le reflet de votre talent, de votre créativité et de votre expertise. Il doit captiver, inspirer et convaincre les visiteurs de votre valeur ajoutée. Dans cet article, je vais vous expliquer ce qu'est un portfolio, son utilité et les éléments clés qui le composent.",
-        "descriptionText": "Un portfolio est un site web qui présente vos réalisations, vos projets et vos compétences de manière visuelle et interactive. Il permet de mettre en valeur votre talent, de montrer votre style et de convaincre les visiteurs de faire appel à vos services. Que vous soyez graphiste, photographe, designer, développeur ou artiste, un portfolio en ligne est un outil essentiel pour promouvoir votre travail et attirer de nouveaux clients.",
-        "featureTitle": "Quelques fonctionnalités clés d'un portfolio",
-        "featureText": "Un portfolio peut être composé de plusieurs fonctionnalités, chacune ayant un rôle spécifique pour mettre en valeur vos réalisations et convaincre les visiteurs de votre talent. Voici quelques fonctionnalités clés que vous pouvez retrouver sur un portfolio :",
+        "title": "CV en ligne",
+        "description": "Mettez en valeur votre parcours professionnel et vos compétences avec un CV en ligne personnalisé.",
+        "introText": "Un CV en ligne est bien plus qu'une simple liste de compétences et d'expériences professionnelles. C'est une vitrine de votre parcours, de vos réalisations et de vos ambitions. Dans cet article, je vais vous expliquer ce qu'est un CV en ligne, son utilité et les éléments clés qui le composent.",
+        "descriptionText": "Un CV en ligne est un site web qui présente votre parcours professionnel, vos compétences et vos réalisations de manière visuelle et interactive. Il permet de mettre en valeur votre expertise, de montrer votre personnalité et de convaincre les recruteurs de votre valeur ajoutée. Que vous soyez à la recherche d'un emploi, d'un stage ou de nouvelles opportunités professionnelles, un CV en ligne peut être un plus pour vous démarquer de la concurrence et attirer l'attention des recruteurs.",
+        "featureTitle": "Quelques fonctionnalités clés d'un CV en ligne",
+        "featureText": "Un CV en ligne peut être composé de plusieurs fonctionnalités, chacune ayant un rôle spécifique pour mettre en valeur votre parcours et convaincre les recruteurs de votre expertise. Voici quelques fonctionnalités clés que vous pouvez retrouver sur un CV en ligne :",
 
         "featureList": {
             "firstFeature": {
-                "title": "Galerie d'œuvres",
-                "text": "Une galerie d'œuvres pour présenter vos réalisations, vos projets ou vos créations. Les images, les vidéos ou les maquettes sont un excellent moyen de montrer votre talent et de convaincre les visiteurs de votre expertise. "
+                "title": "Interactivité et Design Personnalisé",
+                "text": "Un design personnalisé et interactif pour mettre en valeur votre personnalité et votre créativité. Un CV en ligne peut être plus original et plus dynamique qu'un CV traditionnel, ce qui peut vous aider à vous démarquer de la concurrence et à attirer l'attention des recruteurs. "
             },
             "secondFeature": {
-                "title": "Contact et Réseaux Sociaux  ",
-                "text": "Un formulaire de contact et des liens vers vos profils sur les réseaux sociaux pour permettre aux visiteurs de vous contacter facilement et de rester en contact avec vous. Vous pouvez également ajouter des boutons de partage sur les réseaux sociaux pour permettre aux visiteurs de partager votre contenu. "
+                "title": "Téléchargement de CV",
+                "text": "Un bouton de téléchargement pour permettre aux recruteurs de télécharger votre CV au format PDF ou Word. Le téléchargement du CV est un moyen pratique pour les recruteurs de conserver une copie de votre CV et de le partager avec d'autres membres de l'équipe. "
             },
             "thirdFeature": {
-                "title": "Témoignages et Avis",
-                "text": "Des témoignages et des avis de clients ou de collaborateurs pour montrer la qualité de votre travail et la satisfaction de vos clients. Les témoignages sont un excellent moyen de renforcer votre crédibilité et de convaincre les visiteurs de faire appel à vos services. "
+                "title": "Intégration des réseaux sociaux professionnel",
+                "text": "Des liens vers vos profils sur les réseaux sociaux pour permettre aux recruteurs de découvrir plus en détail votre parcours et vos compétences. L'intégration des réseaux sociaux tels que Linkedin par exemple est un excellent moyen de renforcer votre présence en ligne et de montrer que vous êtes actif sur les réseaux professionnels. "
             },
             "fourthFeature": {
                 "title": "Vidéo et Médias",
-                "text": "Des vidéos, des podcasts ou d'autres médias pour présenter vos projets de manière dynamique et interactive. Les médias sont un excellent moyen de captiver les visiteurs et de leur donner un aperçu de votre style et de votre créativité. "
+                "text": "Des vidéos, des podcasts ou d'autres médias pour présenter votre parcours et vos compétences de manière dynamique et interactive. Les médias sont un excellent moyen de captiver les recruteurs et de leur donner un aperçu de votre personnalité et de votre expertise. "
             },
             "fifthFeature": {
                 "title": "Multilingue",
-                "text": "Un site multilingue pour toucher un public international et présenter vos réalisations à un plus large éventail de visiteurs. La traduction de votre portfolio dans plusieurs langues peut vous aider à attirer de nouveaux clients et à vous démarquer de la concurrence. "
+                "text": "Un site multilingue pour toucher un public international et présenter votre CV à un plus large éventail de recruteurs. La traduction de votre CV dans plusieurs langues peut vous aider à attirer de nouvelles opportunités professionnelles et à vous démarquer sur le marché du travail. "
             },
             "sixthFeature": {
                 "title": "Téléchargements",
                 "text": "Des fichiers à télécharger comme des CV, des brochures, des guides ou des présentations pour permettre aux visiteurs de découvrir plus en détail vos compétences et vos réalisations. Les téléchargements sont un excellent moyen de compléter l'information présentée sur votre portfolio et de convaincre les visiteurs de votre expertise. "
             }
         },
-        "exampleTitle": "Un scénario de portfolio possible",
+        "exampleTitle": "Un scénario de CV en ligne possible",
         "videoSRC": "qsdfqsdfq",
         "videoALT": "video portfolio",
-        "exempleText": "Imaginons que votre portfolio se spécialise dans les animations et les créations graphiques animées. Le portfolio pourrait présenter une galerie de vos œuvres animées, des descriptions détaillées de projets ou encore des vidéos de vos processus créatifs. Une section dédiée à votre biographie et à vos inspirations offrirait un aperçu authentique de votre parcours, tandis qu'un formulaire de contact permettrait aux agences et aux clients potentiels de facilement entrer en relation avec vous.",
-        "conclusionText": "En conclusion, un portfolio est bien plus qu'une simple vitrine de vos réalisations, c'est un outil puissant pour promouvoir votre talent, convaincre les visiteurs de votre expertise et attirer de nouveaux clients. Investir dans un portfolio en ligne élégant et captivant est essentiel pour vous démarquer de la concurrence et valoriser votre talent.",
-        "promotionnalTitle": "Vous avez besoin d'un portfolio ?"
+        "exempleText": "Imaginons que vous ayez besoin d'un CV en ligne pour présenter vos compétences en tant que graphiste. Le CV pourrait présenter vos réalisations, vos compétences et vos expériences professionnelles de manière visuelle et interactive. Une galerie d'œuvres avec des images de vos créations, des témoignages de clients satisfaits et des liens vers vos profils sur les réseaux sociaux pour montrer votre expertise et votre professionnalisme. Un formulaire de contact pour permettre aux visiteurs de vous contacter facilement et de demander un devis ou des informations complémentaires.",
+        "conclusionText": "En conclusion, un CV en ligne est bien plus qu'un simple CV, c'est un outil puissant pour promouvoir votre talent, convaincre les recruteurs de votre expertise et attirer de nouvelles opportunités professionnelles. Investir dans un CV en ligne personnalisé et captivant est essentiel pour vous démarquer sur le marché du travail et valoriser votre parcours professionnel. ",
+        "promotionnalTitle": "Vous avez besoin d'un CV en ligne ?"
+    },
+    {
+        "id": 5,
+        "tag": "Conception de site",
+        "title": "Sites d'évènements",
+        "description": "Organisez et promouvez vos événements en ligne avec un site dédié et personnalisé.",
+        "introText": "Un site d'événements est la vitrine de votre événement, le point de rencontre entre les organisateurs et les participants. Il doit informer, engager et convaincre les visiteurs de s'inscrire. Dans cet article, je vais vous expliquer ce qu'est un site d'événements, son utilité et les éléments clés qui le composent.",
+        "descriptionText": "Un site d'événements est un site web dédié à la promotion et à l'organisation d'un événement spécifique, comme un festival, un salon, une conférence, un mariage, etc. Il permet aux organisateurs de présenter le programme, les intervenants, les partenaires, les tarifs et les modalités d'inscription, et aux participants de s'informer, de s'inscrire et de partager l'événement sur les réseaux sociaux. Un site d'événements bien conçu peut contribuer au succès de votre événement en attirant un public qualifié et en facilitant les inscriptions.",
+        "featureTitle": "Quelques fonctionnalités clés d'un site d'événements",
+        "featureText": "Un site d'événements peut être composé de plusieurs fonctionnalités, chacune ayant un rôle spécifique pour informer, engager et convaincre les visiteurs de s'inscrire à votre événement. Voici quelques fonctionnalités clés que vous pouvez retrouver sur un site d'événements :",
+
+        "featureList": {
+            "firstFeature": {
+                "title": "Inscription en ligne",
+                "text": "Un formulaire d'inscription en ligne pour permettre aux participants de s'inscrire facilement à votre événement. L'inscription en ligne est un moyen pratique et sécurisé pour collecter les informations des participants et gérer les inscriptions de manière efficace. "
+            },
+            "secondFeature": {
+                "title": "Téléchargement",
+                "text": "Des fichiers à télécharger comme des brochures, des programmes, des plans ou des guides pour permettre aux participants de découvrir plus en détail votre événement. Les téléchargements sont un excellent moyen de compléter l'information présentée sur le site et de convaincre les visiteurs de s'inscrire. "
+            },
+            "thirdFeature": {
+                "title": "Plan interactif du lieu",
+                "text": "Un plan interactif du lieu de l'événement pour permettre aux participants de se repérer facilement et de trouver les différentes zones (accueil, conférences, stands, etc.). Le plan interactif est un outil pratique pour faciliter la navigation sur le site et améliorer l'expérience des participants. "
+            },
+            "fourthFeature": {
+                "title": "Newsletter et Abonnement",
+                "text": "Un formulaire d'abonnement à la newsletter pour permettre aux participants de rester informés des dernières actualités de l'événement. La newsletter est un outil efficace pour fidéliser les participants et les inciter à revenir régulièrement sur le site. "
+            },
+            "fifthFeature": {
+                "title": "Multilingue",
+                "text": "Un site multilingue pour toucher un public international et promouvoir votre événement à un plus large éventail de participants. La traduction du site dans plusieurs langues peut vous aider à attirer des participants étrangers et à renforcer l'image internationale de votre événement. "
+            },
+            "sixthFeature": {
+                "title": "Sécurité et Confidentialité",
+                "text": "Politique de confidentialité et conformité aux réglementations sur la protection des données pour garantir la sécurité et la confidentialité des informations des participants. La sécurité et la confidentialité sont des éléments essentiels pour instaurer la confiance des participants et protéger leurs données personnelles. "
+            }
+        },
+        "exampleTitle": "Un scénario de site d'événements possible",
+        "videoSRC": "qsdfqsdfq",
+        "videoALT": "video portfolio",
+        "exempleText": "Imaginons que vous ayez besoin d'un site pour organiser et présenter votre mariage. Le site pourrait mettre en avant les détails de l'événement, les activités prévues et les informations importantes de manière élégante et interactive. Une galerie de photos avec des images des préparatifs et des moments spéciaux, des témoignages de proches et d'amis partageant leurs souvenirs et leurs vœux. Un formulaire pour permettre aux invités de confirmer leur présence facilement et d'indiquer leurs préférences ou besoins spécifiques, ainsi qu'une section dédiée à la liste de mariage et aux cadeaux pour simplifier l'organisation.",
+        "conclusionText": "En conclusion, un site d'événements est bien plus qu'une simple page d'information, c'est un outil pour promouvoir votre événement, attirer un public et faciliter les inscriptions. Investir dans un site d'événements personnalisé et captivant est essentiel pour garantir le succès de votre événement et offrir une expérience mémorable aux participants.",
+        "promotionnalTitle": "Vous souhaitez organiser un événement et vous avez besoin d'un site dédié ?"
+    },
+    {
+        "id": 6,
+        "tag": "Développement d'application",
+        "title": "Applications Web",
+        "description": "Créez et déployez des applications web personnalisées pour répondre aux besoins spécifiques de votre entreprise.",
+        "introText": "Une application web est un outil puissant pour automatiser vos processus, améliorer la productivité et offrir des services innovants à vos utilisateurs. Dans cet article, je vais vous expliquer ce qu'est une application web, son utilité et les éléments clés qui la composent.",
+        "descriptionText": "Une application web est un logiciel accessible via un navigateur internet, conçu pour offrir des fonctionnalités interactives et personnalisées. Contrairement aux sites web traditionnels, les applications web permettent une interaction plus poussée avec l'utilisateur, en offrant des services comme la gestion de comptes, le traitement de données en temps réel, et bien plus encore. Une application web bien conçue peut améliorer l'efficacité de votre entreprise et offrir une expérience utilisateur optimisée.",
+        "featureTitle": "Quelques fonctionnalités clés d'une application web",
+        "featureText": "Une application web peut être composée de plusieurs fonctionnalités, chacune ayant un rôle spécifique pour répondre aux besoins spécifiques de votre entreprise et de vos utilisateurs. Voici quelques fonctionnalités clés que vous pouvez retrouver dans une application web :",
+        "featureList": {
+            "firstFeature": {
+                "title": "Gestion des utilisateurs",
+                "text": "Un système de gestion des utilisateurs pour permettre la création, la modification et la suppression de comptes utilisateur. Cela inclut la gestion des rôles et des permissions pour assurer une utilisation sécurisée et contrôlée de l'application."
+            },
+            "secondFeature": {
+                "title": "Tableaux de bord interactifs",
+                "text": "Des tableaux de bord interactifs pour afficher des données en temps réel et permettre aux utilisateurs de visualiser des statistiques, des rapports et des indicateurs clés de performance. Les tableaux de bord sont personnalisables pour répondre aux besoins spécifiques de chaque utilisateur."
+            },
+            "thirdFeature": {
+                "title": "Formulaires dynamiques",
+                "text": "Des formulaires dynamiques pour collecter et traiter des données de manière efficace. Les formulaires peuvent inclure des champs conditionnels, des validations en temps réel et des intégrations avec d'autres systèmes pour automatiser les processus."
+            },
+            "fourthFeature": {
+                "title": "Notifications en temps réel",
+                "text": "Un système de notifications en temps réel pour informer les utilisateurs des mises à jour importantes, des alertes et des messages. Les notifications peuvent être envoyées par e-mail, SMS ou directement via l'application."
+            },
+            "fifthFeature": {
+                "title": "Sécurité et authentification",
+                "text": "Des mesures de sécurité robustes, y compris l'authentification à deux facteurs, le cryptage des données et la gestion des sessions pour protéger les informations sensibles et garantir la confidentialité des utilisateurs."
+            },
+            "sixthFeature": {
+                "title": "Bases de données et stockage",
+                "text": "Une base de données fiable et évolutive pour stocker et gérer les données de l'application. Les bases de données peuvent être relationnelles ou non relationnelles, en fonction des besoins de l'application."
+            }
+        },
+        "exampleTitle": "Un scénario d'application web possible",
+        "videoSRC": "abcd1234",
+        "videoALT": "vidéo de démonstration",
+        "exempleText": "Imaginons que vous ayez besoin d'une application web pour gérer les réservations d'une salle de sport. L'application pourrait permettre aux utilisateurs de créer un compte, de réserver des créneaux horaires, de consulter les disponibilités en temps réel et de recevoir des notifications de rappel. Une section dédiée aux administrateurs permettrait de gérer les réservations, d'ajouter ou de modifier les horaires et d'envoyer des communications aux membres. Un tableau de bord interactif afficherait les statistiques d'utilisation, les tendances de réservation et d'autres indicateurs clés.",
+        "conclusionText": "En conclusion, une application web est bien plus qu'un simple outil numérique, c'est une solution pour automatiser vos processus, améliorer l'expérience utilisateur et augmenter l'efficacité de votre entreprise. Investir dans une application web personnalisée et intuitive est essentiel pour répondre aux besoins spécifiques de votre activité et offrir des services de qualité à vos utilisateurs.",
+        "promotionnalTitle": "Vous souhaitez développer une application web sur mesure ?"
+    },
+    {
+        "id": 7,
+        "tag": "E-commerce",
+        "title": "Sites e-commerce",
+        "description": "Lancez votre boutique en ligne avec un site e-commerce personnalisé et performant.",
+        "introText": "Un site e-commerce est bien plus qu'une simple vitrine, c'est une plateforme interactive où vos clients peuvent explorer, sélectionner et acheter vos produits en toute simplicité. Dans cet article, je vais vous expliquer ce qu'est un site e-commerce, son utilité et les éléments clés qui le composent.",
+        "descriptionText": "Un site e-commerce est un site web dédié à la vente de produits ou de services en ligne. Il permet aux entreprises de présenter leur catalogue, de gérer les commandes, et de traiter les paiements en ligne de manière sécurisée. Un site e-commerce bien conçu peut augmenter vos ventes, élargir votre clientèle et offrir une expérience d'achat fluide et agréable.",
+        "featureTitle": "Quelques fonctionnalités clés d'un site e-commerce",
+        "featureText": "Un site e-commerce peut être composé de plusieurs fonctionnalités, chacune ayant un rôle spécifique pour améliorer l'expérience utilisateur et optimiser les ventes. Voici quelques fonctionnalités clés que vous pouvez retrouver sur un site e-commerce :",
+        "featureList": {
+            "firstFeature": {
+                "title": "Gestion des produits",
+                "text": "Un système de gestion des produits pour ajouter, modifier et supprimer des articles facilement. Inclut la possibilité de gérer les stocks, les variantes de produits (taille, couleur) et les descriptions détaillées."
+            },
+            "secondFeature": {
+                "title": "Panier et commande en ligne",
+                "text": "Une fonctionnalité de panier pour permettre aux clients de sélectionner plusieurs articles avant de finaliser leur achat. Le processus de commande doit être simple et intuitif, avec des options de paiement sécurisées."
+            },
+            "thirdFeature": {
+                "title": "Passerelle de paiement sécurisée",
+                "text": "Intégration de passerelles de paiement sécurisées pour traiter les transactions en ligne. Support des principales cartes de crédit, PayPal et autres méthodes de paiement."
+            },
+            "fourthFeature": {
+                "title": "Suivi des commandes",
+                "text": "Un système de suivi des commandes pour permettre aux clients de suivre l'état de leur commande depuis la préparation jusqu'à la livraison. Notifications par e-mail ou SMS pour informer les clients de l'avancement."
+            },
+            "fifthFeature": {
+                "title": "Avis et commentaires clients",
+                "text": "Une section pour les avis et commentaires des clients afin de partager leurs expériences et d'évaluer les produits. Les avis positifs peuvent renforcer la confiance des nouveaux clients."
+            },
+            "sixthFeature": {
+                "title": "Creation de compte",
+                "text": "Un système de création de compte pour permettre aux clients de s'inscrire, de sauvegarder leurs informations et de suivre leurs commandes. Les comptes clients peuvent inclure des avantages comme des remises ou des offres spéciales."
+            }
+        },
+        "exampleTitle": "Un scénario de site e-commerce possible",
+        "videoSRC": "efgh5678",
+        "videoALT": "vidéo de démonstration",
+        "exempleText": "Imaginons que vous ayez besoin d'un site e-commerce pour vendre des vêtements de mode. Le site pourrait inclure une gestion complète des produits avec des descriptions détaillées, des images haute résolution et des options de filtres pour faciliter la recherche. Un système de panier et de commande intuitif permettrait aux clients de sélectionner plusieurs articles et de finaliser leur achat facilement. Des passerelles de paiement sécurisées garantiraient des transactions sûres, tandis qu'un système de suivi des commandes informerait les clients de l'avancement de leur livraison. Une section d'avis et commentaires renforcerait la confiance des nouveaux acheteurs et des outils SEO et de marketing intégrés aideraient à attirer plus de visiteurs.",
+        "conclusionText": "En conclusion, un site e-commerce est bien plus qu'une simple boutique en ligne, c'est un outil puissant pour augmenter vos ventes, améliorer l'expérience client et étendre votre portée sur le marché. Investir dans un site e-commerce personnalisé et performant est essentiel pour garantir le succès de votre entreprise améliorer votre compétitivité.",
+        "promotionnalTitle": "Vous souhaitez lancer votre boutique en ligne ?"
+    },
+    {
+        "id": 8,
+        "tag": "Services web",
+        "title": "Refonte et Maintenance de Sites Web",
+        "description": "Améliorez et maintenez la performance de votre site web avec nos services de refonte et de maintenance personnalisés.",
+        "introText": "Un site web performant et à jour est essentiel pour garantir une expérience utilisateur optimale et pour maintenir une bonne visibilité en ligne. Dans cet article, je vais vous expliquer ce qu'implique la refonte et la maintenance de sites web, leur utilité et les éléments clés à considérer.",
+        "descriptionText": "La refonte d'un site web consiste à revoir et améliorer son design, sa structure et ses fonctionnalités pour mieux répondre aux besoins des utilisateurs et aux objectifs de l'entreprise. La maintenance, quant à elle, inclut toutes les actions nécessaires pour garantir que le site reste fonctionnel, sécurisé et à jour. Ensemble, ces services assurent que votre site web continue de performer de manière optimale et d'offrir une meilleure expérience utilisateur .",
+        "featureTitle": "Quelques fonctionnalités clés de la refonte et de la maintenance de sites web",
+        "featureText": "La refonte et la maintenance de sites web comprennent plusieurs fonctionnalités essentielles pour améliorer et maintenir la performance de votre site. Voici quelques-unes des fonctionnalités clés que vous pouvez attendre de ces services :",
+        "featureList": {
+            "firstFeature": {
+                "title": "Audit complet du site",
+                "text": "Un audit détaillé pour identifier les points forts et les faiblesses de votre site actuel. L'audit inclut une analyse de la performance, de la sécurité, du SEO et de l'expérience utilisateur."
+            },
+            "secondFeature": {
+                "title": "Optimisation de la performance",
+                "text": "Amélioration de la vitesse de chargement des pages, réduction du temps de réponse du serveur et optimisation des ressources pour offrir une expérience utilisateur fluide et rapide."
+            },
+            "thirdFeature": {
+                "title": "Refonte du design",
+                "text": "Mise à jour du design du site pour le rendre plus moderne, attrayant et intuitif. Cela inclut l'optimisation de la navigation, la mise en place d'un design responsive et l'amélioration de l'ergonomie."
+            },
+            "fourthFeature": {
+                "title": "Sécurité renforcée",
+                "text": "Implémentation de mesures de sécurité avancées pour protéger votre site contre les attaques et les vulnérabilités."
+            },
+            "fifthFeature": {
+                "title": "Résolution de bugs",
+                "text": "Identification et correction des bugs, des erreurs d'affichage et des problèmes de fonctionnalités pour garantir que votre site fonctionne correctement et sans interruption."
+            },
+            "sixthFeature": {
+                "title": "Mises à jour régulières",
+                "text": "Mises à jour régulières des contenus, des plugins et des fonctionnalités pour garantir que votre site reste à jour avec les dernières technologies et tendances du web. Cela inclut également des ajustements pour améliorer le référencement et l'expérience utilisateur."
+            }
+        },
+        "exampleTitle": "Un scénario de service de refonte et de maintenance possible",
+        "videoSRC": "ijkl91011",
+        "videoALT": "vidéo de démonstration",
+        "exempleText": "Imaginons que vous ayez besoin de refondre et de maintenir le site web de votre entreprise. Le service de refonte pourrait inclure une mise à jour complète du design pour le rendre plus moderne et responsive, une optimisation de la performance pour améliorer la vitesse de chargement, et une sécurisation renforcée pour protéger contre les cybermenaces. Le service de maintenance, quant à lui, assurerait des mises à jour régulières des contenus et des fonctionnalités, un support technique continu pour résoudre les problèmes rapidement, et des audits périodiques pour garantir que le site reste performant et sécurisé.",
+        "conclusionText": "En conclusion, la refonte et la maintenance de sites web sont essentielles pour garantir que votre site reste performant, sécurisé et attrayant. Investir dans ces services permet d'améliorer l'expérience utilisateur, de maintenir une bonne visibilité en ligne et de garantir que votre site répond aux attentes de vos visiteurs. Une refonte et une maintenance régulières sont cruciales pour le succès à long terme de votre présence en ligne.",
+        "promotionnalTitle": "Vous souhaitez refondre ou maintenir votre site web ?"
+    },
+    {
+        "id": 9,
+        "tag": "Services web",
+        "title": "SEO et Optimisation",
+        "description": "Améliorez la visibilité et la performance de votre site web avec nos services de SEO et d'optimisation personnalisés.",
+        "introText": "Un site web bien optimisé et bien référencé est crucial pour attirer du trafic et atteindre vos objectifs commerciaux. Dans cet article, je vais vous expliquer ce qu'impliquent les services de SEO et d'optimisation, leur utilité et les éléments clés à considérer.",
+        "descriptionText": "Le SEO (Search Engine Optimization) est l'ensemble des techniques visant à améliorer la visibilité d'un site web dans les résultats des moteurs de recherche. L'optimisation, quant à elle, inclut toutes les actions nécessaires pour améliorer la performance, la vitesse de chargement et l'expérience utilisateur de votre site. Ensemble, ces services assurent que votre site web attire plus de visiteurs et convertit davantage.",
+        "featureTitle": "Quelques fonctionnalités clés des services de SEO et d'optimisation",
+        "featureText": "Les services de SEO et d'optimisation comprennent plusieurs fonctionnalités essentielles pour améliorer la visibilité et la performance de votre site web. Voici quelques-unes des fonctionnalités clés que vous pouvez attendre de ces services :",
+        "featureList": {
+            "firstFeature": {
+                "title": "Audit SEO complet",
+                "text": "Un audit détaillé pour analyser les performances SEO actuelles de votre site. Cela inclut une analyse des mots-clés, des backlinks, du contenu et des aspects techniques."
+            },
+            "secondFeature": {
+                "title": "Recherche de mots-clés",
+                "text": "Identification des mots-clés les plus pertinents pour votre activité et optimisation du contenu pour ces mots-clés afin d'améliorer le classement dans les moteurs de recherche."
+            },
+            "thirdFeature": {
+                "title": "Optimisation technique",
+                "text": "Amélioration des aspects techniques du site, comme la structure des URLs, les balises méta, les sitemaps et la vitesse de chargement, pour favoriser un meilleur référencement."
+            }
+        },
+        "exampleTitle": "Un scénario de service de SEO et d'optimisation possible",
+        "videoSRC": "mnop1234",
+        "videoALT": "vidéo de démonstration",
+        "exempleText": "Imaginons que vous ayez besoin de services de SEO et d'optimisation pour améliorer la visibilité de votre boutique en ligne. Le service pourrait inclure un audit SEO complet pour identifier les points à améliorer, la recherche et l'optimisation des mots-clés pertinents pour vos produits, et l'amélioration technique de votre site pour favoriser un meilleur référencement. Un suivi continu et des rapports réguliers permettraient de mesurer les progrès et d'ajuster les stratégies pour atteindre vos objectifs.",
+        "conclusionText": "En conclusion, les services de SEO et d'optimisation sont essentiels pour garantir que votre site web attire du trafic qualifié et offre une expérience utilisateur optimale. Investir dans ces services permet d'améliorer le classement de votre site dans les moteurs de recherche et ainsi d'augmenter le nombre de visiteurs. Une optimisation régulière et une stratégie SEO bien pensée sont cruciales pour le succès à long terme de votre présence en ligne.",
+        "promotionnalTitle": "Vous souhaitez améliorer le SEO de votre site web ?"
     }
 ]

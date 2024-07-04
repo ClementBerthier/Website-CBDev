@@ -2,15 +2,15 @@ import PropTypes from "prop-types";
 import "./button.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Button({ text, id, type }) {
+export default function Button({ text, id, name, type }) {
     const navigate = useNavigate();
 
     const handleClickNavigate = (e) => {
         const destinationId = e.target.id;
         if (destinationId === "contact") {
             navigate("/", { state: { id: destinationId } });
-        } else if (destinationId === "servicesPage") {
-            navigate("/servicesPage", { state: { id: destinationId } });
+        } else {
+            navigate("/servicesPage", { state: { name: name } });
         }
     };
     return (
@@ -28,5 +28,6 @@ export default function Button({ text, id, type }) {
 Button.propTypes = {
     text: PropTypes.string.isRequired,
     id: PropTypes.string,
+    name: PropTypes.string,
     type: PropTypes.string,
 };

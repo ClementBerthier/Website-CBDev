@@ -126,7 +126,8 @@ export default function Services2() {
 
                         <Button
                             text="+"
-                            id="servicesPage"
+                            id={jsonData.id}
+                            name={jsonData.name}
                             type="button"
                         ></Button>
                     </div>

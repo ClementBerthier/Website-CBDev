@@ -1,69 +1,112 @@
 .ServicePage {
     width: 100%;
     .servicePage_banner_title {
-        background-color: black;
+        background-color: #404b5c;
         height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .tagService {
-            color: white;
-            font-size: 30px;
-            font-weight: bold;
-            padding-top: 100px;
-            padding-left: 50px;
-        }
         .service_title {
             color: white;
-            font-size: 50px;
-            font-weight: bold;
-            padding-left: 50px;
+            font-size: calc(2em + 1vw);
+            font-family: var(--font-title);
+            margin: 4.5rem 0 1.5rem 0;
+            font-weight: 600;
+        }
+        .tagService {
+            color: white;
+            font-family: var(--font-title);
+            font-size: calc(1em + 0.5vw);
+            margin-bottom: 2rem;
+
+            font-weight: 400;
         }
         .service_little_description {
+            max-width: 1700px;
             color: white;
-            font-size: 20px;
-            padding-left: 50px;
+            text-align: center;
+            font-size: calc(1em + 0.5vw);
+            font-family: var(--font-text);
+            margin: 0 15rem;
         }
     }
     .servicePage_content_container {
+        max-width: 1700px;
+        margin: 10rem auto;
+        background-color: #e5f0fb;
+        padding: 10rem 8rem;
+
         .servicePage_content {
-            .content_introduction_title {
-                font-size: 30px;
-                font-weight: bold;
-                padding-top: 50px;
-                padding-left: 50px;
+            .introduction_title,
+            .description_title,
+            .feature_title,
+            .example_title,
+            .conclusion_title {
+                font-size: calc(2em + 1vw);
+                font-family: var(--font-title);
+                font-weight: 600;
+                margin: 2rem 0;
             }
-            .content_introduction_text {
-                font-size: 20px;
-                padding-top: 20px;
-                padding-left: 50px;
+            .introduction_text,
+            .description_text,
+            .feature_text,
+            .example_text,
+            .conclusion_text {
+                font-size: calc(1.2rem + 0.5vw);
+                font-family: var(--font-text);
+                font-weight: 300;
             }
-            .content_feature_title {
-                font-size: 30px;
-                font-weight: bold;
-                padding-top: 50px;
-                padding-left: 50px;
+
+            .item_title {
+                font-size: calc(0.5em + 1vw);
+                font-family: var(--font-title);
+                font-weight: 500;
+                margin: 2rem 0;
             }
-            .content_feature_text {
-                font-size: 20px;
-                padding-top: 20px;
-                padding-left: 50px;
+            .item_text {
+                font-size: calc(1.2rem + 0.5vw);
+                font-family: var(--font-text);
+                font-weight: 300;
             }
-            .content_exemple_title {
-                font-size: 30px;
-                font-weight: bold;
-                padding-top: 50px;
-                padding-left: 50px;
+
+            .example_video {
+                width: 100%;
             }
-            .content_exemple_text {
-                font-size: 20px;
-                padding: 50px;
-            }
-            .content_exemple_video {
-                width: 50%;
-            }
+        }
+    }
+}
+.promotionnal_banner_container {
+    background-color: #e5f0fb;
+    .promotionnal_banner {
+        max-width: 1700px;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promotionnal_banner_title {
+        font-size: calc(2em + 1vw);
+        color: black;
+        font-family: var(--font-title);
+        font-weight: 600;
+        padding: 8rem 0 1rem 0;
+    }
+    .promotionnal_banner_text {
+        font-size: calc(1.2rem + 0.5vw);
+        font-family: var(--font-text);
+        color: black;
+        font-weight: 300;
+        padding: 1rem 0 2rem 0;
+    }
+    .button_contact {
+        padding: 1rem 0 8rem 0;
+        .button {
+            font-size: calc(0.8rem + 0.5vw);
+            font-family: var(--font-title);
+            background: linear-gradient(90deg, #98d2e6, #1e90ff);
         }
     }
 }

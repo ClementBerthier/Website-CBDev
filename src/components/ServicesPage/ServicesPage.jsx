@@ -56,10 +56,10 @@ export default function ServicesPage() {
                                     </p>
                                 </div>
                                 <div className="description">
-                                    <h2 className="description_title">
+                                    <h2 className="description_service_title">
                                         {jsonData.descriptionTitle}
                                     </h2>
-                                    <p className="description_text">
+                                    <p className="description_service_text">
                                         {jsonData.descriptionText}
                                     </p>
                                 </div>

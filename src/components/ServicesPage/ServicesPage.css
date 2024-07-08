@@ -62,10 +62,11 @@
                 font-family: var(--font-text);
                 font-weight: 300;
                 line-height: 3.5rem;
+                padding: 3rem 0;
             }
 
             .item_title {
-                font-size: calc(0.5em + 1vw);
+                font-size: calc(1rem + 1vw);
                 font-family: var(--font-title);
                 font-weight: 500;
                 margin: 2rem 0 1rem 0;

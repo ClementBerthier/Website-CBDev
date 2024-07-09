@@ -119,6 +119,7 @@
             text-decoration: none;
             margin: 0 1rem;
             font-family: var(--font-title);
+            border-bottom: 1px solid white;
         }
         .link:hover {
             cursor: pointer;

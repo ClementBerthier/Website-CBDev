@@ -30,6 +30,9 @@ export default function Header2() {
     }, [burgerOpen]);
 
     const handleClickNavigate = (e) => {
+        setBurgerMenu("burgerHidden");
+        setHiddenClass("");
+        setCrossClass("");
         e.preventDefault();
         const destinationId = e.target.id;
         navigate("/", { state: { id: destinationId } });

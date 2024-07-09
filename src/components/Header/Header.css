@@ -113,7 +113,7 @@
         align-items: center;
         gap: 8rem;
         .link {
-            font-size: calc(4rem + 0.5vw);
+            font-size: calc(3rem + 0.5vw);
             font-weight: 400;
             color: white;
             text-decoration: none;

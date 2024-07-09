@@ -29,8 +29,17 @@
             text-align: center;
             font-size: calc(1em + 0.5vw);
             font-family: var(--font-text);
-            margin: 0 15rem;
+            margin: 0 15rem 2rem 15rem;
             line-height: 3rem;
+        }
+        .articleSelector {
+            width: 20rem;
+            height: 3rem;
+            .text {
+                font-family: var(--font-title);
+                font-weight: 400;
+                font-size: calc(1em + 0.5vw);
+            }
         }
     }
     .servicePage_content_container {
@@ -116,5 +125,12 @@
             font-family: var(--font-title);
             background: linear-gradient(90deg, #98d2e6, #1e90ff);
         }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .articleSelector {
+        width: 10rem !important;
+        height: 2.5rem;
     }
 }

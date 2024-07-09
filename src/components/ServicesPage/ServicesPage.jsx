@@ -3,16 +3,18 @@ import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer.jsx";
 import Button from "../elements/Button/Button.jsx";
 import article from "../../assets/articles.json";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Dropdown } from "semantic-ui-react";
 
 //TODO: ne pas oublier de faire les liens site vitrine portfolio etc
 
 export default function ServicesPage() {
+    const navigate = useNavigate();
     const [jsonData, setJsonData] = useState(null);
+    const [articleSelected, setArticleSelected] = useState(null);
     const data = useLocation();
     const dataName = data.state.name;
-    console.log(dataName);
 
     useEffect(() => {
         if (dataName) {
@@ -38,7 +40,24 @@ export default function ServicesPage() {
         }
     }, [dataName]);
 
-    console.log(jsonData);
+    const option = [
+        { key: "site", text: "Site vitrine", value: "site" },
+        { key: "blog", text: "Blog", value: "blog" },
+        { key: "portfolio", text: "Portfolio", value: "portfolio" },
+        { key: "CV", text: "CV", value: "CV" },
+        { key: "evenement", text: "Evenement", value: "evenement" },
+        { key: "application", text: "Application", value: "application" },
+        { key: "e_commerce", text: "E-commerce", value: "e_commerce" },
+        { key: "RM", text: "R&M", value: "RM" },
+        { key: "SEO", text: "SEO", value: "SEO" },
+    ];
+
+    const handleChangeArticleSelector = (e, value) => {
+        setArticleSelected(value.value);
+    };
+    useEffect(() => {
+        navigate("/servicesPage", { state: { name: articleSelected } });
+    }, [articleSelected, navigate]);
 
     return (
         <>
@@ -52,6 +71,15 @@ export default function ServicesPage() {
                             <p className="service_little_description">
                                 {jsonData.description}
                             </p>
+                            <div>
+                                <Dropdown
+                                    className="articleSelector"
+                                    placeholder={jsonData.title}
+                                    options={option}
+                                    onChange={handleChangeArticleSelector}
+                                    selection
+                                />
+                            </div>
                         </div>
                         <div className="servicePage_content_container">
                             <div className="servicePage_content">

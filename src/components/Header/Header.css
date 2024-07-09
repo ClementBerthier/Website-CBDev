@@ -98,7 +98,7 @@
         }
     }
 }
-.test {
+.burgerMenu {
     background-color: #404b5c;
     width: 100vw;
     height: 100vh;
@@ -124,6 +124,9 @@
             cursor: pointer;
         }
     }
+}
+.burgerHidden {
+    display: none;
 }
 
 @media screen and (max-width: 1000px) {

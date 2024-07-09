@@ -9,6 +9,7 @@ export default function Header2() {
     const navigate = useNavigate();
 
     const [burgerOpen, setBurgerOpen] = useState(false);
+    const [burgerMenu, setBurgerMenu] = useState("burgerHidden");
     const [hiddenClass, setHiddenClass] = useState("");
     const [crossClass, setCrossClass] = useState("");
 
@@ -20,9 +21,11 @@ export default function Header2() {
         if (burgerOpen) {
             setHiddenClass("hidden");
             setCrossClass("cross");
+            setBurgerMenu("burgerMenu");
         } else {
             setHiddenClass("");
             setCrossClass("");
+            setBurgerMenu("burgerHidden");
         }
     }, [burgerOpen]);
 
@@ -143,7 +146,7 @@ export default function Header2() {
                     </div>
                 </div>
             </div>
-            <div className="test">
+            <div className={burgerMenu}>
                 <div className="links_container">
                     <a
                         className="link"

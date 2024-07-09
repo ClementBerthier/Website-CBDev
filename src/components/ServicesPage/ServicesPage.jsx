@@ -7,8 +7,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Dropdown } from "semantic-ui-react";
 
-//TODO: ne pas oublier de faire les liens site vitrine portfolio etc
-
 export default function ServicesPage() {
     const navigate = useNavigate();
     const [jsonData, setJsonData] = useState(null);

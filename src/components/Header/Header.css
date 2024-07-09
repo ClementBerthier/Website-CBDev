@@ -40,6 +40,7 @@
             }
         }
     }
+
     .header_navigation {
         background-color: var(--header-navigation);
         height: 8rem;
@@ -97,6 +98,33 @@
         }
     }
 }
+.test {
+    background-color: #404b5c;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    .links_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        .link {
+            font-size: calc(4rem + 0.5vw);
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-family: var(--font-title);
+        }
+        .link:hover {
+            cursor: pointer;
+        }
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .Header {
@@ -119,6 +147,7 @@
                             height: 0.2rem;
                             background-color: #000000;
                             margin: 1rem;
+                            z-index: 5000;
                         }
 
                         .hidden {

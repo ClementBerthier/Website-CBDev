@@ -18,6 +18,14 @@ export default function ServicesPage() {
         if (dataName) {
             if (dataName === "site") {
                 setJsonData(article[0]);
+            } else if (dataName === "blog") {
+                setJsonData(article[1]);
+            } else if (dataName === "portfolio") {
+                setJsonData(article[2]);
+            } else if (dataName === "CV") {
+                setJsonData(article[3]);
+            } else if (dataName === "evenement") {
+                setJsonData(article[4]);
             } else if (dataName === "application") {
                 setJsonData(article[5]);
             } else if (dataName === "e_commerce") {

@@ -2,11 +2,13 @@ import "./Services.css";
 import services from "../../assets/services.json";
 import { useState } from "react";
 import Button from "../elements/Button/Button.jsx";
+import { useNavigate } from "react-router-dom";
 
 //TODO: ajouter les liens pour les boutons plus d'infos
 //TODO: faire un montage de l'image du site pour le rendu dans service picture
 
 export default function Services2() {
+    const navigate = useNavigate();
     const [isSite, setIsSite] = useState(true);
     const [isRM, setIsRM] = useState(false);
     const [jsonData, setJsonData] = useState(services.site);
@@ -59,6 +61,12 @@ export default function Services2() {
             setActiveSEO("");
         }
     };
+
+    const handleClickLink = (e) => {
+        const name = e.target.id;
+        navigate("/servicesPage", { state: { name: name } });
+    };
+
     return (
         <div className="Services">
             <div className="services_container">
@@ -113,11 +121,25 @@ export default function Services2() {
 
                         {isSite ? (
                             <p className="text">
-                                <span>{jsonData.firstSpan}</span>,{" "}
-                                <span>{jsonData.secondSpan}</span>,{" "}
-                                <span>{jsonData.thirdSpan}</span>,{" "}
-                                <span>{jsonData.fourthSpan}</span>,{" "}
-                                <span>{jsonData.fifthSpan}</span>{" "}
+                                <span id="site" onClick={handleClickLink}>
+                                    {jsonData.firstSpan}
+                                </span>
+                                ,{" "}
+                                <span id="blog" onClick={handleClickLink}>
+                                    {jsonData.secondSpan}
+                                </span>
+                                ,{" "}
+                                <span id="portfolio" onClick={handleClickLink}>
+                                    {jsonData.thirdSpan}
+                                </span>
+                                ,{" "}
+                                <span id="CV" onClick={handleClickLink}>
+                                    {jsonData.fourthSpan}
+                                </span>
+                                ,{" "}
+                                <span id="evenement" onClick={handleClickLink}>
+                                    {jsonData.fifthSpan}
+                                </span>{" "}
                                 {jsonData.description}
                             </p>
                         ) : (

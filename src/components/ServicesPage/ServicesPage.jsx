@@ -3,48 +3,38 @@ import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer.jsx";
 import Button from "../elements/Button/Button.jsx";
 import article from "../../assets/articles.json";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Dropdown } from "semantic-ui-react";
 
 export default function ServicesPage() {
     //TODO: regler le probleme de video decalé par rapport a la section
 
-    const navigate = useNavigate();
     const [jsonData, setJsonData] = useState(null);
-    const [articleSelected, setArticleSelected] = useState(null);
     const data = useLocation();
-    const dataName = data.state.name;
+    const [dataName, setDataName] = useState(data.state.name);
 
     useEffect(() => {
+        console.log("value", dataName);
         if (dataName) {
             if (dataName === "site") {
                 setJsonData(article[0]);
-                setArticleSelected("site");
             } else if (dataName === "blog") {
                 setJsonData(article[1]);
-                setArticleSelected("blog");
             } else if (dataName === "portfolio") {
                 setJsonData(article[2]);
-                setArticleSelected("portfolio");
             } else if (dataName === "CV") {
                 setJsonData(article[3]);
-                setArticleSelected("CV");
             } else if (dataName === "evenement") {
                 setJsonData(article[4]);
-                setArticleSelected("evenement");
             } else if (dataName === "application") {
                 setJsonData(article[5]);
-                setArticleSelected("application");
             } else if (dataName === "e_commerce") {
                 setJsonData(article[6]);
-                setArticleSelected("e_commerce");
             } else if (dataName === "RM") {
                 setJsonData(article[7]);
-                setArticleSelected("RM");
             } else if (dataName === "SEO") {
                 setJsonData(article[8]);
-                setArticleSelected("SEO");
             }
         }
     }, [dataName]);
@@ -62,11 +52,8 @@ export default function ServicesPage() {
     ];
 
     const handleChangeArticleSelector = (e, value) => {
-        setArticleSelected(value.value);
+        setDataName(value.value);
     };
-    useEffect(() => {
-        navigate("/servicesPage", { state: { name: articleSelected } });
-    }, [articleSelected, navigate]);
 
     return (
         <>
@@ -142,18 +129,15 @@ export default function ServicesPage() {
                                     <p className="example_text">
                                         {jsonData.exampleText}
                                     </p>
-                                    {jsonData.creditName === null ? null : (
+                                    {jsonData.creditName !== null ? (
                                         <>
                                             <video
                                                 className="example_video"
                                                 autoPlay
                                                 loop
-                                            >
-                                                <source
-                                                    src={jsonData.videoSRC}
-                                                    type="video/webm"
-                                                />
-                                            </video>
+                                                src={jsonData.videoSRC}
+                                                type="video/webm"
+                                            />
                                             <span className="credit">
                                                 Crédit vidéo:{" "}
                                                 {jsonData.creditName}
@@ -162,7 +146,7 @@ export default function ServicesPage() {
                                                 </a>{" "}
                                             </span>{" "}
                                         </>
-                                    )}
+                                    ) : null}
                                 </div>
                                 <div className="conclusion">
                                     <h2 className="conclusion_title">

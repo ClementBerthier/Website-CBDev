@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import { Dropdown } from "semantic-ui-react";
 
 export default function ServicesPage() {
+    //TODO: regler le probleme de video decalé par rapport a la section
+
     const navigate = useNavigate();
     const [jsonData, setJsonData] = useState(null);
     const [articleSelected, setArticleSelected] = useState(null);
@@ -140,12 +142,27 @@ export default function ServicesPage() {
                                     <p className="example_text">
                                         {jsonData.exampleText}
                                     </p>
-                                    <video
-                                        className="example_video"
-                                        src={jsonData.videoSRC}
-                                        alt=""
-                                        autoPlay="true"
-                                    />
+                                    {jsonData.creditName === null ? null : (
+                                        <>
+                                            <video
+                                                className="example_video"
+                                                autoPlay
+                                                loop
+                                            >
+                                                <source
+                                                    src={jsonData.videoSRC}
+                                                    type="video/webm"
+                                                />
+                                            </video>
+                                            <span className="credit">
+                                                Crédit vidéo:{" "}
+                                                {jsonData.creditName}
+                                                <a href={jsonData.link}>
+                                                    Lien
+                                                </a>{" "}
+                                            </span>{" "}
+                                        </>
+                                    )}
                                 </div>
                                 <div className="conclusion">
                                     <h2 className="conclusion_title">

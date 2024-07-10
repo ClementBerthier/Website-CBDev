@@ -37,8 +37,10 @@
             }
         ],
         "exampleTitle": "Un scénario de site vitrine possible",
-        "videoSRC": "qsdfqsdfq",
+        "videoSRC": "/video/cinema.webm",
         "videoALT": "video site vitrine",
+        "creditName": "Prime vidéo - ",
+        "link": "https://www.primevideo.com/storefront/ref=atv_nb_lcl_fr_FR?merchId=RentBuy&language=fr_FR&ie=UTF8",
         "exampleText": "Pour rester dans le thème du cinéma, imaginons que votre entreprise se spécialise dans la production cinématographique. Le site vitrine pourrait présenter des extraits de films, des témoignages de réalisateurs renommés, un portfolio de productions passées et un blog avec des actualités du monde du cinéma. Une section dédiée à l'équipe et aux coulisses des tournages offrirait un aperçu authentique de votre savoir-faire, tandis qu'un formulaire de contact permettrait aux producteurs et scénaristes de facilement entrer en relation avec vous.",
         "conclusionText": "En conclusion, un site vitrine est bien plus qu'une simple présence en ligne, c'est la vitrine virtuelle de votre entreprise, où vous pouvez captiver et séduire vos visiteurs. Investir dans un site vitrine professionnel et attractif est essentiel pour renforcer votre image de marque et attirer de nouveaux clients. ",
         "promotionnalTitle": "Un site vitrine vous intéresse ?"
@@ -81,8 +83,10 @@
             }
         ],
         "exampleTitle": "Un scénario de blog possible",
-        "videoSRC": "qsdfqsdfq",
+        "videoSRC": "/video/blog.webm",
         "videoALT": "video blog",
+        "creditName": "Voyages Tips",
+        "link": "https://www.voyagetips.com/",
         "exampleText": "Imaginons que votre blog se spécialise dans les aventures et les conseils de voyage. Le blog pourrait présenter des récits de voyages, des photos époustouflantes, des guides pratiques pour différentes destinations et des actualités sur les tendances du tourisme. Une section dédiée aux préparatifs de vos voyages offrirait un aperçu authentique de vos expériences, tandis qu'un formulaire de contact permettrait aux lecteurs et aux partenaires touristiques de facilement entrer en relation avec vous. ",
         "conclusionText": "Un blog est bien plus qu'un simple journal en ligne ; c'est une plateforme dynamique pour partager votre passion, engager vos lecteurs et créer une communauté fidèle. Que votre thème soit la mode, la cuisine, le voyage, la technologie, la santé ou l'éducation, un blog bien conçu peut transformer votre passion en influence. Investissez dans un blog et partagez vos passions et idées avec le monde entier !",
         "promotionnalTitle": "Un blog vous intéresse ?"
@@ -127,6 +131,8 @@
         "exampleTitle": "Un scénario de portfolio possible",
         "videoSRC": "/video/portfolio.webm",
         "videoALT": "video portfolio",
+        "creditName": "Stéphane Labadie, Motion Designer - Portfolio",
+        "link": "https://www.aeromys.org/",
         "exampleText": "Imaginons que votre portfolio se spécialise dans les animations et les créations graphiques animées. Le portfolio pourrait présenter une galerie de vos œuvres animées, des descriptions détaillées de projets ou encore des vidéos de vos processus créatifs. Une section dédiée à votre biographie et à vos inspirations offrirait un aperçu authentique de votre parcours, tandis qu'un formulaire de contact permettrait aux agences et aux clients potentiels de facilement entrer en relation avec vous.",
         "conclusionText": "En conclusion, un portfolio est bien plus qu'une simple vitrine de vos réalisations, c'est un outil puissant pour promouvoir votre talent, convaincre les visiteurs de votre expertise et attirer de nouveaux clients. Investir dans un portfolio en ligne élégant et captivant est essentiel pour vous démarquer de la concurrence et valoriser votre talent.",
         "promotionnalTitle": "Vous avez besoin d'un portfolio ?"
@@ -171,6 +177,8 @@
         "exampleTitle": "Un scénario de CV en ligne possible",
         "videoSRC": "qsdfqsdfq",
         "videoALT": "video portfolio",
+        "creditName": "IA ChatGPT",
+        "link": "https://chatgpt.com/",
         "exampleText": "Imaginons que vous ayez besoin d'un CV en ligne pour présenter vos compétences en tant que graphiste. Le CV pourrait présenter vos réalisations, vos compétences et vos expériences professionnelles de manière visuelle et interactive. Une galerie d'œuvres avec des images de vos créations, des témoignages de clients satisfaits et des liens vers vos profils sur les réseaux sociaux pour montrer votre expertise et votre professionnalisme. Un formulaire de contact pour permettre aux visiteurs de vous contacter facilement et de demander un devis ou des informations complémentaires.",
         "conclusionText": "En conclusion, un CV en ligne est bien plus qu'un simple CV, c'est un outil puissant pour promouvoir votre talent, convaincre les recruteurs de votre expertise et attirer de nouvelles opportunités professionnelles. Investir dans un CV en ligne personnalisé et captivant est essentiel pour vous démarquer sur le marché du travail et valoriser votre parcours professionnel. ",
         "promotionnalTitle": "Vous avez besoin d'un CV en ligne ?"
@@ -213,8 +221,10 @@
             }
         ],
         "exampleTitle": "Un scénario de site d'événements possible",
-        "videoSRC": "qsdfqsdfq",
+        "videoSRC": "/video/mariage.webm",
         "videoALT": "video portfolio",
+        "creditName": "IA - ChatGPT",
+        "link": "https://chatgpt.com/",
         "exampleText": "Imaginons que vous ayez besoin d'un site pour organiser et présenter votre mariage. Le site pourrait mettre en avant les détails de l'événement, les activités prévues et les informations importantes de manière élégante et interactive. Une galerie de photos avec des images des préparatifs et des moments spéciaux, des témoignages de proches et d'amis partageant leurs souvenirs et leurs vœux. Un formulaire pour permettre aux invités de confirmer leur présence facilement et d'indiquer leurs préférences ou besoins spécifiques, ainsi qu'une section dédiée à la liste de mariage et aux cadeaux pour simplifier l'organisation.",
         "conclusionText": "En conclusion, un site d'événements est bien plus qu'une simple page d'information, c'est un outil pour promouvoir votre événement, attirer un public et faciliter les inscriptions. Investir dans un site d'événements personnalisé et captivant est essentiel pour garantir le succès de votre événement et offrir une expérience mémorable aux participants.",
         "promotionnalTitle": "Vous souhaitez organiser un événement et vous avez besoin d'un site dédié ?"
@@ -256,8 +266,10 @@
             }
         ],
         "exampleTitle": "Un scénario d'application web possible",
-        "videoSRC": "abcd1234",
+        "videoSRC": "/video/sport.webm",
         "videoALT": "vidéo de démonstration",
+        "creditName": "GIGAFIT - DOL DE BRETAGNE",
+        "link": "https://www.gigafit.fr/club/dol-de-bretagne",
         "exampleText": "Imaginons que vous ayez besoin d'une application web pour gérer les réservations d'une salle de sport. L'application pourrait permettre aux utilisateurs de créer un compte, de réserver des créneaux horaires, de consulter les disponibilités en temps réel et de recevoir des notifications de rappel. Une section dédiée aux administrateurs permettrait de gérer les réservations, d'ajouter ou de modifier les horaires et d'envoyer des communications aux membres. Un tableau de bord interactif afficherait les statistiques d'utilisation, les tendances de réservation et d'autres indicateurs clés.",
         "conclusionText": "En conclusion, une application web est bien plus qu'un simple outil numérique, c'est une solution pour automatiser vos processus, améliorer l'expérience utilisateur et augmenter l'efficacité de votre entreprise. Investir dans une application web personnalisée et intuitive est essentiel pour répondre aux besoins spécifiques de votre activité et offrir des services de qualité à vos utilisateurs.",
         "promotionnalTitle": "Vous souhaitez développer une application web sur mesure ?"
@@ -299,8 +311,10 @@
             }
         ],
         "exampleTitle": "Un scénario de site e-commerce possible",
-        "videoSRC": "efgh5678",
+        "videoSRC": "/video/amazone.webm",
         "videoALT": "vidéo de démonstration",
+        "creditName": "Amazone",
+        "link": "https://www.amazon.fr/",
         "exampleText": "Imaginons que vous ayez besoin d'un site e-commerce pour vendre des vêtements de mode. Le site pourrait inclure une gestion complète des produits avec des descriptions détaillées, des images haute résolution et des options de filtres pour faciliter la recherche. Un système de panier et de commande intuitif permettrait aux clients de sélectionner plusieurs articles et de finaliser leur achat facilement. Des passerelles de paiement sécurisées garantiraient des transactions sûres, tandis qu'un système de suivi des commandes informerait les clients de l'avancement de leur livraison. Une section d'avis et commentaires renforcerait la confiance des nouveaux acheteurs et des outils SEO et de marketing intégrés aideraient à attirer plus de visiteurs.",
         "conclusionText": "En conclusion, un site e-commerce est bien plus qu'une simple boutique en ligne, c'est un outil puissant pour augmenter vos ventes, améliorer l'expérience client et étendre votre portée sur le marché. Investir dans un site e-commerce personnalisé et performant est essentiel pour garantir le succès de votre entreprise améliorer votre compétitivité.",
         "promotionnalTitle": "Vous souhaitez lancer votre boutique en ligne ?"
@@ -342,8 +356,7 @@
             }
         ],
         "exampleTitle": "Un scénario de service de refonte et de maintenance possible",
-        "videoSRC": "ijkl91011",
-        "videoALT": "vidéo de démonstration",
+        "creditName": null,
         "exampleText": "Imaginons que vous ayez besoin de refondre et de maintenir le site web de votre entreprise. Le service de refonte pourrait inclure une mise à jour complète du design pour le rendre plus moderne et responsive, une optimisation de la performance pour améliorer la vitesse de chargement, et une sécurisation renforcée pour protéger contre les cybermenaces. Le service de maintenance, quant à lui, assurerait des mises à jour régulières des contenus et des fonctionnalités, un support technique continu pour résoudre les problèmes rapidement, et des audits périodiques pour garantir que le site reste performant et sécurisé.",
         "conclusionText": "En conclusion, la refonte et la maintenance de sites web sont essentielles pour garantir que votre site reste performant, sécurisé et attrayant. Investir dans ces services permet d'améliorer l'expérience utilisateur, de maintenir une bonne visibilité en ligne et de garantir que votre site répond aux attentes de vos visiteurs. Une refonte et une maintenance régulières sont cruciales pour le succès à long terme de votre présence en ligne.",
         "promotionnalTitle": "Vous souhaitez refondre ou maintenir votre site web ?"
@@ -373,8 +386,7 @@
             }
         ],
         "exampleTitle": "Un scénario de service de SEO et d'optimisation possible",
-        "videoSRC": "mnop1234",
-        "videoALT": "vidéo de démonstration",
+        "creditName": null,
         "exampleText": "Imaginons que vous ayez besoin de services de SEO et d'optimisation pour améliorer la visibilité de votre boutique en ligne. Le service pourrait inclure un audit SEO complet pour identifier les points à améliorer, la recherche et l'optimisation des mots-clés pertinents pour vos produits, et l'amélioration technique de votre site pour favoriser un meilleur référencement. Un suivi continu et des rapports réguliers permettraient de mesurer les progrès et d'ajuster les stratégies pour atteindre vos objectifs.",
         "conclusionText": "En conclusion, les services de SEO et d'optimisation sont essentiels pour garantir que votre site web attire du trafic qualifié et offre une expérience utilisateur optimale. Investir dans ces services permet d'améliorer le classement de votre site dans les moteurs de recherche et ainsi d'augmenter le nombre de visiteurs. Une optimisation régulière et une stratégie SEO bien pensée sont cruciales pour le succès à long terme de votre présence en ligne.",
         "promotionnalTitle": "Vous souhaitez améliorer le SEO de votre site web ?"

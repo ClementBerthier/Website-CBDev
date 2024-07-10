@@ -33,12 +33,13 @@
             line-height: 3rem;
         }
         .articleSelector {
-            width: 20rem;
+            width: 23rem;
             height: 3rem;
             .text {
                 font-family: var(--font-title);
                 font-weight: 400;
-                font-size: calc(1em + 0.5vw);
+                font-size: 1.6rem;
+                white-space: nowrap;
             }
         }
     }
@@ -90,6 +91,9 @@
 
             .example_video {
                 width: 100%;
+                background-color: white;
+                padding: 5rem;
+                border-radius: 10px;
             }
         }
     }
@@ -130,7 +134,7 @@
 
 @media screen and (max-width: 500px) {
     .articleSelector {
-        width: 10rem !important;
+        width: 17.5rem !important;
         height: 2.5rem;
     }
 }

@@ -4,7 +4,6 @@ import { useState } from "react";
 import Button from "../elements/Button/Button.jsx";
 import { useNavigate } from "react-router-dom";
 
-//TODO: ajouter les liens pour les boutons plus d'infos
 //TODO: faire un montage de l'image du site pour le rendu dans service picture
 
 export default function Services2() {

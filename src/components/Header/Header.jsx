@@ -3,8 +3,6 @@ import "./Header.css";
 import Button from "../elements/Button/Button.jsx";
 import { useNavigate } from "react-router-dom";
 
-//TODO: ajouter le burger menu
-
 export default function Header2() {
     const navigate = useNavigate();
 

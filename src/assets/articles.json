@@ -125,7 +125,7 @@
             }
         ],
         "exampleTitle": "Un scénario de portfolio possible",
-        "videoSRC": "qsdfqsdfq",
+        "videoSRC": "/video/portfolio.webm",
         "videoALT": "video portfolio",
         "exampleText": "Imaginons que votre portfolio se spécialise dans les animations et les créations graphiques animées. Le portfolio pourrait présenter une galerie de vos œuvres animées, des descriptions détaillées de projets ou encore des vidéos de vos processus créatifs. Une section dédiée à votre biographie et à vos inspirations offrirait un aperçu authentique de votre parcours, tandis qu'un formulaire de contact permettrait aux agences et aux clients potentiels de facilement entrer en relation avec vous.",
         "conclusionText": "En conclusion, un portfolio est bien plus qu'une simple vitrine de vos réalisations, c'est un outil puissant pour promouvoir votre talent, convaincre les visiteurs de votre expertise et attirer de nouveaux clients. Investir dans un portfolio en ligne élégant et captivant est essentiel pour vous démarquer de la concurrence et valoriser votre talent.",
@@ -308,7 +308,7 @@
     {
         "id": 8,
         "tag": "Services web",
-        "title": "Refonte et Maintenance de Sites Web",
+        "title": "Refonte & Maintenance",
         "description": "Améliorez et maintenez la performance de votre site web avec nos services de refonte et de maintenance personnalisés.",
         "introText": "Un site web performant et à jour est essentiel pour garantir une expérience utilisateur optimale et pour maintenir une bonne visibilité en ligne. Dans cet article, je vais vous expliquer ce qu'implique la refonte et la maintenance de sites web, leur utilité et les éléments clés à considérer.",
         "descriptionTitle": "Qu'est-ce qu'une refonte et une maintenance de site web?",

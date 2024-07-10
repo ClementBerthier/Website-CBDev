@@ -18,22 +18,31 @@ export default function ServicesPage() {
         if (dataName) {
             if (dataName === "site") {
                 setJsonData(article[0]);
+                setArticleSelected("site");
             } else if (dataName === "blog") {
                 setJsonData(article[1]);
+                setArticleSelected("blog");
             } else if (dataName === "portfolio") {
                 setJsonData(article[2]);
+                setArticleSelected("portfolio");
             } else if (dataName === "CV") {
                 setJsonData(article[3]);
+                setArticleSelected("CV");
             } else if (dataName === "evenement") {
                 setJsonData(article[4]);
+                setArticleSelected("evenement");
             } else if (dataName === "application") {
                 setJsonData(article[5]);
+                setArticleSelected("application");
             } else if (dataName === "e_commerce") {
                 setJsonData(article[6]);
+                setArticleSelected("e_commerce");
             } else if (dataName === "RM") {
                 setJsonData(article[7]);
+                setArticleSelected("RM");
             } else if (dataName === "SEO") {
                 setJsonData(article[8]);
+                setArticleSelected("SEO");
             }
         }
     }, [dataName]);

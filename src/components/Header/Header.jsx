@@ -99,18 +99,18 @@ export default function Header2() {
                                 <a
                                     className="link"
                                     href="/"
-                                    id="FAQs"
-                                    onClick={handleClickNavigate}
-                                >
-                                    FAQ
-                                </a>
-                                <a
-                                    className="link"
-                                    href="/"
                                     id="technologies"
                                     onClick={handleClickNavigate}
                                 >
                                     Technologies
+                                </a>
+                                <a
+                                    className="link"
+                                    href="/"
+                                    id="FAQs"
+                                    onClick={handleClickNavigate}
+                                >
+                                    FAQ
                                 </a>
                                 <a
                                     className="link"

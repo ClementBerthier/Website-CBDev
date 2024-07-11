@@ -3,9 +3,17 @@ import facebook from "/images/whitefacebook.svg";
 import instagram from "/images/whiteinsta.svg";
 import linkedin from "/images/whitelinkedin.svg";
 import github from "/images/whitegithub.svg";
-import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+    const navigate = useNavigate();
+
+    const handleClickNavigate = (e) => {
+        e.preventDefault();
+        const destinationId = e.target.id;
+        navigate("/", { state: { id: destinationId } });
+        console.log(destinationId);
+    };
     return (
         <div className="footer_container">
             <div className="footer_container_section">
@@ -64,7 +72,31 @@ export default function Footer() {
                                         className="footer_navigation_link pointer"
                                         href=""
                                     >
-                                        {"> "}Site
+                                        {"> "}Sites vitrine
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href=""
+                                    >
+                                        {"> "}Blogs
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href=""
+                                    >
+                                        {"> "}Portfolios
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href=""
+                                    >
+                                        {"> "}CV
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href=""
+                                    >
+                                        {"> "}Sites d{"'"}évènement
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -82,14 +114,9 @@ export default function Footer() {
                                         className="footer_navigation_link pointer"
                                         href=""
                                     >
-                                        {"> "}Refonte
+                                        {"> "}Refonte & Maintenance
                                     </a>
-                                    <a
-                                        className="footer_navigation_link pointer"
-                                        href=""
-                                    >
-                                        {"> "}Maintenance
-                                    </a>
+
                                     <a
                                         className="footer_navigation_link pointer"
                                         href=""
@@ -105,50 +132,46 @@ export default function Footer() {
                                     Liens
                                 </h3>
                                 <div className="footer_navigation_link_container">
-                                    <Link
-                                        id="headerHome"
+                                    <a
                                         className="footer_navigation_link pointer"
-                                        to="home"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-70}
-                                        duration={500}
+                                        href="/"
+                                        id="home"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Accueil
-                                    </Link>
-                                    <Link
-                                        id="headerAboutMe"
+                                    </a>
+                                    <a
                                         className="footer_navigation_link pointer"
-                                        to="aboutMe"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-70}
-                                        duration={500}
+                                        href="/"
+                                        id="services"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Services
-                                    </Link>
-                                    <Link
-                                        id="hearderServices"
+                                    </a>
+                                    <a
                                         className="footer_navigation_link pointer"
-                                        to="services"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-229}
-                                        duration={500}
+                                        href="/"
+                                        id="technologies"
+                                        onClick={handleClickNavigate}
                                     >
-                                        {"> "}Services
-                                    </Link>
-                                    <Link
-                                        id="headerContact"
+                                        {"> "}Technologies
+                                    </a>
+                                    <a
                                         className="footer_navigation_link pointer"
-                                        to="contact"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-250}
-                                        duration={500}
+                                        href="/"
+                                        id="FAQs"
+                                        onClick={handleClickNavigate}
                                     >
-                                        {"> "}Contact{" "}
-                                    </Link>
+                                        {"> "}FAQ
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href="/"
+                                        id="contact"
+                                        onClick={handleClickNavigate}
+                                    >
+                                        {"> "}Contact
+                                    </a>
                                 </div>
                             </div>
                         </div>

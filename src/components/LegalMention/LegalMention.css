@@ -14,6 +14,7 @@
             font-family: var(--font-title);
             margin: 8.5rem 0 1.5rem 0;
             font-weight: 600;
+            text-align: center;
         }
 
         .legalMention_little_description {
@@ -26,7 +27,7 @@
             line-height: 3rem;
         }
         .articleSelector {
-            width: 23rem;
+            width: 25rem;
             height: 3rem;
             .text {
                 font-family: var(--font-title);
@@ -61,13 +62,13 @@
                 padding-bottom: 5rem;
             }
         }
-        .bottomServicePage {
+        .bottomFooterPage {
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 2rem;
             .articleSelector {
-                width: 23rem;
+                width: 25rem;
                 height: 3rem;
                 .text {
                     font-family: var(--font-title);
@@ -89,7 +90,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .servicePage_content_container {
+    .legalMention_content_container {
         margin: 10rem auto;
         background-color: #e5f0fb;
         padding: 10rem 2rem !important;
@@ -100,7 +101,6 @@
     }
 
     .articleSelector {
-        width: 17.5rem !important;
-        height: 2.5rem;
+        width: 19.5rem !important;
     }
 }

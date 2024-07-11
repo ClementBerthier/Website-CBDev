@@ -12,7 +12,11 @@ export default function LegalMention() {
         { key: "Mentions légales", text: "Mentions légales", value: "ML" },
         { key: "CGU", text: "CGU", value: "CGU" },
         { key: "CGV", text: "CGV", value: "CGV" },
-        { key: "Politique de confidentienlité", text: "PC", value: "PC" },
+        {
+            key: "Politique de confidentienlité",
+            text: "Politique de confidentialité",
+            value: "PC",
+        },
     ];
 
     const handleChangeArticleSelector = (e, value) => {
@@ -62,7 +66,7 @@ export default function LegalMention() {
                             ))}
                         </ul>
                     </div>
-                    <div className="bottomServicePage">
+                    <div className="bottomFooterPage">
                         <Dropdown
                             className="articleSelector"
                             placeholder={jsonData.title}

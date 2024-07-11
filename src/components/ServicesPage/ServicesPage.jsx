@@ -8,7 +8,9 @@ import { useEffect, useState } from "react";
 import { Dropdown } from "semantic-ui-react";
 
 export default function ServicesPage() {
-    //TODO: regler le probleme de video decalé par rapport a la section
+
+    //TODO: ajouter un retour en haut de page
+    //TODO: gerer le lancement de video automatique pour mobile
 
     const [jsonData, setJsonData] = useState(null);
     const data = useLocation();

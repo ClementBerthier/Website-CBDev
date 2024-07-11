@@ -30,6 +30,7 @@
             .services_name {
                 font-size: calc(0.6rem + 0.5vw);
                 font-family: var(--font-title);
+                text-align: center;
 
                 margin: 1rem auto;
                 padding: 2rem 1rem;

@@ -4,6 +4,8 @@ import Button from "../elements/Button/Button.jsx";
 import { useNavigate } from "react-router-dom";
 
 export default function Header2() {
+
+    //TODO: changer couleur et ameliorer design du burger
     const navigate = useNavigate();
 
     const [burgerOpen, setBurgerOpen] = useState(false);

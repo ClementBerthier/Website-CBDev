@@ -5,10 +5,9 @@ import Button from "../elements/Button/Button.jsx";
 import article from "../../assets/articles.json";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Dropdown } from "semantic-ui-react";
+import { Dropdown, Popup } from "semantic-ui-react";
 
 export default function ServicesPage() {
-
     //TODO: ajouter un retour en haut de page
     //TODO: gerer le lancement de video automatique pour mobile
 
@@ -55,6 +54,10 @@ export default function ServicesPage() {
 
     const handleChangeArticleSelector = (e, value) => {
         setDataName(value.value);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    const handleClickReturnTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     return (
@@ -157,6 +160,27 @@ export default function ServicesPage() {
                                     <p className="conclusion_text">
                                         {jsonData.conclusionText}
                                     </p>
+                                </div>
+                                <div className="bottomServicePage">
+                                    <Dropdown
+                                        className="articleSelector"
+                                        placeholder={jsonData.title}
+                                        options={option}
+                                        onChange={handleChangeArticleSelector}
+                                        selection
+                                    />
+                                    <Popup
+                                        content="Retour haut de page"
+                                        size="huge"
+                                        trigger={
+                                            <img
+                                                className="returnTop"
+                                                src="/images/arrow-down.svg"
+                                                alt="flèche retour top page"
+                                                onClick={handleClickReturnTop}
+                                            />
+                                        }
+                                    />
                                 </div>
                             </div>
                         </div>

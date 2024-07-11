@@ -8,8 +8,6 @@ import { useEffect, useState } from "react";
 import { Dropdown, Popup } from "semantic-ui-react";
 
 export default function ServicesPage() {
-    //TODO: gerer le lancement de video automatique pour mobile
-
     const [jsonData, setJsonData] = useState(null);
     const data = useLocation();
     const [dataName, setDataName] = useState(data.state.name);

@@ -1,6 +1,6 @@
 import "./Services.css";
 import services from "../../assets/services.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../elements/Button/Button.jsx";
 import { useNavigate } from "react-router-dom";
 
@@ -17,11 +17,27 @@ export default function Services2() {
     const [activeEco, setActiveEco] = useState("");
     const [activeRM, setActiveRM] = useState("");
     const [activeSEO, setActiveSEO] = useState("");
+    const [dataElement, setDataElement] = useState("");
 
     const handleClickClass = (e) => {
-        const dataElement = e.target.id;
+        sessionStorage.setItem("dataElement", e.target.id);
+        setDataElement(e.target.id);
 
-        console.log(e.target.id);
+        sessionStorage.setItem("scrollPosition", window.scrollY);
+    };
+
+    useEffect(() => {
+        const previousDataElement = sessionStorage.getItem("dataElement");
+        if (previousDataElement) {
+            setDataElement(previousDataElement);
+        } else {
+            setDataElement("site");
+        }
+
+        window.scrollTo(0, sessionStorage.getItem("scrollPosition"));
+    }, []);
+
+    useEffect(() => {
         if (dataElement === "site") {
             setJsonData(services.site);
             setIsSite(true);
@@ -60,7 +76,7 @@ export default function Services2() {
         } else {
             setActiveSEO("");
         }
-    };
+    }, [dataElement]);
 
     const handleClickLink = (e) => {
         const name = e.target.id;

@@ -1,4 +1,3 @@
-//import Home from "../Home/Home.jsx";
 import Services from "../Services/Services.jsx";
 import ContactBanner from "../ContactBanner/ContactBanner.jsx";
 import Contact from "../Contact/Contact.jsx";
@@ -53,14 +52,14 @@ export default function Layout() {
             <div ref={servicesRef}>
                 <Services />
             </div>
-            <div ref={FAQsRef}>
-                <FAQs />
+            <div ref={technologiesRef}>
+                <Technologies />
             </div>
             <div>
                 <ContactBanner />
             </div>
-            <div ref={technologiesRef}>
-                <Technologies />
+            <div ref={FAQsRef}>
+                <FAQs />
             </div>
             <div ref={contactRef}>
                 <Contact />

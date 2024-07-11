@@ -22,7 +22,7 @@
                 color: #000;
                 margin-bottom: 1rem;
                 white-space: nowrap;
-                padding: 0rem 2rem 3rem 2rem;
+                padding: 2rem 0rem 3rem 2rem;
             }
             .presentation_paragraph {
                 width: 100%;
@@ -31,7 +31,7 @@
                 font-weight: 200;
                 color: #000;
                 margin-bottom: 1rem;
-                padding: 2rem;
+                padding: 2rem 0 2rem 2rem;
                 line-height: 4rem;
             }
             .button {

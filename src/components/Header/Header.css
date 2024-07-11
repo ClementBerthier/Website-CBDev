@@ -99,7 +99,7 @@
     }
 }
 .burgerMenu {
-    background-color: #404b5c;
+    background-color: #4682b4;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -119,10 +119,11 @@
             text-decoration: none;
             margin: 0 1rem;
             font-family: var(--font-title);
-            border-bottom: 1px solid white;
+            transition: 0.5s ease-in-out;
         }
         .link:hover {
             cursor: pointer;
+            transform: scale(1.2);
         }
     }
 }

@@ -133,6 +133,7 @@
 }
 .promotionnal_banner_container {
     background-color: #e5f0fb;
+    text-align: center;
     .promotionnal_banner {
         max-width: 1700px;
         margin: 5rem auto;
@@ -166,6 +167,16 @@
 }
 
 @media screen and (max-width: 500px) {
+    .servicePage_content_container {
+        margin: 10rem auto;
+        background-color: #e5f0fb;
+        padding: 10rem 2rem !important;
+        .example_video {
+            width: 100% !important;
+            padding: 0rem !important;
+        }
+    }
+
     .articleSelector {
         width: 17.5rem !important;
         height: 2.5rem;

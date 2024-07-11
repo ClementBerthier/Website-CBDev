@@ -7,16 +7,41 @@ import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
     const navigate = useNavigate();
+    const homePageNav = ["home", "services", "technologies", "FAQs", "contact"];
+    const servicePageNav = [
+        "site",
+        "blog",
+        "portfolio",
+        "CV",
+        "evenement",
+        "application",
+        "e_commerce",
+        "RM",
+        "SEO",
+    ];
 
     const handleClickNavigate = (e) => {
         e.preventDefault();
         const destinationId = e.target.id;
         if (destinationId === "legalMention") {
             navigate("/legalMention");
-        } else {
+        } else if (homePageNav.includes(destinationId)) {
             navigate("/", { state: { id: destinationId } });
+        } else if (servicePageNav.includes(destinationId)) {
+            const currentPath = window.location.pathname;
+            if (currentPath === "/servicesPage") {
+                navigate("/refresh", { replace: true });
+                setTimeout(() => {
+                    navigate("/servicesPage", {
+                        state: { name: destinationId },
+                    });
+                }, 0);
+            } else {
+                navigate("/servicesPage", { state: { name: destinationId } });
+            }
         }
     };
+
     return (
         <div className="footer_container">
             <div className="footer_container_section">
@@ -82,56 +107,74 @@ export default function Footer() {
                                 <div className="footer_navigation_link_container">
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="site"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Sites vitrine
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="blog"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Blogs
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="portfolio"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Portfolios
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="CV"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}CV
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="evenement"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Sites d{"'"}évènement
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="application"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Application
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="e_commerce"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}E-commerce
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="RM"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}Refonte & Maintenance
                                     </a>
 
                                     <a
                                         className="footer_navigation_link pointer"
-                                        href=""
+                                        href="/servicesPage"
+                                        id="SEO"
+                                        onClick={handleClickNavigate}
                                     >
                                         {"> "}SEO
                                     </a>

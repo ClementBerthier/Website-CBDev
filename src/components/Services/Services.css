@@ -176,7 +176,7 @@
         }
         .description_picture_container {
             width: 100% !important;
-            height: auto !important;
+            max-height: 50rem;
         }
     }
 }

@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import Button from "../elements/Button/Button.jsx";
 import { useNavigate } from "react-router-dom";
 
-//TODO: faire un montage de l'image du site pour le rendu dans service picture
-
 export default function Services2() {
     const navigate = useNavigate();
     const [isSite, setIsSite] = useState(true);

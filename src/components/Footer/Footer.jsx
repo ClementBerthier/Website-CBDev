@@ -20,11 +20,16 @@ export default function Footer() {
         "SEO",
     ];
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     const handleClickNavigate = (e) => {
         e.preventDefault();
         const destinationId = e.target.id;
         if (destinationId === "legalMention") {
             navigate("/legalMention");
+            scrollToTop();
         } else if (homePageNav.includes(destinationId)) {
             navigate("/", { state: { id: destinationId } });
         } else if (servicePageNav.includes(destinationId)) {

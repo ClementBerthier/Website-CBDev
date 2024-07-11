@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import { Dropdown, Popup } from "semantic-ui-react";
 
 export default function ServicesPage() {
-    //TODO: ajouter un retour en haut de page
     //TODO: gerer le lancement de video automatique pour mobile
 
     const [jsonData, setJsonData] = useState(null);
@@ -140,6 +139,7 @@ export default function ServicesPage() {
                                                 className="example_video"
                                                 autoPlay
                                                 loop
+                                                playsInline
                                                 src={jsonData.videoSRC}
                                                 type="video/webm"
                                             />

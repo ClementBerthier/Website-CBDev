@@ -1,0 +1,106 @@
+.LegalMention {
+    width: 100%;
+    .legalMention_banner_title {
+        background-color: #404b5c;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .legalMention_title {
+            color: white;
+            font-size: calc(2em + 1vw);
+            font-family: var(--font-title);
+            margin: 8.5rem 0 1.5rem 0;
+            font-weight: 600;
+        }
+
+        .legalMention_little_description {
+            max-width: 1700px;
+            color: white;
+            text-align: center;
+            font-size: calc(1em + 0.5vw);
+            font-family: var(--font-text);
+            margin: 0 15rem 2rem 15rem;
+            line-height: 3rem;
+        }
+        .articleSelector {
+            width: 23rem;
+            height: 3rem;
+            .text {
+                font-family: var(--font-title);
+                font-weight: 400;
+                font-size: 1.6rem;
+                white-space: nowrap;
+            }
+        }
+    }
+    .legalMention_content_container {
+        max-width: 1700px;
+        margin: 10rem auto;
+        background-color: #e5f0fb;
+        padding: 10rem 8rem;
+
+        .legalMention_content {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+
+            .item_title {
+                font-size: calc(1rem + 1vw);
+                font-family: var(--font-title);
+                font-weight: 500;
+                margin: 2rem 0 1rem 0;
+            }
+            .item_text {
+                font-size: calc(1.2rem + 0.5vw);
+                font-family: var(--font-text);
+                font-weight: 300;
+                line-height: 3.5rem;
+                padding-bottom: 5rem;
+            }
+        }
+        .bottomServicePage {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            .articleSelector {
+                width: 23rem;
+                height: 3rem;
+                .text {
+                    font-family: var(--font-title);
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    white-space: nowrap;
+                }
+            }
+
+            .returnTop {
+                width: 3rem;
+                transform: rotate(180deg);
+            }
+            .returnTop:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .servicePage_content_container {
+        margin: 10rem auto;
+        background-color: #e5f0fb;
+        padding: 10rem 2rem !important;
+        .example_video {
+            width: 100% !important;
+            padding: 0rem !important;
+        }
+    }
+
+    .articleSelector {
+        width: 17.5rem !important;
+        height: 2.5rem;
+    }
+}

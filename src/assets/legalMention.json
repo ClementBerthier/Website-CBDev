@@ -1,0 +1,190 @@
+[
+    {
+        "id": 1,
+        "lastUpdate": "Dernière mise à jour effectué le 11 juillet 2024",
+        "title": "Mentions légales",
+        "articlesList": [
+            {
+                "title": "1. Identité et coordonnées.",
+                "text": "Clément Berthier Développeur, entreprise individuelle gérée par M. Clément Berthier, dont l'adresse professionnelle est située au 12bis rue du Commandant Wauthier, Résidence l'Infante, Bât C, APPT 21. N° SIRET : 98370137600011, code NAF : 6201Z Programmation Informatique. Adresse de courrier électronique : clementberthierdeveloppeur@gmail.com, numéro de téléphone : 07.88.45.37.78."
+            },
+            {
+                "title": "2. Propriété intellectuelle",
+                "text": "L'ensemble des éléments du site internet de Clement Berthier Développeur, notamment les textes, présentations, illustrations, photographies, arborescences et mises en forme sont, sauf documents publics et précisions complémentaires, la propriété intellectuelle exclusive de Clement Berthier Développeur ou de ses partenaires."
+            },
+            {
+                "title": "3. Hébergement",
+                "text": "en cours"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "lastUpdate": "Dernière mise à jour effectué le 11 juillet 2024",
+        "title": "Conditions générales d'utilisation",
+        "articlesList": [
+            {
+                "title": "Article 1 : Objet",
+                "text": "Les présentes conditions générales d'utilisation (CGU) ont pour objet de définir les modalités et conditions dans lesquelles les utilisateurs peuvent accéder au site et utiliser ses services."
+            },
+            {
+                "title": "Article 2 : Accès au site",
+                "text": "Le site Clément Berthier Développeur est accessible gratuitement à tout utilisateur disposant d'un accès à internet. Tous les coûts afférents à l'accès au site, que ce soit les frais matériels, logiciels ou d'accès à internet, sont exclusivement à la charge de l'utilisateur. L'éditeur ne pourra être tenu responsable de tout dysfonctionnement du réseau ou des serveurs ou de tout autre événement échappant au contrôle raisonnable, qui empêcherait ou dégraderait l'accès au site."
+            },
+            {
+                "title": "Article 3 : Propriété intellectuelle",
+                "text": "L'ensemble des éléments du site (textes, images, graphismes, logo, icônes, etc.) sont la propriété exclusive de Clément Berthier Développeur ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Clément Berthier Développeur."
+            },
+            {
+                "title": "Article 4 : Propriété intellectuelle",
+                "text": "L'ensemble des éléments du site (textes, images, graphismes, logo, icônes, etc.) sont la propriété exclusive de Clément Berthier Développeur ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de Clément Berthier Développeur. Tout éléments n'appartenant pas a Clément Berthier Développeur est mentionné dans le site et crédité."
+            },
+            {
+                "title": "Article 5 : Responsabilité de Clément Berthier Développeur",
+                "text": "Clément Berthier Développeur s'efforce de fournir des informations aussi précises que possible. Toutefois, Clément Berthier Développeur ne pourra être tenu responsable des omissions, des inexactitudes et des carences dans la mise à jour, qu'elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations."
+            },
+            {
+                "title": "Article 6 : Données personnelles",
+                "text": "Conformément à la réglementation en vigueur, Clément Berthier Développeur s'engage à protéger la vie privée des utilisateurs et la confidentialité de leurs données personnelles. Pour plus d'informations, veuillez consulter la politique de confidentialité."
+            },
+            {
+                "title": "Article 7 : Cookies",
+                "text": "Le site Clément Berthier Développeur n'utilise pas de cookies pour améliorer l'expérience utilisateur et fournir des services adaptés."
+            },
+            {
+                "title": "Article 8 : Liens hypertextes",
+                "text": "Le site peut contenir des liens hypertextes vers d'autres sites. Clément Berthier Développeur s'efforce de vérifier la qualité et l'intégrité de ces sites. Néanmoins, Clément Berthier Développeur n'a pas la possibilité de vérifier leur contenu mis à jour et n'assumera en conséquence aucune responsabilité de ce fait."
+            },
+            {
+                "title": "Article 9 : Modifications des CGU",
+                "text": " Clément Berthier Développeur se réserve le droit de modifier les présentes CGU à tout moment. Les utilisateurs sont invités à les consulter régulièrement."
+            },
+            {
+                "title": "Article 10 : Droit applicable et juridiction compétente",
+                "text": "Les présentes CGU sont soumises au droit français. En cas de litige, et à défaut d'accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur."
+            },
+            {
+                "title": "Article 11 : Contact",
+                "text": "Pour toute question relative à l'utilisation du site, vous pouvez nous contacter grâce a la section contact du site."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "lastUpdate": "Dernière mise à jour effectué le 11 juillet 2024",
+        "title": "Conditions générales de ventes de prestations de services",
+        "articlesList": [
+            {
+                "title": "Article 1 : Objet",
+                "text": "Les Conditions Générales de Vente (CGV) de prestations de services décrites ci-après détaillent les droits et obligations de l’Entreprise Individuelle Clément Berthier Développeur, enregistrée sous le statut de micro-entreprise, établie à l'adresse 12bis rue du Commandant Wauthier, Résidence l’Infante, bâtiment C, appartement 32, SIRET n°983 701 376 00011, représentée par Clément BERTHIER  et de son Client, dans le cadre de missions de conception, de développement et de maintenance de solutions informatique en développement “full stack”. Cela inclut la prise en charge de projets de développement web et mobile englobant à la fois le 'front-end' (interface utilisateur) et 'le back-end' (logique applicative et base de données), sur la base des instructions des utilisateurs."
+            },
+            {
+                "title": "Article 2 : Application",
+                "text": "Toute commande implique, pour devenir ferme et définitive, l’adhésion entière et sans réserve du Client aux présentes CGV, qu’il déclare avoir lues, comprises et acceptées. Aucune condition particulière ou générale d’achat ne peut, sauf accord express et écrit des deux parties, prévaloir sur les présentes CGV."
+            },
+            {
+                "title": "Article 3 : Lieu et durée d'intervention",
+                "text": "Les prestations prévues à l’article 1 sont réalisées dans les locaux de l'Entreprise Individuelle Clément Berthier Développeur, en télétravail, ou dans ceux du Client, sur le matériel du Client, après accord entre les deux parties, dans le cadre d’un contrat de service en sous-traitance. Aucun minimum d'heure n'est à réaliser en télétravail. Toutefois, pour toute demande de prestation sur site, il est préférable de prévoir un minimum de deux heures consécutives afin d’optimiser les temps de déplacements et d’assurer l’efficacité de l’intervention (Voir conditions à l’article 6)."
+            },
+            {
+                "title": "Article 4 : Devis et valité des commandes",
+                "text": "Chaque commande est précédée d’un devis gratuit (dont la validité n’excède pas 30 jours. Au-delà, il est nécessaire d’en demander la prolongation ou de faire établir un nouveau devis, si modification il y a) établi par Clément Berthier Développeur sur la base des informations communiquées par le Client et indiquant le détail de la prestation à effectuer. Pour confirmer sa commande de manière ferme et définitive, le Client doit retourner à Clément Berthier Développeur, par tout moyen à sa convenance, le devis dûment signé avec la mention 'Bon pour accord', les professionnels devant en outre apposer leur cachet commercial. Toute modification des besoins du Client ou des conditions du projet après l’émission du devis peut entraîner la révision du devis initial. Un acompte de 30 % sera demandé à la signature du devis soit par chèques, soit par virement bancaire. La réalisation de ladite commande démarre sitôt encaissement de cet acompte ( Voir conditions article 8 ). Le versement de l’acompte n’autorise cependant pas l’accès du Client a une quelconque forme de propriété sur tout ou partie des éléments de la prestation qui reste la propriété exclusive de Clément Berthier Développeur jusqu’au paiement intégral (Voir conditions article 11). Le solde sera réglé à réception de la facture. Les travaux réguliers sont à régler à la fin de chaque mois, sauf avis contraire lors de l’établissement du devis. Les petits travaux ponctuels sont à régler à la commande. A défaut de réception du devis et des présentes CGV acceptés, du règlement correspondant à l’acompte et, le cas échéant, du règlement total, Clément Berthier Développeur se réserve le droit de ne pas commencer ou d’interrompre sa prestation."
+            },
+            {
+                "title": "Article 5 : Exécution des commandes et délai de réalisation",
+                "text": "Clément Berthier Développeur s’engage à réaliser les prestations commandées avec le plus grand soin et conformément au devis accepté par le Client. Clément Berthier Développeur s’efforce de proposer les délais de réalisations les plus adaptés aux besoins du Client, en tenant compte de ses disponibilité actuelles. La livraison est réalisée à la date indiquée sur le devis, sauf accord contraire ou retard du Client pour confirmer sa commande, pouvant donner lieu à un dépassement des délais. Le Client s’engage à mettre à la disposition de Clément Berthier Développeur tous les éléments nécessaires à l’accomplissement de la mission définie, qui doivent être de bonne qualité et fournis sur des supports valides. Tout retard, omission ou tout document fourni de la part du client ne pouvant être traité (bande son inaudible, document illisible…) pourra entraîner soit une révision de la date de livraison, soit une annulation de la commande. Dans de telles situations Clément Berthier Développeur communiquera avec le Client pour déterminer la marche à suivre la plus appropriée. En cas d’exécution de la prestation au sein des locaux du Client, Clément Berthier Développeur s'engage à en respecter les règles d’hygiène et de sécurité en vigueur."
+            },
+            {
+                "title": "Article 6 : Tarifs",
+                "text": "Les tarifs appliqués sont ceux en vigueur au jour de la prise de commande. Les prix peuvent être calculés à l’unité, à l’heure, au jour ou au forfait. Ils sont exprimés en euros et non soumis à la TVA, conformément à l’article 293B du CGI. Les services aux entreprises sont négociés de gré à gré et leur tarif final peut varier en fonction des exigences particulières que requièrent les prestations, soit en faveur du Client, soit en faveur de Clément Berthier Développeur. Ainsi, les tarifs indiqués sur les supports de communication de Clément Berthier Développeur sont donnés à titre indicatif et ne remplacent nullement un devis personnalisé en bonne et due forme. Les tarifs sont majorés des éventuels frais d'affranchissement, d'impression, de fourniture particulière et/ou de livraison applicables au jour de la commande. Toute prestation sur site ne représentant pas deux heures de travail consécutives est majorée de frais de déplacement selon le barème kilométrique en vigueur, ainsi que tout déplacement supérieur à 10 kilomètres du siège social de l’entreprise Clément Berthier Développeur. De manière générale, les tarifs sont révisables au 1er janvier de chaque année. Toutefois, Clément Berthier Développeur s'accorde le droit de modifier ses tarifs à tout moment, étant entendu que les travaux en cours seront facturés aux prix indiqués lors de l'enregistrement de la commande, validée par la signature du devis et des présentes CGV."
+            },
+            {
+                "title": "Article 7 : Remises et majorations",
+                "text": "Les prestations réalisées en urgence à la demande du Client seront majorées de la façon suivante : Travaux effectués après 18h30 pour le lendemain, les samedis ou à remettre dans un délai inférieur à 8 heures : + 25% ; Travaux réalisés les dimanches et jours fériés : + 50 %."
+            },
+            {
+                "title": "Article 8 : Droit de rétractation et annulation",
+                "text": "Un droit de rétractation sera accepté dans la limite de quatorze jours ouvrables suivant la date du devis signé. Il ne sera alors facturé au Client aucun frais. Dans le cas d’un acompte de 30 % fournie par chèque a la signature du devis celui ci ne sera encaissé qu’après ce délai de quatorze jour. Dans le cas d’un acompte de 30 % fournie par virement bancaire à la signature du devis, celui ci sera rembourser a la demande du client dans son délai de rétractation, au-delà de celui ci, il ne sera pas rembourser. En cas d’annulation d’une commande en cours de réalisation par le Client, quelle qu’en soit la cause, ce dernier s’engage à régler la totalité de la prestation déjà effectuée. Cette annulation doit être confirmée par le Client à Clément Berthier Développeur par écrit (courrier ou mail). Par voie de conséquence, la prestation réalisé en totalité ou en partie par Clément Berthier Développeur et pour lequel le Client a usé de son droit de rétractation, devient de fait la propriété de Clément Berthier Développeur, et est soumis au droit en vigueur en matière de propriété intellectuelle."
+            },
+            {
+                "title": "Article 9 : Pénalités de retard et indemnité forfaitaire de recouvrement",
+                "text": " Sauf accord préalable entre les parties, en cas de défaut de paiement d'une facture à l'échéance, une pénalité de retard égale à trois fois le taux d'intérêt légal ainsi qu’une indemnité forfaitaire de frais de recouvrement de 40,00 euros, conformément à l’article L441-6 et D441-5 du Code de Commerce, est exigible sans qu'aucune mise en demeure ne soit nécessaire. Cette pénalité, calculée sur la somme restant due, court de plein droit le jour suivant la date de règlement portée sur la facture, tout comme l’indemnité forfaitaire de frais de recouvrement de 40,00 euros. En cas de recouvrement judiciaire, le Client supportera tous les frais de mise en demeure et de contentieux, et se verra facturer, à titre de clause pénale, une somme égale à 15 % du montant total de la commande qu’il a passée, avec un minimum forfaitaire de trente Euros par dossier, et ce, sans préjudice de tous dommages et intérêts ou indemnités que Clément Berthier Développeur pourrait réclamer. En outre, Clément Berthier Développeur se réserve le droit de suspendre ou de résilier toutes les commandes ou contrats en cours du Client, après l'envoi d'une mise en demeure restée infructueuse."
+            },
+            {
+                "title": "Article 10 : Confidentialité",
+                "text": "Clément Berthier Développeur s'engage à respecter strictement la confidentialité de toutes les informations, documents, données ou concepts dont elle pourrait avoir connaissance avant, pendant ou après la réalisation de sa prestation, ainsi que du contenu des travaux commandés et réalisés. La responsabilité de Clément Berthier Développeur ne peut être engagée en raison d'une interception ou d'un détournement des informations lors du transfert des données, notamment par Internet. Par conséquent, il appartient au Client, lors de la commande, d’informer Clément Berthier Développeur des moyens de transfert qu’il souhaite voir mis en œuvre afin de garantir la confidentialité de toute information à caractère sensible. De convention expresse, les résultats de la mission sont en la pleine maîtrise du Client à compter du paiement intégral de la prestation, Clément Berthier Développeur s'interdisant de faire état des résultats et de les utiliser de quelque manière que ce soit, sauf obtention préalable de l'autorisation écrite du Client."
+            },
+            {
+                "title": "Article 11 : Propriétés intellectuelles",
+                "text": "Tout élément fourni par le Client est protégé par le droit de la propriété intellectuelle et reste sa seule propriété. Il déclare disposer de tous les droits et/ou autorisations nécessaires, et garantit Clément Berthier Développeur contre toute réclamation éventuelle d’un tiers qui prétendrait avoir un droit de propriété intellectuelle sur l’un quelconque des éléments fournis par lui, notamment de tous textes, images, logos, graphiques, photos, films audio ou vidéo, fichiers, logiciels, bases de données. Le Client est propriétaire du contenu de son site web, c’est-à-dire des informations se trouvant sur son site (logo, page HTML, fichiers images, sons, etc.), des bases de données, fichiers clients ou autres. L’ensemble des créations de Clément Berthier Développeur reste sa propriété exclusive, et Clément Berthier Développeur se réserve le droit de revendre ou d’utiliser tout ou partie de ses créations. Ainsi, tout logiciel, application métier ou autres développements spécifiques réalisés pour le Client reste la propriété de Clément Berthier Développeur. Clément Berthier Développeur conserve l’entière propriété de la prestation et de chacun de ses éléments (hors éléments fournis par le Client), y compris immatériels, jusqu’au règlement total de toutes les facturations dues par le Client à Clément Berthier Développeur."
+            },
+            {
+                "title": "Article 12 : Responsabilité et cas de force majeure",
+                "text": "Clément Berthier Développeur s’engage, à titre d’obligation de moyens, à exécuter ses prestations avec tout le soin en usage dans sa profession et à utiliser les règles de l’art du moment. Clément Berthier Développeur met en œuvre tous les moyens nécessaires mis à sa disposition pour prendre soin et préserver les fichiers informatiques et autres documents qui lui sont confiés par le Client pour la réalisation de la prestation commandée. Toutefois, compte tenu des risques de dommage ou de détérioration encourus par ce type de support, il appartient au Client de s'en prémunir par tous moyens à sa convenance, qui décharge en conséquence Clément Berthier Développeur de toute responsabilité. A compter de la remise des documents livrés par Clément Berthier Développeur, le Client est responsable de l’utilisation, de l’exploitation et de la diffusion du contenu qui y est présenté, notamment en ce qui concerne les éventuels droits et copyright. Il décharge en conséquence Clément Berthier Développeur de toute responsabilité et la garantit contre tout recours susceptible d’être intenté à son encontre, du fait d'une quelconque utilisation frauduleuse ou en raison de toute perte de bénéfices ou trouble commercial. Clément Berthier Développeur se réserve le droit de refuser tous travaux dont les intentions sont contraires à l’honnêteté ou à la morale (pornographie, racisme, incitation à la violence…). La responsabilité de Clément Berthier Développeur ne pourra pas être mise en œuvre si la non-exécution ou le retard dans l'exécution de l'une des obligations décrites dans les présentes CGV découle d'un cas de force majeure. À ce titre, la force majeure s'entend de tout événement imprévisible, irrésistible et extérieur, au sens de l'article 1148 du Code civil."
+            },
+            {
+                "title": "Article 13 : Evolutions de la législation",
+                "text": "Dans le cas d’une évolutions de la législation impliquant des modifications pour la mise en conformité du site Web du Client, les frais de développement seront a la charge du client. Le développement du site web étant antérieur a la nouvelle législation, Clément Berthier Développeur ne peut être tenu responsable d’une éventuelle impossibilité de mise en conformité avec la nouvelles législation."
+            },
+            {
+                "title": "Article 14 : Droit applicable et juridiction compétente",
+                "text": "Tout litige relatif à l'application ou à l'interprétation des présentes CGV est soumis au droit français. À défaut de résolution amiable, le litige sera porté devant le Tribunal de Commerce de Castres. Date de mise à jour : 12 avril 2024. Les Conditions Générales de Vente pouvant être modifiables à tout moment, seule la date de réception du devis signé sera admise pour l'application des présentes."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "lastUpdate": "Dernière mise à jour effectué le 11 juillet 2024",
+        "title": "Politique de confidentialité (RGPD)",
+        "articlesList": [
+            {
+                "title": "Article 1 : Introduction",
+                "text": "Chez Clément Berthier Développeur, nous accordons une grande importance à la protection de votre vie privée. Cette politique de confidentialité a pour but de vous informer sur la manière dont nous collectons, utilisons et protégeons vos données personnelles lorsque vous utilisez notre site web [Nom de votre site] et nos services de développement web."
+            },
+            {
+                "title": "Article 2 : Responsable du traitement des données",
+                "text": "Le responsable du traitement des données personnelles est géré par M Clément Berthier, domicilié au 12bis rue du Commandant Wauthier, Résidence l'Infante, Bât C, APPT 21. Adresse de courrier électronique : clementberthierdeveloppeur@gmail.com, numéro de téléphone : 07.88.45.37.78"
+            },
+            {
+                "title": "Article 3 : Données collectées",
+                "text": "Nous collectons différentes données personnelles en fonction de votre utilisation de notre site et de nos services, notamment : Votre nom, prénom, adresse électronique, numéro de téléphone, et toute autres informations que vous nous transmettez via notre formulaire de contact."
+            },
+            {
+                "title": "Article 4 : Utilisations des données",
+                "text": "Les données collectées sont utilisées pour les finalités suivantes : exécution des contrats de développement web et aux réponses au demandes d'information. Les données collectées ne sont en aucun cas transmises à des tiers sans votre consentement."
+            },
+            {
+                "title": "Article 5 : Base légale du traitement des données",
+                "text": "Le traitement de vos données personnelles est basé sur les fondements juridiques tels que l'exécution d'un contrat, le respect d'une obligation légale, l'intérêt légitime ou le consentement."
+            },
+            {
+                "title": "Article 6 : Partage des données",
+                "text": "Vos données personnelles ne sont en aucun cas partagées, vendues ou louées à des tiers sans votre consentement. Les seuls cas de partage de données sont ceux nécessaires à l'exécution de nos services, notamment avec nos prestataires sous-traitées."
+            },
+            {
+                "title": "Article 7 : Durée de conservation des données",
+                "text": "Nous conservons vos données personnelles uniquement le temps nécessaire pour les finalités pour lesquelles elles ont été collectées, conformément aux exigences légales."
+            },
+            {
+                "title": "Article 8 : Droits des utilisateurs",
+                "text": "Vous disposez des droits suivants concernant vos données personnelles: droit d'accès, droit de rectification, droit à l'effacement, droit à la limitation du traitement, droit à la portabilité des données, droit d'opposition et droit de retirer votre consentement à tout moment. Pour exercer ces droits, vous pouvez me contacter via le formulaire de contact présent sur le site."
+            },
+            {
+                "title": "Article 9 : Sécurité des données",
+                "text": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données contre toute destruction, perte, altération, divulgation ou accès non autorisé."
+            },
+            {
+                "title": "Article 10 : Utilisation des cookies",
+                "text": "Notre site n'utilise pas de cookies."
+            },
+            {
+                "title": "Article 11 : Modifications de la politique de confidentialité",
+                "text": "Nous pouvons modifier cette politique de confidentialité de temps en temps. Nous vous informerons de tout changement en publiant la nouvelle politique sur notre site. Nous vous encourageons à consulter cette page régulièrement pour rester informé des mises à jour."
+            },
+            {
+                "title": "Article 12 : Contact",
+                "text": "Pour toute question relative à cette politique de confidentialité ou pour exercer vos droits, vous pouvez nous contacter via le formulaire de contact présent sur le site."
+            }
+        ]
+    }
+]

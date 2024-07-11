@@ -11,8 +11,11 @@ export default function Footer() {
     const handleClickNavigate = (e) => {
         e.preventDefault();
         const destinationId = e.target.id;
-        navigate("/", { state: { id: destinationId } });
-        console.log(destinationId);
+        if (destinationId === "legalMention") {
+            navigate("/legalMention");
+        } else {
+            navigate("/", { state: { id: destinationId } });
+        }
     };
     return (
         <div className="footer_container">
@@ -58,6 +61,15 @@ export default function Footer() {
                                 >
                                     <img src={github} alt="logo github" />
                                 </a>
+                            </div>
+                            <div className="legalMention_container">
+                                <span
+                                    className="legalMention"
+                                    id="legalMention"
+                                    onClick={handleClickNavigate}
+                                >
+                                    Mentions légales
+                                </span>
                             </div>
                         </div>
                     </div>

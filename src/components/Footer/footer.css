@@ -54,6 +54,21 @@
                         margin-bottom: 1rem;
                     }
                 }
+                .legalMention_container {
+                    display: flex;
+                    justify-content: center;
+                    .legalMention {
+                        text-align: center;
+                        font-size: calc(0.6vw + 0.8rem);
+                        font-family: var(--font-text);
+                        color: white;
+                        margin-top: 1rem;
+                    }
+                    .legalMention:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
             }
             .footer_navigation_first {
                 display: flex;

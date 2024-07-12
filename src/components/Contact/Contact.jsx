@@ -351,7 +351,13 @@ export default function Contact() {
                                     Réseaux sociaux:
                                 </h3>
                                 <div className="detail_logo">
-                                    <a className="detail_link" href="">
+                                    <a
+                                        className="detail_link"
+                                        href="https://www.facebook.com/profile.php?id=61562316966767"
+                                        rel="noreferrer noopener"
+                                        target="_blank"
+                                        aria-label="facebook"
+                                    >
                                         <img
                                             src={facebook}
                                             alt="logo facebook"

@@ -67,7 +67,13 @@ export default function Footer() {
                         <div className="footer_section_division_second">
                             <h3 className="footer_title">Suivez nous </h3>
                             <div className="footer_social_logo">
-                                <a className="footer_link" href="">
+                                <a
+                                    className="footer_link"
+                                    href="https://www.facebook.com/profile.php?id=61562316966767"
+                                    rel="noreferrer noopener"
+                                    target="_blank"
+                                    aria-label="facebook"
+                                >
                                     <img src={facebook} alt="logo facebook" />
                                 </a>
                                 <a className="footer_link" href="">

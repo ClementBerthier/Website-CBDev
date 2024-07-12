@@ -212,3 +212,9 @@
         height: 10rem !important;
     }
 }
+
+@media screen and (orientation: landscape) and (min-width: 3000px) {
+    .technologies_container {
+        max-width: 2500px !important;
+    }
+}

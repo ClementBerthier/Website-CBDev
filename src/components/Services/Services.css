@@ -251,3 +251,19 @@
         }
     }
 }
+
+@media screen and (orientation: landscape) and (min-width: 3000px) {
+    .services_container {
+        max-width: 2500px !important;
+        .description_text_container,
+        .description_picture_container {
+            height: 70rem !important;
+        }
+        .description_text_container {
+            .text {
+                font-size: calc(1rem + 0.5vw) !important;
+                line-height: 4rem !important;
+            }
+        }
+    }
+}

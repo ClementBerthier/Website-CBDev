@@ -1,7 +1,7 @@
 .form_global {
     background-color: #e5f0fb;
     .contact_container {
-        max-width: 1200px;
+        max-width: 1700px;
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -244,6 +244,15 @@
             textarea {
                 font-size: calc(0.7rem + 0.5vw) !important;
             }
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 3000px) {
+    .contact_container {
+        max-width: 2500px !important;
+        .detail_text {
+            line-height: 4rem !important;
         }
     }
 }

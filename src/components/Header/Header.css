@@ -271,3 +271,21 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (orientation: landscape) and (min-width: 3000px) {
+    .header_banner_container,
+    .header_navigation_container {
+        max-width: 2500px !important;
+    }
+    .phone_number,
+    .mail_adress {
+        font-size: 2rem !important;
+    }
+    .phone_logo,
+    .mail_logo {
+        width: 2.5rem !important;
+    }
+    .link {
+        font-size: 2.3rem !important;
+    }
+}

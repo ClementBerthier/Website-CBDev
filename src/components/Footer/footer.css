@@ -1,7 +1,7 @@
 .footer_container {
     background-color: #404b5c;
     .footer_container_section {
-        max-width: 1200px;
+        max-width: 1700px;
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -50,7 +50,7 @@
                     color: white;
                     gap: 5%;
                     .footer_link {
-                        width: 14%;
+                        width: 5rem;
                         margin-bottom: 1rem;
                     }
                 }
@@ -114,7 +114,6 @@
                             font-family: var(--font-text);
                             margin: 0 2rem;
 
-                            line-height: 2rem;
                             font-weight: 400;
                         }
                         .mailto {
@@ -268,5 +267,11 @@
             padding: 2rem 1rem !important;
             font-size: calc(1vw + 0.6rem) !important;
         }
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 3000px) {
+    .footer_container_section {
+        max-width: 2500px !important;
     }
 }

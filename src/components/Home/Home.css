@@ -21,7 +21,6 @@
                 font-weight: 500;
                 color: #000;
                 margin-bottom: 1rem;
-                white-space: nowrap;
                 padding: 2rem 0rem 3rem 2rem;
             }
             .presentation_paragraph {
@@ -97,6 +96,12 @@
 }
 @media screen and (orientation: landscape) and (max-width: 1800px) {
     .home {
+        padding: 14rem 1rem 0 1rem !important;
+    }
+}
+@media screen and (orientation: landscape) and (min-width: 3000px) {
+    .home {
+        max-width: 2500px !important;
         padding: 14rem 1rem 0 1rem !important;
     }
 }

@@ -363,7 +363,13 @@ export default function Contact() {
                                             alt="logo facebook"
                                         />
                                     </a>
-                                    <a className="detail_link" href="">
+                                    <a
+                                        className="detail_link"
+                                        href="https://www.instagram.com/clementberthier_dev/"
+                                        rel="noreferrer noopener"
+                                        target="_blank"
+                                        aria-label="facebook"
+                                    >
                                         <img
                                             src={instagram}
                                             alt="logo instagram"

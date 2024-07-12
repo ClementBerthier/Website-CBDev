@@ -76,7 +76,13 @@ export default function Footer() {
                                 >
                                     <img src={facebook} alt="logo facebook" />
                                 </a>
-                                <a className="footer_link" href="">
+                                <a
+                                    className="footer_link"
+                                    href="https://www.instagram.com/clementberthier_dev/"
+                                    rel="noreferrer noopener"
+                                    target="_blank"
+                                    aria-label="instagram"
+                                >
                                     <img src={instagram} alt="logo instagram" />
                                 </a>
                                 <a

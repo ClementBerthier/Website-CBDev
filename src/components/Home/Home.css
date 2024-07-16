@@ -45,23 +45,7 @@
             img {
                 width: 100%;
                 height: auto;
-            }
-        }
-    }
-    .home_scroller {
-        display: flex;
-        justify-content: center;
-        padding: 4rem 0 0 0;
-        width: 100%;
-        height: 30rem;
-        .arrow_picture {
-            width: 15rem;
-            height: 30rem;
-            border-radius: 30px;
-            .picture {
-                animation: goDown 3s ease-in-out infinite;
-                width: 100%;
-                height: 100%;
+                padding-bottom: 10rem;
             }
         }
     }

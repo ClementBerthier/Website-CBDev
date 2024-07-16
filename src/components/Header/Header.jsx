@@ -74,7 +74,7 @@ export default function Header2() {
                                 <img
                                     id="home"
                                     className="company_logo"
-                                    src="/images/Logo_CBDev.png"
+                                    src="/images/Logo_CBDev.WebP"
                                     alt="logo entreprise"
                                     onClick={handleClickNavigate}
                                 />

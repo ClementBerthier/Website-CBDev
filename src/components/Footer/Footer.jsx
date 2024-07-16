@@ -55,7 +55,7 @@ export default function Footer() {
                         <div className="footer_section_division">
                             <img
                                 className="footer_logo"
-                                src="/images/Logo_CBDev_white.png"
+                                src="/images/Logo_CBDev_white.WebP"
                                 alt="logo entreprise"
                             />
                             <p className="motto">

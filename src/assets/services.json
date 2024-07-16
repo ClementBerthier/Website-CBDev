@@ -10,7 +10,7 @@
         "fifthSpan": "sites d'évènements",
         "description": "... Que vous soyez un particulier ou une entreprise, votre image numérique est importante. Découvrez plus en détail mes services de conception de site web.",
         "logo": "/images/code.svg",
-        "picture": "/images/site.png"
+        "picture": "/images/site.WebP"
     },
     "application": {
         "id": 2,
@@ -19,7 +19,7 @@
 
         "description": "Applications de gestion de projets, outils d'administration en ligne, bases de données interactives... Que vous soyez un particulier ou une entreprise, je crée des applications web qui répondent précisément à vos besoins. Découvrez plus en détail mes services de conception d'application web.",
         "logo": "/images/application.svg",
-        "picture": "/images/pg4.png"
+        "picture": "/images/pg4.WebP"
     },
 
     "e_commerce": {
@@ -29,7 +29,7 @@
 
         "description": "Création de site e-commerce, intégration de solutions de paiement, interfaces attractives...  Je vous accompagne dans la mise en place de votre boutique en ligne pour vous permettre de développer votre activité sur internet. Découvrez comment mes services peuvent booster vos ventes en ligne.",
         "logo": "/images/cart.svg",
-        "picture": "/images/soap.png"
+        "picture": "/images/soap.WebP"
     },
     "RM": {
         "id": 4,
@@ -38,8 +38,8 @@
 
         "description": "Modernisation de l'interface utilisateur, amélioration des performances, mise à jour des fonctionnalités... Je m'occupe de la refonte et de la maintenance de vos applications et sites web, que ce soit pour corriger des bugs, optimiser la vitesse ou intégrer de nouvelles technologies. Découvrez comment mes services peuvent revitaliser vos solutions numériques.",
         "logo": "/images/tools.svg",
-        "oldPicture": "/images/old.png",
-        "newPicture": "/images/new.png"
+        "oldPicture": "/images/old.WebP",
+        "newPicture": "/images/new.WebP"
     },
     "SEO": {
         "id": 5,
@@ -48,6 +48,6 @@
 
         "description": "Analyse de mots-clés, optimisation du contenu, amélioration de la structure du site... Je met en place des stratégies SEO efficaces pour augmenter votre visibilité sur les moteurs de recherche. Découvrez comment mes techniques peuvent propulser votre site au sommet des résultats de recherche",
         "logo": "/images/medal1st.svg",
-        "picture": "/images/chevrerie.png"
+        "picture": "/images/chevrerie.WebP"
     }
 }

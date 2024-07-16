@@ -22,7 +22,7 @@ export default function Home2() {
 
                 <div className="home_illustration">
                     <img
-                        src="/images/avatar_dev.png"
+                        src="/images/avatar_dev.WebP"
                         alt="developper_illustration"
                     />
                 </div>

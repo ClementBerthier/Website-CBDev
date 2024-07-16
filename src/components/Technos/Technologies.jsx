@@ -10,7 +10,7 @@ export default function Technologies() {
         id: 1,
         tag: "Frontend",
         name: "HTML5",
-        path: "/images/techLogo/HTML5.png",
+        path: "/images/techLogo/HTML5.WebP",
         url: "https://developer.mozilla.org/fr/docs/Web/HTML",
         description:
             "HTML5 est un langage informatique qui permet de créer la structure et le contenu des pages web. Imaginez le comme le squelette de votre site ou chaque os représente un élément de votre page, tels que les titres, les paragraphes, les images, les vidéos, etc...",

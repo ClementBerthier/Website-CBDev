@@ -160,6 +160,9 @@
         width: 100%;
         height: 22%;
     }
+    .ui.modal > .header {
+        font-family: var(--font-title);
+    }
     .content_modal_contact {
         width: 100%;
         height: 80%;

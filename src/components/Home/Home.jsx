@@ -32,7 +32,7 @@ export default function Home2() {
                     <img
                         className="picture"
                         src="/images/arrow-down.svg"
-                        alt="arrow down"
+                        alt="arrowDown"
                     />
                 </div>
             </div>

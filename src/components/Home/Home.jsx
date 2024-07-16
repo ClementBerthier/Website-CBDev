@@ -24,6 +24,7 @@ export default function Home2() {
                     <img
                         src="/images/avatar_dev.WebP"
                         alt="developper_illustration"
+                        loading="lazy"
                     />
                 </div>
             </div>

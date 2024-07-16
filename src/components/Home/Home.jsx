@@ -22,9 +22,8 @@ export default function Home2() {
 
                 <div className="home_illustration">
                     <img
-                        src="/images/avatar_dev.WebP"
+                        src="/images/avatar_dev.AVIF"
                         alt="developper_illustration"
-                        loading="lazy"
                     />
                 </div>
             </div>

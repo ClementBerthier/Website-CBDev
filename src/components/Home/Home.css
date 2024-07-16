@@ -41,6 +41,7 @@
         }
         .home_illustration {
             width: 50%;
+            height: 100%;
             margin: auto;
             img {
                 width: 100%;

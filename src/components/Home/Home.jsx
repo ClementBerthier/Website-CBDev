@@ -27,15 +27,6 @@ export default function Home2() {
                     />
                 </div>
             </div>
-            <div className="home_scroller">
-                <div className="arrow_picture">
-                    <img
-                        className="picture"
-                        src="/images/arrow-down.svg"
-                        alt="arrowDown"
-                    />
-                </div>
-            </div>
         </div>
     );
 }

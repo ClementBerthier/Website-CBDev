@@ -40,8 +40,7 @@
             }
         }
         .home_illustration {
-            width: 60%;
-            height: 100%;
+            width: 50%;
             margin: auto;
             img {
                 width: 100%;
@@ -82,7 +81,7 @@
 
 @media screen and (orientation: portrait) and (max-width: 1280px) {
     .home {
-        padding: 25rem 1rem !important;
+        padding: 25rem 1rem 0 1rem !important;
 
         .home_presentation {
             .presentation_name {
@@ -101,20 +100,20 @@
 }
 @media screen and (orientation: landscape) and (max-width: 1800px) {
     .home {
-        padding: 14rem 1rem !important;
+        padding: 14rem 1rem 0 1rem !important;
     }
 }
 @media screen and (orientation: landscape) and (min-width: 3000px) {
     .home {
         max-width: 2500px !important;
-        padding: 14rem 1rem !important;
+        padding: 14rem 1rem 0 1rem !important;
     }
 }
 
 @media screen and (orientation: portrait) and (max-width: 860px) {
     .home_container {
         .home {
-            padding: 10rem 1rem !important;
+            padding: 10rem 1rem 0 1rem !important;
             flex-direction: column;
             .home_presentation {
                 width: 100%;
@@ -157,7 +156,7 @@
 @media screen and (orientation: portrait) and (max-width: 444px) {
     .home_container {
         .home {
-            padding: 18rem 1rem;
+            padding: 18rem 1rem 0 1rem;
 
             .home_presentation {
                 .presentation_name {

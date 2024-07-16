@@ -18,6 +18,7 @@
             .presentation_name {
                 font-size: calc(3.5rem + 2vw);
                 font-family: var(--font-title);
+                font-display: swap;
                 font-weight: 500;
                 color: #000;
                 margin-bottom: 1rem;

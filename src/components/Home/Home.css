@@ -172,5 +172,12 @@
                 }
             }
         }
+        .home_scroller {
+            padding: 4rem 0 0 0;
+            height: 20rem;
+            .arrow_picture {
+                width: 10%;
+            }
+        }
     }
 }

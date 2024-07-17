@@ -6,7 +6,7 @@ export default defineConfig({
     build: {
         outDir: "dist", // Dossier de sortie pour les fichiers de build
         sourcemap: true, // Générer des sourcemaps pour le debugging
-        rollupOptions: {
+        /*   rollupOptions: {
             output: {
                 manualChunks(id) {
                     if (id.includes("node_modules")) {
@@ -14,7 +14,7 @@ export default defineConfig({
                     }
                 },
             },
-        },
+        }, */
     },
     server: {
         port: 3000, // Port du serveur de développement

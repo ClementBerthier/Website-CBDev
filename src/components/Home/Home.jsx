@@ -14,7 +14,7 @@ export default function Home2() {
                     <p className="presentation_paragraph">
                         Je suis à votre écoute pour vous aider à réaliser votre
                         projet web et vous proposer des solutions adaptées a vos
-                        besoins
+                        besoins.
                     </p>
                     {/*                     <Button text="Plus d'infos"></Button>
                      */}{" "}

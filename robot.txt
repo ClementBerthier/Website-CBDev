@@ -1,22 +1,44 @@
-user-agent: *
-disallow:
+User-agent: Googlebot
+Allow: /
 
-sitemap: https://www.clementberthierdeveloppeur.fr/sitemap.xml
+User-agent: Googlebot-News
+Allow: /
 
-user-agent: MJ12bot
-disallow: /
+User-agent: Googlebot-Image
+Allow: /
 
-user-agent: AhrefsBot
-disallow: /
+User-agent: Googlebot-Video
+Allow: /
 
-user-agent: SEMrushBot
-disallow: /
+User-agent: Googlebot-Mobile
+Allow: /
 
-user-agent: BLEXBot
-disallow: /
+User-agent: AdsBot-Google
+Allow: /
 
-user-agent: DotBot
-disallow: /
+User-agent: AdsBot-Google-Mobile
+Allow: /
 
-user-agent: YandexBot
-disallow: /
+User-agent: Googlebot-Ads
+Allow: /
+
+User-agent: Google-Site-Verification
+Allow: /
+
+User-agent: Google-Read-Aloud
+Allow: /
+
+User-agent: Duosearch
+Allow: /
+
+User-agent: Feedfetcher-Google
+Allow: /
+
+User-agent: Google-Favicon
+Allow: /
+
+User-agent: Google-Structured-Data-Testing-Tool
+Allow: /
+
+User-agent: *
+Disallow: /

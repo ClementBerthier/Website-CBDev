@@ -1,22 +1,22 @@
-User-agent: *
-Disallow:
+user-agent: *
+disallow:
 
-Sitemap: https://www.clementberthierdeveloppeur.fr/sitemap.xml
+sitemap: https://www.clementberthierdeveloppeur.fr/sitemap.xml
 
-User-agent: MJ12bot
-Disallow: /
+user-agent: MJ12bot
+disallow: /
 
-User-agent: AhrefsBot
-Disallow: /
+user-agent: AhrefsBot
+disallow: /
 
-User-agent: SEMrushBot
-Disallow: /
+user-agent: SEMrushBot
+disallow: /
 
-User-agent: BLEXBot
-Disallow: /
+user-agent: BLEXBot
+disallow: /
 
-User-agent: DotBot
-Disallow: /
+user-agent: DotBot
+disallow: /
 
-User-agent: YandexBot
-Disallow: /
+user-agent: YandexBot
+disallow: /

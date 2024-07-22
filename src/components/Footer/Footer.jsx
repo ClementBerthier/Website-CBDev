@@ -160,7 +160,7 @@ export default function Footer() {
                                         id="evenement"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Sites d{"'"}évènement
+                                        {"> "}Sites d{"'"}événement
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"

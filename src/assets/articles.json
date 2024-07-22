@@ -4,7 +4,7 @@
         "tag": "Conception de site",
         "title": "Site vitrine",
         "description": "Affirmez votre présence en ligne avec un site vitrine professionnel et attractif.",
-        "introText": "Un site vitrine est comme la bande-annonce d'un grand film. Il doit captiver, intriguer et donner envie de voir la suite. Ce premier aperçu de votre entreprise peut faire toute la différence entre un visiteur de passage et un client fidèle. Dans cet article, je vais vous expliquer ce qu'est un site vitrine, son but et de quoi il peut être composé.",
+        "introText": "Un site vitrine est comme la bande-annonce d'un grand film. Il doit captiver, intriguer et donner envie de voir la suite. Ce premier aperçu de votre entreprise peut faire toute la différence entre un visiteur de passage et un client fidèle. Dans cet article, je vais vous expliquer ce qu'est un site vitrine, son but, et de quoi il peut être composé.",
         "descriptionTitle": "Qu'est-ce qu'un site vitrine ?",
         "descriptionText": "Un site vitrine est un site web qui présente une entreprise, une association ou toute autre entité qui mérite d'être présentée. Il s'agit d'une vitrine virtuelle qui permet aux visiteurs de découvrir qui vous êtes, vos produits ou vos services, et comment vous contacter de manière simple et efficace. Contrairement à un site e-commerce, un site vitrine n'a pas pour but de vendre directement des produits ou des services en ligne, mais plutôt de donner une image professionnelle de votre entreprise et de susciter l'intérêt des visiteurs.",
         "featureTitle": "Quelques fonctionnalités clés d'un site vitrine",
@@ -13,27 +13,27 @@
         "featureList": [
             {
                 "title": "Page d'accueil attirante",
-                "text": "La page d'accueil est la première chose que voient les visiteurs de votre site vitrine. Elle doit être attrayante, claire et informative pour donner envie aux visiteurs de découvrir le reste de votre site. "
+                "text": "La page d'accueil est la première chose que voient les visiteurs de votre site vitrine. Elle doit être attrayante, claire et informative pour donner envie aux visiteurs de découvrir le reste de votre site."
             },
             {
                 "title": "Produits et services",
-                "text": "Des pages détaillant les produits et services offerts, avec des descriptions, des images et éventuellement des vidéos permettent de donner un aperçu de ce que vous proposez.  "
+                "text": "Des pages détaillant les produits et services offerts, avec des descriptions, des images et éventuellement des vidéos permettent de donner un aperçu de ce que vous proposez."
             },
             {
                 "title": "Formulaire de contact ",
-                "text": " Un formulaire de contact simple et efficace permet aux visiteurs de vous contacter facilement. Vous pouvez également ajouter des informations de contact comme votre adresse, votre numéro de téléphone ou vos horaires d'ouverture. "
+                "text": " Un formulaire de contact simple et efficace permet aux visiteurs de vous contacter facilement. Vous pouvez également ajouter des informations de contact comme votre adresse, votre numéro de téléphone ou vos horaires d'ouverture."
             },
             {
                 "title": "Galerie d'images",
-                "text": "Une galerie d'images pour présenter vos produits, vos locaux ou vos équipes. Les images sont un excellent moyen de donner une image professionnelle de votre entreprise et de susciter l'intérêt des visiteurs. "
+                "text": "Une galerie d'images pour présenter vos produits, vos locaux ou vos équipes. Les images sont un excellent moyen de donner une image professionnelle de votre entreprise et de susciter l'intérêt des visiteurs."
             },
             {
                 "title": "Intégration des réseaux sociaux",
-                "text": "L'intégration des réseaux sociaux afin de permettre aux visiteurs de partager votre contenu sur les réseaux sociaux et de rester en contact avec vous. Vous pouvez également afficher vos dernières publications sur les réseaux sociaux pour montrer que vous êtes actif en ligne. "
+                "text": "L'intégration des réseaux sociaux afin de permettre aux visiteurs de partager votre contenu sur les réseaux sociaux et de rester en contact avec vous. Vous pouvez également afficher vos dernières publications sur les réseaux sociaux pour montrer que vous êtes actif en ligne."
             },
             {
                 "title": "Menu de navigation",
-                "text": "Un menu de navigation clair et intuitif pour permettre aux visiteurs de trouver facilement ce qu'ils cherchent. Un bon menu de navigation est essentiel pour offrir une expérience utilisateur optimale. "
+                "text": "Un menu de navigation clair et intuitif pour permettre aux visiteurs de trouver facilement ce qu'ils cherchent. Un bon menu de navigation est essentiel pour offrir une expérience utilisateur optimale."
             }
         ],
         "exampleTitle": "Un scénario de site vitrine possible",
@@ -66,7 +66,7 @@
                 "text": "Les commentaires permettent aux lecteurs de réagir aux articles, de poser des questions, de donner leur avis ou de partager leur expérience. Les commentaires sont un excellent moyen d'engager la communauté et de créer un lien avec les lecteurs. "
             },
             {
-                "title": "Recherche Intégrée",
+                "title": "Recherche intégrée",
                 "text": "Une fonction de recherche intégrée pour permettre aux lecteurs de trouver facilement les articles qui les intéressent. La recherche est un outil essentiel pour faciliter la navigation sur le blog et encourager les lecteurs à explorer davantage de contenus. "
             },
             {
@@ -88,7 +88,7 @@
         "creditName": "Voyages Tips",
         "link": "https://www.voyagetips.com/",
         "exampleText": "Imaginons que votre blog se spécialise dans les aventures et les conseils de voyage. Le blog pourrait présenter des récits de voyages, des photos époustouflantes, des guides pratiques pour différentes destinations et des actualités sur les tendances du tourisme. Une section dédiée aux préparatifs de vos voyages offrirait un aperçu authentique de vos expériences, tandis qu'un formulaire de contact permettrait aux lecteurs et aux partenaires touristiques de facilement entrer en relation avec vous. ",
-        "conclusionText": "Un blog est bien plus qu'un simple journal en ligne ; c'est une plateforme dynamique pour partager votre passion, engager vos lecteurs et créer une communauté fidèle. Que votre thème soit la mode, la cuisine, le voyage, la technologie, la santé ou l'éducation, un blog bien conçu peut transformer votre passion en influence. Investissez dans un blog et partagez vos passions et idées avec le monde entier !",
+        "conclusionText": "Un blog est bien plus qu'un simple journal en ligne ; c'est une plateforme dynamique pour partager votre passion, engager vos lecteurs et créer une communauté fidèle. Que votre thème soit la mode, la cuisine, le voyage, la technologie, la santé ou l'éducation, un blog bien conçu peut transformer votre passion en influence. Investissez dans un blog et partagez vos passions et vos idées avec le monde entier !",
         "promotionnalTitle": "Un blog vous intéresse ?"
     },
     {
@@ -108,7 +108,7 @@
                 "text": "Une galerie d'œuvres pour présenter vos réalisations, vos projets ou vos créations. Les images, les vidéos ou les maquettes sont un excellent moyen de montrer votre talent et de convaincre les visiteurs de votre expertise. "
             },
             {
-                "title": "Contact et Réseaux Sociaux  ",
+                "title": "Contact et Réseaux sociaux  ",
                 "text": "Un formulaire de contact et des liens vers vos profils sur les réseaux sociaux pour permettre aux visiteurs de vous contacter facilement et de rester en contact avec vous. Vous pouvez également ajouter des boutons de partage sur les réseaux sociaux pour permettre aux visiteurs de partager votre contenu. "
             },
             {
@@ -125,7 +125,7 @@
             },
             {
                 "title": "Téléchargements",
-                "text": "Des fichiers à télécharger comme des CV, des brochures, des guides ou des présentations pour permettre aux visiteurs de découvrir plus en détail vos compétences et vos réalisations. Les téléchargements sont un excellent moyen de compléter l'information présentée sur votre portfolio et de convaincre les visiteurs de votre expertise. "
+                "text": "Des fichiers à télécharger comme des CV, des brochures, des guides ou des présentations pour permettre aux visiteurs de découvrir plus en détail vos compétences et vos réalisations. Les téléchargements sont un excellents moyens de compléter l'information présentée sur votre portfolio et de convaincre les visiteurs de votre expertise. "
             }
         ],
         "exampleTitle": "Un scénario de portfolio possible",
@@ -168,10 +168,6 @@
             {
                 "title": "Multilingue",
                 "text": "Un site multilingue pour toucher un public international et présenter votre CV à un plus large éventail de recruteurs. La traduction de votre CV dans plusieurs langues peut vous aider à attirer de nouvelles opportunités professionnelles et à vous démarquer sur le marché du travail. "
-            },
-            {
-                "title": "Téléchargements",
-                "text": "Des fichiers à télécharger comme des CV, des brochures, des guides ou des présentations pour permettre aux visiteurs de découvrir plus en détail vos compétences et vos réalisations. Les téléchargements sont un excellent moyen de compléter l'information présentée sur votre portfolio et de convaincre les visiteurs de votre expertise. "
             }
         ],
         "exampleTitle": "Un scénario de CV en ligne possible",
@@ -186,7 +182,7 @@
     {
         "id": 5,
         "tag": "Conception de site",
-        "title": "Sites d'évènements",
+        "title": "Sites d'événements",
         "description": "Organisez et promouvez vos événements en ligne avec un site dédié et personnalisé.",
         "introText": "Un site d'événements est la vitrine de votre événement, le point de rencontre entre les organisateurs et les participants. Il doit informer, engager et convaincre les visiteurs de s'inscrire. Dans cet article, je vais vous expliquer ce qu'est un site d'événements, son utilité et les éléments clés qui le composent.",
         "descriptionTitle": "Qu'est-ce qu'un site d'évènement ?",
@@ -242,7 +238,7 @@
         "featureList": [
             {
                 "title": "Gestion des utilisateurs",
-                "text": "Un système de gestion des utilisateurs pour permettre la création, la modification et la suppression de comptes utilisateur. Cela inclut la gestion des rôles et des permissions pour assurer une utilisation sécurisée et contrôlée de l'application."
+                "text": "Un système de gestion des utilisateurs pour permettre la création, la modification et la suppression de comptes utilisateur. Cela inclut la gestion des rôles et des autorisations pour assurer une utilisation sécurisée et contrôlée de l'application."
             },
             {
                 "title": "Tableaux de bord interactifs",
@@ -270,7 +266,7 @@
         "videoALT": "vidéo application",
         "creditName": "GIGAFIT - DOL DE BRETAGNE",
         "link": "https://www.gigafit.fr/club/dol-de-bretagne",
-        "exampleText": "Imaginons que vous ayez besoin d'une application web pour gérer les réservations d'une salle de sport. L'application pourrait permettre aux utilisateurs de créer un compte, de réserver des créneaux horaires, de consulter les disponibilités en temps réel et de recevoir des notifications de rappel. Une section dédiée aux administrateurs permettrait de gérer les réservations, d'ajouter ou de modifier les horaires et d'envoyer des communications aux membres. Un tableau de bord interactif afficherait les statistiques d'utilisation, les tendances de réservation et d'autres indicateurs clés.",
+        "exampleText": "Imaginons que vous ayez besoin d'une application web pour gérer les réservations d'une salle de sport. L'application pourrait permettre aux utilisateurs de créer un compte, de réserver des créneaux horaires, de consulter les disponibilités en temps réel et recevoir des notifications de rappel. Une section dédiée aux administrateurs permettrait de gérer les réservations, d'ajouter ou de modifier les horaires et d'envoyer des communications aux membres. Un tableau de bord interactif afficherait les statistiques d'utilisation, les tendances de réservation et d'autres indicateurs clés.",
         "conclusionText": "En conclusion, une application web est bien plus qu'un simple outil numérique, c'est une solution pour automatiser vos processus, améliorer l'expérience utilisateur et augmenter l'efficacité de votre entreprise. Investir dans une application web personnalisée et intuitive est essentiel pour répondre aux besoins spécifiques de votre activité et offrir des services de qualité à vos utilisateurs.",
         "promotionnalTitle": "Vous souhaitez développer une application web sur mesure ?"
     },
@@ -306,7 +302,7 @@
                 "text": "Une section pour les avis et commentaires des clients afin de partager leurs expériences et d'évaluer les produits. Les avis positifs peuvent renforcer la confiance des nouveaux clients."
             },
             {
-                "title": "Creation de compte",
+                "title": "Création de compte",
                 "text": "Un système de création de compte pour permettre aux clients de s'inscrire, de sauvegarder leurs informations et de suivre leurs commandes. Les comptes clients peuvent inclure des avantages comme des remises ou des offres spéciales."
             }
         ],
@@ -315,7 +311,7 @@
         "videoALT": "vidéo de site e-commerce",
         "creditName": "Amazon",
         "link": "https://www.amazon.fr/",
-        "exampleText": "Imaginons que vous ayez besoin d'un site e-commerce pour vendre des vêtements de mode. Le site pourrait inclure une gestion complète des produits avec des descriptions détaillées, des images haute résolution et des options de filtres pour faciliter la recherche. Un système de panier et de commande intuitif permettrait aux clients de sélectionner plusieurs articles et de finaliser leur achat facilement. Des passerelles de paiement sécurisées garantiraient des transactions sûres, tandis qu'un système de suivi des commandes informerait les clients de l'avancement de leur livraison. Une section d'avis et commentaires renforcerait la confiance des nouveaux acheteurs et des outils SEO et de marketing intégrés aideraient à attirer plus de visiteurs.",
+        "exampleText": "Imaginons que vous ayez besoin d'un site e-commerce pour vendre des vêtements de mode. Le site pourrait inclure une gestion complète des produits avec des descriptions détaillées, des images haute résolution et des options de filtres pour faciliter la recherche. Un système de panier et de commande intuitif permettrait aux clients de sélectionner plusieurs articles et de finaliser leurs achats facilement. Des passerelles de paiement sécurisées garantiraient des transactions sûres, tandis qu'un système de suivi des commandes informerait les clients de l'avancement de leurs livraisons. Une section d'avis et commentaires renforcerait la confiance des nouveaux acheteurs et des outils SEO et de marketing intégrés aideraient à attirer plus de visiteurs.",
         "conclusionText": "En conclusion, un site e-commerce est bien plus qu'une simple boutique en ligne, c'est un outil puissant pour augmenter vos ventes, améliorer l'expérience client et étendre votre portée sur le marché. Investir dans un site e-commerce personnalisé et performant est essentiel pour garantir le succès de votre entreprise améliorer votre compétitivité.",
         "promotionnalTitle": "Vous souhaitez lancer votre boutique en ligne ?"
     },
@@ -326,7 +322,7 @@
         "description": "Améliorez et maintenez la performance de votre site web avec nos services de refonte et de maintenance personnalisés.",
         "introText": "Un site web performant et à jour est essentiel pour garantir une expérience utilisateur optimale et pour maintenir une bonne visibilité en ligne. Dans cet article, je vais vous expliquer ce qu'implique la refonte et la maintenance de sites web, leur utilité et les éléments clés à considérer.",
         "descriptionTitle": "Qu'est-ce qu'une refonte et une maintenance de site web?",
-        "descriptionText": "La refonte d'un site web consiste à revoir et améliorer son design, sa structure et ses fonctionnalités pour mieux répondre aux besoins des utilisateurs et aux objectifs de l'entreprise. La maintenance, quant à elle, inclut toutes les actions nécessaires pour garantir que le site reste fonctionnel, sécurisé et à jour. Ensemble, ces services assurent que votre site web continue de performer de manière optimale et d'offrir une meilleure expérience utilisateur .",
+        "descriptionText": "La refonte d'un site web consiste à revoir et améliorer son design, sa structure et ses fonctionnalités pour mieux répondre aux besoins des utilisateurs et aux objectifs de l'entreprise. La maintenance, quant à elle, inclut toutes les actions nécessaires pour garantir que le site reste fonctionnel, sécurisé et à jour. Ensemble, ces services assurent que votre site web continue de performer de manière optimale et d'offrir une meilleure expérience utilisateur.",
         "featureTitle": "Quelques fonctionnalités clés de la refonte et de la maintenance de sites web",
         "featureText": "La refonte et la maintenance de sites web comprennent plusieurs fonctionnalités essentielles pour améliorer et maintenir la performance de votre site. Voici quelques-unes des fonctionnalités clés que vous pouvez attendre de ces services :",
         "featureList": [
@@ -367,10 +363,10 @@
         "title": "SEO et Optimisation",
         "description": "Améliorez la visibilité et la performance de votre site web avec nos services de SEO et d'optimisation personnalisés.",
         "introText": "Un site web bien optimisé et bien référencé est crucial pour attirer du trafic et atteindre vos objectifs commerciaux. Dans cet article, je vais vous expliquer ce qu'impliquent les services de SEO et d'optimisation, leur utilité et les éléments clés à considérer.",
-        "descriptionTitle": "Qu'est ce que le SEO?",
+        "descriptionTitle": "Qu'est-ce que le SEO?",
         "descriptionText": "Le SEO (Search Engine Optimization) est l'ensemble des techniques visant à améliorer la visibilité d'un site web dans les résultats des moteurs de recherche. L'optimisation, quant à elle, inclut toutes les actions nécessaires pour améliorer la performance, la vitesse de chargement et l'expérience utilisateur de votre site. Ensemble, ces services assurent que votre site web attire plus de visiteurs et convertit davantage.",
         "featureTitle": "Quelques fonctionnalités clés des services de SEO et d'optimisation",
-        "featureText": "Les services de SEO et d'optimisation comprennent plusieurs fonctionnalités essentielles pour améliorer la visibilité et la performance de votre site web. Voici quelques-unes des fonctionnalités clés que vous pouvez attendre de ces services :",
+        "featureText": "Les services de SEO et d'optimisation comprennent plusieurs fonctionnalités essentielles pour améliorer la visibilité et la performance de votre site web. Voici quelques-unes des fonctionnalités clés que vous pouvez attendre de ces services:",
         "featureList": [
             {
                 "title": "Audit SEO complet",

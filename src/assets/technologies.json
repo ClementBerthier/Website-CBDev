@@ -5,7 +5,7 @@
         "name": "HTML5",
         "path": "/images/techLogo/HTML5.WebP",
         "url": "https://developer.mozilla.org/fr/docs/Web/HTML",
-        "description": "HTML5 est un langage informatique qui permet de créer la structure et le contenu des pages web. Imaginez le comme le squelette de votre site ou chaque os représente un élément de votre page, tels que les titres, les paragraphes, les images, les vidéos, etc..."
+        "description": "HTML5 est un langage informatique qui permet de créer la structure et le contenu des pages web. Imaginez-le comme le squelette de votre site où chaque os représente un élément de votre page, tels que les titres, les paragraphes, les images, les vidéos, etc..."
     },
     {
         "id": 2,
@@ -46,7 +46,7 @@
         "name": "React",
         "path": "/images/techLogo/react.WebP",
         "url": "https://react.dev/",
-        "description": "React est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur dynamiques et interactives. Il s'agit du cerveau de votre site côté client, permettant de gérer efficacement l'affichage des données et les interactions des utilisateurs pour créer une expérience fluide et réactive."
+        "description": "React est une bibliothèque JavaScript utilisée pour construire des interfaces utilisateurs dynamiques et interactives. Il s'agit du cerveau de votre site côté client, permettant de gérer efficacement l'affichage des données et les interactions des utilisateurs pour créer une expérience fluide et réactive."
     },
     {
         "id": 7,
@@ -54,7 +54,7 @@
         "name": "PostgreSQL",
         "path": "/images/techLogo/postgre.WebP",
         "url": "https://www.postgresql.org/",
-        "description": "PostgreSQL est un système de gestion de base de données relationnelle open-source. Qui dit base de données dit données stockées quelque part, comme s'il s'agissait de la mémoire de votre site, où toutes les informations importantes sont stockées, organisées et récupérées de manière sécurisée et efficace pour être utilisées par votre application web."
+        "description": "PostgreSQL est un système de gestion de base de données relationnelle open source. Qui dit base de données dit données stockées quelque part, comme s'il s'agissait de la mémoire de votre site, où toutes les informations importantes sont stockées, organisées et récupérées de manière sécurisée et efficace pour être utilisées par votre application web."
     },
     {
         "id": 8,
@@ -70,6 +70,6 @@
         "name": "Socket.io",
         "path": "/images/techLogo/Socket-io.WebP",
         "url": "https://socket.io/",
-        "description": "Socket.io est une bibliothèque JavaScript qui permet d'ajouter des fonctionnalités de communication en temps réel aux applications web. Voyez ici une sorte de neurotransmetteur, facilitant l'échange instantané de messages et de données entre le serveur et les clients pour des applications comme les chats en direct, les notifications et les jeux en ligne."
+        "description": "Socket.io est une bibliothèque JavaScript qui permet d'ajouter des fonctionnalités de communication en temps réel aux applications web. Voyez-le comme une sorte de neurotransmetteur, facilitant l'échange instantané de messages et de données entre le serveur et les clients pour des applications comme les chats en direct, les notifications et les jeux en ligne."
     }
 ]

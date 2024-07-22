@@ -7,7 +7,7 @@
         "secondSpan": "blogs",
         "thirdSpan": "portfolios",
         "fourthSpan": "CV en ligne",
-        "fifthSpan": "sites d'évènements",
+        "fifthSpan": "sites d'événements",
         "description": "... Que vous soyez un particulier ou une entreprise, votre image numérique est importante. Découvrez plus en détail mes services de conception de site web.",
         "logo": "/images/code.svg",
         "picture": "/images/site.WebP"
@@ -46,7 +46,7 @@
         "name": "SEO",
         "title": "Maximisez votre impact numérique grâce au SEO",
 
-        "description": "Analyse de mots-clés, optimisation du contenu, amélioration de la structure du site... Je met en place des stratégies SEO efficaces pour augmenter votre visibilité sur les moteurs de recherche. Découvrez comment mes techniques peuvent propulser votre site au sommet des résultats de recherche",
+        "description": "Analyse de mots-clés, optimisation du contenu, amélioration de la structure du site... Je mets en place des stratégies SEO efficaces pour augmenter votre visibilité sur les moteurs de recherche. Découvrez comment mes techniques peuvent propulser votre site au sommet des résultats de recherche",
         "logo": "/images/medal1st.svg",
         "picture": "/images/chevrerie.WebP"
     }

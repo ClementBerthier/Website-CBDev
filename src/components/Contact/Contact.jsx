@@ -74,9 +74,9 @@ export default function Contact() {
         } else if (stateMailValid === false && statePhoneValid === false) {
             setReadyToSend(false);
 
-            setTitleModal("Mail et numéro de téléphone invalide");
+            setTitleModal("Mail et numéro de téléphone invalides");
             setContentModal(
-                "Veuillez vérifier votre adresse mail et votre numero de téléphone"
+                "Veuillez vérifier votre adresse mail et votre numéro de téléphone"
             );
             setModalOpen(true);
         } else if (stateMailValid === false) {

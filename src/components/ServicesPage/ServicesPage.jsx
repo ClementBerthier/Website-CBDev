@@ -189,7 +189,7 @@ export default function ServicesPage() {
                                 {jsonData.promotionnalTitle}
                             </h2>
                             <p className="promotionnal_banner_text">
-                                N{"'"}hésitez pas a me contacter
+                                N{"'"}hésitez pas a me contacter.
                             </p>
                             <div className="button_contact">
                                 <Button text="Contact" id="contact" />

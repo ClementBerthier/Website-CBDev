@@ -26,7 +26,10 @@ export default function Layout() {
             if (location.state.id === "home") {
                 homeRef.current.scrollIntoView(options);
             } else if (location.state.id === "services") {
-                servicesRef.current.scrollIntoView(options);
+                servicesRef.current.scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                });
             } else if (location.state.id === "FAQs") {
                 FAQsRef.current.scrollIntoView(options);
             } else if (location.state.id === "technologies") {

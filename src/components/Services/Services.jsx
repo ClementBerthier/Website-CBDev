@@ -80,6 +80,12 @@ export default function Services2() {
         navigate("/servicesPage", { state: { name: name } });
     };
 
+    const handleClickTop = (e) => {
+        e.preventDefault();
+
+        navigate("/", { state: { id: e.target.id } });
+    };
+
     return (
         <div className="Services">
             <div className="services_container">
@@ -192,6 +198,14 @@ export default function Services2() {
                             />
                         </div>
                     )}
+                </div>
+                <div className="goToServices">
+                    <Button
+                        text="Autres services"
+                        type="button"
+                        id="services"
+                        onClick={handleClickTop}
+                    ></Button>
                 </div>
             </div>
         </div>

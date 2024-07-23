@@ -7,7 +7,7 @@ export default function Button({ text, id, name, type }) {
 
     const handleClickNavigate = (e) => {
         const destinationId = e.target.id;
-        if (destinationId === "contact") {
+        if (destinationId === "contact" || destinationId === "services") {
             navigate("/", { state: { id: destinationId } });
         } else {
             navigate("/servicesPage", { state: { name: name } });

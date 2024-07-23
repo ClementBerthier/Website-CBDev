@@ -138,6 +138,15 @@
                 }
             }
         }
+        .goToServices {
+            margin: 2rem auto;
+            .button {
+                font-size: calc(0.7rem + 0.5vw);
+                font-family: var(--font-title);
+                padding: 1rem 2rem;
+                display: none;
+            }
+        }
     }
 }
 
@@ -197,6 +206,11 @@
     }
     .text {
         font-size: calc(1rem + 0.5vw) !important;
+    }
+    .goToServices {
+        .button {
+            display: block !important;
+        }
     }
 }
 

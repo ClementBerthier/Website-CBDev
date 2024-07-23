@@ -128,7 +128,7 @@ export default function Footer() {
                                         id="site"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Sites vitrine
+                                        {"> "}Sites vitrines
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"

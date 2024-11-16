@@ -258,11 +258,9 @@ export default function Footer() {
                                         Adresse
                                     </span>
                                     <span className="adress_info">
-                                        12 bis rue du Commandant Wauthier,
+                                        112 rue Charles Peguy
                                         <br />
-                                        Résidence l{"'"}Infante, Bat C Appt 32,
-                                        <br />
-                                        81100 Castres
+                                        81200 AUSSILLON
                                     </span>
                                 </div>
                                 <div className="footer_navigation_link">

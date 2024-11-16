@@ -5,6 +5,8 @@ import "./LegalMention.css";
 import { useState } from "react";
 import { Dropdown, Popup } from "semantic-ui-react";
 
+//TODO: check the bug of the dropdown, the choice is not the same on each dropdown when we change the value
+
 export default function LegalMention() {
     const [jsonData, setJsonData] = useState(legalMention[0]);
 

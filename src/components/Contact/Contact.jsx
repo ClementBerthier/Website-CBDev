@@ -1,8 +1,6 @@
 import "semantic-ui-css/semantic.min.css";
 import "./contact.css";
 
-//TODO: mettre les liens des réseaux sociaux
-
 import ButtonElement from "../elements/Button/Button.jsx";
 import { Button, FormField, Header, Modal } from "semantic-ui-react";
 import facebook from "/images/whitefacebook.svg";

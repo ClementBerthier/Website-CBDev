@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import Button from "../elements/Button/Button.jsx";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Header2() {
     const navigate = useNavigate();
@@ -104,6 +104,13 @@ export default function Header2() {
                                 >
                                     Technologies
                                 </a>
+                                <Link
+                                    className="link"
+                                    to="/projets"
+                                    id="Projects"
+                                >
+                                    Projects
+                                </Link>
                                 <a
                                     className="link"
                                     href="/"

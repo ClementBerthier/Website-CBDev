@@ -1,6 +1,7 @@
 import Footer from "../Footer/Footer.jsx";
 import Headers from "../Header/Header.jsx";
 import "./Projects.css";
+import projectsList from "../../assets/projectsList.json";
 
 export default function Projects() {
     return (
@@ -46,27 +47,39 @@ export default function Projects() {
                     </div>
                 </section>
                 <section className="projects-list">
-                    <div className="project">
-                        <div className="project-picture">
-                            <img src="" alt="" />
+                    {projectsList.map((project) => (
+                        <div className="project" key={project.id}>
+                            <div className="project-picture">
+                                <img src="" alt="" />
+                            </div>
+                            <div className="project-infos">
+                                <div className="titleYear">
+                                    <h3 className="project-title">
+                                        {project.title}
+                                    </h3>
+                                    <span className="project-year">
+                                        {project.year}
+                                    </span>
+                                </div>
+                                <p className="project-blurb">{project.blurb}</p>
+                                <div className="techTag">
+                                    <ul>
+                                        {project.tech.map((techItem, index) => (
+                                            <li key={index}>{techItem}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="buttonCategory">
+                                    <button className="project-link">
+                                        voir
+                                    </button>
+                                    <span className="category">
+                                        {project.category}
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div className="project-infos">
-                            <div className="titleYear">
-                                <h3 className="project-title">title</h3>
-                                <span className="project-year">year</span>
-                            </div>
-                            <p className="project-blurb">blurb</p>
-                            <div className="techTag">
-                                <ul>
-                                    <li>tech</li>
-                                </ul>
-                            </div>
-                            <div className="buttonCategory">
-                                <button className="project-link">voir</button>
-                                <span className="category">categoru</span>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </section>
             </div>
             <Footer />

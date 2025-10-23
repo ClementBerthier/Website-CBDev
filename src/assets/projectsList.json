@@ -1,17 +1,43 @@
 [
     {
         "id": 1,
+        "title": "Clement Berthier Développeur",
+        "blurb": "Site vitrine présentant le site de Clément Berthier, développeur web freelance.",
+        "description": "Clément Berthier Développeur mon site vitrine officiel, développeur web freelance spécialisé dans la création de sites web modernes et performants. Le site présente les services offerts, les projets réalisés et les moyens de contact. L’objectif principal était de créer une présence en ligne professionnelle et attrayante pour attirer de nouveaux clients et mettre en valeur mes compétences techniques.",
+        "collaborators": [""],
+        "collaboratorsLinks": [""],
+        "year": "2024",
+        "category": "Site vitrine",
+        "tech": ["React.js", "Semantic UI", "Vercel, EmailJS"],
+        "image": "",
+        "link": "https://www.clementberthierdeveloppeur.fr/"
+    },
+    {
+        "id": 2,
         "title": "Aprex.org",
-        "blurb": "Site vitrine pour l'Association de Prévoyance et de Retraite des EXpatriés",
+        "blurb": "Refonte pour l'Association de Prévoyance et de Retraite des EXpatriés",
         "description": "Aprex.org est le site officiel de l’Association de Prévoyance et de Retraite des Expatriés (APREX). Il présente l’activité de l’association, ses offres d’assurance santé, prévoyance et épargne à destination des expatriés, ainsi que ses partenaires. L’objectif de la refonte était de moderniser l’image de l’association, d’améliorer la lisibilité des informations et de faciliter l’accès aux ressources administratives pour les adhérents et futurs membres.",
         "collaborators": ["Pragmatik Flow - Guillaume Darroux"],
         "collaboratorsLinks": ["https://www.pragmatikflow.com/"],
 
         "year": "2024",
-        "category": ["Refonte", "Site Vitrine"],
-        "tech": [""],
-        "tags": [""],
+        "category": "Refonte",
+        "tech": ["Next.js", "Tailwind CSS", "Vercel"],
         "image": "",
-        "link": ""
+        "link": "https://www.aprex.org/"
+    },
+    {
+        "id": 3,
+        "title": "Tiaré Assist'",
+        "blurb": "Site vitrine pour Tiaré Assist’, service de secrétariat et de gestion commerciale.",
+        "description": "Tiaré Assist' est un site présentant les services de secrétariat et de gestion commerciale proposés par Tiaré Assist’. L'idée du site était d’être sobre et minimaliste, dans un style inspiré de Tahiti. Le site met en avant les différentes prestations offertes, les tarifs et les moyens de contact pour les clients potentiels.",
+        "collaborators": [""],
+        "collaboratorsLinks": [""],
+
+        "year": "2025",
+        "category": "Site vitrine",
+        "tech": ["React.js", "Vercel, EmailJS"],
+        "image": "",
+        "link": "https://www.tiareassist.fr/"
     }
 ]

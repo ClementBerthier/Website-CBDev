@@ -1,0 +1,277 @@
+/* ===== Theme (variables) ===== */
+:root {
+    --bg: #ffffff;
+    --ink: #0f172a; /* slate-900 */
+    --muted: #64748b; /* slate-500/600 mix */
+    --line: #e2e8f0; /* slate-200 */
+    --chip: #f8fafc; /* slate-50 */
+    --g1: #0ea5e9; /* sky-500 */
+    --g2: #2563eb; /* blue-600 */
+    --shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+    --shadow-lg: 0 10px 24px rgba(15, 23, 42, 0.12);
+    --radius: 16px;
+}
+
+/* ===== Layout wrapper ===== */
+.Projects {
+    max-width: 80%; /* ~max-w-7xl */
+    margin: 0 auto;
+    padding: 15rem 1rem;
+    color: var(--ink);
+
+    .projects-menu {
+        padding: 3rem 0 1rem;
+        .menu-title {
+            font-size: clamp(35px, 2.5vw, 50px);
+            font-weight: 800;
+            margin: 0 0 1rem 0;
+            font-family: var(--font-title);
+        }
+        .containerSearchBar {
+            display: flex;
+            gap: 0.75rem;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .menu-description {
+                color: var(--muted);
+                max-width: 60ch;
+                margin: 0.25rem 0 1rem;
+                font-size: clamp(21px, 2.5vw, 30px);
+                font-family: var(--font-text);
+            }
+            input.searchBar {
+                width: 320px;
+                max-width: 100%;
+                border: 2px solid var(--line);
+                background: rgba(255, 255, 255, 0.7);
+                padding: 0.6rem 0.8rem;
+                font-size: clamp(10px, 2.5vw, 15px);
+                border-radius: 12px;
+                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+            }
+            input.searchBar::placeholder {
+                color: #94a3b8;
+            }
+            input.searchBar:focus {
+                outline: none;
+                border-color: transparent;
+                box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.562);
+            }
+        }
+        .tabBar ul {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .tabBar ul li {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.4rem 0.75rem;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.7);
+            font-size: clamp(14px, 2.5vw, 20px);
+            font-family: var(--font-text);
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .tabBar ul li:hover {
+            background: #fff;
+            border-color: #dbe3ef;
+        }
+        .tabBar ul li.active {
+            color: #fff;
+            border-color: transparent;
+            background: linear-gradient(90deg, var(--g1), var(--g2));
+            box-shadow: var(--shadow);
+        }
+        .sort {
+            margin-left: auto;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .sort label {
+            color: var(--muted);
+            font-size: clamp(14px, 2.5vw, 20px);
+            font-family: var(--font-text);
+            padding-right: 0.5rem;
+        }
+        .sort select {
+            border: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.7);
+            padding: 0.4rem 0.5rem;
+            border-radius: 12px;
+            font-size: clamp(14px, 2.5vw, 20px);
+        }
+    }
+    .projects-menu > .searchBar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        margin: 1rem -1rem 0;
+        padding: 0.75rem 1rem;
+        border-top: 1px solid #f1f5f9;
+        border-bottom: 1px solid #f1f5f9;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .projects-list {
+        padding: 1.5rem 0 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        .project {
+            width: 25%;
+            min-width: 280px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: #fff;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+            .project-picture {
+                position: relative;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 190px;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.35s ease;
+                }
+            }
+            .project-picture::after {
+                content: \"\";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.3),
+                    transparent
+                );
+                opacity: 0;
+                transition: 0.25s;
+            }
+            .project-infos {
+                padding: 1rem;
+                .titleYear {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 0.5rem;
+                    .project-title {
+                        margin: 0;
+                        font-size: clamp(14px, 2.5vw, 20px);
+                        font-weight: 700;
+                        letter-spacing: 0.2px;
+                    }
+                    .project-year {
+                        color: #94a3b8;
+                        font-size: clamp(14px, 2.5vw, 20px);
+                    }
+                }
+                .project-blurb {
+                    margin: 0.4rem 0 0;
+                    color: var(--muted);
+                    font-size: clamp(14px, 2.5vw, 20px);
+                    line-height: 1.4;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                .techTag ul {
+                    margin: 0.75rem 0 0;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+                }
+                .techTag ul li {
+                    display: inline-flex;
+                    align-items: center;
+                    border: 1px solid var(--line);
+                    color: #475569;
+                    background: #fff; /* ou var(--chip) */
+                    padding: 0.25rem 0.5rem;
+                    border-radius: 999px;
+                    font-size: clamp(10px, 2.5vw, 15px);
+                }
+                .buttonCategory {
+                    margin-top: 0.9rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    .project-link {
+                        border: 0;
+                        color: #fff;
+                        padding: 0.45rem 0.9rem;
+                        border-radius: 12px;
+                        background: linear-gradient(
+                            90deg,
+                            var(--g1),
+                            var(--g2)
+                        );
+                        box-shadow: var(--shadow);
+                        font-size: clamp(10px, 2.5vw, 15px);
+                        cursor: pointer;
+                        transition: opacity 0.2s ease, transform 0.03s ease;
+                    }
+                    .project-link:hover {
+                        opacity: 0.95;
+                    }
+                    .project-link:active {
+                        transform: translateY(1px);
+                    }
+
+                    /* Catégorie à droite */
+                    .category {
+                        margin-left: auto;
+                        color: #94a3b8;
+                        font-size: clamp(10px, 2.5vw, 15px);
+                    }
+                }
+            }
+        }
+        .project:hover {
+            box-shadow: var(--shadow-lg);
+        }
+        .project::before {
+            content: \"\";
+            position: absolute;
+            inset: 0 0 auto 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--g1), var(--g2));
+            opacity: 0.9;
+        }
+        .project:hover .project-picture img {
+            transform: scale(1.03);
+        }
+        .project:hover .project-picture::after {
+            opacity: 1;
+        }
+    }
+}
+
+/* Blurb (2 lignes clamp) */
+
+/* Badges techno (ul/li) */
+
+/* Footer ligne de la carte: bouton + catégorie */
+
+/* CTA gradient */
+
+/* ===== Utilities ===== */
+.hidden {
+    display: none !important;
+}

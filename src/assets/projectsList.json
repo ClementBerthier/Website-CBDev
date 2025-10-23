@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Aprex.org",
+        "blurb": "Site vitrine pour l'Association de Prévoyance et de Retraite des EXpatriés",
+        "description": "Aprex.org est le site officiel de l’Association de Prévoyance et de Retraite des Expatriés (APREX). Il présente l’activité de l’association, ses offres d’assurance santé, prévoyance et épargne à destination des expatriés, ainsi que ses partenaires. L’objectif de la refonte était de moderniser l’image de l’association, d’améliorer la lisibilité des informations et de faciliter l’accès aux ressources administratives pour les adhérents et futurs membres.",
+        "collaborators": ["Pragmatik Flow - Guillaume Darroux"],
+        "collaboratorsLinks": ["https://www.pragmatikflow.com/"],
+
+        "year": "2024",
+        "category": ["Refonte", "Site Vitrine"],
+        "tech": [""],
+        "tags": [""],
+        "image": "",
+        "link": ""
+    }
+]

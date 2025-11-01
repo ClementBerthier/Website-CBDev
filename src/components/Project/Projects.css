@@ -1,6 +1,6 @@
 /* ===== Theme (variables) ===== */
 :root {
-    --bg: #ffffff;
+    --bg: #f9fafe;
     --ink: #0f172a; /* slate-900 */
     --muted: #64748b; /* slate-500/600 mix */
     --line: #e2e8f0; /* slate-200 */
@@ -12,9 +12,13 @@
     --radius: 16px;
 }
 
+body {
+    background-color: var(--bg);
+}
+
 /* ===== Layout wrapper ===== */
 .Projects {
-    max-width: 80%; /* ~max-w-7xl */
+    max-width: 80%;
     margin: 0 auto;
     padding: 15rem 1rem;
     color: var(--ink);
@@ -44,7 +48,7 @@
                 width: 320px;
                 max-width: 100%;
                 border: 2px solid var(--line);
-                background: rgba(255, 255, 255, 0.7);
+                background: rgb(255, 255, 255) !important;
                 padding: 0.6rem 0.8rem;
                 font-size: clamp(10px, 2.5vw, 15px);
                 border-radius: 12px;
@@ -59,6 +63,12 @@
                 box-shadow: 0 0 0 3px rgba(70, 130, 180, 0.562);
             }
         }
+        .searchBar {
+            background-color: var(--bg) !important;
+            border-top: 1px solid var(--line) !important;
+            border-bottom: 1px solid var(--line) !important;
+            z-index: 0 !important;
+        }
         .tabBar ul {
             display: flex;
             gap: 0.5rem;
@@ -72,7 +82,7 @@
             align-items: center;
             padding: 0.4rem 0.75rem;
             border-radius: 999px;
-            border: 1px solid var(--line);
+            border: 2px solid var(--line);
             background: rgba(255, 255, 255, 0.7);
             font-size: clamp(14px, 2.5vw, 20px);
             font-family: var(--font-text);
@@ -127,10 +137,12 @@
     .projects-list {
         padding: 1.5rem 0 3rem;
         display: flex;
-        flex-wrap: wrap;
         gap: 1.25rem;
+        flex-wrap: wrap;
+        justify-content: center;
         .project {
-            width: 25%;
+            flex: 1 1 400px; /* ✅ Garde minimum 280px, mais s'adapte */
+            background-color: #e5f0fb !important;
             min-width: 280px;
             position: relative;
             overflow: hidden;
@@ -144,8 +156,8 @@
                 overflow: hidden;
                 img {
                     width: 100%;
-                    height: 190px;
-                    object-fit: cover;
+                    height: 300px;
+                    object-fit: contain;
                     display: block;
                     transition: transform 0.35s ease;
                 }
@@ -163,6 +175,7 @@
                 transition: 0.25s;
             }
             .project-infos {
+                background-color: #ffffff;
                 padding: 1rem;
                 .titleYear {
                     display: flex;
@@ -201,7 +214,7 @@
                     display: inline-flex;
                     align-items: center;
                     border: 1px solid var(--line);
-                    color: #475569;
+                    color: #000000;
                     background: #fff; /* ou var(--chip) */
                     padding: 0.25rem 0.5rem;
                     border-radius: 999px;
@@ -216,6 +229,7 @@
                         border: 0;
                         color: #fff;
                         padding: 0.45rem 0.9rem;
+                        margin-top: 0.25rem;
                         border-radius: 12px;
                         background: linear-gradient(
                             90deg,
@@ -223,7 +237,7 @@
                             var(--g2)
                         );
                         box-shadow: var(--shadow);
-                        font-size: clamp(10px, 2.5vw, 15px);
+                        font-size: clamp(12px, 2.5vw, 17px);
                         cursor: pointer;
                         transition: opacity 0.2s ease, transform 0.03s ease;
                     }
@@ -263,15 +277,17 @@
     }
 }
 
-/* Blurb (2 lignes clamp) */
-
-/* Badges techno (ul/li) */
-
-/* Footer ligne de la carte: bouton + catégorie */
-
-/* CTA gradient */
-
-/* ===== Utilities ===== */
 .hidden {
     display: none !important;
+}
+
+@media (max-width: 768px) {
+    .Projects {
+        .projects-menu {
+            .containerSearchBar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
 }

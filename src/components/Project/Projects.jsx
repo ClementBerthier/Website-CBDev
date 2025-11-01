@@ -48,9 +48,13 @@ export default function Projects() {
                 </section>
                 <section className="projects-list">
                     {projectsList.map((project) => (
-                        <div className="project" key={project.id}>
+                        <div
+                            className="project"
+                            key={project.id}
+                            id={project.id}
+                        >
                             <div className="project-picture">
-                                <img src="" alt="" />
+                                <img src={project.image} alt="" />
                             </div>
                             <div className="project-infos">
                                 <div className="titleYear">
@@ -71,7 +75,7 @@ export default function Projects() {
                                 </div>
                                 <div className="buttonCategory">
                                     <button className="project-link">
-                                        voir
+                                        Voir le site
                                     </button>
                                     <span className="category">
                                         {project.category}

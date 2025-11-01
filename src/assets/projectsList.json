@@ -8,8 +8,8 @@
         "collaboratorsLinks": [""],
         "year": "2024",
         "category": "Site vitrine",
-        "tech": ["React.js", "Semantic UI", "Vercel, EmailJS"],
-        "image": "",
+        "tech": ["React.js", "Semantic UI", "Vercel", "EmailJS"],
+        "image": "/images/avatar_dev.AVIF",
         "link": "https://www.clementberthierdeveloppeur.fr/"
     },
     {
@@ -22,8 +22,8 @@
 
         "year": "2024",
         "category": "Refonte",
-        "tech": ["Next.js", "Tailwind CSS", "Vercel"],
-        "image": "",
+        "tech": ["Next.js", "Tailwind CSS", "Monetico Paiement  ", "Vercel"],
+        "image": "/images/aprex-logo.svg",
         "link": "https://www.aprex.org/"
     },
     {
@@ -36,8 +36,22 @@
 
         "year": "2025",
         "category": "Site vitrine",
-        "tech": ["React.js", "Vercel, EmailJS"],
-        "image": "",
+        "tech": ["React.js", "Vercel", "EmailJS"],
+        "image": "/images/Tiare-Assist'.webP",
         "link": "https://www.tiareassist.fr/"
+    },
+    {
+        "id": 4,
+        "title": "Les larmes d'Aedrûn",
+        "blurb": "Livre intéractif en ligne pour le roman fantastique 'Les larmes d'Aedrûn'.",
+        "description": "Les larmes d'Aedrûn est un site web interactif conçu pour accompagner le roman fantastique éponyme. Le site offre aux lecteurs une expérience immersive en proposant des series de choix qui influencent le déroulement de l'histoire. L'objectif était de créer une plateforme engageante qui permet aux lecteurs de s'immerger davantage dans l'univers du livre et de vivre une aventure unique à chaque lecture.",
+        "collaborators": [""],
+        "collaboratorsLinks": [""],
+
+        "year": "2025",
+        "category": "Livre interactif",
+        "tech": ["En cours de développement"],
+        "image": "/images/logoBookHero.webP",
+        "link": ""
     }
 ]

@@ -73,14 +73,16 @@ body {
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
-            padding: 0;
+            padding: 1rem;
             margin: 0;
             list-style: none;
+            text-align: center;
+            white-space: nowrap;
         }
         .tabBar ul li {
             display: inline-flex;
             align-items: center;
-            padding: 0.4rem 0.75rem;
+            padding: 0.6rem 0.75rem;
             border-radius: 999px;
             border: 2px solid var(--line);
             background: rgba(255, 255, 255, 0.7);
@@ -102,6 +104,7 @@ body {
         .sort {
             margin-left: auto;
             display: flex;
+            justify-content: end;
             gap: 2rem;
             align-items: center;
             flex-wrap: wrap;
@@ -183,7 +186,7 @@ body {
                     justify-content: space-between;
                     gap: 0.5rem;
                     .project-title {
-                        margin: 0;
+                        margin-bottom: 1rem;
                         font-size: clamp(14px, 2.5vw, 20px);
                         font-weight: 700;
                         letter-spacing: 0.2px;
@@ -191,6 +194,7 @@ body {
                     .project-year {
                         color: #94a3b8;
                         font-size: clamp(14px, 2.5vw, 20px);
+                        margin-bottom: 1rem;
                     }
                 }
                 .project-blurb {
@@ -218,7 +222,7 @@ body {
                     background: #fff; /* ou var(--chip) */
                     padding: 0.25rem 0.5rem;
                     border-radius: 999px;
-                    font-size: clamp(10px, 2.5vw, 15px);
+                    font-size: clamp(10px, 2.5vw, 17px);
                 }
                 .buttonCategory {
                     margin-top: 0.9rem;
@@ -252,7 +256,7 @@ body {
                     .category {
                         margin-left: auto;
                         color: #94a3b8;
-                        font-size: clamp(10px, 2.5vw, 15px);
+                        font-size: clamp(10px, 2.5vw, 17px);
                     }
                 }
             }

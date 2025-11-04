@@ -4,6 +4,9 @@ import "./Projects.css";
 import projectsList from "../../assets/projectsList.json";
 
 export default function Projects() {
+    const allCategories = projectsList.map((project) => project.category);
+    const uniqueCategories = [...new Set(allCategories)];
+    console.log(uniqueCategories);
     return (
         <>
             <Headers />
@@ -25,8 +28,9 @@ export default function Projects() {
                     <div className="searchBar">
                         <div className="tabBar">
                             <ul>
-                                <li>Tous</li>
-                                <li>Toussdsdsdsd</li>
+                                {uniqueCategories.map((category, index) => (
+                                    <li key={index}>{category}</li>
+                                ))}
                             </ul>
                         </div>
                         <div className="sort">

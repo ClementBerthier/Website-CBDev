@@ -1,12 +1,49 @@
 import Footer from "../Footer/Footer.jsx";
 import Headers from "../Header/Header.jsx";
+
 import "./Projects.css";
 import projectsList from "../../assets/projectsList.json";
+import { useState } from "react";
 
 export default function Projects() {
     const allCategories = projectsList.map((project) => project.category);
     const uniqueCategories = [...new Set(allCategories)];
-    console.log(uniqueCategories);
+
+    const allYears = projectsList.map((project) => project.year);
+    const uniqueYears = [...new Set(allYears)];
+
+    const [selectedCategories, setSelectedCategories] = useState([]);
+    const [selectedYears, setSelectedYears] = useState([]);
+
+    const handleCategoryClick = (category) => {
+        setSelectedCategories(
+            (prev) =>
+                prev.includes(category)
+                    ? prev.filter((c) => c !== category) // déjà sélectionnée → on enlève
+                    : [...prev, category] // pas encore → on ajoute
+        );
+    };
+
+    const handleYearClick = (year) => {
+        setSelectedYears(
+            year === "all" ? [] : [year] // "all" réinitialise la sélection
+        );
+    };
+    console.log("selectedYears:", selectedYears);
+
+    const filteredProjects = projectsList.filter((project) => {
+        // Si aucune catégorie n'est sélectionnée → ça match tout
+        const matchCategory =
+            selectedCategories.length === 0 ||
+            selectedCategories.includes(project.category);
+
+        // Si aucune année n'est sélectionnée → ça match tout
+        const matchYear =
+            selectedYears.length === 0 || selectedYears.includes(project.year);
+
+        // On garde le projet seulement si les deux conditions sont vraies
+        return matchCategory && matchYear;
+    });
     return (
         <>
             <Headers />
@@ -29,29 +66,48 @@ export default function Projects() {
                         <div className="tabBar">
                             <ul>
                                 {uniqueCategories.map((category, index) => (
-                                    <li key={index}>{category}</li>
+                                    <li
+                                        key={index}
+                                        onClick={() =>
+                                            handleCategoryClick(category)
+                                        }
+                                        className={
+                                            selectedCategories.includes(
+                                                category
+                                            )
+                                                ? "tabItem tabItem--active"
+                                                : "tabItem"
+                                        }
+                                    >
+                                        {category}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
                         <div className="sort">
                             <div className="sortByYear">
                                 <label htmlFor="year">Année:</label>
-                                <select name="year" id="year">
-                                    <option value="date">Toutes</option>{" "}
-                                </select>
-                            </div>
-                            <div className="sortOldNew">
-                                <label htmlFor="OldNew">Tri:</label>
-                                <select name="OldNew" id="OldNew">
-                                    <option value="new">Plus Récents</option>{" "}
-                                    <option value="old">Plus Ancien</option>{" "}
+                                <select
+                                    name="year"
+                                    id="year"
+                                    default="Toutes"
+                                    onChange={(e) =>
+                                        handleYearClick(e.target.value)
+                                    }
+                                >
+                                    <option value="all">Toutes</option>
+                                    {uniqueYears.map((year, index) => (
+                                        <option value={year} key={index}>
+                                            {year}
+                                        </option>
+                                    ))}
                                 </select>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section className="projects-list">
-                    {projectsList.map((project) => (
+                    {filteredProjects.map((project) => (
                         <div
                             className="project"
                             key={project.id}

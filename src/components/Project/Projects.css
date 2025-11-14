@@ -78,6 +78,19 @@ body {
             list-style: none;
             text-align: center;
             white-space: nowrap;
+
+            .tabItem {
+                padding: 0.4rem 0.9rem;
+                border-radius: 999px;
+                cursor: pointer;
+                transition: background-color 0.2s ease, color 0.2s ease;
+            }
+
+            .tabItem--active {
+                background: linear-gradient(90deg, var(--g1), var(--g2));
+                color: #ffffff;
+                border-color: rgb(102, 178, 230);
+            }
         }
         .tabBar ul li {
             display: inline-flex;
@@ -92,15 +105,12 @@ body {
             cursor: pointer;
         }
         .tabBar ul li:hover {
-            background: #fff;
-            border-color: #dbe3ef;
-        }
-        .tabBar ul li.active {
-            color: #fff;
-            border-color: transparent;
             background: linear-gradient(90deg, var(--g1), var(--g2));
-            box-shadow: var(--shadow);
+            color: #fff;
+            transition: 0s;
+            border-color: rgb(102, 178, 230);
         }
+
         .sort {
             margin-left: auto;
             display: flex;
@@ -121,6 +131,9 @@ body {
             padding: 0.4rem 0.5rem;
             border-radius: 12px;
             font-size: clamp(14px, 2.5vw, 20px);
+        }
+        .sort select:hover {
+            cursor: pointer;
         }
     }
     .projects-menu > .searchBar {
@@ -198,7 +211,7 @@ body {
                     }
                 }
                 .project-blurb {
-                    margin: 0.4rem 0 0;
+                    margin: 0.6rem 0;
                     color: var(--muted);
                     font-size: clamp(14px, 2.5vw, 20px);
                     line-height: 1.4;
@@ -207,7 +220,7 @@ body {
                     overflow: hidden;
                 }
                 .techTag ul {
-                    margin: 0.75rem 0 0;
+                    margin: 1.5rem 0 0;
                     padding: 0;
                     list-style: none;
                     display: flex;
@@ -220,7 +233,7 @@ body {
                     border: 1px solid var(--line);
                     color: #000000;
                     background: #fff; /* ou var(--chip) */
-                    padding: 0.25rem 0.5rem;
+                    padding: 0.25rem 0.8rem;
                     border-radius: 999px;
                     font-size: clamp(10px, 2.5vw, 17px);
                 }

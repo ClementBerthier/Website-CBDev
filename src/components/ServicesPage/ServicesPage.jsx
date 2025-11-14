@@ -13,7 +13,6 @@ export default function ServicesPage() {
     const [dataName, setDataName] = useState(data.state.name);
 
     useEffect(() => {
-        console.log("value", dataName);
         if (dataName) {
             if (dataName === "site") {
                 setJsonData(article[0]);

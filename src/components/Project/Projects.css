@@ -193,6 +193,9 @@ body {
             .project-infos {
                 background-color: #ffffff;
                 padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 .titleYear {
                     display: flex;
                     align-items: center;

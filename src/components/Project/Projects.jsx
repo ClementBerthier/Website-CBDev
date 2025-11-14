@@ -29,21 +29,31 @@ export default function Projects() {
             year === "all" ? [] : [year] // "all" réinitialise la sélection
         );
     };
-    console.log("selectedYears:", selectedYears);
+
+    const [searchTerm, setSearchTerm] = useState("");
+    const search = searchTerm.toLowerCase().trim();
 
     const filteredProjects = projectsList.filter((project) => {
-        // Si aucune catégorie n'est sélectionnée → ça match tout
         const matchCategory =
             selectedCategories.length === 0 ||
             selectedCategories.includes(project.category);
 
-        // Si aucune année n'est sélectionnée → ça match tout
         const matchYear =
             selectedYears.length === 0 || selectedYears.includes(project.year);
 
-        // On garde le projet seulement si les deux conditions sont vraies
-        return matchCategory && matchYear;
+        // 🔎 À adapter aux champs de ton JSON :
+        // ici j’imagine `project.title` et `project.description`
+        const matchSearch =
+            search === "" ||
+            project.title.toLowerCase().includes(search) ||
+            project.description.toLowerCase().includes(search) ||
+            project.tech.some((techItem) =>
+                techItem.toLowerCase().includes(search)
+            );
+
+        return matchCategory && matchYear && matchSearch;
     });
+
     return (
         <>
             <Headers />
@@ -60,6 +70,8 @@ export default function Projects() {
                             className="searchBar"
                             placeholder="Rechercher un projet, une techno..."
                             type="text"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
                         />
                     </div>
                     <div className="searchBar">

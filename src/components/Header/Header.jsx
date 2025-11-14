@@ -34,7 +34,6 @@ export default function Header2() {
         e.preventDefault();
         const destinationId = e.target.id;
         navigate("/", { state: { id: destinationId } });
-        console.log(destinationId);
     };
 
     return (
@@ -109,7 +108,7 @@ export default function Header2() {
                                     to="/projets"
                                     id="Projects"
                                 >
-                                    Projects
+                                    Projets
                                 </Link>
                                 <a
                                     className="link"

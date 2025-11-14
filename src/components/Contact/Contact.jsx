@@ -38,8 +38,6 @@ export default function Contact() {
     const [statePhoneValid, setStatePhoneValid] = useState(false);
 
     const handleClick = () => {
-        console.log("handleClick");
-
         if (
             (stateMailFull === false && stateObjectFull === false) ||
             (stateMailFull === false && stateMessageFull === false) ||
@@ -100,9 +98,7 @@ export default function Contact() {
     };
 
     const handleSubmit = async (e) => {
-        console.log("handleSubmit");
         e.preventDefault();
-        console.log("readytosend", readyToSend);
 
         if (readyToSend) {
             try {

@@ -3,7 +3,7 @@ import facebook from "/images/whitefacebook.svg";
 import instagram from "/images/whiteinsta.svg";
 import linkedin from "/images/whitelinkedin.svg";
 import github from "/images/whitegithub.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer() {
     const navigate = useNavigate();
@@ -228,6 +228,13 @@ export default function Footer() {
                                     >
                                         {"> "}Technologies
                                     </a>
+                                    <Link
+                                        className="link footer_navigation_link pointer"
+                                        to="/projets"
+                                        id="Projects"
+                                    >
+                                        {"> "}Projets
+                                    </Link>
                                     <a
                                         className="footer_navigation_link pointer"
                                         href="/"

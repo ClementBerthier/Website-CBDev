@@ -10,7 +10,6 @@ export default function FAQs() {
         setQuestionOpened((prevId) =>
             prevId === Number(id) ? null : Number(id)
         );
-        console.log(questionOpened);
     };
 
     return (

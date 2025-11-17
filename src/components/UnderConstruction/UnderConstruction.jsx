@@ -5,9 +5,9 @@ export default function UnderConstruction() {
             <section className="wip-card">
                 <p className="wip-badge">Bientôt disponible</p>
 
-                <h1 className="wip-title">
+                <p className="wip-title">
                     Ce site est en cours de développement
-                </h1>
+                </p>
 
                 <p className="wip-text">
                     Ce projet est actuellement en cours de développement.

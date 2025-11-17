@@ -91,6 +91,10 @@ body {
                 color: #ffffff;
                 border-color: rgb(102, 178, 230);
             }
+            .tabItem--active:hover {
+                background: white;
+                color: #000000;
+            }
         }
         .tabBar ul li {
             display: inline-flex;
@@ -118,6 +122,14 @@ body {
             gap: 2rem;
             align-items: center;
             flex-wrap: wrap;
+            .sortByYear {
+                display: flex;
+                flex-direction: row;
+
+                gap: 0.5rem;
+                justify-content: center;
+                align-items: center;
+            }
         }
         .sort label {
             color: var(--muted);
@@ -156,8 +168,9 @@ body {
         gap: 1.25rem;
         flex-wrap: wrap;
         justify-content: center;
+
         .project {
-            flex: 1 1 400px; /* ✅ Garde minimum 280px, mais s'adapte */
+            flex: 1 1 400px;
             background-color: #e5f0fb !important;
             min-width: 280px;
             position: relative;
@@ -167,6 +180,7 @@ body {
             border-radius: var(--radius);
             box-shadow: var(--shadow);
             transition: box-shadow 0.25s ease, transform 0.25s ease;
+
             .project-picture {
                 position: relative;
                 overflow: hidden;
@@ -196,6 +210,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                height: 20rem;
                 .titleYear {
                     display: flex;
                     align-items: center;
@@ -248,7 +263,8 @@ body {
                     .project-link {
                         border: 0;
                         color: #fff;
-                        padding: 0.45rem 0.9rem;
+                        padding: 0.7rem 0.9rem;
+
                         margin-top: 0.25rem;
                         border-radius: 12px;
                         background: linear-gradient(
@@ -307,6 +323,24 @@ body {
             .containerSearchBar {
                 flex-direction: column;
                 align-items: flex-start;
+            }
+        }
+        .projects-list {
+            .project {
+                .project-infos {
+                    height: 17rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 440px) {
+    .Projects {
+        .projects-menu {
+            .sort {
+                .sortByYear {
+                    flex-direction: column;
+                }
             }
         }
     }

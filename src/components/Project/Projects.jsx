@@ -146,9 +146,14 @@ export default function Projects() {
                                     </ul>
                                 </div>
                                 <div className="buttonCategory">
-                                    <button className="project-link">
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="project-link"
+                                    >
                                         Voir le site
-                                    </button>
+                                    </a>
                                     <span className="category">
                                         {project.category}
                                     </span>

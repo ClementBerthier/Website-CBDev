@@ -6,6 +6,7 @@ import HomeLoader from "../HomeLoader/HomeLoader.jsx";
 import LegalMention from "../LegalMention/LegalMention.jsx";
 import Projects from "../Project/Projects.jsx";
 import { useEffect, useState } from "react";
+import UnderConstruction from "../UnderConstruction/UnderConstruction.jsx";
 
 export default function App() {
     const [isFirstLoad, setIsFirstLoad] = useState(true);
@@ -23,6 +24,10 @@ export default function App() {
                 <Route path="/servicesPage" element={<ServicesPage />} />
                 <Route path="/legalMention" element={<LegalMention />} />
                 <Route path="/projets" element={<Projects />}></Route>
+                <Route
+                    path="/underConstruction"
+                    element={<UnderConstruction />}
+                ></Route>
             </Routes>
         </>
     );

@@ -4,6 +4,7 @@ import Headers from "../Header/Header.jsx";
 import "./Projects.css";
 import projectsList from "../../assets/projectsList.json";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
     const allCategories = projectsList.map((project) => project.category);
@@ -146,14 +147,27 @@ export default function Projects() {
                                     </ul>
                                 </div>
                                 <div className="buttonCategory">
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="project-link"
-                                    >
-                                        Voir le site
-                                    </a>
+                                    {project.link === "" ? (
+                                        <Link
+                                            className="project-link"
+                                            to="/underConstruction"
+                                            id="underConstruction"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Voir le site
+                                        </Link>
+                                    ) : (
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="project-link"
+                                        >
+                                            Voir le site
+                                        </a>
+                                    )}
+
                                     <span className="category">
                                         {project.category}
                                     </span>

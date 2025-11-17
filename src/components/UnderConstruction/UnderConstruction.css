@@ -1,0 +1,114 @@
+.wip-page {
+    min-height: 100vh;
+    padding: 6rem 2rem; /* ↑ plus de respiration */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5f0fb;
+}
+
+/* Carte centrale */
+.wip-card {
+    max-width: 1000px; /* ↑ plus large */
+    width: 100%;
+    background: #ffffff;
+    border-radius: var(--radius, 28px); /* ↑ angles plus grands */
+    box-shadow: var(--shadow, 0 12px 30px rgba(15, 23, 42, 0.12));
+    padding: 3.75rem 3.5rem; /* ↑ padding plus large */
+}
+
+/* Petit badge en haut */
+.wip-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1rem; /* ↑ légèrement plus grand */
+    border-radius: 999px;
+    font-size: 1.95rem; /* ↑ taille texte */
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: #e5f0fb;
+    color: #2563eb;
+    margin-bottom: 1.75rem;
+}
+
+/* Titre principal */
+.wip-title {
+    font-size: clamp(2rem, 4vw, 5rem); /* ↑ bien plus grand */
+    margin: 0 0 1.5rem;
+    line-height: 1.25;
+}
+
+/* Texte descriptif */
+.wip-text {
+    margin: 0 0 2.8rem; /* ↑ plus d'espace */
+    color: #475569; /* un peu plus foncé pour lisibilité */
+    font-size: 2.15rem; /* ↑ texte plus grand */
+    line-height: 1.75;
+}
+
+/* Zone boutons */
+.wip-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* ↑ espace entre boutons */
+}
+
+/* Bouton principal – gradient identique mais taille boostée */
+.wip-btn-primary {
+    border: 0;
+    padding: 1rem 1.6rem; /* ↑ plus massif */
+    border-radius: 15px; /* ↑ arrondi */
+    background: linear-gradient(90deg, var(--g1, #2563eb), var(--g2, #1d4ed8));
+    box-shadow: var(--shadow, 0 12px 30px rgba(15, 23, 42, 0.12));
+    font-size: 2.05rem; /* ↑ */
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.03s ease;
+}
+
+.wip-btn-primary:hover {
+    background: #e5f0fb;
+}
+
+.wip-btn-primary:active {
+    transform: translateY(1px);
+}
+
+/* Bouton secondaire */
+.wip-btn-ghost {
+    padding: 1rem 1.6rem; /* ↑ même taille */
+    border-radius: 15px;
+    border: 1px solid #cbd5f5;
+    background: transparent;
+    font-size: 2.05rem;
+    font-weight: 500;
+    color: #1e293b;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.wip-btn-ghost:hover {
+    background: #e5f0fb;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .wip-card {
+        padding: 2.25rem 1.5rem; /* réduit un peu pour mobile */
+        max-width: 95%;
+    }
+
+    .wip-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .wip-btn-primary,
+    .wip-btn-ghost {
+        text-align: center;
+        width: 100%;
+    }
+}

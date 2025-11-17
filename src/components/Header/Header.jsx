@@ -187,6 +187,9 @@ export default function Header2() {
                     >
                         Technologies
                     </a>
+                    <Link className="link" to="/projets" id="Projects">
+                        Projets
+                    </Link>
                     <a
                         className="link"
                         href="/"

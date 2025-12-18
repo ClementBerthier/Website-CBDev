@@ -9,6 +9,8 @@ export default function Home2() {
                     <h2 className="presentation_name">
                         Clément Berthier
                         <br className="firstBR" /> Développeur Web
+                        <br className="firstBR" /> &
+                        <br className="firstBR" /> Automatisation IA
                         <br /> Freelance.
                     </h2>
                     <p className="presentation_paragraph">

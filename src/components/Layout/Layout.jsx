@@ -1,4 +1,5 @@
 import Services from "../Services/Services.jsx";
+import ServicesIA from "../ServicesIA/ServicesIA.jsx";
 import ContactBanner from "../ContactBanner/ContactBanner.jsx";
 import Contact from "../Contact/Contact.jsx";
 import Footer from "../Footer/Footer.jsx";
@@ -7,7 +8,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Header from "../Header/Header.jsx";
 import Home from "../Home/Home.jsx";
-import Technologies from "../Technos/Technologies.jsx";
+//import Technologies from "../Technos/Technologies.jsx";
 
 export default function Layout() {
     const location = useLocation();
@@ -55,9 +56,12 @@ export default function Layout() {
             <div ref={servicesRef}>
                 <Services />
             </div>
-            <div ref={technologiesRef}>
-                <Technologies />
+            <div>
+                <ServicesIA />
             </div>
+            {/* <div ref={technologiesRef}>
+                <Technologies />
+            </div> */}
             <div>
                 <ContactBanner />
             </div>

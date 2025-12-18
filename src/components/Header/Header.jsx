@@ -95,14 +95,14 @@ export default function Header2() {
                                 >
                                     Services
                                 </a>
-                                <a
+                                {/* <a
                                     className="link"
                                     href="/"
                                     id="technologies"
                                     onClick={handleClickNavigate}
                                 >
                                     Technologies
-                                </a>
+                                </a> */}
                                 <Link
                                     className="link"
                                     to="/projets"
@@ -171,14 +171,14 @@ export default function Header2() {
                     >
                         Services
                     </a>
-                    <a
+                    {/* <a
                         className="link"
                         href="/"
                         id="technologies"
                         onClick={handleClickNavigate}
                     >
                         Technologies
-                    </a>
+                    </a> */}
                     <Link className="link" to="/projets" id="Projects">
                         Projets
                     </Link>

@@ -23,5 +23,20 @@
         "id": 5,
         "name": "Quels avantages ai-je de passer par un développeur web plutôt que par un site de création de site web gratuit ?",
         "answer": "Passer par un développeur web offre une personnalisation complète, un design professionnel, une optimisation pour le SEO et la performance, ainsi qu'un support technique dédié et une meilleure sécurité. Contrairement aux outils gratuits, un développeur garantit un site unique, évolutif et adapté spécifiquement à vos besoins."
+    },
+    {
+        "id": 6,
+        "name": "À quoi servent concrètement les solutions IA pour mon entreprise ?",
+        "answer": "Les solutions IA permettent d’automatiser des tâches répétitives, d’optimiser vos processus internes et d’améliorer votre efficacité globale. Elles peuvent, par exemple, gérer des demandes clients, automatiser des actions marketing, analyser des données ou assister vos équipes au quotidien. L’objectif n’est pas de remplacer l’humain, mais de lui faire gagner du temps et de la performance."
+    },
+    {
+        "id": 7,
+        "name": "Les solutions IA sont-elles adaptées aux petites entreprises et aux indépendants ?",
+        "answer": "Oui, totalement. Contrairement aux idées reçues, l’IA n’est pas réservée aux grandes entreprises. Les solutions que je propose sont adaptées à votre taille, à vos besoins réels et à votre budget. L’approche est progressive et sur mesure, afin d’apporter des bénéfices concrets sans complexité inutile."
+    },
+    {
+        "id": 8,
+        "name": "Faut-il déjà avoir des connaissances techniques pour mettre en place de l’IA ?",
+        "answer": "Non. L’accompagnement IA est justement là pour ça. Je vous aide à définir les bons usages, à choisir les outils adaptés et à les intégrer dans votre organisation. Vous bénéficiez de solutions simples à utiliser, pensées pour être comprises et adoptées facilement par vos équipes."
     }
 ]

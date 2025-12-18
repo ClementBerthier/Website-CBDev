@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "tag": "Services IA",
+        "title": "Automatisation IA",
+        "description": "Optimisez vos processus métier grâce à l’automatisation par l’intelligence artificielle et libérez du temps pour ce qui compte vraiment.",
+        "introText": "L’automatisation IA, c’est un peu le chef d’orchestre invisible de votre entreprise. Elle observe, comprend et exécute des tâches répétitives à votre place, sans fatigue ni erreur. Résultat : des processus plus fluides, des équipes soulagées et une entreprise qui gagne en efficacité et en réactivité.",
+        "descriptionTitle": "Qu’est-ce que l’automatisation IA ?",
+        "descriptionText": "L’automatisation IA consiste à utiliser l’intelligence artificielle combinée à des outils d’automatisation pour exécuter automatiquement des tâches, des flux de travail ou des processus métier. Contrairement à une automatisation classique basée uniquement sur des règles fixes, l’automatisation IA peut analyser des données, prendre des décisions simples et s’adapter à différents scénarios. Elle s’applique aussi bien à la gestion administrative, au marketing, au support client ou à la gestion de données.",
+        "featureTitle": "Ce que permet l’automatisation IA",
+        "featureText": "Une solution d’automatisation IA est toujours conçue sur mesure, en fonction de vos besoins et de votre organisation. Voici quelques usages concrets que l’on retrouve fréquemment :",
+
+        "featureList": [
+            {
+                "title": "Automatisation des tâches répétitives",
+                "text": "Saisie de données, envoi d’emails, classement de documents, synchronisation d’outils… L’IA prend en charge les tâches chronophages pour réduire les erreurs humaines et faire gagner un temps précieux."
+            },
+            {
+                "title": "Automatisation des processus métier",
+                "text": "Création de workflows intelligents reliant vos outils (CRM, ERP, outils marketing, facturation…). Chaque action déclenche automatiquement la suivante, sans intervention manuelle."
+            },
+            {
+                "title": "Traitement intelligent des données",
+                "text": "Analyse, tri, enrichissement et exploitation de vos données grâce à l’IA afin de produire des informations utiles et exploitables en temps réel."
+            },
+            {
+                "title": "Automatisation marketing et commerciale",
+                "text": "Qualification de leads, envoi de messages personnalisés, suivi client automatisé ou relances intelligentes basées sur le comportement des utilisateurs."
+            },
+            {
+                "title": "Connexion entre vos outils existants",
+                "text": "L’automatisation IA agit comme un pont entre vos applications (site web, outils internes, plateformes externes) pour créer un écosystème cohérent et fluide."
+            }
+        ],
+        "exampleTitle": "Un scénario d’automatisation IA concret",
+        "videoSRC": "/images/automationIAServices.webP",
+        "videoALT": "automatisation IA",
+        "creditName": "IA OpenAI",
+        "link": "https://chatgpt.com/",
+        "exampleText": "Imaginons une entreprise qui reçoit quotidiennement des demandes via son site web. Grâce à l’automatisation IA, chaque demande est analysée automatiquement, classée selon son type, enrichie avec des données pertinentes, puis envoyée au bon service. En parallèle, un email personnalisé est envoyé au client et le lead est enregistré dans le CRM, sans aucune action manuelle.",
+        "conclusionText": "L’automatisation IA n’est pas une simple optimisation technique, c’est un véritable levier de performance. Elle permet de gagner du temps, de réduire les coûts, d’améliorer la qualité des processus et de rendre votre entreprise plus agile. En automatisant intelligemment, vous transformez votre façon de travailler.",
+        "promotionnalTitle": "Et si vous automatisiez votre entreprise grâce à l’IA ?"
+    },
+    {
+        "id": 2,
+        "tag": "Services IA",
+        "title": "Agents IA",
+        "description": "Déléguez des tâches complexes à des agents IA capables d’analyser, décider et agir de manière autonome au service de votre entreprise.",
+        "introText": "Un agent IA, ce n’est pas un simple script automatisé. C’est un collaborateur numérique capable de comprendre un objectif, d’analyser une situation et d’enchaîner des actions pour l’atteindre. Là où l’automatisation exécute, l’agent IA réfléchit, s’adapte et interagit avec vos outils comme le ferait un humain, mais à la vitesse de la machine.",
+        "descriptionTitle": "Qu’est-ce qu’un agent IA ?",
+        "descriptionText": "Un agent IA est une entité logicielle autonome basée sur l’intelligence artificielle. Il est conçu pour atteindre un objectif précis en prenant des décisions, en utilisant des outils, en analysant des données et parfois même en dialoguant avec des utilisateurs. Contrairement à un simple chatbot, un agent IA peut exécuter des actions concrètes : interroger des bases de données, déclencher des automatisations, rédiger du contenu ou orchestrer plusieurs systèmes entre eux.",
+        "featureTitle": "Ce que peuvent faire les agents IA",
+        "featureText": "Les agents IA sont construits sur mesure selon vos besoins métiers. Voici quelques capacités clés qu’ils peuvent offrir :",
+
+        "featureList": [
+            {
+                "title": "Prise de décision autonome",
+                "text": "L’agent IA analyse une situation, évalue plusieurs options et choisit la meilleure action à entreprendre en fonction de règles, de données et de contexte."
+            },
+            {
+                "title": "Interaction avec vos outils",
+                "text": "CRM, bases de données, outils internes, APIs externes… Un agent IA peut interagir avec l’ensemble de votre écosystème logiciel."
+            },
+            {
+                "title": "Gestion intelligente des demandes",
+                "text": "Traitement automatique des demandes clients, qualification, priorisation et réponse adaptée sans intervention humaine systématique."
+            },
+            {
+                "title": "Agents conversationnels avancés",
+                "text": "Bien plus qu’un chatbot classique, un agent IA peut comprendre des intentions complexes, maintenir un contexte et exécuter des actions en arrière-plan."
+            },
+            {
+                "title": "Orchestration de tâches complexes",
+                "text": "Un agent IA peut enchaîner plusieurs actions : analyser une donnée, déclencher une automatisation, vérifier un résultat et ajuster son comportement."
+            }
+        ],
+        "exampleTitle": "Un scénario d’agent IA en entreprise",
+        "videoSRC": "/images/agentIAServices.webP",
+        "videoALT": "images agent IA",
+        "creditName": "IA OpenAI",
+        "link": "https://chatgpt.com/",
+        "exampleText": "Imaginons un agent IA dédié au support client. Il analyse chaque message entrant, comprend le besoin, consulte la base de connaissances, interagit avec le CRM pour vérifier l’historique client, puis répond automatiquement ou escalade la demande vers un humain si nécessaire. L’agent apprend continuellement des échanges pour améliorer ses réponses.",
+        "conclusionText": "Les agents IA représentent une nouvelle génération d’outils numériques. Ils permettent d’automatiser des tâches complexes, de fluidifier les processus et d’offrir une expérience utilisateur plus réactive et personnalisée. En intégrant des agents IA, vous dotez votre entreprise de véritables assistants intelligents, capables d’évoluer avec vos besoins.",
+        "promotionnalTitle": "Et si vous intégriez des agents IA sur mesure dans votre entreprise ?"
+    },
+    {
+        "id": 4,
+        "tag": "Services IA",
+        "title": "Accompagnement IA",
+        "description": "Bénéficiez d’un accompagnement IA sur mesure pour intégrer l’intelligence artificielle de manière efficace, progressive et alignée avec vos objectifs métier.",
+        "introText": "Mettre de l’IA dans une entreprise ne consiste pas à brancher un outil et espérer des miracles. Sans vision, sans méthode et sans accompagnement, l’IA reste sous-exploitée. Vous accompagner dans la mise en place d’outils d’IA vous permettra de transformer une technologie complexe en un levier concret de performance, en tenant compte de vos équipes, de vos contraintes et de votre réalité terrain.",
+        "descriptionTitle": "Qu’est-ce que l’accompagnement IA ?",
+        "descriptionText": "L’accompagnement IA consiste à guider une entreprise dans l’adoption et l’intégration de solutions basées sur l’intelligence artificielle. Cela inclut l’analyse des besoins, la définition d’une stratégie IA, le choix des bons outils, la mise en place technique et l’accompagnement humain. L’objectif est d’assurer une IA utile, maîtrisée et réellement adaptée à votre organisation.",
+        "featureTitle": "Ce que comprend un accompagnement IA",
+        "featureText": "Un accompagnement IA efficace repose sur une approche progressive et personnalisée. Voici les principaux piliers de cet accompagnement :",
+        "featureList": [
+            {
+                "title": "Audit et analyse des besoins",
+                "text": "Identification des processus existants, des points de friction et des opportunités concrètes où l’IA peut apporter une réelle valeur ajoutée."
+            },
+            {
+                "title": "Définition d’une stratégie IA",
+                "text": "Élaboration d’une feuille de route claire et réaliste, alignée avec vos objectifs business et votre maturité numérique."
+            },
+            {
+                "title": "Choix des outils et des technologies",
+                "text": "Sélection des solutions IA les plus adaptées à votre contexte, sans surenchère technologique ni outils inutiles."
+            },
+            {
+                "title": "Mise en œuvre et intégration",
+                "text": "Déploiement progressif des solutions IA, intégration avec vos systèmes existants et validation des résultats à chaque étape."
+            }
+        ],
+        "exampleTitle": "Un accompagnement IA en situation réelle",
+        "videoSRC": "/images/accompagnementService.webP",
+        "videoALT": "accompagnement IA",
+        "creditName": "IA OpenAI",
+        "link": "https://chatgpt.com/",
+        "exampleText": "Imaginons une PME souhaitant améliorer sa gestion commerciale.L’accompagnement IA commence par une phase d’écoute et d’analyse approfondie des pratiques existantes, afin de comprendre les enjeux réels, les contraintes métiers et les attentes des équipes. Sur cette base, des solutions d’automatisation et des agents IA ciblés sont conçus sur mesure, puis déployés progressivement. Les outils sont ajustés en continu grâce aux retours du terrain, garantissant une intégration fluide, pertinente et durable, pleinement alignée avec la réalité de l’entreprise.",
+        "conclusionText": "L’IA est un puissant levier de transformation, à condition d’être bien accompagnée. Un accompagnement IA structuré permet d’éviter les erreurs coûteuses, d’accélérer la mise en œuvre et de maximiser les bénéfices. C’est la clé pour une adoption réussie, durable et alignée avec vos enjeux humains et business.",
+        "promotionnalTitle": "Besoin d’un accompagnement IA clair et efficace ?"
+    },
+    {
+        "id": 5,
+        "tag": "Services IA",
+        "title": "GEO",
+        "description": "Optimisez la visibilité de votre entreprise dans les réponses générées par les intelligences artificielles comme ChatGPT, Gemini ou Perplexity.",
+        "introText": "Le référencement ne se limite plus aux moteurs de recherche classiques. Aujourd’hui, les utilisateurs interrogent directement des intelligences artificielles pour trouver des prestataires, des solutions ou des recommandations. La GEO, ou Generative Engine Optimization, vise à positionner votre entreprise comme une source fiable et pertinente dans les réponses générées par ces IA.",
+        "descriptionTitle": "Qu’est-ce que la GEO ?",
+        "descriptionText": "La GEO consiste à structurer, enrichir et optimiser vos contenus afin qu’ils soient compris, interprétés et cités par les moteurs d’IA générative. Contrairement au SEO traditionnel qui vise un classement dans une page de résultats, la GEO cherche à faire apparaître votre marque, vos services ou votre expertise directement dans les réponses produites par l’intelligence artificielle.",
+        "featureTitle": "Les leviers de la GEO",
+        "featureText": "La GEO repose sur une combinaison de bonnes pratiques éditoriales, techniques et sémantiques. Voici les principaux leviers à activer:",
+        "featureList": [
+            {
+                "title": "Contenus structurés et explicites",
+                "text": "Des contenus clairs, bien hiérarchisés et orientés réponses permettent aux IA de comprendre rapidement votre expertise et vos services."
+            },
+            {
+                "title": "Optimisation sémantique orientée IA",
+                "text": "Travail sur les intentions, les formulations naturelles et les questions que les utilisateurs posent réellement aux intelligences artificielles."
+            },
+            {
+                "title": "Autorité et crédibilité",
+                "text": "Mise en avant de votre expertise, de vos cas concrets et de vos contenus de référence pour renforcer votre légitimité auprès des moteurs d’IA."
+            },
+            {
+                "title": "Données exploitables par les IA",
+                "text": "Structuration des informations clés (services, localisation, spécialités) afin qu’elles puissent être facilement intégrées dans les réponses générées."
+            },
+            {
+                "title": "Synergie avec le SEO classique",
+                "text": "La GEO ne remplace pas le SEO, elle le complète en adaptant vos contenus aux nouveaux usages de recherche basés sur l’IA."
+            }
+        ],
+        "exampleTitle": "Un exemple concret de GEO",
+        "videoSRC": "/images/geoServices.webP",
+        "videoALT": "GEO intelligence artificielle",
+        "creditName": "IA OpenAI",
+        "link": "https://chatgpt.com/",
+        "exampleText": "Un utilisateur demande à une IA : « Quel prestataire peut m’aider à automatiser mon entreprise avec l’IA ? ». Grâce à une stratégie GEO bien menée, votre entreprise est citée directement dans la réponse, avec une description claire de vos services et de votre expertise, sans même passer par une page de résultats classique.",
+        "conclusionText": "La GEO marque une évolution majeure du référencement. En optimisant votre présence pour les moteurs d’IA, vous anticipez les nouveaux usages et prenez une longueur d’avance sur vos concurrents. C’est une opportunité stratégique pour renforcer votre visibilité et votre crédibilité dans un monde où l’information est de plus en plus générée par l’intelligence artificielle.",
+        "promotionnalTitle": "Et si votre entreprise apparaissait directement dans les réponses des IA ?"
+    }
+]

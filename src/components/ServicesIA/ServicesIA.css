@@ -1,0 +1,283 @@
+.ServicesIA {
+    background-color: var(--services);
+
+    .services_container {
+        max-width: 1700px;
+        margin: 0rem auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem 0 5rem 0;
+
+        .services_title {
+            margin: 5rem 0;
+            font-family: var(--font-title);
+            font-size: calc(2rem + 1vw);
+            font-weight: 500;
+            color: var(--black);
+            text-align: center;
+        }
+        .services_name_container {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            background-color: var(--services_name_container);
+            box-shadow: 0 0 10px 0 #0606c228;
+            border-radius: 10px;
+            margin: 1rem;
+
+            .services_name {
+                font-size: calc(0.6rem + 0.5vw);
+                font-family: var(--font-title);
+                text-align: center;
+
+                margin: 1rem auto;
+                padding: 2rem 1rem;
+                border-radius: 10px;
+            }
+            .services_name:hover {
+                cursor: pointer;
+            }
+            .active {
+                background-color: var(--services_name_active);
+                color: var(--white);
+                font-weight: 500;
+            }
+        }
+        .services_description_container {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            width: 80%;
+            margin: 1rem 0;
+
+            .description_text_container {
+                width: 40%;
+                height: 50rem;
+                background-color: var(--description_text_container);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 10px 0 #0606c228;
+
+                .logo {
+                    width: 8rem;
+                    height: 8rem;
+                    margin: 2rem 0rem 1rem 2rem;
+                }
+                .text_title {
+                    font-size: calc(1.2rem + 0.5vw);
+                    font-family: var(--font-title);
+                    font-weight: 600;
+
+                    margin-top: 2rem;
+                    padding: 0 2rem;
+                }
+                .text {
+                    font-size: calc(0.7rem + 0.5vw);
+                    font-family: var(--font-text);
+                    line-height: 2.5rem;
+                    margin: 0 auto;
+                    padding: 2rem;
+                    span {
+                        color: var(--text-span);
+                        font-weight: 500;
+                    }
+                    span:hover {
+                        cursor: pointer;
+                    }
+                }
+                .button {
+                    margin: 0 auto;
+                    font-size: calc(0.7rem + 0.5vw);
+                    font-family: var(--font-title);
+                }
+            }
+            .description_picture_container {
+                width: 60%;
+                height: 50rem;
+                background-color: var(--description_picture_container);
+                border-radius: 10px;
+                box-shadow: 0 0 10px 0 #0606c228;
+                overflow: scroll;
+                position: relative;
+                .picture_container {
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    z-index: 1;
+                    .oldPicture {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        padding: 2rem;
+                    }
+                }
+                .picture_container--2 {
+                    animation: widthUp 10s ease infinite;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    overflow: hidden;
+                    z-index: 2;
+                    .newPicture {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        padding: 2rem;
+                    }
+                }
+
+                .picture {
+                    width: 100%;
+                    height: 50rem;
+                    object-fit: contain;
+                }
+            }
+        }
+        .goToServices {
+            margin: 2rem auto;
+            .button {
+                font-size: calc(0.7rem + 0.5vw);
+                font-family: var(--font-title);
+                padding: 1rem 2rem;
+                display: none;
+            }
+        }
+    }
+}
+
+@keyframes widthUp {
+    0% {
+        transform: translateY(-100%);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 875px) {
+    .services_description_container {
+        flex-direction: column !important;
+        .description_text_container {
+            width: 100% !important;
+            height: auto !important;
+            .logo {
+                width: 4rem !important;
+                height: 4rem !important;
+            }
+            .button {
+                margin: 1rem auto !important;
+                padding: 1rem 2rem !important;
+            }
+        }
+        .description_picture_container {
+            width: 100% !important;
+            max-height: 50rem;
+        }
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 731px) {
+    .services_name_container {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 50% !important;
+        .services_name {
+            padding: 1rem !important;
+            font-size: calc(1rem + 0.5vw) !important;
+        }
+    }
+    .text_title {
+        font-size: calc(1.5rem + 0.5vw) !important;
+    }
+    .text {
+        font-size: calc(1rem + 0.5vw) !important;
+    }
+    .goToServices {
+        .button {
+            display: block !important;
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+    .services_container {
+        padding: 2rem !important;
+        .services_title {
+            margin: 2rem 0 !important;
+        }
+
+        .description_text_container {
+            height: 45rem !important;
+            .logo {
+                width: 4rem !important;
+                height: 4rem !important;
+                margin: 1rem 0rem 1rem 1rem;
+            }
+            .text {
+                font-size: calc(0.7rem + 0.5vw);
+                font-family: var(--font-text);
+                line-height: 2rem !important;
+                margin: 0 auto;
+                padding: 2rem;
+                span {
+                    color: var(--text-span);
+                    font-weight: 500;
+                }
+                span:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .description_picture_container {
+            height: 45rem !important;
+        }
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 800px) {
+    .services_description_container {
+        flex-direction: column !important;
+        .description_text_container {
+            width: 100% !important;
+            height: auto !important;
+            .logo {
+                width: 4rem !important;
+                height: 4rem !important;
+            }
+        }
+        .description_picture_container {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 3000px) {
+    .services_container {
+        max-width: 2500px !important;
+        .description_text_container,
+        .description_picture_container {
+            height: 70rem !important;
+        }
+        .description_text_container {
+            .text {
+                font-size: calc(1rem + 0.5vw) !important;
+                line-height: 4rem !important;
+            }
+        }
+    }
+}

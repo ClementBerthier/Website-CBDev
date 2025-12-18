@@ -1,0 +1,47 @@
+{
+    "automation_IA": {
+        "id": 1,
+        "tag": "IA",
+        "name": "automation_IA",
+        "title": "Workflows automatisés, connexions d’outils, gains de temps.",
+        "description": "Automatisation de vos processus métiers existants en connectant vos logiciels entre eux. L’IA intervient pour déclencher, enrichir ou optimiser les actions, sans changer vos habitudes de travail.",
+        "logo": "/images/brain.svg",
+        "picture": "/images/automationIA.WebP",
+        "pictureMobile": "/images/automationIAMobile.WebP"
+    },
+    "agent_IA": {
+        "id": 2,
+        "tag": "IA",
+        "name": "Agent IA",
+        "title": "Agents autonomes, décisions, actions continues.",
+
+        "description": "Conception d'agents IA capables d’analyser des données, prendre des décisions et agir de manière autonome selon vos objectifs métier.",
+        "logo": "/images/brain-research.svg",
+        "picture": "/images/agentIA.webp",
+        "pictureMobile": "/images/agentIAMobile.webP"
+    },
+
+    "support_IA": {
+        "id": 3,
+        "tag": "IA",
+        "name": "Accompagnement IA",
+        "title": "Audit, conseil, priorisation, mise en place.",
+
+        "description": "Je vous accompagne pour identifier les opportunités IA réellement utiles à votre activité, définir une feuille de route claire et éviter les solutions gadget ou surdimensionnées.",
+        "logo": "/images/yoga.svg",
+        "picture": "/images/auditIA.webP",
+        "pictureMobile": "/images/auditIAMobile.webP"
+    },
+
+    "SEO": {
+        "id": 5,
+        "tag": "IA",
+        "name": "GEO",
+        "title": "Visibilité dans les moteurs IA et assistants.",
+
+        "description": "J’optimise votre présence numérique pour que votre entreprise soit comprise, citée et recommandée par les moteurs de recherche basés sur l’IA et les assistants intelligents.",
+        "logo": "/images/medal1st.svg",
+        "picture": "/images/Geo.webP",
+        "pictureMobile": "/images/GeoMobile.webP"
+    }
+}

@@ -46,6 +46,21 @@ export default function Footer() {
             }
         }
     };
+    const handleClickNavigateIA = (e) => {
+        e.preventDefault();
+        const destinationId = e.target.id;
+        const currentPath = window.location.pathname;
+        if (currentPath === "/servicesPageIA") {
+            navigate("/refresh", { replace: true });
+            setTimeout(() => {
+                navigate("/servicesPageIA", {
+                    state: { name: destinationId },
+                });
+            }, 0);
+        } else {
+            navigate("/servicesPageIA", { state: { name: destinationId } });
+        }
+    };
 
     return (
         <div className="footer_container">
@@ -195,6 +210,38 @@ export default function Footer() {
                                     >
                                         {"> "}SEO
                                     </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href="/servicesPageIA"
+                                        id="automation_IA"
+                                        onClick={handleClickNavigateIA}
+                                    >
+                                        {"> "}Automatisation IA
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href="/servicesPageIA"
+                                        id="Agent IA"
+                                        onClick={handleClickNavigateIA}
+                                    >
+                                        {"> "}Agent IA
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href="/servicesPageIA"
+                                        id="Accompagnement IA"
+                                        onClick={handleClickNavigateIA}
+                                    >
+                                        {"> "}Accompagnement IA
+                                    </a>
+                                    <a
+                                        className="footer_navigation_link pointer"
+                                        href="/servicesPageIA"
+                                        id="GEO"
+                                        onClick={handleClickNavigateIA}
+                                    >
+                                        {"> "}GEO
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -220,14 +267,14 @@ export default function Footer() {
                                     >
                                         {"> "}Services
                                     </a>
-                                    <a
+                                    {/* <a
                                         className="footer_navigation_link pointer"
                                         href="/"
                                         id="technologies"
                                         onClick={handleClickNavigate}
                                     >
                                         {"> "}Technologies
-                                    </a>
+                                    </a> */}
                                     <Link
                                         className="link footer_navigation_link pointer"
                                         to="/projets"

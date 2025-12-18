@@ -7,8 +7,11 @@ export default function Button({ text, id, name, type }) {
 
     const handleClickNavigate = (e) => {
         const destinationId = e.target.id;
+        console.log("dddddd", name);
         if (destinationId === "contact" || destinationId === "services") {
             navigate("/", { state: { id: destinationId } });
+        } else if (destinationId === "IA") {
+            navigate("/servicesPageIA", { state: { name: name } });
         } else {
             navigate("/servicesPage", { state: { name: name } });
         }
@@ -28,6 +31,7 @@ export default function Button({ text, id, name, type }) {
 Button.propTypes = {
     text: PropTypes.string.isRequired,
     id: PropTypes.string,
+    tag: PropTypes.string,
     name: PropTypes.string,
     type: PropTypes.string,
 };

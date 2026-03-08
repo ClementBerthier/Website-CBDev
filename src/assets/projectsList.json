@@ -53,5 +53,19 @@
         "tech": ["En cours de développement"],
         "image": "/images/logoBookHero.webP",
         "link": ""
+    },
+    {
+        "id": 5,
+        "title": "Genbee",
+        "blurb": "Plateforme de mise en relation intelligente entre entrepreuneuses et entrepreuneurs.",
+        "description": "Genbee est une plateforme en ligne de mise en relation d’entrepreneuses et d’entrepreneurs de la région Occitanie. Elle propose un annuaire de professionnels, des événements quotidiens afin d’augmenter son réseau, mais également un système d’annonces pour maximiser la recherche de prestataires ou de collaborateurs.",
+        "collaborators": ["ACOLLADE - Magali Piketty"],
+        "collaboratorsLinks": ["https://www.acollade.com/"],
+
+        "year": "2026",
+        "category": "Site web",
+        "tech": ["PHP", "Stripe", "Javascript", "N8N"],
+        "image": "/images/logo_genbee.webp",
+        "link": "https://genbee.fr/"
     }
 ]

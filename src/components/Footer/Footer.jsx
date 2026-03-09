@@ -143,7 +143,7 @@ export default function Footer() {
                                         id="site"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Sites vitrines
+                                        Sites vitrines
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -151,7 +151,7 @@ export default function Footer() {
                                         id="blog"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Blogs
+                                        Blogs
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -159,7 +159,7 @@ export default function Footer() {
                                         id="portfolio"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Portfolios
+                                        Portfolios
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -167,7 +167,7 @@ export default function Footer() {
                                         id="CV"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}CV
+                                        CV
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -175,7 +175,7 @@ export default function Footer() {
                                         id="evenement"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Sites d{"'"}événement
+                                        Sites d{"'"}événement
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -183,7 +183,7 @@ export default function Footer() {
                                         id="application"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Application
+                                        Application
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -191,7 +191,7 @@ export default function Footer() {
                                         id="e_commerce"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}E-commerce
+                                        E-commerce
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -199,7 +199,7 @@ export default function Footer() {
                                         id="RM"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Refonte & Maintenance
+                                        Refonte & Maintenance
                                     </a>
 
                                     <a
@@ -208,7 +208,7 @@ export default function Footer() {
                                         id="SEO"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}SEO
+                                        SEO
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -216,7 +216,7 @@ export default function Footer() {
                                         id="automation_IA"
                                         onClick={handleClickNavigateIA}
                                     >
-                                        {"> "}Automatisation IA
+                                        Automatisation IA
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -224,7 +224,7 @@ export default function Footer() {
                                         id="Agent IA"
                                         onClick={handleClickNavigateIA}
                                     >
-                                        {"> "}Agent IA
+                                        Agent IA
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -232,7 +232,7 @@ export default function Footer() {
                                         id="Accompagnement IA"
                                         onClick={handleClickNavigateIA}
                                     >
-                                        {"> "}Accompagnement IA
+                                        Accompagnement IA
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -240,7 +240,7 @@ export default function Footer() {
                                         id="GEO"
                                         onClick={handleClickNavigateIA}
                                     >
-                                        {"> "}GEO
+                                        GEO
                                     </a>
                                 </div>
                             </div>
@@ -257,7 +257,7 @@ export default function Footer() {
                                         id="home"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Accueil
+                                        Accueil
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -265,7 +265,7 @@ export default function Footer() {
                                         id="services"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Services
+                                        Services
                                     </a>
                                     {/* <a
                                         className="footer_navigation_link pointer"
@@ -273,14 +273,14 @@ export default function Footer() {
                                         id="technologies"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Technologies
+                                        Technologies
                                     </a> */}
                                     <Link
                                         className="link footer_navigation_link pointer"
                                         to="/projets"
                                         id="Projects"
                                     >
-                                        {"> "}Projets
+                                        Projets
                                     </Link>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -288,7 +288,7 @@ export default function Footer() {
                                         id="FAQs"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}FAQ
+                                        FAQ
                                     </a>
                                     <a
                                         className="footer_navigation_link pointer"
@@ -296,7 +296,7 @@ export default function Footer() {
                                         id="contact"
                                         onClick={handleClickNavigate}
                                     >
-                                        {"> "}Contact
+                                        Contact
                                     </a>
                                 </div>
                             </div>

@@ -3,7 +3,7 @@ import Headers from "../Header/Header.jsx";
 
 import "./Projects.css";
 import projectsList from "../../assets/projectsList.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Projects() {
@@ -15,20 +15,19 @@ export default function Projects() {
 
     const [selectedCategories, setSelectedCategories] = useState([]);
     const [selectedYears, setSelectedYears] = useState([]);
+    const [selectedProject, setSelectedProject] = useState(null);
 
     const handleCategoryClick = (category) => {
         setSelectedCategories(
             (prev) =>
                 prev.includes(category)
-                    ? prev.filter((c) => c !== category) // déjà sélectionnée → on enlève
-                    : [...prev, category] // pas encore → on ajoute
+                    ? prev.filter((c) => c !== category)
+                    : [...prev, category]
         );
     };
 
     const handleYearClick = (year) => {
-        setSelectedYears(
-            year === "all" ? [] : [year] // "all" réinitialise la sélection
-        );
+        setSelectedYears(year === "all" ? [] : [year]);
     };
 
     const [searchTerm, setSearchTerm] = useState("");
@@ -42,8 +41,6 @@ export default function Projects() {
         const matchYear =
             selectedYears.length === 0 || selectedYears.includes(project.year);
 
-        // 🔎 À adapter aux champs de ton JSON :
-        // ici j’imagine `project.title` et `project.description`
         const matchSearch =
             search === "" ||
             project.title.toLowerCase().includes(search) ||
@@ -54,6 +51,21 @@ export default function Projects() {
 
         return matchCategory && matchYear && matchSearch;
     });
+
+    useEffect(() => {
+        if (selectedProject) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [selectedProject]);
+
+    const hasCollaborators =
+        selectedProject &&
+        selectedProject.collaborators.some((c) => c !== "");
 
     return (
         <>
@@ -125,6 +137,7 @@ export default function Projects() {
                             className="project"
                             key={project.id}
                             id={project.id}
+                            onClick={() => setSelectedProject(project)}
                         >
                             <div className="project-picture">
                                 <img src={project.image} alt="" />
@@ -147,27 +160,9 @@ export default function Projects() {
                                     </ul>
                                 </div>
                                 <div className="buttonCategory">
-                                    {project.link === "" ? (
-                                        <Link
-                                            className="project-link"
-                                            to="/underConstruction"
-                                            id="underConstruction"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Voir le site
-                                        </Link>
-                                    ) : (
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="project-link"
-                                        >
-                                            Voir le site
-                                        </a>
-                                    )}
-
+                                    <button className="project-link">
+                                        En savoir plus
+                                    </button>
                                     <span className="category">
                                         {project.category}
                                     </span>
@@ -178,6 +173,127 @@ export default function Projects() {
                 </section>
             </div>
             <Footer />
+
+            {selectedProject && (
+                <div
+                    className="modal-overlay"
+                    onClick={() => setSelectedProject(null)}
+                >
+                    <div
+                        className="modal"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        {/* Hero image */}
+                        <div className="modal-hero">
+                            <img
+                                src={selectedProject.image}
+                                alt={selectedProject.title}
+                            />
+                            <div className="modal-hero-overlay">
+                                <div className="modal-hero-meta">
+                                    <span className="modal-category">
+                                        {selectedProject.category}
+                                    </span>
+                                    <span className="modal-year">
+                                        {selectedProject.year}
+                                    </span>
+                                </div>
+                                <h2 className="modal-title">
+                                    {selectedProject.title}
+                                </h2>
+                            </div>
+                            <button
+                                className="modal-close"
+                                onClick={() => setSelectedProject(null)}
+                                aria-label="Fermer"
+                            >
+                                ✕
+                            </button>
+                        </div>
+
+                        {/* Corps */}
+                        <div className="modal-body">
+                            <p className="modal-description">
+                                {selectedProject.description}
+                            </p>
+
+                            <div className="modal-sections">
+                                <div className="modal-tech">
+                                    <p className="modal-section-label">
+                                        Technologies
+                                    </p>
+                                    <ul>
+                                        {selectedProject.tech.map(
+                                            (techItem, index) => (
+                                                <li key={index}>{techItem}</li>
+                                            )
+                                        )}
+                                    </ul>
+                                </div>
+
+                                {hasCollaborators && (
+                                    <div className="modal-collaborators">
+                                        <p className="modal-section-label">
+                                            Collaborateurs
+                                        </p>
+                                        <ul>
+                                            {selectedProject.collaborators.map(
+                                                (collab, index) =>
+                                                    collab !== "" && (
+                                                        <li key={index}>
+                                                            <a
+                                                                href={
+                                                                    selectedProject
+                                                                        .collaboratorsLinks[
+                                                                        index
+                                                                    ]
+                                                                }
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                            >
+                                                                <span className="collab-icon">↗</span>
+                                                                {collab}
+                                                            </a>
+                                                        </li>
+                                                    )
+                                            )}
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+                        {/* Footer */}
+                        <div className="modal-footer">
+                            {selectedProject.link === "" ? (
+                                <Link
+                                    className="modal-link"
+                                    to="/underConstruction"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Voir le site →
+                                </Link>
+                            ) : (
+                                <a
+                                    href={selectedProject.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="modal-link"
+                                >
+                                    Voir le site →
+                                </a>
+                            )}
+                            <button
+                                className="modal-btn-close"
+                                onClick={() => setSelectedProject(null)}
+                            >
+                                Fermer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     );
 }

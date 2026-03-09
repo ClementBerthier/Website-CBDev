@@ -212,11 +212,11 @@
 .footer_credit {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem 2rem !important;
     border-top: none !important;
     font-family: var(--font-text);
-    font-size: 0.9rem !important;
-    color: #475569 !important;
+    font-size: 1.2rem !important;
+    color: #cbd5e1 !important;
+    padding: 1.5rem 2rem !important;
     text-align: center;
     background-color: transparent !important;
 }

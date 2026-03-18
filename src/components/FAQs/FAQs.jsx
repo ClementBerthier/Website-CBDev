@@ -27,6 +27,16 @@ export default function FAQs() {
                             id={question.id}
                             key={index}
                             onClick={handleClickQuestion}
+                            role="button"
+                            aria-expanded={questionOpened === question.id}
+                            aria-controls={`answer-${question.id}`}
+                            tabIndex={0}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    e.preventDefault();
+                                    handleClickQuestion(e);
+                                }
+                            }}
                         >
                             <div
                                 className="question_name_container"
@@ -66,6 +76,7 @@ export default function FAQs() {
                             </div>
 
                             <p
+                                id={`answer-${question.id}`}
                                 className={`answer ${
                                     questionOpened === question.id
                                         ? "visible"

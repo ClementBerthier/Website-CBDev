@@ -5,7 +5,7 @@ export default defineConfig({
     plugins: [react()],
     build: {
         outDir: "dist", // Dossier de sortie pour les fichiers de build
-        sourcemap: true, // Générer des sourcemaps pour le debugging
+        sourcemap: false, // Générer des sourcemaps pour le debugging
         /*   rollupOptions: {
             output: {
                 manualChunks(id) {

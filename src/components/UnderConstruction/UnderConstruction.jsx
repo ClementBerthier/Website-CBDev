@@ -24,7 +24,7 @@ export default function UnderConstruction() {
                     </a>
 
                     <a
-                        href="mailto:clementberthier.developpeur@gmail.com"
+                        href="mailto:clementberthierdeveloppeur@gmail.com"
                         className="wip-btn-ghost"
                     >
                         Me contacter

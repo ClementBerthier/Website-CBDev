@@ -343,8 +343,8 @@ export default function Footer() {
             </div>
             <div className="footer_credit_container">
                 <p className="footer_credit">
-                    CBDev. © 2024 - Designé et développé par Clément Berthier
-                    Développeur
+                    CBDev. © 2024 - {new Date().getFullYear()} - Designé et
+                    développé par Clément Berthier Développeur
                 </p>
             </div>
         </footer>

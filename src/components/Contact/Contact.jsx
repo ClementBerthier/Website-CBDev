@@ -17,7 +17,6 @@ export default function Contact() {
 
     const [modalOpen, setModalOpen] = useState(false);
     const [readyToSend, setReadyToSend] = useState(true);
-    useState(false);
 
     const [titleModal, setTitleModal] = useState("");
     const [contentModal, setContentModal] = useState("");
@@ -101,21 +100,17 @@ export default function Contact() {
         e.preventDefault();
 
         if (readyToSend) {
-            try {
-                await emailjs.sendForm(serviceId, templateId, form.current, {
-                    publicKey: emailJSPublicKey,
-                });
-                setFormData({
-                    user_lastname: "",
-                    user_firstname: "",
-                    user_email: "",
-                    user_phone: "",
-                    object: "",
-                    message: "",
-                });
-            } catch (error) {
-                // erreur d'envoi
-            }
+            await emailjs.sendForm(serviceId, templateId, form.current, {
+                publicKey: emailJSPublicKey,
+            });
+            setFormData({
+                user_lastname: "",
+                user_firstname: "",
+                user_email: "",
+                user_phone: "",
+                object: "",
+                message: "",
+            });
         }
     };
 
@@ -214,7 +209,7 @@ export default function Contact() {
                                 <div className="firstSection">
                                     <FormField>
                                         <label htmlFor="lastname">Nom</label>
-                                        <input
+                                        <inputauto
                                             placeholder="Votre nom"
                                             name="user_lastname"
                                             type="text"
@@ -249,7 +244,7 @@ export default function Contact() {
                                     <input
                                         placeholder="Votre adresse mail"
                                         name="user_email"
-                                        type="text"
+                                        type="email"
                                         id="mail"
                                         value={formData.user_email}
                                         onChange={handleChange}
@@ -260,7 +255,7 @@ export default function Contact() {
                                     <input
                                         placeholder="Votre numéro de téléphone"
                                         name="user_phone"
-                                        type="text"
+                                        type="tel"
                                         id="phone"
                                         value={formData.user_phone}
                                         onChange={handleChange}
@@ -354,7 +349,7 @@ export default function Contact() {
                                         href="https://www.instagram.com/clementberthier_dev/"
                                         rel="noreferrer noopener"
                                         target="_blank"
-                                        aria-label="facebook"
+                                        aria-label="instagram"
                                     >
                                         <img
                                             src={instagram}

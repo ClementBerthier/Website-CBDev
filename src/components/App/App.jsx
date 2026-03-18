@@ -25,11 +25,8 @@ export default function App() {
                 <Route path="/servicesPage" element={<ServicesPage />} />
                 <Route path="/servicesPageIA" element={<ServicesPageIA />} />
                 <Route path="/legalMention" element={<LegalMention />} />
-                <Route path="/projets" element={<Projects />}></Route>
-                <Route
-                    path="/underConstruction"
-                    element={<UnderConstruction />}
-                ></Route>
+                <Route path="/projets" element={<Projects />} />
+                <Route path="/underConstruction" element={<UnderConstruction />} />
             </Routes>
         </>
     );

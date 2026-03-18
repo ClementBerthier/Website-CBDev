@@ -11,9 +11,9 @@ import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 
 export default function Contact() {
-    const serviceId = "o/j#YBqAnUk:BhFdPP1*13:";
-    const templateId = "template_z2eknc5";
-    const emailJSPublicKey = "kpw1Hx7jtYqg2aguq";
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const emailJSPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const [modalOpen, setModalOpen] = useState(false);
     const [readyToSend, setReadyToSend] = useState(true);
@@ -46,7 +46,7 @@ export default function Contact() {
             setReadyToSend(false);
             setTitleModal("Champs manquants");
             setContentModal(
-                "Plusieurs champs obligatoires sont manquants, veuillez les renseigner pour envoyer votre message"
+                "Plusieurs champs obligatoires sont manquants, veuillez les renseigner pour envoyer votre message",
             );
             setModalOpen(true);
         } else if (stateMailFull === false) {
@@ -72,7 +72,7 @@ export default function Contact() {
 
             setTitleModal("Mail et numéro de téléphone invalides");
             setContentModal(
-                "Veuillez vérifier votre adresse mail et votre numéro de téléphone"
+                "Veuillez vérifier votre adresse mail et votre numéro de téléphone",
             );
             setModalOpen(true);
         } else if (stateMailValid === false) {
@@ -91,7 +91,7 @@ export default function Contact() {
             setReadyToSend(true);
             setTitleModal("Message envoyé");
             setContentModal(
-                "Votre message a bien été envoyé, nous vous répondrons dans les plus brefs délais"
+                "Votre message a bien été envoyé, nous vous répondrons dans les plus brefs délais",
             );
             setModalOpen(true);
         }
@@ -102,14 +102,9 @@ export default function Contact() {
 
         if (readyToSend) {
             try {
-                const result = await emailjs.sendForm(
-                    serviceId,
-                    templateId,
-                    form.current,
-                    {
-                        publicKey: emailJSPublicKey,
-                    }
-                );
+                await emailjs.sendForm(serviceId, templateId, form.current, {
+                    publicKey: emailJSPublicKey,
+                });
                 setFormData({
                     user_lastname: "",
                     user_firstname: "",
@@ -118,12 +113,9 @@ export default function Contact() {
                     object: "",
                     message: "",
                 });
-                console.log("success", result);
             } catch (error) {
-                console.log("Failed", error);
+                // erreur d'envoi
             }
-        } else {
-            console.log("not ready to send");
         }
     };
 
@@ -354,6 +346,7 @@ export default function Contact() {
                                         <img
                                             src={facebook}
                                             alt="logo facebook"
+                                            loading="lazy"
                                         />
                                     </a>
                                     <a
@@ -366,6 +359,7 @@ export default function Contact() {
                                         <img
                                             src={instagram}
                                             alt="logo instagram"
+                                            loading="lazy"
                                         />
                                     </a>
                                     <a
@@ -378,6 +372,7 @@ export default function Contact() {
                                         <img
                                             src={linkedin}
                                             alt="logo linkedin"
+                                            loading="lazy"
                                         />
                                     </a>
                                     <a
@@ -387,7 +382,11 @@ export default function Contact() {
                                         rel="noreferrer noopener"
                                         aria-label="github"
                                     >
-                                        <img src={github} alt="logo github" />
+                                        <img
+                                            src={github}
+                                            alt="logo github"
+                                            loading="lazy"
+                                        />
                                     </a>
                                 </div>
                             </div>

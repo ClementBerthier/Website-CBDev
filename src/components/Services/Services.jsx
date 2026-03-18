@@ -135,6 +135,7 @@ export default function Services2() {
                             className="logo"
                             src={jsonData.logo}
                             alt="Icône de développement web"
+                            loading="lazy"
                         />
                         <h3 className="text_title">{jsonData.title}</h3>
 
@@ -179,6 +180,7 @@ export default function Services2() {
                                     className="oldPicture"
                                     src={jsonData.oldPicture}
                                     alt="ancien site"
+                                    loading="lazy"
                                 />
                             </div>
                             <div className="picture_container--2">
@@ -186,6 +188,7 @@ export default function Services2() {
                                     className="newPicture"
                                     src={jsonData.newPicture}
                                     alt="nouveau site"
+                                    loading="lazy"
                                 />
                             </div>
                         </div>
@@ -195,6 +198,7 @@ export default function Services2() {
                                 className="picture"
                                 src={jsonData.picture}
                                 alt="Illustration du service de développement web"
+                                loading="lazy"
                             />
                         </div>
                     )}

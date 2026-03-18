@@ -22,7 +22,6 @@ export default function ServicesIA() {
 
         const { height, width } = divPictureRef.current.getBoundingClientRect();
         setIsPortrait(height > width);
-        console.log("isportrait", isPortrait);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -122,6 +121,7 @@ export default function ServicesIA() {
                             className="logo"
                             src={jsonData.logo}
                             alt="Icône d'automatisation IA"
+                            loading="lazy"
                         />
                         <h3 className="text_title">{jsonData.title}</h3>
 
@@ -144,12 +144,14 @@ export default function ServicesIA() {
                                 className="picture"
                                 src={jsonData.pictureMobile}
                                 alt="Illustration du service d'automatisation IA"
+                                loading="lazy"
                             />
                         ) : (
                             <img
                                 className="picture"
                                 src={jsonData.picture}
                                 alt="Illustration du service d'automatisation IA"
+                                loading="lazy"
                             />
                         )}
                     </div>

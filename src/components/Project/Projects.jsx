@@ -175,7 +175,7 @@ export default function Projects() {
                             onClick={() => setSelectedProject(project)}
                         >
                             <div className="project-picture">
-                                <img src={project.image} alt={project.title} />
+                                <img src={project.image} alt={project.title} loading="lazy" />
                             </div>
                             <div className="project-infos">
                                 <div className="titleYear">

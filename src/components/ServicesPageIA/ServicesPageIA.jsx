@@ -13,7 +13,6 @@ export default function ServicesPageIA() {
     const data = useLocation();
     const [dataName, setDataName] = useState(data.state.name);
 
-    console.log("dataname", dataName);
     useEffect(() => {
         if (dataName) {
             if (dataName === "automation_IA") {

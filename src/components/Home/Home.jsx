@@ -6,13 +6,13 @@ export default function Home2() {
         <div className="home_container">
             <div className="home">
                 <div className="home_presentation">
-                    <h2 className="presentation_name">
+                    <h1 className="presentation_name">
                         Clément Berthier
                         <br className="firstBR" /> Développeur Web
                         <br className="firstBR" /> &
                         <br className="firstBR" /> Automatisation IA
                         <br /> Freelance.
-                    </h2>
+                    </h1>
                     <p className="presentation_paragraph">
                         Je suis à votre écoute pour vous aider à réaliser votre
                         projet web et vous proposer des solutions adaptées à vos
@@ -25,7 +25,7 @@ export default function Home2() {
                 <div className="home_illustration">
                     <img
                         src="/images/avatar_dev.AVIF"
-                        alt="developper_illustration"
+                        alt="Illustration de Clément Berthier, développeur web freelance"
                     />
                 </div>
             </div>

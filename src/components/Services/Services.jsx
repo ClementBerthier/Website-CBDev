@@ -134,7 +134,7 @@ export default function Services2() {
                         <img
                             className="logo"
                             src={jsonData.logo}
-                            alt="symbol code"
+                            alt="Icône de développement web"
                         />
                         <h3 className="text_title">{jsonData.title}</h3>
 
@@ -194,7 +194,7 @@ export default function Services2() {
                             <img
                                 className="picture"
                                 src={jsonData.picture}
-                                alt="picture description service"
+                                alt="Illustration du service de développement web"
                             />
                         </div>
                     )}

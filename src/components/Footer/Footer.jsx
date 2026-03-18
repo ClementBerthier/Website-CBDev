@@ -63,7 +63,7 @@ export default function Footer() {
     };
 
     return (
-        <div className="footer_container">
+        <footer className="footer_container">
             <div className="footer_container_section">
                 <div className="footer_navigation_container">
                     <div className="footer_section">
@@ -347,6 +347,6 @@ export default function Footer() {
                     Développeur
                 </p>
             </div>
-        </div>
+        </footer>
     );
 }

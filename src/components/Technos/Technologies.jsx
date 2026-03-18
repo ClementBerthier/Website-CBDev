@@ -83,7 +83,7 @@ export default function Technologies() {
                                 <img
                                     className="description_logo_dev"
                                     src={currentTechnology.path}
-                                    alt="technology logo"
+                                    alt="Logo de la technologie"
                                 />
                             </div>
                             <a

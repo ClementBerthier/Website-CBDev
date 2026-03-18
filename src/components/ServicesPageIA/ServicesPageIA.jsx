@@ -6,6 +6,7 @@ import article from "../../assets/articlesIA.json";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Dropdown, Popup } from "semantic-ui-react";
+import { Helmet } from "react-helmet-async";
 
 export default function ServicesPageIA() {
     const [jsonData, setJsonData] = useState(null);
@@ -52,12 +53,69 @@ export default function ServicesPageIA() {
 
     return (
         <>
+            <Helmet>
+                <title>Automatisation IA & Agents IA | Clément Berthier Développeur, Tarn</title>
+                <meta
+                    name="description"
+                    content="Solutions d'automatisation IA sur mesure dans le Tarn. Agents IA, automatisation de processus et optimisation GEO pour booster la productivité de votre entreprise."
+                />
+                <link
+                    rel="canonical"
+                    href="https://www.clementberthierdeveloppeur.fr/servicesPageIA"
+                />
+                <meta property="og:title" content="Automatisation IA & Agents IA | Clément Berthier Développeur, Tarn" />
+                <meta property="og:description" content="Solutions d'automatisation IA sur mesure dans le Tarn. Agents IA, automatisation de processus et optimisation GEO pour booster la productivité de votre entreprise." />
+                <meta property="og:url" content="https://www.clementberthierdeveloppeur.fr/servicesPageIA" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Automatisation IA & Agents IA",
+                        "description": "Solutions d'automatisation IA sur mesure. Agents IA, automatisation de processus et optimisation GEO pour booster la productivité de votre entreprise.",
+                        "provider": {
+                            "@type": "ProfessionalService",
+                            "name": "Clément Berthier Développeur",
+                            "url": "https://www.clementberthierdeveloppeur.fr"
+                        },
+                        "areaServed": {
+                            "@type": "AdministrativeArea",
+                            "name": "Occitanie"
+                        },
+                        "serviceType": "Automatisation IA",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "EUR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    })}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Accueil",
+                                "item": "https://www.clementberthierdeveloppeur.fr/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Automatisation IA",
+                                "item": "https://www.clementberthierdeveloppeur.fr/servicesPageIA"
+                            }
+                        ]
+                    })}
+                </script>
+            </Helmet>
             <Header />
             {jsonData ? (
                 <>
                     <div className="ServicePageIA">
                         <div className="servicePage_banner_title">
-                            <h2 className="service_title">{jsonData.title}</h2>
+                            <h1 className="service_title">{jsonData.title}</h1>
                             <span className="tagService">{jsonData.tag}</span>
                             <p className="service_little_description">
                                 {jsonData.description}
@@ -113,7 +171,7 @@ export default function ServicesPageIA() {
                                                         {feature.text}
                                                     </p>
                                                 </li>
-                                            )
+                                            ),
                                         )}
                                     </ul>
                                 </div>

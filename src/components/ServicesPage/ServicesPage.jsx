@@ -6,6 +6,7 @@ import article from "../../assets/articles.json";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Dropdown, Popup } from "semantic-ui-react";
+import { Helmet } from "react-helmet-async";
 
 export default function ServicesPage() {
     const [jsonData, setJsonData] = useState(null);
@@ -58,12 +59,69 @@ export default function ServicesPage() {
 
     return (
         <>
+            <Helmet>
+                <title>Création de Sites Web sur mesure | Clément Berthier Développeur, Tarn</title>
+                <meta
+                    name="description"
+                    content="Développeur web freelance dans le Tarn. Création de sites vitrines, portfolios, blogs, sites e-commerce et applications web sur mesure adaptés à vos besoins."
+                />
+                <link
+                    rel="canonical"
+                    href="https://www.clementberthierdeveloppeur.fr/servicesPage"
+                />
+                <meta property="og:title" content="Création de Sites Web sur mesure | Clément Berthier Développeur, Tarn" />
+                <meta property="og:description" content="Développeur web freelance dans le Tarn. Création de sites vitrines, portfolios, blogs, sites e-commerce et applications web sur mesure adaptés à vos besoins." />
+                <meta property="og:url" content="https://www.clementberthierdeveloppeur.fr/servicesPage" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        "name": "Développement Web sur mesure",
+                        "description": "Création de sites vitrines, portfolios, blogs, sites e-commerce et applications web sur mesure adaptés à vos besoins.",
+                        "provider": {
+                            "@type": "ProfessionalService",
+                            "name": "Clément Berthier Développeur",
+                            "url": "https://www.clementberthierdeveloppeur.fr"
+                        },
+                        "areaServed": {
+                            "@type": "AdministrativeArea",
+                            "name": "Occitanie"
+                        },
+                        "serviceType": "Développement Web",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "EUR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    })}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Accueil",
+                                "item": "https://www.clementberthierdeveloppeur.fr/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Développement Web",
+                                "item": "https://www.clementberthierdeveloppeur.fr/servicesPage"
+                            }
+                        ]
+                    })}
+                </script>
+            </Helmet>
             <Header />
             {jsonData ? (
                 <>
                     <div className="ServicePage">
                         <div className="servicePage_banner_title">
-                            <h2 className="service_title">{jsonData.title}</h2>
+                            <h1 className="service_title">{jsonData.title}</h1>
                             <span className="tagService">{jsonData.tag}</span>
                             <p className="service_little_description">
                                 {jsonData.description}
@@ -119,7 +177,7 @@ export default function ServicesPage() {
                                                         {feature.text}
                                                     </p>
                                                 </li>
-                                            )
+                                            ),
                                         )}
                                     </ul>
                                 </div>

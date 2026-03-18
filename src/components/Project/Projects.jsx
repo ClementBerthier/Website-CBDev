@@ -5,6 +5,7 @@ import "./Projects.css";
 import projectsList from "../../assets/projectsList.json";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function Projects() {
     const allCategories = projectsList.map((project) => project.category);
@@ -69,10 +70,44 @@ export default function Projects() {
 
     return (
         <>
+            <Helmet>
+                <title>Mes Réalisations Web & IA | Clément Berthier Développeur</title>
+                <meta
+                    name="description"
+                    content="Découvrez mes réalisations en développement web et automatisation IA : sites vitrines, applications web et solutions IA sur mesure."
+                />
+                <link
+                    rel="canonical"
+                    href="https://www.clementberthierdeveloppeur.fr/projets"
+                />
+                <meta property="og:title" content="Mes Réalisations Web & IA | Clément Berthier Développeur" />
+                <meta property="og:description" content="Découvrez mes réalisations en développement web et automatisation IA : sites vitrines, applications web et solutions IA sur mesure." />
+                <meta property="og:url" content="https://www.clementberthierdeveloppeur.fr/projets" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Accueil",
+                                "item": "https://www.clementberthierdeveloppeur.fr/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Projets",
+                                "item": "https://www.clementberthierdeveloppeur.fr/projets"
+                            }
+                        ]
+                    })}
+                </script>
+            </Helmet>
             <Headers />
             <div className="Projects">
                 <section className="projects-menu">
-                    <h2 className="menu-title">Mes Projets</h2>
+                    <h1 className="menu-title">Mes Projets</h1>
                     <div className="containerSearchBar">
                         <p className="menu-description">
                             Découvrez une sélection de projets réalisés, mettant
@@ -140,7 +175,7 @@ export default function Projects() {
                             onClick={() => setSelectedProject(project)}
                         >
                             <div className="project-picture">
-                                <img src={project.image} alt="" />
+                                <img src={project.image} alt={project.title} />
                             </div>
                             <div className="project-infos">
                                 <div className="titleYear">

@@ -121,7 +121,7 @@ export default function ServicesIA() {
                         <img
                             className="logo"
                             src={jsonData.logo}
-                            alt="symbol code"
+                            alt="Icône d'automatisation IA"
                         />
                         <h3 className="text_title">{jsonData.title}</h3>
 
@@ -143,13 +143,13 @@ export default function ServicesIA() {
                             <img
                                 className="picture"
                                 src={jsonData.pictureMobile}
-                                alt="picture description serviceIA"
+                                alt="Illustration du service d'automatisation IA"
                             />
                         ) : (
                             <img
                                 className="picture"
                                 src={jsonData.picture}
-                                alt="picture description serviceIA"
+                                alt="Illustration du service d'automatisation IA"
                             />
                         )}
                     </div>

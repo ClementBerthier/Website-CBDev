@@ -41,7 +41,7 @@ export default function LegalMention() {
             <Header />
             <div className="LegalMention">
                 <div className="legalMention_banner_title">
-                    <h2 className="legalMention_title">{jsonData.title}</h2>
+                    <h1 className="legalMention_title">{jsonData.title}</h1>
                     <p className="legalMention_little_description">
                         {jsonData.description}
                     </p>
@@ -60,9 +60,9 @@ export default function LegalMention() {
                         <ul className="articles_list">
                             {jsonData.articlesList.map((article, index) => (
                                 <li className="article_list_item" key={index}>
-                                    <h3 className="item_title">
+                                    <h2 className="item_title">
                                         {article.title}
-                                    </h3>
+                                    </h2>
                                     <p className="item_text">{article.text}</p>
                                 </li>
                             ))}

@@ -40,7 +40,7 @@ export default function FAQs() {
                                         id={question.id}
                                         className="double_arrow"
                                         src="/images/arrow-right-double-line.svg"
-                                        alt="double right arrow"
+                                        alt="Flèche d'ouverture de la question"
                                     />
                                     <h3
                                         id={question.id}
@@ -61,7 +61,7 @@ export default function FAQs() {
                                             : "rotateUp"
                                     }`}
                                     src="/images/arrow-down-line.svg"
-                                    alt="arrow"
+                                    alt="Flèche de fermeture"
                                 />
                             </div>
 

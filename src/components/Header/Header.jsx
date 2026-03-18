@@ -38,7 +38,7 @@ export default function Header2() {
 
     return (
         <>
-            <div className="Header">
+            <header className="Header">
                 <div className="header_banner">
                     <div className="header_banner_container">
                         <div className="banner_phone">
@@ -152,9 +152,9 @@ export default function Header2() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </header>
             <div className={burgerMenu}>
-                <div className="links_container">
+                <nav className="links_container">
                     <a
                         className="link"
                         href="/"
@@ -198,7 +198,7 @@ export default function Header2() {
                     >
                         Contact
                     </a>
-                </div>
+                </nav>
             </div>
         </>
     );

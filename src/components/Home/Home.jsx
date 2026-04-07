@@ -11,12 +11,11 @@ export default function Home2() {
                         <br className="firstBR" /> Développeur Web
                         <br className="firstBR" /> &
                         <br className="firstBR" /> Automatisation IA
-                        <br /> Freelance.
                     </h1>
                     <p className="presentation_paragraph">
-                        Je suis à votre écoute pour vous aider à réaliser votre
-                        projet web et vous proposer des solutions adaptées à vos
-                        besoins.
+                        Sites internet & automatisation sur mesure pour
+                        artisans, commerçants et PME dans le secteur de{" "}
+                        <span className="bold">Mazamet — Tarn / Occitanie</span>
                     </p>
                     {/*                     <Button text="Plus d'infos"></Button>
                      */}{" "}

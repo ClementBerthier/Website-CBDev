@@ -306,9 +306,9 @@ export default function Contact() {
                             <div className="detail">
                                 <h3 className="detail_title">Adresse:</h3>
                                 <p className="detail_text">
-                                    112 rue Charles Peguy
+                                    157 chemin de terre albine
                                     <br />
-                                    81200 AUSSILLON
+                                    81660 {`Pont-de-l'arn`}
                                 </p>
                             </div>
                             <div className="detail">

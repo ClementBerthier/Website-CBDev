@@ -312,9 +312,9 @@ export default function Footer() {
                                         Adresse
                                     </span>
                                     <span className="adress_info">
-                                        112 rue Charles Peguy
+                                        157 chemin de terre albine
                                         <br />
-                                        81200 AUSSILLON
+                                        81660 {`Pont-de-l'arn`}
                                     </span>
                                 </div>
                                 <div className="footer_navigation_link">

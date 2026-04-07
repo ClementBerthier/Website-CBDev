@@ -76,48 +76,52 @@ export default function Layout() {
                     {JSON.stringify({
                         "@context": "https://schema.org",
                         "@type": "ProfessionalService",
-                        "name": "Clément Berthier Développeur",
-                        "url": "https://www.clementberthierdeveloppeur.fr",
-                        "logo": "https://www.clementberthierdeveloppeur.fr/images/LogoMetaCBDev.webP",
-                        "image": "https://www.clementberthierdeveloppeur.fr/images/LogoMetaCBDev.webP",
-                        "description": "Développeur web freelance à Mazamet, près de Castres (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA.",
-                        "telephone": "+33788453778",
-                        "email": "clementberthierdeveloppeur@gmail.com",
-                        "address": {
+                        name: "Clément Berthier Développeur",
+                        url: "https://www.clementberthierdeveloppeur.fr",
+                        logo: "https://www.clementberthierdeveloppeur.fr/images/LogoMetaCBDev.webP",
+                        image: "https://www.clementberthierdeveloppeur.fr/images/LogoMetaCBDev.webP",
+                        description:
+                            "Développeur web freelance à Mazamet, près de Castres (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA.",
+                        telephone: "+33788453778",
+                        email: "clementberthierdeveloppeur@gmail.com",
+                        address: {
                             "@type": "PostalAddress",
-                            "streetAddress": "112 rue Charles Peguy",
-                            "postalCode": "81200",
-                            "addressLocality": "Aussillon",
-                            "addressRegion": "Occitanie",
-                            "addressCountry": "FR"
+                            streetAddress: "157 chemin de terre albine",
+                            postalCode: "81660",
+                            addressLocality: "Pont-de-l'arn",
+                            addressRegion: "Occitanie",
+                            addressCountry: "FR",
                         },
-                        "geo": {
+                        geo: {
                             "@type": "GeoCoordinates",
-                            "latitude": 43.4927,
-                            "longitude": 2.3691
+                            latitude: 43.4927,
+                            longitude: 2.3691,
                         },
-                        "areaServed": [
-                            { "@type": "City", "name": "Mazamet" },
-                            { "@type": "City", "name": "Castres" },
-                            { "@type": "City", "name": "Toulouse" },
-                            { "@type": "City", "name": "Albi" },
-                            { "@type": "City", "name": "Montpellier" },
-                            { "@type": "AdministrativeArea", "name": "Tarn" },
-                            { "@type": "AdministrativeArea", "name": "Occitanie" }
+                        areaServed: [
+                            { "@type": "City", name: "Mazamet" },
+                            { "@type": "City", name: "Castres" },
+                            { "@type": "City", name: "Toulouse" },
+                            { "@type": "City", name: "Albi" },
+                            { "@type": "City", name: "Montpellier" },
+                            { "@type": "AdministrativeArea", name: "Tarn" },
+                            {
+                                "@type": "AdministrativeArea",
+                                name: "Occitanie",
+                            },
                         ],
-                        "priceRange": "€€",
-                        "founder": {
+                        priceRange: "€€",
+                        founder: {
                             "@type": "Person",
-                            "name": "Clément Berthier",
-                            "jobTitle": "Développeur Web & Automatisation IA",
-                            "url": "https://www.clementberthierdeveloppeur.fr"
+                            name: "Clément Berthier",
+                            jobTitle: "Développeur Web & Automatisation IA",
+                            url: "https://www.clementberthierdeveloppeur.fr",
                         },
-                        "sameAs": [
+                        sameAs: [
                             "https://www.facebook.com/profile.php?id=61562316966767",
                             "https://www.instagram.com/clementberthier_dev/",
                             "https://www.linkedin.com/in/cl%C3%A9ment-berthier/",
-                            "https://github.com/ClementBerthier"
-                        ]
+                            "https://github.com/ClementBerthier",
+                        ],
                     })}
                 </script>
             </Helmet>

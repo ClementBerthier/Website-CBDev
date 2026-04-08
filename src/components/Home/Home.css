@@ -124,6 +124,8 @@
             .home_illustration {
                 width: 100%;
                 margin: 0;
+                display: flex;
+                justify-content: center;
                 img {
                     width: 80%;
                     height: auto;

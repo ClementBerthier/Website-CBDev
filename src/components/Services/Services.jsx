@@ -38,6 +38,7 @@ export default function Services2() {
         if (dataElement === "site") {
             setJsonData(services.site);
             setIsSite(true);
+
             setActiveSite("active");
         } else {
             setIsSite(false);

@@ -118,47 +118,23 @@ export default function Contact() {
         const name = e.target.name;
         const value = e.target.value;
 
-        setFormData({ ...formData, [name]: value });
+        const updatedData = { ...formData, [name]: value };
+        setFormData(updatedData);
 
         const regexMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const regexPhone =
             /^\+?[0-9]{1,4}?[-. ]?(\(?\d{1,3}?\)?[-. ]?)?\d{1,4}[-. ]?\d{1,4}[-. ]?\d{1,9}$/;
 
-        if (formData.user_email === "") {
-            setStateMailFull(false);
-        } else {
-            setStateMailFull(true);
-        }
+        setStateMailFull(updatedData.user_email !== "");
+        setStateObjectFull(updatedData.object !== "");
+        setStateMessageFull(updatedData.message !== "");
 
-        if (formData.object === "") {
-            setStateObjectFull(false);
-        } else {
-            setStateObjectFull(true);
-        }
-
-        if (formData.message === "") {
-            setStateMessageFull(false);
-        } else {
-            setStateMessageFull(true);
-        }
-
-        if (
-            formData.user_email !== "" &&
-            !regexMail.test(formData.user_email)
-        ) {
-            setStateMailValid(false);
-        } else {
-            setStateMailValid(true);
-        }
-
-        if (
-            formData.user_phone !== "" &&
-            !regexPhone.test(formData.user_phone)
-        ) {
-            setStatePhoneValid(false);
-        } else {
-            setStatePhoneValid(true);
-        }
+        setStateMailValid(
+            updatedData.user_email === "" || regexMail.test(updatedData.user_email)
+        );
+        setStatePhoneValid(
+            updatedData.user_phone === "" || regexPhone.test(updatedData.user_phone)
+        );
     };
 
     const form = useRef();
@@ -209,7 +185,7 @@ export default function Contact() {
                                 <div className="firstSection">
                                     <FormField>
                                         <label htmlFor="lastname">Nom</label>
-                                        <inputauto
+                                        <input
                                             placeholder="Votre nom"
                                             name="user_lastname"
                                             type="text"
@@ -217,7 +193,7 @@ export default function Contact() {
                                             value={formData.user_lastname}
                                             onChange={handleChange}
                                             maxLength={50}
-                                            autoComplete="given-name"
+                                            autoComplete="family-name"
                                         />
                                     </FormField>
                                     <FormField>
@@ -232,7 +208,7 @@ export default function Contact() {
                                             value={formData.user_firstname}
                                             onChange={handleChange}
                                             maxLength={50}
-                                            autoComplete="family-name"
+                                            autoComplete="given-name"
                                         />
                                     </FormField>
                                 </div>

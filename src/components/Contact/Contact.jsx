@@ -16,7 +16,7 @@ export default function Contact() {
     const emailJSPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const [modalOpen, setModalOpen] = useState(false);
-    const [readyToSend, setReadyToSend] = useState(true);
+    const [consentModalOpen, setConsentModalOpen] = useState(false);
 
     const [titleModal, setTitleModal] = useState("");
     const [contentModal, setContentModal] = useState("");
@@ -42,76 +42,69 @@ export default function Contact() {
             (stateMailFull === false && stateMessageFull === false) ||
             (stateObjectFull === false && stateMessageFull === false)
         ) {
-            setReadyToSend(false);
             setTitleModal("Champs manquants");
             setContentModal(
                 "Plusieurs champs obligatoires sont manquants, veuillez les renseigner pour envoyer votre message",
             );
             setModalOpen(true);
         } else if (stateMailFull === false) {
-            setReadyToSend(false);
-
             setTitleModal("Mail manquant");
             setContentModal("Veuillez renseigner votre adresse mail");
             setModalOpen(true);
         } else if (stateObjectFull === false) {
-            setReadyToSend(false);
-
             setTitleModal("Objet manquant");
             setContentModal("Veuillez renseigner l'objet de votre message");
             setModalOpen(true);
         } else if (stateMessageFull === false) {
-            setReadyToSend(false);
-
             setTitleModal("Message manquant");
             setContentModal("Veuillez renseigner votre message");
             setModalOpen(true);
         } else if (stateMailValid === false && statePhoneValid === false) {
-            setReadyToSend(false);
-
             setTitleModal("Mail et numéro de téléphone invalides");
             setContentModal(
                 "Veuillez vérifier votre adresse mail et votre numéro de téléphone",
             );
             setModalOpen(true);
         } else if (stateMailValid === false) {
-            setReadyToSend(false);
-
             setTitleModal("Mail invalide");
             setContentModal("Veuillez vérifier votre adresse mail");
             setModalOpen(true);
         } else if (statePhoneValid === false) {
-            setReadyToSend(false);
-
             setTitleModal("Numéro de téléphone invalide");
             setContentModal("Veuillez vérifier votre numéro de téléphone");
             setModalOpen(true);
         } else {
-            setReadyToSend(true);
-            setTitleModal("Message envoyé");
-            setContentModal(
-                "Votre message a bien été envoyé, nous vous répondrons dans les plus brefs délais",
-            );
-            setModalOpen(true);
+            setConsentModalOpen(true);
         }
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
+    };
 
-        if (readyToSend) {
-            await emailjs.sendForm(serviceId, templateId, form.current, {
-                publicKey: emailJSPublicKey,
-            });
-            setFormData({
-                user_lastname: "",
-                user_firstname: "",
-                user_email: "",
-                user_phone: "",
-                object: "",
-                message: "",
-            });
-        }
+    const handleConsentAccepted = async () => {
+        setConsentModalOpen(false);
+        await emailjs.sendForm(serviceId, templateId, form.current, {
+            publicKey: emailJSPublicKey,
+        });
+        setFormData({
+            user_lastname: "",
+            user_firstname: "",
+            user_email: "",
+            user_phone: "",
+            object: "",
+            message: "",
+        });
+        setStateMailFull(false);
+        setStateObjectFull(false);
+        setStateMessageFull(false);
+        setStateMailValid(false);
+        setStatePhoneValid(false);
+        setTitleModal("Message envoyé");
+        setContentModal(
+            "Votre message a bien été envoyé, nous vous répondrons dans les plus brefs délais",
+        );
+        setModalOpen(true);
     };
 
     const handleChange = (e) => {
@@ -163,6 +156,43 @@ export default function Contact() {
                         onClick={() => setModalOpen(false)}
                     >
                         Retour
+                    </Button>
+                </Modal.Actions>
+            </Modal>
+
+            <Modal
+                open={consentModalOpen}
+                onClose={() => setConsentModalOpen(false)}
+                size="small"
+                className="modal_contact"
+                closeOnDimmerClick={false}
+            >
+                <Header
+                    className="header_modal_contact"
+                    size="huge"
+                    content="Confirmation"
+                />
+                <Modal.Content className="content_modal_contact">
+                    <p className="textModal">
+                        En soumettant ce formulaire, vous acceptez que vos
+                        données soient traitées conformément à notre politique
+                        de confidentialité.
+                    </p>
+                </Modal.Content>
+                <Modal.Actions className="actions_modal_contact">
+                    <Button
+                        className="buttonModal"
+                        size="huge"
+                        onClick={handleConsentAccepted}
+                    >
+                        Valider
+                    </Button>
+                    <Button
+                        className="buttonModal"
+                        size="huge"
+                        onClick={() => setConsentModalOpen(false)}
+                    >
+                        Refuser
                     </Button>
                 </Modal.Actions>
             </Modal>

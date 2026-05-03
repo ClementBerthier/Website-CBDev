@@ -52,25 +52,9 @@ export default function Layout() {
                     Clément Berthier | Développeur Web & Automatisation IA
                     Freelance à Mazamet, Tarn
                 </title>
-                <meta
-                    name="description"
-                    content="Développeur web freelance à Mazamet, près de Castres (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA pour entreprises et particuliers."
-                />
                 <link
                     rel="canonical"
                     href="https://www.clementberthierdeveloppeur.fr/"
-                />
-                <meta
-                    property="og:title"
-                    content="Clément Berthier | Développeur Web & Automatisation IA Freelance à Mazamet et Castres, Tarn"
-                />
-                <meta
-                    property="og:description"
-                    content="Développeur web freelance à Mazamet, près de Castres (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA pour entreprises et particuliers."
-                />
-                <meta
-                    property="og:url"
-                    content="https://www.clementberthierdeveloppeur.fr/"
                 />
             </Helmet>
             <Header />

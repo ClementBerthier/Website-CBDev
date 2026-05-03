@@ -68,42 +68,43 @@ export default function ServicesPageIA() {
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "Service",
-                        "name": "Automatisation IA & Agents IA",
-                        "description": "Solutions d'automatisation IA sur mesure. Agents IA, automatisation de processus et optimisation GEO pour booster la productivité de votre entreprise.",
-                        "provider": {
-                            "@type": "ProfessionalService",
-                            "name": "Clément Berthier Développeur",
-                            "url": "https://www.clementberthierdeveloppeur.fr"
-                        },
-                        "areaServed": {
-                            "@type": "AdministrativeArea",
-                            "name": "Occitanie"
-                        },
-                        "serviceType": "Automatisation IA",
-                        "offers": {
-                            "@type": "Offer",
-                            "priceCurrency": "EUR",
-                            "availability": "https://schema.org/InStock"
-                        }
-                    })}
-                </script>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
+                        "@graph": [
                             {
-                                "@type": "ListItem",
-                                "position": 1,
-                                "name": "Accueil",
-                                "item": "https://www.clementberthierdeveloppeur.fr/"
+                                "@type": "Service",
+                                "name": "Automatisation IA & Agents IA",
+                                "description": "Solutions d'automatisation IA sur mesure. Agents IA, automatisation de processus et optimisation GEO pour booster la productivité de votre entreprise.",
+                                "provider": {
+                                    "@type": "ProfessionalService",
+                                    "name": "Clément Berthier Développeur",
+                                    "url": "https://www.clementberthierdeveloppeur.fr"
+                                },
+                                "areaServed": {
+                                    "@type": "AdministrativeArea",
+                                    "name": "Occitanie"
+                                },
+                                "serviceType": "Automatisation IA",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "priceCurrency": "EUR",
+                                    "availability": "https://schema.org/InStock"
+                                }
                             },
                             {
-                                "@type": "ListItem",
-                                "position": 2,
-                                "name": "Automatisation IA",
-                                "item": "https://www.clementberthierdeveloppeur.fr/servicesPageIA"
+                                "@type": "BreadcrumbList",
+                                "itemListElement": [
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 1,
+                                        "name": "Accueil",
+                                        "item": "https://www.clementberthierdeveloppeur.fr/"
+                                    },
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 2,
+                                        "name": "Automatisation IA",
+                                        "item": "https://www.clementberthierdeveloppeur.fr/servicesPageIA"
+                                    }
+                                ]
                             }
                         ]
                     })}

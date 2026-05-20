@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet-async";
 export default function ServicesPageIA() {
     const [jsonData, setJsonData] = useState(null);
     const data = useLocation();
-    const [dataName, setDataName] = useState(data.state.name);
+    const [dataName, setDataName] = useState(data.state?.name ?? "automation_IA");
 
     useEffect(() => {
         if (dataName) {

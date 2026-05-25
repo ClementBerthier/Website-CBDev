@@ -13,8 +13,9 @@ export default function Home2() {
                         <br className="firstBR" /> Automatisation IA
                     </h1>
                     <p className="presentation_paragraph">
-                        Sites internet & automatisation sur mesure pour
-                        artisans, commerçants et PME dans le secteur de{" "}
+                        Développeur Web & Automatisation IA, Sites pro et
+                        systèmes intelligents pour artisans, indépendants et
+                        PME. Plus de visibilité, Plus de clients <br></br>
                         <span className="bold">Mazamet — Tarn / Occitanie</span>
                     </p>
                     {/*                     <Button text="Plus d'infos"></Button>

@@ -1,0 +1,82 @@
+:root {
+    /* Colors */
+    --steel-blue: #4682b4;
+    --dodger-blue: #1e90ff;
+    --light-blue: #add8e6;
+    --demi-light-blue: #e5f0fb;
+    --navy-blue: #0606c2;
+    --grey-blue: #f9fafe;
+    --fake-black: #1c1c1c;
+    --smooth-grey: #c5c5c58b;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Fonts — aliased on next/font CSS variables */
+    --font-text: var(--font-open-sans), sans-serif;
+    --font-title: var(--font-poppins), sans-serif;
+
+    /* Backgrounds */
+    --header-banner: var(--fake-black);
+    --header-navigation: var(--white);
+    --home-container: var(--grey-blue);
+    --services: var(--demi-light-blue);
+    --services_name_container: var(--white);
+    --services_name_active: var(--dodger-blue);
+    --description_text_container: var(--white);
+    --description_picture_container: var(--white);
+
+    /* Font colors */
+    --mail-adress: var(--white);
+    --text-span: var(--dodger-blue);
+
+    /* Borders */
+    --border-Header: var(--smooth-grey);
+
+    /* Buttons */
+    --button-background: var(--dodger-blue);
+    --button-color: var(--white);
+    --button-hover-background: var(--navy-blue);
+    --button-hover-color: var(--white);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 13rem;
+}
+
+body {
+    font-family: var(--font-text);
+    color: var(--fake-black);
+    background: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-title);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

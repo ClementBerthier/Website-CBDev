@@ -1,7 +1,0 @@
-@import "./_vars.css";
-
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    background-color: var(--grey-blue);
-}

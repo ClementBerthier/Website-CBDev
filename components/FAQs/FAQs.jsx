@@ -50,7 +50,7 @@ export default function FAQs() {
                         return (
                         <details
                             key={question.id}
-                            className="group flex flex-col gap-3"
+                            className="group"
                         >
                             {/* Question — clickable summary */}
                             <summary className="flex cursor-pointer list-none items-end gap-2.5 marker:hidden [&::-webkit-details-marker]:hidden">
@@ -69,7 +69,7 @@ export default function FAQs() {
                             </summary>
 
                             {/* Answer — appears on click */}
-                            <div className="flex flex-row-reverse items-end gap-2.5">
+                            <div className="mt-3 flex flex-row-reverse items-end gap-2.5">
                                 <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full ring-2 ring-white">
                                     <Image
                                         src="/images/avatar_dev.AVIF"

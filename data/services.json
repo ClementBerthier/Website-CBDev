@@ -1,0 +1,322 @@
+[
+    {
+        "slug": "sites-vitrines",
+        "name": "Sites vitrines",
+        "tag": "Conception de site",
+        "title": "Site vitrine",
+        "metaTitle": "Création de site vitrine à Castres, Mazamet (Tarn) — CBDev",
+        "metaDescription": "Création de sites vitrines professionnels à Castres, Mazamet et dans tout le Tarn. Sites modernes, rapides, SEO local intégré. Devis transparent dès 299€.",
+        "shortDescription": "Affirmez votre présence en ligne avec un site vitrine professionnel et attractif, pensé pour les artisans, indépendants et TPE/PME de Castres, Mazamet et du Tarn.",
+        "introText": "Un site vitrine est comme la bande-annonce d'un grand film. Il doit captiver, intriguer et donner envie de voir la suite. Ce premier aperçu de votre entreprise peut faire toute la différence entre un visiteur de passage et un client fidèle. Que vous soyez restaurateur à Castres, artisan à Mazamet ou indépendant dans le Tarn, votre site vitrine est votre commercial 24/7.",
+        "descriptionTitle": "Qu'est-ce qu'un site vitrine ?",
+        "descriptionText": "Un site vitrine est un site web qui présente une entreprise, une association ou toute autre activité professionnelle. Il s'agit d'une vitrine virtuelle qui permet aux visiteurs de découvrir qui vous êtes, vos produits ou vos services, et comment vous contacter de manière simple et efficace. Contrairement à un site e-commerce, un site vitrine n'a pas pour but de vendre directement des produits, mais plutôt de donner une image professionnelle et de susciter l'intérêt des prospects locaux.",
+        "featureTitle": "Quelques fonctionnalités clés d'un site vitrine",
+        "featureText": "Un site vitrine peut être composé de plusieurs fonctionnalités, définies selon vos besoins et vos objectifs. Voici quelques éléments clés que l'on retrouve sur un site vitrine moderne :",
+        "featureList": [
+            {
+                "title": "Page d'accueil attirante",
+                "text": "La page d'accueil est la première chose que voient vos visiteurs. Elle doit être claire, rapide à charger et orientée action pour donner envie de découvrir le reste."
+            },
+            {
+                "title": "Présentation des services",
+                "text": "Des pages détaillant vos produits ou services, avec descriptions, images et tarifs si pertinent. Vos prospects doivent comprendre ce que vous faites en moins de 10 secondes."
+            },
+            {
+                "title": "Formulaire de contact",
+                "text": "Un formulaire simple et efficace pour permettre aux visiteurs de vous joindre. Couplé à vos coordonnées (téléphone, adresse, horaires) pour rassurer."
+            },
+            {
+                "title": "Galerie ou portfolio",
+                "text": "Des photos de vos réalisations, de vos locaux ou de votre équipe. Les visuels rassurent vos visiteurs et donnent une image professionnelle et soignée de votre activité."
+            },
+            {
+                "title": "SEO local intégré",
+                "text": "Optimisation pour les recherches géolocalisées (Castres, Mazamet, Tarn, Occitanie), création et optimisation de votre fiche Google Business, données structurées LocalBusiness qui rendent votre activité éligible au Local Pack Google."
+            },
+            {
+                "title": "Rapide sur mobile et ordinateur",
+                "text": "Plus de 60 % de vos visiteurs viennent du téléphone. Votre site s'adapte à tous les écrans, est optimisé pour un chargement rapide, et respecte la réglementation sur les données personnelles (RGPD)."
+            }
+        ],
+        "targetAudience": "Artisans, professions libérales, restaurateurs, commerçants, associations et indépendants du Tarn (Castres, Mazamet, Albi, Carmaux) qui veulent une vitrine professionnelle, rapide et bien référencée localement.",
+        "conclusionText": "En conclusion, un site vitrine est bien plus qu'une simple présence en ligne, c'est la vitrine virtuelle de votre entreprise. Pour une TPE de Castres, Mazamet ou du Tarn, c'est l'outil n°1 pour être trouvé sur Google. Investir dans un site vitrine professionnel, rapide et bien référencé localement est essentiel pour renforcer votre image et attirer de nouveaux clients dans votre zone.",
+        "promotionalTitle": "Un site vitrine vous intéresse ?",
+        "keywords": [
+            "création site vitrine Castres",
+            "création site vitrine Mazamet",
+            "site internet artisan Tarn",
+            "site vitrine PME Castres",
+            "développeur web freelance Castres",
+            "développeur web freelance Mazamet",
+            "site web professionnel pas cher",
+            "site responsive mobile",
+            "SEO local Tarn"
+        ]
+    },
+    {
+        "slug": "applications-web",
+        "name": "Applications web",
+        "tag": "Développement d'application",
+        "title": "Application web sur mesure",
+        "metaTitle": "Application web sur mesure à Castres, Mazamet (Tarn)",
+        "metaDescription": "Développement d'applications web métier sur mesure pour TPE/PME : gestion clients, planning, devis, tableaux de bord. Freelance à Castres et Mazamet (Tarn), intervention à distance.",
+        "shortDescription": "Créez un outil métier sur mesure : gestion clients, planning, devis, automatisation des tâches. Une application web qui colle exactement à votre activité.",
+        "introText": "Une application web est un outil puissant pour automatiser vos processus, améliorer la productivité et offrir des services innovants à vos clients. Quand un tableur Excel ne suffit plus, quand vos outils métier ne dialoguent pas entre eux, ou quand vous voulez digitaliser votre activité, l'application web sur mesure est la solution.",
+        "descriptionTitle": "Qu'est-ce qu'une application web ?",
+        "descriptionText": "Une application web est un logiciel accessible via un navigateur internet, conçu pour offrir des fonctionnalités interactives et personnalisées. Contrairement aux sites vitrines, les applications web permettent une interaction poussée : gestion de comptes, traitement de données en temps réel, automatisations métier. Une application web bien conçue peut transformer la productivité de votre entreprise et offrir une expérience utilisateur professionnelle.",
+        "featureTitle": "Quelques fonctionnalités clés d'une application web",
+        "featureText": "Une application web métier se construit autour de vos besoins réels. Voici les briques fonctionnelles les plus courantes :",
+        "featureList": [
+            {
+                "title": "Gestion des utilisateurs et droits",
+                "text": "Création, modification et suppression de comptes. Gestion des rôles (admin, manager, employé) et des autorisations précises pour une utilisation sécurisée et contrôlée."
+            },
+            {
+                "title": "Tableaux de bord interactifs",
+                "text": "Visualisation de vos données métier : KPI, statistiques, rapports. Tableaux de bord personnalisables par profil utilisateur pour piloter votre activité en un coup d'œil."
+            },
+            {
+                "title": "Formulaires dynamiques",
+                "text": "Collecte et traitement de données efficace. Champs conditionnels, contrôles en temps réel pour guider l'utilisateur, intégrations avec vos autres outils pour automatiser les flux."
+            },
+            {
+                "title": "Notifications en temps réel",
+                "text": "Alertes utilisateur instantanées : mises à jour, événements, messages. Multi-canal selon vos besoins : email et notifications in-app inclus, SMS en option (via un service tiers facturé à l'usage)."
+            },
+            {
+                "title": "Sécurité et conformité RGPD",
+                "text": "Accès protégé par mot de passe avec double authentification en option (par SMS ou application). Vos données sont sécurisées (connexions chiffrées HTTPS, hébergement protégé) et le traitement reste conforme à la réglementation RGPD."
+            },
+            {
+                "title": "Base de données et stockage",
+                "text": "Vos données métier (clients, commandes, factures...) sont stockées de façon fiable et sécurisée. Sauvegardes automatiques quotidiennes, accès rapide même quand votre activité grandit."
+            }
+        ],
+        "targetAudience": "TPE/PME qui ont des processus métier spécifiques (gestion de clients, planning, devis, stock, équipes), des artisans qui veulent digitaliser leur suivi de chantier, des indépendants qui veulent un outil unique au lieu de jongler entre 5 logiciels.",
+        "conclusionText": "Une application web sur mesure n'est pas un simple outil numérique : c'est une réponse précise à votre besoin métier, qui vous fait gagner du temps chaque jour. Investir dans une application personnalisée et intuitive transforme la façon de travailler de votre équipe et donne un avantage concurrentiel durable.",
+        "promotionalTitle": "Vous souhaitez développer une application web sur mesure ?",
+        "keywords": [
+            "application web sur mesure",
+            "logiciel métier en ligne",
+            "outil de gestion entreprise",
+            "développement application TPE Castres",
+            "application web Mazamet",
+            "application web Tarn",
+            "alternative Excel gestion",
+            "application web RGPD"
+        ]
+    },
+    {
+        "slug": "e-commerce",
+        "name": "E-commerce",
+        "tag": "E-commerce",
+        "title": "Site e-commerce",
+        "metaTitle": "Création de site e-commerce à Castres, Mazamet (Tarn)",
+        "metaDescription": "Lancez votre boutique en ligne avec un site e-commerce performant : catalogue, paiement Stripe, suivi commandes. Développeur freelance à Castres et Mazamet, alternative moderne à Shopify.",
+        "shortDescription": "Lancez votre boutique en ligne avec un site e-commerce personnalisé : catalogue, panier, paiement sécurisé, suivi commandes. Vendez 24/7 sans dépendre d'une marketplace.",
+        "introText": "Un site e-commerce est bien plus qu'une simple vitrine, c'est une plateforme interactive où vos clients peuvent explorer, sélectionner et acheter vos produits en toute simplicité. Pour un artisan, un producteur local ou une TPE de Castres, Mazamet ou ailleurs dans le Tarn, c'est l'opportunité de vendre au-delà de votre zone géographique sans payer les commissions d'Amazon ou Etsy.",
+        "descriptionTitle": "Qu'est-ce qu'un site e-commerce ?",
+        "descriptionText": "Un site e-commerce est un site web dédié à la vente de produits ou de services en ligne. Il permet de présenter votre catalogue, de gérer les commandes et de traiter les paiements en ligne de manière sécurisée. Contrairement à Shopify ou Prestashop qui imposent leurs frais et limitations, un site e-commerce sur mesure vous donne le contrôle complet sur votre boutique, votre design et vos données.",
+        "featureTitle": "Quelques fonctionnalités clés d'un site e-commerce",
+        "featureText": "Un site e-commerce performant repose sur plusieurs briques fonctionnelles essentielles :",
+        "featureList": [
+            {
+                "title": "Gestion du catalogue produits",
+                "text": "Ajout, modification, suppression de produits en autonomie. Variantes (taille, couleur), gestion des stocks en temps réel, champs structurés pour le référencement Google, photos haute résolution affichées rapidement sur tous les écrans."
+            },
+            {
+                "title": "Panier et tunnel de commande",
+                "text": "Panier persistant, tunnel de commande court (3 étapes maximum), parcours optimisé pour réduire l'abandon de panier et maximiser le taux de conversion."
+            },
+            {
+                "title": "Paiement en ligne sécurisé",
+                "text": "Vos clients paient par carte bancaire, Apple Pay, Google Pay ou virement. Transactions sécurisées avec authentification forte (3D Secure) via votre prestataire de paiement. Pas d'abonnement mensuel ni de commission de ma part sur vos ventes — seuls les frais bancaires de votre prestataire s'appliquent."
+            },
+            {
+                "title": "Suivi des commandes",
+                "text": "Statuts en temps réel (préparation, expédié, livré), notifications email automatiques, et numéro de suivi du transporteur de votre choix (Mondial Relay, Chronopost, La Poste...)."
+            },
+            {
+                "title": "Comptes clients et fidélisation",
+                "text": "Inscription, sauvegarde des préférences, historique des commandes, codes promo. Programme de fidélité en option. Données hébergées sur une infrastructure dédiée à votre activité, conforme RGPD."
+            },
+            {
+                "title": "SEO produits et marketing",
+                "text": "Vos produits sont structurés pour être éligibles aux résultats enrichis Google et à Google Shopping (photo, prix, et avis si vous en collectez). Tout est prêt techniquement pour lancer vos campagnes Google Ads et Meta Ads sur une base saine."
+            }
+        ],
+        "targetAudience": "Producteurs locaux, artisans qui veulent vendre leurs créations, commerçants qui veulent élargir leur zone de chalandise, e-commerçants qui veulent quitter Shopify pour réduire leurs frais.",
+        "conclusionText": "Un site e-commerce sur mesure est un outil puissant pour augmenter vos ventes et étendre votre marché bien au-delà de Castres, du Tarn ou de l'Occitanie. Investir dans une boutique en ligne performante, indépendante des plateformes, c'est gagner en marge et en contrôle. Le code, les données, le design : tout vous appartient.",
+        "promotionalTitle": "Vous souhaitez lancer votre boutique en ligne ?",
+        "keywords": [
+            "création boutique en ligne Castres",
+            "création boutique en ligne Tarn",
+            "site e-commerce Castres",
+            "site e-commerce Mazamet",
+            "vendre sur internet",
+            "alternative Shopify",
+            "site e-commerce Stripe",
+            "boutique en ligne artisan",
+            "e-commerce sur mesure"
+        ]
+    },
+    {
+        "slug": "refonte-maintenance",
+        "name": "Refonte & maintenance",
+        "tag": "Services web",
+        "title": "Refonte & maintenance",
+        "metaTitle": "Refonte & maintenance de site web — Castres, Mazamet",
+        "metaDescription": "Refonte de site WordPress, Wix ou ancien site obsolète. Maintenance technique régulière : sécurité, performance, contenus. Freelance à Castres et Mazamet (Tarn), réactif et transparent.",
+        "shortDescription": "Modernisation d'un site existant ou maintenance technique régulière. Sécurité, performance, expérience utilisateur et conformité RGPD. Donnez une seconde vie à un site dépassé ou laissé à l'abandon.",
+        "introText": "Un site web performant et à jour est essentiel pour garantir une expérience utilisateur optimale et maintenir une bonne visibilité Google. Si votre site est lent, mal référencé, plus mobile-friendly ou bloqué sur une technologie dépassée, il est temps d'agir. La refonte ne signifie pas tout recommencer : c'est moderniser ce qui freine votre activité.",
+        "descriptionTitle": "Qu'est-ce qu'une refonte et une maintenance de site web ?",
+        "descriptionText": "La refonte d'un site web consiste à revoir et améliorer son design, sa structure et ses fonctionnalités pour mieux répondre aux besoins des utilisateurs et aux objectifs de l'entreprise. La maintenance inclut toutes les actions pour garantir que le site reste fonctionnel, sécurisé et à jour : mises à jour de sécurité, correction de bugs, sauvegardes, surveillance des performances. Ensemble, ces services assurent que votre site continue de performer dans la durée.",
+        "featureTitle": "Que comprend une refonte ou un contrat de maintenance ?",
+        "featureText": "Refonte et maintenance se composent de plusieurs étapes essentielles pour améliorer et préserver la performance de votre site :",
+        "featureList": [
+            {
+                "title": "Audit complet du site",
+                "text": "Analyse détaillée des points forts et des faiblesses du site : vitesse de chargement, sécurité, visibilité sur Google, accessibilité et conformité RGPD. Un état des lieux clair, avec les priorités d'amélioration identifiées."
+            },
+            {
+                "title": "Optimisation de la performance",
+                "text": "Un site qui s'affiche vite, sur mobile comme sur ordinateur. Pages allégées, images au format dernière génération, affichage quasi instantané. Des visiteurs qui n'attendent pas, et un atout pour le classement Google qui favorise les sites rapides."
+            },
+            {
+                "title": "Refonte du design",
+                "text": "Une identité visuelle moderne et sur mesure, adaptée à votre activité. Design responsive qui s'adapte à tous les écrans, avec priorité au mobile, et une navigation repensée pour trouver l'information rapidement."
+            },
+            {
+                "title": "Sécurité renforcée",
+                "text": "Un site protégé et tenu à jour. Protection contre les attaques les plus courantes, connexion sécurisée (HTTPS) et surveillance continue des failles. Une sécurité entretenue dans la durée, pas un site installé puis oublié."
+            },
+            {
+                "title": "Résolution de bugs",
+                "text": "Identification et correction des bugs, des problèmes d'affichage et des dysfonctionnements. Un site stable et fiable au quotidien."
+            },
+            {
+                "title": "Mises à jour régulières",
+                "text": "Mise à jour des contenus, des composants techniques et des fonctionnalités. Ajustements pour le référencement et l'expérience visiteur, et veille permanente sur les nouveautés et la sécurité."
+            }
+        ],
+        "targetAudience": "Entreprises avec un site vieillissant, lent ou présentant des failles de sécurité. TPE qui veulent migrer d'une plateforme dépassée vers une solution moderne et performante. PME qui préfèrent un contrat de maintenance mensuelle pour anticiper les problèmes plutôt que d'intervenir dans l'urgence.",
+        "conclusionText": "La refonte et la maintenance de site web sont essentielles pour garantir performance, sécurité et attractivité dans le temps. Investir dans ces services permet d'améliorer durablement l'expérience utilisateur, le SEO et la conversion. Une maintenance régulière coûte toujours moins cher qu'une refonte d'urgence après une chute de trafic ou un incident technique.",
+        "promotionalTitle": "Vous souhaitez refondre ou maintenir votre site web ?",
+        "keywords": [
+            "refonte site web Castres",
+            "refonte site web Mazamet",
+            "moderniser site internet Tarn",
+            "maintenance site WordPress",
+            "site lent ralenti",
+            "migration WordPress vers Next.js",
+            "contrat maintenance site web Castres",
+            "refonte site Wix"
+        ]
+    },
+    {
+        "slug": "seo-local",
+        "name": "SEO local",
+        "tag": "Services web",
+        "title": "SEO local & référencement Google",
+        "metaTitle": "Référencement SEO local à Castres, Mazamet, Tarn",
+        "metaDescription": "Apparaître sur Google quand vos clients vous cherchent : SEO local Castres, Mazamet, Albi. Optimisation Google Business Profile, contenu géolocalisé, Schema LocalBusiness.",
+        "shortDescription": "Apparaître quand vos clients vous cherchent à Castres, Mazamet, Toulouse. Optimisation de votre fiche Google Business et balisage technique pour être identifié comme entreprise locale par Google.",
+        "introText": "Un site web bien optimisé et bien référencé localement est crucial pour attirer du trafic qualifié et atteindre vos objectifs commerciaux. Si vous n'apparaissez pas dans les premiers résultats locaux de Google, vos clients trouvent vos concurrents avant vous.",
+        "descriptionTitle": "Qu'est-ce que le SEO local ?",
+        "descriptionText": "Le SEO local est l'ensemble des techniques visant à améliorer la visibilité d'un site web et d'une fiche Google Business sur les recherches géolocalisées : \"restaurant Castres\", \"plombier Mazamet\", \"électricien Tarn\". Cela combine optimisation technique du site, contenu géolocalisé, balisage spécifique pour être identifié comme entreprise locale par Google, et travail sur la fiche Google Business. Bien fait, le SEO local vous place devant les bonnes personnes au bon moment : celles qui cherchent déjà vos services dans votre zone.",
+        "featureTitle": "Quelques fonctionnalités clés du SEO local",
+        "featureText": "Le SEO local en 2026 repose sur plusieurs piliers techniques et de contenu :",
+        "featureList": [
+            {
+                "title": "Audit SEO complet",
+                "text": "Analyse de la visibilité actuelle du site : positionnement sur les recherches locales, état technique (vitesse, indexation par Google, données structurées) et comparaison avec les concurrents de la zone."
+            },
+            {
+                "title": "Recherche de mots-clés locaux",
+                "text": "Identification des recherches réellement tapées par les clients du secteur : \"métier + ville\", \"métier près de moi\", questions locales. Le contenu du site est optimisé pour répondre précisément à ces recherches."
+            },
+            {
+                "title": "Optimisation technique",
+                "text": "Mise en place des éléments que Google attend d'une activité locale : données structurées (nom, adresse, horaires, zone d'intervention), balises de page optimisées, plan du site, adresses de pages lisibles et connexion sécurisée. Une base technique propre pour être bien compris par Google."
+            },
+            {
+                "title": "Google Business Profile",
+                "text": "Création ou optimisation complète de la fiche Google : catégorie principale, services détaillés, horaires, photos, description avec les mots-clés de la zone. Une fiche complète et soignée pour mieux ressortir dans les résultats locaux."
+            },
+            {
+                "title": "Contenu géolocalisé régulier",
+                "text": "Publication d'articles, de FAQ et d'actualités ancrés dans la zone : projets réalisés, conseils pratiques liés au secteur, réponses aux questions des clients locaux. Un site vivant et ancré dans sa région inspire confiance aux visiteurs et à Google."
+            },
+            {
+                "title": "Sollicitation d'avis clients",
+                "text": "Les avis comptent : une fiche avec 50 avis ou plus a bien plus de chances de ressortir dans le top 3 local de Google qu'une fiche qui en a moins de 10. Mise en place d'une méthode simple pour recueillir les avis des clients satisfaits."
+            }
+        ],
+        "targetAudience": "TPE, artisans, commerçants, professions libérales du Tarn et de l'Occitanie qui dépendent de leur zone géographique pour leur clientèle : restaurateurs, plombiers, électriciens, kinés, avocats, garagistes, coiffeurs, esthéticiennes.",
+        "conclusionText": "Les services de SEO local sont essentiels pour qu'un artisan ou une TPE soit trouvée par les bons clients au bon moment. Investir dans ces services permet de capturer le trafic qualifié local, le plus rentable, et d'apparaître durablement dans les premiers résultats de Google. Une stratégie SEO locale bien pensée transforme votre visibilité dans votre zone d'intervention.",
+        "promotionalTitle": "Vous souhaitez améliorer votre SEO local ?",
+        "keywords": [
+            "SEO local Castres",
+            "SEO local Mazamet",
+            "référencement Google Tarn",
+            "Google My Business Castres",
+            "référencement local artisan",
+            "fiche Google entreprise Castres",
+            "Local Pack Google",
+            "agence SEO Occitanie"
+        ]
+    },
+    {
+        "slug": "automatisation-ia",
+        "name": "Automatisation IA",
+        "tag": "Automatisation",
+        "title": "Automatisation IA",
+        "metaTitle": "Automatisation IA pour TPE et PME à Castres, Mazamet (Tarn)",
+        "metaDescription": "Automatisez vos tâches répétitives avec n8n et l'IA : emails, CRM, devis, suivi clients. Workflows sur mesure, conformes RGPD. Freelance à Castres et Mazamet (Tarn).",
+        "shortDescription": "Workflows n8n et agents IA pour automatiser vos tâches répétitives. Emails, CRM, devis, suivi clients. Gagnez du temps, réduisez les erreurs.",
+        "introText": "L'automatisation IA, c'est le chef d'orchestre invisible de votre entreprise. Elle observe, comprend et exécute des tâches répétitives à votre place, sans fatigue ni erreur. Résultat : des processus plus fluides, des équipes soulagées, une entreprise plus réactive. Pour une TPE qui n'a pas de service informatique, c'est l'occasion de libérer du temps sur les tâches administratives pour le consacrer à son métier et à ses clients.",
+        "descriptionTitle": "Qu'est-ce que l'automatisation IA ?",
+        "descriptionText": "L'automatisation IA consiste à utiliser l'intelligence artificielle combinée à des outils d'automatisation comme n8n pour exécuter automatiquement des tâches, des workflows ou des processus métier. Contrairement à une automatisation classique basée uniquement sur des règles fixes, l'automatisation IA peut analyser des données, prendre des décisions simples et s'adapter à différents scénarios. Elle s'applique à la gestion administrative, au marketing, au support client, à la facturation, etc.",
+        "featureTitle": "Ce que permet l'automatisation IA",
+        "featureText": "Une solution d'automatisation IA est toujours conçue sur mesure, en fonction de vos besoins et de votre organisation. Voici quelques usages concrets que l'on retrouve fréquemment :",
+        "featureList": [
+            {
+                "title": "Automatisation des tâches répétitives",
+                "text": "Saisie de données, envoi d'emails, classement de documents, synchronisation entre outils. Les tâches répétitives et chronophages sont prises en charge automatiquement : moins d'erreurs, du temps gagné."
+            },
+            {
+                "title": "Workflows métier intelligents",
+                "text": "Mise en place de scénarios automatisés reliant vos outils (CRM, facturation, marketing...). Chaque étape déclenche la suivante automatiquement, sans manipulation manuelle."
+            },
+            {
+                "title": "Traitement intelligent des données",
+                "text": "Analyse, tri et enrichissement de vos données pour en tirer des informations exploitables. Lecture automatique de documents (PDF, emails), extraction et classement des informations utiles."
+            },
+            {
+                "title": "Automatisation marketing et commerciale",
+                "text": "Qualification des prospects, envoi de messages personnalisés, suivi client automatisé, relances déclenchées selon le comportement des prospects. Liaison possible avec votre CRM, votre site et vos campagnes."
+            },
+            {
+                "title": "Connexion entre vos outils existants",
+                "text": "L'automatisation agit comme un pont entre vos applications (site web, outils internes, plateformes externes) pour créer un ensemble cohérent. Pas besoin de tout remplacer : vos outils actuels restent en place."
+            },
+            {
+                "title": "Conformité RGPD et sécurité",
+                "text": "Workflows déployés sur votre propre compte, avec un contrôle clair sur vos données. Minimisation des données personnelles transmises aux services d'IA, sécurisation des accès et conformité RGPD intégrée dès la conception."
+            }
+        ],
+        "targetAudience": "TPE/PME qui croulent sous les tâches administratives répétitives, professions libérales (cabinets de kiné, avocats, comptables) qui veulent automatiser RDV/relances/facturation, e-commerçants qui veulent automatiser SAV et marketing.",
+        "conclusionText": "L'automatisation IA n'est pas une simple optimisation technique : c'est un levier de performance qui transforme votre quotidien. Pour une TPE de Castres, Mazamet ou du Tarn, c'est un investissement raisonnable qui allège durablement la charge administrative et libère du temps pour le métier. En automatisant intelligemment, vous transformez votre façon de travailler et libérez du temps pour ce qui compte vraiment : vos clients et votre métier.",
+        "promotionalTitle": "Et si vous automatisiez votre entreprise grâce à l'IA ?",
+        "keywords": [
+            "automatisation IA TPE Castres",
+            "automatisation IA Mazamet",
+            "workflow n8n",
+            "agent IA entreprise",
+            "automatiser tâches répétitives",
+            "automatisation marketing",
+            "n8n freelance Tarn",
+            "IA conforme RGPD"
+        ]
+    }
+]

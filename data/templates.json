@@ -1,0 +1,83 @@
+[
+    {
+        "id": "one-page-1",
+        "name": "Institut de beauté",
+        "packId": "one-page",
+        "previewImage": "/images/templates/template-one-page-1.webp",
+        "demoUrl": "https://template1.clementberthierdeveloppeur.fr",
+        "description": "Page unique pour un institut de beauté : prestations, tarifs et prise de rendez-vous.",
+        "tags": ["Bien-être", "Local", "Prise de RDV"]
+    },
+    {
+        "id": "one-page-2",
+        "name": "Application de commande de repas",
+        "packId": "one-page",
+        "previewImage": "/images/templates/template-one-page-2.webp",
+        "demoUrl": "https://template2.clementberthierdeveloppeur.fr",
+        "description": "Landing de présentation d'une application mobile de commande de repas à domicile.",
+        "tags": ["Application", "Food", "Lancement"]
+    },
+    {
+        "id": "one-page-3",
+        "name": "Location de voitures de sport",
+        "packId": "one-page",
+        "previewImage": "/images/templates/template-one-page-3.webp",
+        "demoUrl": "https://template3.clementberthierdeveloppeur.fr",
+        "description": "Page unique pour une société de location de voitures de sport : flotte et réservation.",
+        "tags": ["Premium", "Réservation", "Automobile"]
+    },
+    {
+        "id": "tpe-pme-1",
+        "name": "Baptêmes de vol",
+        "packId": "tpe-pme",
+        "previewImage": "/images/templates/template-tpe-pme-1.webp",
+        "demoUrl": "https://template-tpe1.clementberthierdeveloppeur.fr",
+        "description": "Site vitrine pour une société proposant des baptêmes de l'air, montgolfière et expériences aériennes.",
+        "tags": ["Loisirs", "Expérience", "Réservation"]
+    },
+    {
+        "id": "tpe-pme-2",
+        "name": "Boutique de plantes rares",
+        "packId": "tpe-pme",
+        "previewImage": "/images/templates/template-tpe-pme-2.webp",
+        "demoUrl": "https://template-tpe2.clementberthierdeveloppeur.fr",
+        "description": "Site vitrine pour une boutique spécialisée dans les plantes rares : catalogue, conseils, contact.",
+        "tags": ["Botanique", "Spécialiste", "Catalogue"]
+    },
+    {
+        "id": "tpe-pme-3",
+        "name": "Groupe de musique",
+        "packId": "tpe-pme",
+        "previewImage": "/images/templates/template-tpe-pme-3.webp",
+        "demoUrl": "https://template-tpe3.clementberthierdeveloppeur.fr",
+        "description": "Site vitrine pour un groupe de musique : biographie, dates de concerts, écoutes et contact booking.",
+        "tags": ["Musique", "Événementiel", "Artistique"]
+    },
+    {
+        "id": "artisan-1",
+        "name": "Plombier-chauffagiste",
+        "packId": "artisan",
+        "previewImage": "/images/templates/template-artisan-1.webp",
+        "demoUrl": "https://template-artisan1.clementberthierdeveloppeur.fr",
+        "description": "Site vitrine deux pages avec portfolio des réalisations pour un artisan plombier-chauffagiste.",
+        "tags": ["Artisan", "Local", "Portfolio"]
+    },
+    {
+        "id": "artisan-2",
+        "name": "Luthier",
+        "packId": "artisan",
+        "previewImage": "/images/templates/template-artisan-2.webp",
+        "demoUrl": "https://template-artisan2.clementberthierdeveloppeur.fr",
+        "description": "Site vitrine deux pages avec galerie portfolio pour un luthier.",
+        "tags": ["Artisan", "Sur-mesure", "Portfolio"]
+    },
+    {
+        "id": "artisan-3",
+        "name": "Paysagiste",
+        "packId": "artisan",
+        "previewImage": "/images/templates/template-artisan-3.webp",
+        "demoUrl": "https://template-artisan3.clementberthierdeveloppeur.fr",
+        "description": "Site vitrine deux pages avec galerie portfolio pour un paysagiste créateur de jardins.",
+        "tags": ["Artisan", "Création", "Portfolio"]
+    }
+]

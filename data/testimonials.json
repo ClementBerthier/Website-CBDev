@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "author": "Tiaré Assist'",
+        "role": "Service de secrétariat et de gestion commerciale",
+        "text": "Clément a créé mon site internet professionnel. Je voulais quelque chose de sobre, fonctionnel et droit au but pour mes clients. J'ai eu tout ce que je voulais. Il est présent, demande toujours avant d'appliquer, propose plusieurs solutions, ne se vexe pas quand on n'adhère pas à son idée, toujours présent pour répondre au téléphone. Il est rapide et consciencieux. Vraiment si vous avez un site à monter, n'hésitez plus.",
+        "rating": 5,
+        "date": "2025-09"
+    },
+    {
+        "id": 2,
+        "author": "Guillaume Darroux",
+        "role": "Développeur Web Fullstack",
+        "text": "Clément est consciencieux et réalise les projets de façon pro et communique régulièrement sur l'avancée du projet. On sait où ça en est, du premier jour jusqu'à la livraison finale ! Le projet est 100% conforme à ce qui était prévu, et les délais ont été respectés. Ultra satisfait du résultat, je recommande les yeux fermés !",
+        "rating": 5,
+        "date": "2025-08"
+    }
+]

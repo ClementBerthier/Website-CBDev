@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "title": "Clement Berthier Développeur",
+        "blurb": "Site vitrine présentant le site de Clément Berthier, développeur web freelance.",
+        "description": "Clément Berthier Développeur mon site vitrine officiel, développeur web freelance spécialisé dans la création de sites web modernes et performants. Le site présente les services offerts, les projets réalisés et les moyens de contact. L’objectif principal était de créer une présence en ligne professionnelle et attrayante pour attirer de nouveaux clients et mettre en valeur mes compétences techniques.",
+        "collaborators": [
+            ""
+        ],
+        "collaboratorsLinks": [
+            ""
+        ],
+        "year": "2024",
+        "tech": [
+            "React.js",
+            "Semantic UI",
+            "Vercel",
+            "EmailJS"
+        ],
+        "image": "/images/avatar_dev.AVIF",
+        "imageWidth": 899,
+        "imageHeight": 661,
+        "link": "https://www.clementberthierdeveloppeur.fr/",
+        "categories": [
+            "Refonte",
+            "Site vitrine"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Aprex.org",
+        "blurb": "Refonte pour l'Association de Prévoyance et de Retraite des EXpatriés",
+        "description": "Aprex.org est le site officiel de l’Association de Prévoyance et de Retraite des Expatriés (APREX). Il présente l’activité de l’association, ses offres d’assurance santé, prévoyance et épargne à destination des expatriés, ainsi que ses partenaires. L’objectif de la refonte était de moderniser l’image de l’association, d’améliorer la lisibilité des informations et de faciliter l’accès aux ressources administratives pour les adhérents et futurs membres.",
+        "collaborators": [
+            "Guillaume Darroux"
+        ],
+        "collaboratorsLinks": [
+            "https://www.linkedin.com/in/guillaumedarroux/"
+        ],
+        "year": "2024",
+        "tech": [
+            "Next.js",
+            "Tailwind CSS",
+            "Monetico Paiement  ",
+            "Vercel"
+        ],
+        "image": "/images/aprex-logo.svg",
+        "imageWidth": 283,
+        "imageHeight": 113,
+        "link": "https://www.aprex.org/",
+        "categories": [
+            "Refonte"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Tiaré Assist'",
+        "blurb": "Site vitrine pour Tiaré Assist’, service de secrétariat et de gestion commerciale.",
+        "description": "Tiaré Assist' est un site présentant les services de secrétariat et de gestion commerciale proposés par Tiaré Assist’. L'idée du site était d’être sobre et minimaliste, dans un style inspiré de Tahiti. Le site met en avant les différentes prestations offertes, les tarifs et les moyens de contact pour les clients potentiels.",
+        "collaborators": [
+            ""
+        ],
+        "collaboratorsLinks": [
+            ""
+        ],
+        "year": "2025",
+        "tech": [
+            "React.js",
+            "Vercel",
+            "EmailJS"
+        ],
+        "image": "/images/Tiare-Assist'.webP",
+        "imageWidth": 500,
+        "imageHeight": 472,
+        "link": "https://www.tiareassist.fr/",
+        "categories": [
+            "Site vitrine"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Genbee",
+        "blurb": "Plateforme de mise en relation intelligente entre entrepreuneuses et entrepreuneurs.",
+        "description": "Genbee est une plateforme en ligne de mise en relation d’entrepreneuses et d’entrepreneurs de la région Occitanie. Elle propose un annuaire de professionnels, des événements quotidiens afin d’augmenter son réseau, mais également un système d’annonces pour maximiser la recherche de prestataires ou de collaborateurs.",
+        "collaborators": [
+            "ACOLLADE - Magali Piketty"
+        ],
+        "collaboratorsLinks": [
+            "https://www.acollade.com/"
+        ],
+        "year": "2026",
+        "tech": [
+            "PHP",
+            "Stripe",
+            "Javascript",
+            "N8N"
+        ],
+        "image": "/images/logo_genbee.webp",
+        "imageWidth": 577,
+        "imageHeight": 196,
+        "link": "https://genbee.fr/",
+        "categories": [
+            "Site web"
+        ]
+    }
+]

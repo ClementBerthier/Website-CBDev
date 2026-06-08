@@ -31,3 +31,12 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
+
+# Audit reports (sensitive)
+audit/
+
+# Local references and working folders (screenshots, notes, AI tooling)
+ref/
+notes/
+.claude/
+.cursor/

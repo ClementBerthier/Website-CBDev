@@ -1,125 +1,111 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
-import Button from "../elements/Button/Button.jsx";
-import services from "@/data/services.json";
-import "./Services.css";
+import {
+    Globe,
+    AppWindow,
+    ShoppingCart,
+    RefreshCw,
+    Search,
+    Workflow,
+    ArrowRight,
+} from "lucide-react";
 
-const SERVICE_TABS = [
-    { key: "site", label: "Conception de site" },
-    { key: "application", label: "Développement d'application" },
-    { key: "e_commerce", label: "E-commerce" },
-    { key: "RM", label: "Refonte & Maintenance" },
-    { key: "SEO", label: "Optimisation SEO" },
-];
-
-const SITE_SUBLINKS = [
-    { key: "site", spanField: "firstSpan" },
-    { key: "blog", spanField: "secondSpan" },
-    { key: "portfolio", spanField: "thirdSpan" },
-    { key: "CV", spanField: "fourthSpan" },
-    { key: "evenement", spanField: "fifthSpan" },
+const SERVICES = [
+    {
+        icon: Globe,
+        title: "Sites vitrines",
+        description:
+            "Une vitrine 24/7 pour votre activité. Pages soignées, mobile-first, SEO local intégré.",
+        href: "/services/sites-vitrines",
+    },
+    {
+        icon: AppWindow,
+        title: "Applications web",
+        description:
+            "Outils métier sur mesure. Gestion clients, planning, devis, automatisation des tâches répétitives.",
+        href: "/services/applications-web",
+    },
+    {
+        icon: ShoppingCart,
+        title: "E-commerce",
+        description:
+            "Boutique en ligne complète. Catalogue, paiement, suivi commandes, livraison.",
+        href: "/services/e-commerce",
+    },
+    {
+        icon: RefreshCw,
+        title: "Refonte & maintenance",
+        description:
+            "Modernisation d'un site existant ou maintenance technique régulière. Sécurité, performance, contenus à jour.",
+        href: "/services/refonte-maintenance",
+    },
+    {
+        icon: Search,
+        title: "SEO local",
+        description:
+            "Apparaître quand vos clients vous cherchent à Castres, Mazamet, Toulouse. Google Business, contenu optimisé.",
+        href: "/services/seo-local",
+    },
+    {
+        icon: Workflow,
+        title: "Automatisation",
+        description:
+            "Workflows n8n et agents IA pour automatiser vos tâches répétitives. Gagnez du temps, réduisez les erreurs.",
+        href: "/services/automatisation-ia",
+    },
 ];
 
 export default function Services() {
-    const [activeKey, setActiveKey] = useState("site");
-    const jsonData = services[activeKey];
-    const isSite = activeKey === "site";
-    const isRM = activeKey === "RM";
-
     return (
-        <div className="Services">
-            <div className="services_container">
-                <h2 className="services_title">
-                    Mes services en developpement web
-                </h2>
-                <div className="services_name_container">
-                    {SERVICE_TABS.map((tab) => (
-                        <div
-                            key={tab.key}
-                            className={`services_name ${activeKey === tab.key ? "active" : ""}`}
-                            role="button"
-                            tabIndex={0}
-                            onClick={() => setActiveKey(tab.key)}
-                            onKeyDown={(e) => {
-                                if (e.key === "Enter" || e.key === " ") {
-                                    e.preventDefault();
-                                    setActiveKey(tab.key);
-                                }
-                            }}
-                        >
-                            {tab.label}
-                        </div>
-                    ))}
+        <div className="bg-gradient-to-bl from-brand-100 via-brand-100/80 to-brand-50 py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6">
+                <div className="mx-auto max-w-2xl text-center">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-4 py-1.5 text-sm font-medium text-brand-700 shadow-sm">
+                        Services web
+                    </span>
+                    <h2 className="mt-4 font-display font-bold text-ink-900 text-[clamp(2rem,4vw,3rem)]">
+                        Ce que je peux faire{" "}
+                        <span className="bg-gradient-to-r from-brand-300 to-brand-500 bg-clip-text text-transparent">
+                            pour votre activité
+                        </span>
+                    </h2>
+                    <p className="mt-4 text-lg leading-relaxed text-ink-500">
+                        Des solutions web pensées pour les artisans, indépendants
+                        et PME. Choisissez ce qui correspond à votre besoin.
+                    </p>
                 </div>
-                <div className="services_description_container">
-                    <div className="description_text_container">
-                        <img
-                            className="logo"
-                            src={jsonData.logo}
-                            alt="Icône de développement web"
-                            loading="lazy"
-                        />
-                        <h3 className="text_title">{jsonData.title}</h3>
 
-                        {isSite ? (
-                            <p className="text">
-                                {SITE_SUBLINKS.map((sub, i) => (
-                                    <span key={sub.key}>
-                                        <Link
-                                            href={`/servicesPage?section=${sub.key}`}
-                                        >
-                                            {jsonData[sub.spanField]}
-                                        </Link>
-                                        {i < SITE_SUBLINKS.length - 1
-                                            ? ", "
-                                            : " "}
+                <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {SERVICES.map((service) => {
+                        const Icon = service.icon;
+                        return (
+                            <Link
+                                key={service.title}
+                                href={service.href}
+                                className="group relative flex flex-col rounded-2xl border border-ink-100 bg-white p-8 transition-all hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-500/10"
+                            >
+                                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-brand-100 to-brand-200 text-brand-700 transition-colors group-hover:from-brand-500 group-hover:to-brand-700 group-hover:text-white">
+                                    <Icon size={28} strokeWidth={1.8} />
+                                </div>
+                                <h3 className="font-display text-xl font-bold text-ink-900">
+                                    {service.title}
+                                </h3>
+                                <p className="mt-3 flex-1 text-base leading-relaxed text-ink-500">
+                                    {service.description}
+                                </p>
+                                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-700 transition-transform group-hover:gap-3">
+                                    Découvrir le service
+                                    <span className="sr-only">
+                                        {" "}
+                                        {service.title.toLowerCase()}
                                     </span>
-                                ))}
-                                {jsonData.description}
-                            </p>
-                        ) : (
-                            <p className="text">{jsonData.description}</p>
-                        )}
-
-                        <Button
-                            text="+"
-                            href={`/servicesPage?section=${jsonData.name}`}
-                        />
-                    </div>
-                    {isRM ? (
-                        <div className="description_picture_container">
-                            <div className="picture_container">
-                                <img
-                                    className="oldPicture"
-                                    src={jsonData.oldPicture}
-                                    alt="ancien site"
-                                    loading="lazy"
-                                />
-                            </div>
-                            <div className="picture_container--2">
-                                <img
-                                    className="newPicture"
-                                    src={jsonData.newPicture}
-                                    alt="nouveau site"
-                                    loading="lazy"
-                                />
-                            </div>
-                        </div>
-                    ) : (
-                        <div className="description_picture_container">
-                            <img
-                                className="picture"
-                                src={jsonData.picture}
-                                alt="Illustration du service de développement web"
-                                loading="lazy"
-                            />
-                        </div>
-                    )}
-                </div>
-                <div className="goToServices">
-                    <Button text="Autres services" href="/#services" />
+                                    <ArrowRight
+                                        size={16}
+                                        className="transition-transform group-hover:translate-x-1"
+                                    />
+                                </div>
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
         </div>

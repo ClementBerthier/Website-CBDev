@@ -1,9 +1,15 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import "./Modal.css";
 
-export default function Modal({ open, title, children, actions, onClose }) {
+export default function Modal({
+    open,
+    title,
+    icon,
+    children,
+    actions,
+    onClose,
+}) {
     const dialogRef = useRef(null);
 
     useEffect(() => {
@@ -24,13 +30,26 @@ export default function Modal({ open, title, children, actions, onClose }) {
     return (
         <dialog
             ref={dialogRef}
-            className="modal_contact"
             onCancel={handleCancel}
             onClose={onClose}
+            className="m-auto w-[calc(100%-2rem)] max-w-md rounded-3xl border-0 bg-white p-0 shadow-2xl backdrop:bg-ink-900/60 backdrop:backdrop-blur-sm"
         >
-            <h2 className="header_modal_contact">{title}</h2>
-            <div className="content_modal_contact">{children}</div>
-            <div className="actions_modal_contact">{actions}</div>
+            <div className="p-8 text-center sm:p-10">
+                {icon ? (
+                    <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-100 to-brand-200 text-brand-700">
+                        {icon}
+                    </div>
+                ) : null}
+                <h2 className="font-display text-2xl font-bold text-ink-900">
+                    {title}
+                </h2>
+                <div className="mt-3 text-base leading-relaxed text-ink-500">
+                    {children}
+                </div>
+                <div className="mt-8 flex flex-col-reverse justify-center gap-3 sm:flex-row">
+                    {actions}
+                </div>
+            </div>
         </dialog>
     );
 }

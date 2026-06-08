@@ -1,6 +1,7 @@
 import { Poppins, Open_Sans } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import HashScrollHandler from "@/components/HashScrollHandler/HashScrollHandler";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -20,11 +21,11 @@ const openSans = Open_Sans({
 export const metadata = {
     metadataBase: new URL("https://www.clementberthierdeveloppeur.fr"),
     title: {
-        default: "Clément Berthier | Développeur Web & Automatisation IA Freelance à Mazamet, Tarn",
+        default: "Clément Berthier | Développeur Web & Automatisation IA Freelance à Castres, Mazamet (Tarn)",
         template: "%s | Clément Berthier Développeur",
     },
     description:
-        "Développeur web freelance à Mazamet, près de Castres (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA pour entreprises et particuliers.",
+        "Développeur web freelance à Castres et Mazamet (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA pour entreprises et particuliers.",
     robots: {
         index: true,
         follow: true,
@@ -62,14 +63,14 @@ export const viewport = {
 
 const businessSchema = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "LocalBusiness",
     "@id": "https://www.clementberthierdeveloppeur.fr/#business",
     name: "Clément Berthier Développeur",
     url: "https://www.clementberthierdeveloppeur.fr",
     logo: "https://www.clementberthierdeveloppeur.fr/images/LogoMetaCBDev.webP",
     image: "https://www.clementberthierdeveloppeur.fr/images/LogoMetaCBDev.webP",
     description:
-        "Développeur web freelance à Mazamet, près de Castres (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA.",
+        "Développeur web freelance à Castres et Mazamet (Tarn). Création de sites vitrines, e-commerce, applications web sur mesure et solutions d'automatisation IA.",
     telephone: "+33788453778",
     email: "clementberthierdeveloppeur@gmail.com",
     address: {
@@ -86,8 +87,8 @@ const businessSchema = {
         longitude: 2.3691,
     },
     areaServed: [
-        { "@type": "City", name: "Mazamet" },
         { "@type": "City", name: "Castres" },
+        { "@type": "City", name: "Mazamet" },
         { "@type": "City", name: "Toulouse" },
         { "@type": "City", name: "Albi" },
         { "@type": "City", name: "Montpellier" },
@@ -95,18 +96,26 @@ const businessSchema = {
         { "@type": "AdministrativeArea", name: "Occitanie" },
     ],
     priceRange: "€€",
-    openingHoursSpecification: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-        ],
-        opens: "09:00",
-        closes: "18:00",
-    },
+    openingHoursSpecification: [
+        {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            opens: "09:00",
+            closes: "12:30",
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            opens: "14:00",
+            closes: "18:00",
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: "Friday",
+            opens: "09:00",
+            closes: "12:30",
+        },
+    ],
     founder: {
         "@type": "Person",
         "@id": "https://www.clementberthierdeveloppeur.fr/#person",
@@ -135,7 +144,11 @@ const websiteSchema = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="fr" className={`${poppins.variable} ${openSans.variable}`}>
+        <html
+            lang="fr"
+            data-scroll-behavior="smooth"
+            className={`${poppins.variable} ${openSans.variable}`}
+        >
             <body>
                 <script
                     type="application/ld+json"
@@ -149,6 +162,7 @@ export default function RootLayout({ children }) {
                         __html: JSON.stringify(websiteSchema),
                     }}
                 />
+                <HashScrollHandler />
                 <Header />
                 {children}
                 <Footer />

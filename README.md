@@ -1,9 +1,26 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # Website-CBDev
+
+Site vitrine de Clément Berthier, développeur web freelance.
+
+## Stack
+
+- Next.js 16 (App Router)
+- React
+- Tailwind CSS
+- Déployé sur Vercel
+
+## Développement
+
+```bash
+npm install
+npm run dev
+```
+
+Ouvre [http://localhost:3000](http://localhost:3000).
+
+## Scripts
+
+- `npm run dev` — serveur de développement
+- `npm run build` — build production
+- `npm start` — serveur production
+- `npm run lint` — lint

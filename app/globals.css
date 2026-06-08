@@ -1,5 +1,30 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+    --color-brand-50: #eff8ff;
+    --color-brand-100: #e5f0fb;
+    --color-brand-200: #c7e2fb;
+    --color-brand-300: #98d2e6;
+    --color-brand-500: #1e90ff;
+    --color-brand-600: #1677d6;
+    --color-brand-700: #2e5d80;
+    --color-brand-900: #0606c2;
+
+    --color-ink-900: #0f172a;
+    --color-ink-700: #1e293b;
+    --color-ink-500: #475569;
+    --color-ink-400: #64748b;
+    --color-ink-300: #94a3b8;
+    --color-ink-200: #cbd5e1;
+    --color-ink-100: #e2e8f0;
+
+    --font-display: var(--font-poppins), system-ui, sans-serif;
+    --font-sans: var(--font-open-sans), system-ui, sans-serif;
+}
+
 :root {
-    /* Colors */
+    /* Legacy variables — kept for components not yet migrated to Tailwind */
     --steel-blue: #4682b4;
     --dodger-blue: #1e90ff;
     --light-blue: #add8e6;
@@ -11,11 +36,9 @@
     --white: #ffffff;
     --black: #000000;
 
-    /* Fonts — aliased on next/font CSS variables */
     --font-text: var(--font-open-sans), sans-serif;
     --font-title: var(--font-poppins), sans-serif;
 
-    /* Backgrounds */
     --header-banner: var(--fake-black);
     --header-navigation: var(--white);
     --home-container: var(--grey-blue);
@@ -25,24 +48,20 @@
     --description_text_container: var(--white);
     --description_picture_container: var(--white);
 
-    /* Font colors */
     --mail-adress: var(--white);
     --text-span: var(--dodger-blue);
 
-    /* Borders */
     --border-Header: var(--smooth-grey);
 
-    /* Buttons */
     --button-background: var(--dodger-blue);
     --button-color: var(--white);
     --button-hover-background: var(--navy-blue);
     --button-hover-color: var(--white);
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
 }
 
 html,
@@ -51,15 +70,10 @@ body {
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 13rem;
-}
-
 body {
-    font-family: var(--font-text);
-    color: var(--fake-black);
-    background: var(--white);
+    font-family: var(--font-sans);
+    color: var(--color-ink-900);
+    background: #fff;
 }
 
 h1,
@@ -68,7 +82,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-title);
+    font-family: var(--font-display);
 }
 
 a {
@@ -76,7 +90,7 @@ a {
     text-decoration: none;
 }
 
-img {
+:where(img) {
     max-width: 100%;
     height: auto;
 }

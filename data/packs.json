@@ -1,0 +1,108 @@
+[
+    {
+        "id": "one-page",
+        "name": "Pack One Page",
+        "price": 299,
+        "priceLabel": "À partir de 299€",
+        "tagline": "La présence en ligne essentielle, sans superflu",
+        "description": "Une page unique scrollable avec 3 sections clés et les pages légales obligatoires. Le format direct, rapide à mettre en ligne, idéal pour démarrer.",
+        "includes": [
+            "Page d'accueil scrollable (3 sections au choix)",
+            "Formulaire de contact fonctionnel",
+            "Site responsive (mobile, tablette, ordinateur)",
+            "Accompagnement et mise en place de l'hébergement",
+            "Mise en ligne du site"
+        ],
+        "targetAudience": "Indépendants, professions libérales, petites structures qui veulent une vitrine claire et rapide",
+        "ctaLabel": "Demander un devis",
+        "ctaHref": "/contact",
+        "hasTemplates": true,
+        "featured": false
+    },
+    {
+        "id": "artisan",
+        "name": "Pack Artisan",
+        "price": 790,
+        "priceLabel": "À partir de 790€",
+        "tagline": "Site vitrine + portfolio pour mettre en valeur votre savoir-faire",
+        "description": "Pensé pour les artisans, ce pack inclut une page d'accueil scrollable et une page Réalisations avec galerie portfolio. SEO local et fiche Google My Business inclus pour ressortir dans les recherches de proximité.",
+        "includes": [
+            "Page d'accueil scrollable complète",
+            "Page Réalisations avec galerie portfolio",
+            "Formulaire de contact fonctionnel",
+            "Optimisation SEO local + fiche Google My Business",
+            "Site responsive (mobile, tablette, ordinateur)",
+            "Accompagnement et mise en place de l'hébergement",
+            "Mise en ligne du site"
+        ],
+        "targetAudience": "Artisans, professionnels qui ont besoin de montrer leurs réalisations et leur savoir-faire tout en ayant une visibilité accrue sur le web",
+        "ctaLabel": "Demander un devis",
+        "ctaHref": "/contact",
+        "hasTemplates": true,
+        "featured": false
+    },
+    {
+        "id": "tpe-pme",
+        "name": "Pack TPE/PME",
+        "price": 990,
+        "priceLabel": "À partir de 990€",
+        "tagline": "Site vitrine 3 pages avec étude UX préalable",
+        "description": "L'offre la plus demandée. Trois pages distinctes pour structurer votre offre, avec une vraie étude UX en amont pour comprendre votre activité et vos clients. Le bon équilibre entre coût et professionnalisme.",
+        "includes": [
+            "Optimisation du parcours utilisateur",
+            "3 pages : Accueil, Services/Offres, Contact",
+            "Formulaire de contact fonctionnel",
+            "Site responsive (mobile, tablette, ordinateur)",
+            "Accompagnement et mise en place de l'hébergement",
+            "Mise en ligne du site"
+        ],
+        "targetAudience": "TPE et PME qui veulent un site à leur image, capable d'attirer de nouveaux clients et de leur donner envie de vous choisir",
+        "ctaLabel": "Demander un devis",
+        "ctaHref": "/contact",
+        "hasTemplates": true,
+        "featured": true
+    },
+    {
+        "id": "automatisation",
+        "name": "Pack Automatisation",
+        "price": 490,
+        "priceLabel": "À partir de 490€ — sur devis",
+        "tagline": "Des automatisations sur mesure pour gagner du temps au quotidien",
+        "description": "Je mets en place pour vous des automatisations qui prennent en charge vos tâches répétitives. Vos outils restent à vous, vos données restent protégées.",
+        "includes": [
+            "Analyse des tâches que vous pouvez automatiser",
+            "Création des automatisations sur votre propre espace",
+            "Sécurisation de vos identifiants et accès",
+            "Protection de vos données sensibles avant traitement (conforme RGPD)",
+            "Documentation d'utilisation",
+            "Suivi après la mise en service"
+        ],
+        "targetAudience": "Entreprises qui veulent automatiser leurs process (emails, CRM, devis, suivi clients)",
+        "ctaLabel": "Discuter de mon besoin",
+        "ctaHref": "/contact",
+        "hasTemplates": false,
+        "featured": false
+    },
+    {
+        "id": "sur-mesure",
+        "name": "Pack Sur Mesure",
+        "price": null,
+        "priceLabel": "Sur devis",
+        "tagline": "Pour les projets ambitieux : outil de gestion clients, vente en ligne, applications professionnelles",
+        "description": "Une étude approfondie, un projet livré étape par étape, des paiements échelonnés. Pour les besoins qui sortent du cadre des packs standards : application professionnelle, outil de gestion clients, site de vente en ligne avancé.",
+        "includes": [
+            "Étude approfondie de votre besoin et de vos utilisateurs",
+            "Conception de la structure de votre projet",
+            "Livraison du projet étape par étape",
+            "Paiement échelonné en fonction des étapes",
+            "Tests avec de vrais utilisateurs et améliorations en continu",
+            "Documentation complète du projet",
+            "Accompagnement après la mise en service"
+        ],
+        "targetAudience": "Entreprises avec un besoin spécifique : outil de gestion clients sur mesure, site de vente en ligne avancé, application professionnelle ou plateforme dédiée",
+        "ctaLabel": "Discuter de mon projet",
+        "ctaHref": "/contact",
+        "hasTemplates": false,
+        "featured": false
+    }
+]

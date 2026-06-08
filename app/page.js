@@ -1,9 +1,8 @@
 import Home from "@/components/Home/Home";
 import Services from "@/components/Services/Services";
-import ServicesIA from "@/components/ServicesIA/ServicesIA";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
 import FAQs from "@/components/FAQs/FAQs";
-import Contact from "@/components/Contact/Contact";
+import Process from "@/components/Process/Process";
 import questions from "@/data/questions.json";
 
 const faqSchema = {
@@ -36,16 +35,13 @@ export default function HomePage() {
                     <Services />
                 </section>
                 <section>
-                    <ServicesIA />
-                </section>
-                <section>
                     <ContactBanner />
                 </section>
                 <section id="FAQs">
                     <FAQs />
                 </section>
-                <section id="contact">
-                    <Contact />
+                <section>
+                    <Process />
                 </section>
             </main>
         </>

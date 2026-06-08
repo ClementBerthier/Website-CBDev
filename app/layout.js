@@ -30,6 +30,11 @@ export const metadata = {
         index: true,
         follow: true,
     },
+    verification: {
+        other: {
+            "msvalidate.01": "F04C1A1062471066243301B595699AC1",
+        },
+    },
     openGraph: {
         type: "website",
         siteName: "Clément Berthier Développeur",

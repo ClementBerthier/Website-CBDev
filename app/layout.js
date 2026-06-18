@@ -82,7 +82,7 @@ const businessSchema = {
         "@type": "PostalAddress",
         streetAddress: "157 chemin de terre albine",
         postalCode: "81660",
-        addressLocality: "Pont-de-l'arn",
+        addressLocality: "Pont-de-l'Arn",
         addressRegion: "Occitanie",
         addressCountry: "FR",
     },

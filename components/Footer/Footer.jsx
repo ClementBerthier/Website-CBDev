@@ -147,7 +147,7 @@ export default function Footer() {
                                 <span className="leading-relaxed text-white">
                                     157 chemin de terre albine
                                     <br />
-                                    81660 Pont-de-l&apos;arn
+                                    81660 Pont-de-l&apos;Arn
                                 </span>
                             </li>
                             <li className="flex items-start gap-3 text-sm">

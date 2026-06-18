@@ -256,7 +256,7 @@ export default function Contact() {
                                             <p className="mt-0.5 text-base leading-relaxed">
                                                 157 chemin de terre albine
                                                 <br />
-                                                81660 Pont-de-l&apos;arn
+                                                81660 Pont-de-l&apos;Arn
                                             </p>
                                         </div>
                                     </div>

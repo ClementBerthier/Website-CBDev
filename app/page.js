@@ -1,9 +1,11 @@
 import Home from "@/components/Home/Home";
 import Services from "@/components/Services/Services";
+import Testimonials from "@/components/Testimonials/Testimonials";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
 import FAQs from "@/components/FAQs/FAQs";
 import Process from "@/components/Process/Process";
 import questions from "@/data/questions.json";
+import testimonials from "@/data/testimonials.json";
 
 const faqSchema = {
     "@context": "https://schema.org",
@@ -33,6 +35,9 @@ export default function HomePage() {
                 </section>
                 <section id="services">
                     <Services />
+                </section>
+                <section id="testimonials">
+                    <Testimonials testimonials={testimonials} />
                 </section>
                 <section>
                     <ContactBanner />

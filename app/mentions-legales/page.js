@@ -7,10 +7,6 @@ export const metadata = {
     alternates: {
         canonical: "/mentions-legales",
     },
-    robots: {
-        index: false,
-        follow: true,
-    },
 };
 
 export default function LegalMentionPage() {

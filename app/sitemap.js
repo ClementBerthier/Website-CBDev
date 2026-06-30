@@ -48,6 +48,12 @@ export default function sitemap() {
             changeFrequency: "yearly",
             priority: 0.8,
         },
+        {
+            url: `${BASE_URL}/mentions-legales`,
+            lastModified,
+            changeFrequency: "yearly",
+            priority: 0.3,
+        },
     ];
 
     const serviceRoutes = services.map((service) => ({

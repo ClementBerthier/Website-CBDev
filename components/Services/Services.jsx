@@ -56,7 +56,7 @@ const SERVICES = [
 
 export default function Services() {
     return (
-        <div className="bg-gradient-to-bl from-brand-100 via-brand-100/80 to-brand-50 py-24 sm:py-32">
+        <div className="bg-gradient-to-b from-brand-100 via-brand-50 to-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6">
                 <div className="mx-auto max-w-2xl text-center">
                     <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-4 py-1.5 text-sm font-medium text-brand-700 shadow-sm">

@@ -1,6 +1,7 @@
 import Home from "@/components/Home/Home";
 import Services from "@/components/Services/Services";
 import ProjectsTeaser from "@/components/ProjectsTeaser/ProjectsTeaser";
+import PricingTeaser from "@/components/PricingTeaser/PricingTeaser";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import ContactBanner from "@/components/ContactBanner/ContactBanner";
 import FAQs from "@/components/FAQs/FAQs";
@@ -36,6 +37,9 @@ export default function HomePage() {
                 </section>
                 <section id="services">
                     <Services />
+                </section>
+                <section id="tarifs">
+                    <PricingTeaser />
                 </section>
                 <section id="projets">
                     <ProjectsTeaser />

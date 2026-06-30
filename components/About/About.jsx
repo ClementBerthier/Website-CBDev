@@ -195,7 +195,7 @@ export default function About() {
             </section>
 
             {/* Engagements */}
-            <section className="bg-white px-6 py-16 sm:py-20">
+            <section className="bg-gradient-to-b from-white via-brand-50 to-brand-100 px-6 py-16 sm:py-20">
                 <div className="mx-auto max-w-7xl">
                     <div className="grid gap-6 sm:grid-cols-3">
                         {COMMITMENTS.map((commitment) => {
@@ -222,7 +222,7 @@ export default function About() {
             </section>
 
             {/* Mon parcours */}
-            <section className="bg-gradient-to-b from-white via-brand-100 to-white px-6 py-16 sm:py-24">
+            <section className="bg-gradient-to-b from-brand-100 via-brand-50 to-white px-6 py-16 sm:py-24">
                 <div className="mx-auto max-w-4xl">
                     <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-700 shadow-sm">
                         Parcours
@@ -251,7 +251,7 @@ export default function About() {
             </section>
 
             {/* Compétences */}
-            <section className="bg-white px-6 py-16 sm:py-24">
+            <section className="bg-gradient-to-b from-white via-brand-50 to-brand-100 px-6 py-16 sm:py-24">
                 <div className="mx-auto max-w-7xl">
                     <div className="mx-auto max-w-2xl text-center">
                         <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-700">
@@ -301,7 +301,7 @@ export default function About() {
             </section>
 
             {/* Formations / certifications */}
-            <section className="bg-gradient-to-b from-white via-brand-100 to-white px-6 py-16 sm:py-24">
+            <section className="bg-gradient-to-b from-brand-100 via-brand-50 to-white px-6 py-16 sm:py-24">
                 <div className="mx-auto max-w-4xl">
                     <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-700 shadow-sm">
                         <GraduationCap size={12} />
@@ -346,7 +346,7 @@ export default function About() {
             </section>
 
             {/* Valeurs */}
-            <section className="bg-white px-6 py-16 sm:py-24">
+            <section className="bg-gradient-to-b from-white via-brand-50 to-brand-100 px-6 py-16 sm:py-24">
                 <div className="mx-auto max-w-7xl">
                     <div className="mx-auto max-w-2xl text-center">
                         <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-700">

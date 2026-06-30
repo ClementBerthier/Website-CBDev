@@ -13,7 +13,7 @@ export default function ProjectsTeaser() {
     if (LATEST_PROJECTS.length === 0) return null;
 
     return (
-        <section className="bg-white px-6 py-16 sm:py-24">
+        <section className="bg-gradient-to-b from-brand-100 via-brand-50 to-white px-6 py-16 sm:py-24">
             <div className="mx-auto max-w-7xl">
                 <div className="mx-auto max-w-2xl text-center">
                     <span className="inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-700 shadow-sm">

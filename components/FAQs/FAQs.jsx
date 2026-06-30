@@ -15,7 +15,7 @@ const PEOPLE = [
 
 export default function FAQs() {
     return (
-        <div className="relative overflow-hidden bg-white py-24 sm:py-32">
+        <div className="relative overflow-hidden bg-gradient-to-b from-white via-brand-50 to-brand-100 py-24 sm:py-32">
             <div
                 aria-hidden="true"
                 className="pointer-events-none absolute -right-32 top-20 h-96 w-96 rounded-full bg-brand-100/50 blur-3xl"

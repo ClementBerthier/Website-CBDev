@@ -27,7 +27,7 @@ const STEPS = [
 
 export default function Process() {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-b from-white via-brand-100 to-white px-6 py-20 sm:py-28">
+        <section className="relative overflow-hidden bg-gradient-to-b from-brand-100 via-brand-50 to-white px-6 py-20 sm:py-28">
             <div
                 aria-hidden="true"
                 className="pointer-events-none absolute -left-32 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-brand-100/40 blur-3xl"

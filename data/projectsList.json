@@ -12,14 +12,15 @@
         ],
         "year": "2024",
         "tech": [
-            "React.js",
-            "Semantic UI",
+            "Next.js",
+            "Tailwind CSS",
             "Vercel",
-            "EmailJS"
+            "Nodemailer"
         ],
-        "image": "/images/avatar_dev.AVIF",
-        "imageWidth": 899,
-        "imageHeight": 661,
+        "image": "/images/CBDevHero.webp",
+        "imageWidth": 2560,
+        "imageHeight": 1440,
+        "imageFit": "cover",
         "link": "https://www.clementberthierdeveloppeur.fr/",
         "categories": [
             "Refonte",
@@ -44,9 +45,10 @@
             "Monetico Paiement  ",
             "Vercel"
         ],
-        "image": "/images/aprex-logo.svg",
-        "imageWidth": 283,
-        "imageHeight": 113,
+        "image": "/images/AprexHero.webp",
+        "imageWidth": 2560,
+        "imageHeight": 1440,
+        "imageFit": "cover",
         "link": "https://www.aprex.org/",
         "categories": [
             "Refonte"
@@ -65,13 +67,14 @@
         ],
         "year": "2025",
         "tech": [
-            "React.js",
+            "Next.js",
             "Vercel",
-            "EmailJS"
+            "Nodemailer"
         ],
-        "image": "/images/Tiare-Assist'.webP",
-        "imageWidth": 500,
-        "imageHeight": 472,
+        "image": "/images/TiareAssistHero.webp",
+        "imageWidth": 2560,
+        "imageHeight": 1440,
+        "imageFit": "cover",
         "link": "https://www.tiareassist.fr/",
         "categories": [
             "Site vitrine"
@@ -95,9 +98,10 @@
             "Javascript",
             "N8N"
         ],
-        "image": "/images/logo_genbee.webp",
-        "imageWidth": 577,
-        "imageHeight": 196,
+        "image": "/images/GenbeeHero.webp",
+        "imageWidth": 2560,
+        "imageHeight": 1440,
+        "imageFit": "cover",
         "link": "https://genbee.fr/",
         "categories": [
             "Site web"

@@ -46,7 +46,11 @@ export default function ProjectsTeaser() {
                                     width={project.imageWidth}
                                     height={project.imageHeight}
                                     sizes="(max-width: 640px) 100vw, 50vw"
-                                    className="max-h-full max-w-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+                                    className={`transition-transform duration-500 group-hover:scale-105 ${
+                                        project.imageFit === "cover"
+                                            ? "h-full w-full object-cover"
+                                            : "max-h-full max-w-full object-contain p-4"
+                                    }`}
                                 />
                                 <div className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-brand-700 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
                                     <ArrowUpRight size={18} />

@@ -212,7 +212,11 @@ export default function Projects() {
                                                 width={project.imageWidth}
                                                 height={project.imageHeight}
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                                                className="block h-auto w-full p-4 transition-transform duration-500 group-hover:scale-105"
+                                                className={`block h-auto w-full transition-transform duration-500 group-hover:scale-105 ${
+                                        project.imageFit === "cover"
+                                            ? ""
+                                            : "p-4"
+                                    }`}
                                             />
                                             <div className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-brand-700 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
                                                 <ArrowUpRight size={18} />
@@ -294,7 +298,11 @@ export default function Projects() {
                                 width={selectedProject.imageWidth}
                                 height={selectedProject.imageHeight}
                                 sizes="(max-width: 768px) 100vw, 672px"
-                                className="max-h-full max-w-full object-contain p-6"
+                                className={
+                                    selectedProject.imageFit === "cover"
+                                        ? "h-full w-full object-cover"
+                                        : "max-h-full max-w-full object-contain p-6"
+                                }
                             />
                             <button
                                 type="button"

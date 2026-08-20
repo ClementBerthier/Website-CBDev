@@ -98,7 +98,12 @@ export default function Footer() {
                     {/* Services */}
                     <div className="lg:col-span-3">
                         <h3 className="font-display text-sm font-bold uppercase tracking-wider text-white">
-                            Services
+                            <Link
+                                href="/services"
+                                className="transition-colors hover:text-brand-300"
+                            >
+                                Services
+                            </Link>
                         </h3>
                         <ul className="mt-5 space-y-3">
                             {SERVICES.map((service) => (

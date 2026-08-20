@@ -8,7 +8,7 @@ import { Menu, X, Phone, Mail } from "lucide-react";
 const NAV_LINKS = [
     { href: "/#home", label: "Accueil" },
     { href: "/a-propos", label: "À propos" },
-    { href: "/services/sites-vitrines", label: "Services" },
+    { href: "/services", label: "Services" },
     { href: "/offres", label: "Offres" },
     { href: "/templates", label: "Templates" },
     { href: "/projets", label: "Projets" },

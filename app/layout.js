@@ -53,11 +53,6 @@ export const metadata = {
         card: "summary_large_image",
         images: ["/images/LogoMetaCBDev.webP"],
     },
-    icons: {
-        icon: "/icon.ico",
-        shortcut: "/icon.ico",
-        apple: "/images/apple-touch-icon.png",
-    },
 };
 
 export const viewport = {

@@ -9,6 +9,14 @@ import Process from "@/components/Process/Process";
 import questions from "@/data/questions.json";
 import testimonials from "@/data/testimonials.json";
 
+// Title and description are inherited from the root layout defaults, which are
+// already written for the home page. Only the canonical needs to be declared.
+export const metadata = {
+    alternates: {
+        canonical: "/",
+    },
+};
+
 const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

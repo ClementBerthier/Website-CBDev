@@ -106,5 +106,62 @@
         "categories": [
             "Application web"
         ]
+    },
+    {
+        "id": 6,
+        "title": "CC ELEC",
+        "blurb": "Site vitrine pour CC ELEC, électricien artisan à Castres et dans le Tarn.",
+        "description": "CC ELEC est le site vitrine d’un électricien artisan installé à Carbes, qui intervient à Castres et dans le sud du Tarn. Le site présente les six prestations de l’entreprise — électricité générale, dépannage, rénovation, domotique, alarmes et climatisation — une page de chantiers réalisés et une carte des communes desservies. L’objectif était de donner à l’entreprise sa première présence en ligne et de la rendre visible sur les recherches locales : données structurées LocalBusiness, cohérence stricte avec la fiche Google Business et fiche détaillée par chantier. Le formulaire de contact est validé côté serveur et protégé par un token anti-bot.",
+        "collaborators": [
+            ""
+        ],
+        "collaboratorsLinks": [
+            ""
+        ],
+        "year": "2026",
+        "tech": [
+            "Next.js",
+            "Tailwind CSS",
+            "Vercel",
+            "Nodemailer",
+            "Leaflet"
+        ],
+        "image": "/images/CCElecHero.webp",
+        "imageWidth": 1920,
+        "imageHeight": 1080,
+        "imageFit": "cover",
+        "link": "https://www.ccelec81.fr/",
+        "categories": [
+            "Site vitrine"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Micellex",
+        "blurb": "Refonte du site de Micellex, entreprise de nettoyage professionnel dans le Tarn.",
+        "description": "Micellex est une entreprise de nettoyage professionnel installée près de Castres : remise en état de logement, nettoyage d’intérieur de véhicule, de canapés, tapis et matelas, et entretien de bureaux et locaux. Le projet consistait à remplacer le WordPress existant par un site statique — plus rapide et sans maintenance de CMS — sur le même hébergement mutualisé. Les pages sont exportées en statique et le formulaire de contact repose sur un back-end PHP déposé hors de la racine web, avec validation côté serveur, limitation de débit et envoi SMTP. La réservation en ligne des prestations à tarif fixe est déléguée à Dispoo, et une page Réalisations détaille les chantiers effectués.",
+        "collaborators": [
+            ""
+        ],
+        "collaboratorsLinks": [
+            ""
+        ],
+        "year": "2026",
+        "tech": [
+            "Next.js",
+            "Tailwind CSS",
+            "PHP",
+            "Leaflet",
+            "LWS"
+        ],
+        "image": "/images/MicellexHero.webp",
+        "imageWidth": 1920,
+        "imageHeight": 1080,
+        "imageFit": "cover",
+        "link": "https://micellex.fr/",
+        "categories": [
+            "Refonte",
+            "Site vitrine"
+        ]
     }
 ]

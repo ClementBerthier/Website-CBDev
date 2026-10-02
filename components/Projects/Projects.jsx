@@ -13,8 +13,17 @@ import {
     ArrowUpRight,
 } from "lucide-react";
 
+/**
+ * Projets du plus récent au plus ancien.
+ *
+ * À année égale, `id` décroissant départage : les identifiants sont attribués
+ * dans l'ordre d'ajout, le dernier projet intégré remonte donc en tête. Sans ce
+ * départage, le tri reste stable sur l'ordre du fichier JSON et affiche le plus
+ * ancien d'abord. Doit rester identique au tri de ProjectsTeaser, sinon
+ * l'accueil et cette page ne présentent pas les projets dans le même ordre.
+ */
 const SORTED_PROJECTS = [...projectsList].sort(
-    (a, b) => Number(b.year) - Number(a.year)
+    (a, b) => Number(b.year) - Number(a.year) || b.id - a.id
 );
 const ALL_CATEGORIES = [
     ...new Set(SORTED_PROJECTS.flatMap((p) => p.categories)),
@@ -191,85 +200,85 @@ export default function Projects() {
                             </p>
                         </div>
                     ) : (
-                        <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                            {/*
+                              Grille et non colonnes CSS : `columns-*` remplit
+                              colonne par colonne de haut en bas, ce qui casse
+                              l'ordre de lecture — le 2e projet atterrit sous le
+                              1er au lieu d'être à sa droite. La grille remplit
+                              ligne par ligne et respecte donc le tri ci-dessus.
+                            */}
                             {filteredProjects.map((project) => (
-                                <div
+                                <button
                                     key={project.id}
-                                    className="mb-6 break-inside-avoid"
+                                    type="button"
+                                    onClick={() => setSelectedProject(project)}
+                                    className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white text-left shadow-sm transition-all hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-500/10"
                                 >
-                                    <button
-                                        type="button"
-                                        onClick={() =>
-                                            setSelectedProject(project)
-                                        }
-                                        className="group relative block w-full overflow-hidden rounded-2xl border border-ink-100 bg-white text-left shadow-sm transition-all hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-500/10"
-                                    >
-                                        {/* Image — natural ratio for masonry effect */}
-                                        <div className="relative overflow-hidden bg-gradient-to-br from-brand-50 to-brand-100">
-                                            <Image
-                                                src={project.image}
-                                                alt={project.title}
-                                                width={project.imageWidth}
-                                                height={project.imageHeight}
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                                                className={`block h-auto w-full transition-transform duration-500 group-hover:scale-105 ${
-                                        project.imageFit === "cover"
-                                            ? ""
-                                            : "p-4"
-                                    }`}
-                                            />
-                                            <div className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-brand-700 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
-                                                <ArrowUpRight size={18} />
-                                            </div>
+                                    {/* Image — ratio fixe : aligne les cartes d'une même ligne */}
+                                    <div className="relative flex aspect-[16/9] items-center justify-center overflow-hidden bg-gradient-to-br from-brand-50 to-brand-100">
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            width={project.imageWidth}
+                                            height={project.imageHeight}
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                                            className={`transition-transform duration-500 group-hover:scale-105 ${
+                                                project.imageFit === "cover"
+                                                    ? "h-full w-full object-cover"
+                                                    : "max-h-full max-w-full object-contain p-4"
+                                            }`}
+                                        />
+                                        <div className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-brand-700 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
+                                            <ArrowUpRight size={18} />
                                         </div>
+                                    </div>
 
-                                        {/* Body */}
-                                        <div className="flex flex-col p-5">
-                                            <div className="flex items-center justify-between gap-2">
-                                                <div className="flex flex-wrap gap-1.5">
-                                                    {project.categories.map(
-                                                        (cat) => (
-                                                            <span
-                                                                key={cat}
-                                                                className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700"
-                                                            >
-                                                                {cat}
-                                                            </span>
-                                                        )
-                                                    )}
-                                                </div>
-                                                <span className="shrink-0 text-xs font-medium text-ink-400">
-                                                    {project.year}
-                                                </span>
-                                            </div>
-                                            <h3 className="mt-3 font-display text-lg font-bold text-ink-900">
-                                                {project.title}
-                                            </h3>
-                                            <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-ink-500">
-                                                {project.blurb}
-                                            </p>
-                                            <div className="mt-4 flex flex-wrap gap-1.5">
-                                                {project.tech
-                                                    .slice(0, 4)
-                                                    .map((tech) => (
+                                    {/* Body */}
+                                    <div className="flex flex-1 flex-col p-5">
+                                        <div className="flex items-center justify-between gap-2">
+                                            <div className="flex flex-wrap gap-1.5">
+                                                {project.categories.map(
+                                                    (cat) => (
                                                         <span
-                                                            key={tech}
-                                                            className="rounded-md border border-ink-100 bg-white px-2 py-0.5 text-xs text-ink-600"
+                                                            key={cat}
+                                                            className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-semibold text-brand-700"
                                                         >
-                                                            {tech}
+                                                            {cat}
                                                         </span>
-                                                    ))}
-                                                {project.tech.length > 4 ? (
-                                                    <span className="rounded-md border border-ink-100 bg-white px-2 py-0.5 text-xs text-ink-400">
-                                                        +
-                                                        {project.tech.length -
-                                                            4}
-                                                    </span>
-                                                ) : null}
+                                                    )
+                                                )}
                                             </div>
+                                            <span className="shrink-0 text-xs font-medium text-ink-400">
+                                                {project.year}
+                                            </span>
                                         </div>
-                                    </button>
-                                </div>
+                                        <h3 className="mt-3 font-display text-lg font-bold text-ink-900">
+                                            {project.title}
+                                        </h3>
+                                        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-ink-500">
+                                            {project.blurb}
+                                        </p>
+                                        <div className="mt-4 flex flex-wrap gap-1.5">
+                                            {project.tech
+                                                .slice(0, 4)
+                                                .map((tech) => (
+                                                    <span
+                                                        key={tech}
+                                                        className="rounded-md border border-ink-100 bg-white px-2 py-0.5 text-xs text-ink-600"
+                                                    >
+                                                        {tech}
+                                                    </span>
+                                                ))}
+                                            {project.tech.length > 4 ? (
+                                                <span className="rounded-md border border-ink-100 bg-white px-2 py-0.5 text-xs text-ink-400">
+                                                    +
+                                                    {project.tech.length - 4}
+                                                </span>
+                                            ) : null}
+                                        </div>
+                                    </div>
+                                </button>
                             ))}
                         </div>
                     )}

@@ -11,11 +11,11 @@ const BASE_URL = "https://www.clementberthierdeveloppeur.fr";
  * Bump a value here when the corresponding page content actually changes.
  */
 const LAST_MODIFIED = {
-    home: "2026-07-17",
+    home: "2026-10-02",
     offres: "2026-06-08",
     services: "2026-06-08",
     templates: "2026-06-08",
-    projets: "2026-06-08",
+    projets: "2026-10-02",
     aPropos: "2026-06-18",
     contact: "2026-06-08",
     mentionsLegales: "2026-06-30",

@@ -14,5 +14,21 @@
         "text": "Clément est consciencieux et réalise les projets de façon pro et communique régulièrement sur l'avancée du projet. On sait où ça en est, du premier jour jusqu'à la livraison finale ! Le projet est 100% conforme à ce qui était prévu, et les délais ont été respectés. Ultra satisfait du résultat, je recommande les yeux fermés !",
         "rating": 5,
         "date": "2025-08"
+    },
+    {
+        "id": 3,
+        "author": "Cédric Ciolek",
+        "role": "CC ELEC — Électricien à Castres et dans le Tarn",
+        "text": "Je suis ravi du travail qu'il a effectué pour la création de mon site. Clément s'engage et s'investit comme si c'était pour lui, il a de super idées. Je le recommande les yeux fermés. Merci beaucoup Clément !",
+        "rating": 5,
+        "date": "2026-09"
+    },
+    {
+        "id": 4,
+        "author": "Cléa Gonzalez",
+        "role": "Micellex — Nettoyage professionnel dans le Tarn",
+        "text": "Je recommande vivement Clément Berthier. C'est un développeur très professionnel, sérieux et à l'écoute. Il prend le temps de comprendre les besoins de ses clients et réalise un travail de grande qualité avec beaucoup de rigueur et de réactivité. Je suis très satisfaite de la création de mon site internet professionnel. À chaque étape, Clément a su me conseiller, répondre à mes questions et proposer des solutions adaptées. Son implication et son souci du détail font vraiment la différence. Un grand merci pour ton travail et ton accompagnement. Je recommande Clément sans hésiter à toute personne recherchant un développeur compétent et de confiance.",
+        "rating": 5,
+        "date": "2026-08"
     }
 ]

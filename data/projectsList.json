@@ -42,7 +42,7 @@
         "tech": [
             "Next.js",
             "Tailwind CSS",
-            "Monetico Paiement  ",
+            "Monetico Paiement",
             "Vercel"
         ],
         "image": "/images/AprexHero.webp",
@@ -104,7 +104,7 @@
         "imageFit": "cover",
         "link": "https://genbee.fr/",
         "categories": [
-            "Site web"
+            "Application web"
         ]
     }
 ]
